@@ -1,9 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import '../../styles/global.css';
+import '../../styles/global.css'
+import yml from '../../config/config.yaml'
 const pageTitle = "Sasha's Learning Site"
 const identity = {
-	firstName: "Sasha",
+	// firstName: "Sasha",
 	country: "Vietnam",
 	occupation: "Developer",
 	hobbies: ["dogs", "hiking", "yoga"],
@@ -30,7 +31,7 @@ const fontSize = "2rem";
 				</ul>
 				<p>Here are a few facts about me:</p>
 				<ul>
-					<li>My name is {identity.firstName}.</li>
+					<li>My name is {yml.firstName} {yml.lastName}.</li>
 					<li>I live in {identity.country} and I work as a {identity.occupation}.</li>
 					{identity.hobbies.length >= 2 &&
 						<li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
