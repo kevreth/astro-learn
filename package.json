@@ -9,7 +9,11 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/vue": "^5.0.3",
+    "@vitejs/plugin-vue": "^5.2.1",
     "astro": "^5.1.1",
-    "prettier": "^3.4.2"
+    "prettier": "^3.4.2",
+    "tabulator-tables": "^6.3.0",
+    "vue": "^3.5.13"
   }
 }
