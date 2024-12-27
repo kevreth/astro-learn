@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - funeral-services
+  coc:
+    - family-community/funerals-memorials/funeral-home/
+proper_niche: Funeral
+plural_niche: Funerals
+proper_organization: Funeral Home
+plural_organization: Funeral Homes
+warning_terms: 
+disqualify: 
+discriminator: 

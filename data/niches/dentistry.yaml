@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - dentist/
+  coc:
+    - health-medicine/dental-services/dentist/
+proper_niche: Dentist
+plural_niche: Dentists
+proper_organization: Dental Clinic
+plural_organization: Dental Clinics
+warning_terms: 
+disqualify: 
+discriminator: 

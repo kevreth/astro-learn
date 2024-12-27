@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - siding-contractors
+  coc:
+    - contractors/painting-siding/siding-contractor/
+proper_niche: Siding Installer
+plural_niche: Siding Installers
+proper_organization: Siding Contractor
+plural_organization: Siding Contractors
+warning_terms: 
+disqualify: 
+discriminator: 

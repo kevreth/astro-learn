@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - moving-companies
+  coc:
+    - moving-transport/moving-services/
+proper_niche: Mover
+plural_niche: Movers
+proper_organization: Moving Company
+plural_organization: Moving Companies
+warning_terms: 
+disqualify: 
+discriminator: 

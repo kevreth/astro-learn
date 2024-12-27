@@ -1,0 +1,15 @@
+urls:
+  bbb:
+    - nail-salon
+  coc:
+    - beauty-spas/hair-nails/nail-salon/
+proper_niche: Nail Salon
+plural_niche: Nail Salons
+proper_organization: Nail Salon
+plural_organization: Nail Salons
+warning_terms: 
+disqualify: 
+  - dog
+  - cat
+  - pet
+discriminator: 

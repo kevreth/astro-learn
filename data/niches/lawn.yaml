@@ -1,0 +1,13 @@
+urls:
+  bbb:
+    - lawn-maintenance
+    - lawn-care
+  coc:
+    - home-garden/lawn-garden/lawn-care-service/
+proper_niche: Lawn Care Service
+plural_niche: Lawn Care Services
+proper_organization: Lawn Care Company
+plural_organization: Lawn Care Companies
+warning_terms: 
+disqualify: 
+discriminator: 

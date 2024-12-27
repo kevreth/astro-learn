@@ -1,0 +1,15 @@
+urls:
+  bbb:
+    - pest-control
+    - termite-control
+    - rodent-control
+    - mosquito-control
+  coc:
+    - home-garden/animal-pest-control/pest-control-service/
+proper_niche: Pest Control Service
+plural_niche: Pest Control Services
+proper_organization: Pest Control Company
+plural_organization: Pest Control Companies
+warning_terms: 
+disqualify: 
+discriminator: 

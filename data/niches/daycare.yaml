@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - child-care-centers
+  coc:
+    - family-community/child-care-services/day-care-center/
+proper_niche: Daycare
+plural_niche: Daycares
+proper_organization: Daycare
+plural_organization: Daycares
+warning_terms: 
+disqualify: 
+discriminator: 

@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - pet-grooming
+  coc:
+    - pets/pet-services/pet-groomer/
+proper_niche: Pet Grooming
+plural_niche: Pet Groomers
+proper_organization: 
+plural_organization: 
+warning_terms: 
+disqualify: 
+discriminator: 

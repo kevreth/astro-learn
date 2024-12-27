@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - stucco
+  coc:
+    - contractors/building-design/stucco-contractor/
+proper_niche: Stucco Installer
+plural_niche: Stucco Installers
+proper_organization: Stucco Contractor
+plural_organization: Stucco Contractors
+warning_terms: 
+disqualify: 
+discriminator: 

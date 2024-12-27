@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - barber
+  coc:
+    - beauty-spas/hair-nails/barber-shop/
+proper_niche: Barbar
+plural_niche: Barbars
+proper_organization: Barbar Shop
+plural_organization: Barbar Shops
+warning_terms: 
+disqualify: 
+discriminator: 

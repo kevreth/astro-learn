@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - garage-doors
+  coc:
+    - contractors/doors/garage-door-supplier/
+proper_niche: Garage Door Installer
+plural_niche: Garage Door Installers
+proper_organization: Garage Door Contractor
+plural_organization: Garage Door Contractors
+warning_terms: 
+disqualify: 
+discriminator: 

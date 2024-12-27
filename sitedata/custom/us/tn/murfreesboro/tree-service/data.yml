@@ -1,0 +1,21 @@
+name: TreeMaster Services
+title: Sample Murfreesboro, Tennessee Tree Services Site
+description: Murfreesboro, Tennessee Tree Services|TreeMaster Services
+nav1:
+  - label: Directory
+    path: /us/tn/murfreesboro/tree-service/directory
+  - label: Services
+    path: /us/tn/murfreesboro/tree-service/services
+  - label: About Us
+    path: /us/tn/murfreesboro/tree-service/about
+nav2:
+  - label: Special Offers
+    path: /us/tn/murfreesboro/tree-service/offers
+  - label: Testimonials
+    path: /us/tn/murfreesboro/tree-service/testimonials
+logo:
+  src: 'https://i.imgur.com/B9kN2MA.jpeg'
+  alt: "The TreeMaster Services logo."
+  slogan: 'Since 1963!'
+header: TreeMaster Services
+footer: (416) 555-3494

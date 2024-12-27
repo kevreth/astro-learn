@@ -1,0 +1,13 @@
+urls:
+  bbb:
+    - kitchen-cabinets
+    - cabinets
+  coc:
+    - contractors/home-improvement/cabinet-maker/
+proper_niche: Cabinet Installer
+plural_niche: Cabinet Installers
+proper_organization: Cabinet Installation Company
+plural_organization: Cabinet Installation Companies
+warning_terms: 
+disqualify: 
+discriminator: 

@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - mason-contractors
+  coc:
+    - contractors/foundations-masonry/masonry-contractor/
+proper_niche: Mason
+plural_niche: Masons
+proper_organization: Masonry Contractor 
+plural_organization: Masonry Contractors
+warning_terms: 
+disqualify: 
+discriminator: 

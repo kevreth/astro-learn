@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - water-well-drilling
+  coc:
+    - contractors/plumbing-water/well-drilling-contractor/
+proper_niche: Well
+plural_niche: Wells
+proper_organization: Well Drilling Contractor
+plural_organization: Well Drilling Contractors
+warning_terms: 
+disqualify: 
+discriminator: 

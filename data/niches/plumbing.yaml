@@ -1,0 +1,13 @@
+urls:
+  bbb:
+    - plumber
+  coc:
+    - plumber
+proper_niche: Plumber
+plural_niche: Plumbers
+proper_organization: Plumbing Company
+plural_organization: Plumbing Companies
+warning_terms:
+disqualify:
+  - Home Depot
+discriminator:

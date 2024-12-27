@@ -1,0 +1,13 @@
+urls:
+  bbb:
+    - brakes
+    - brake-service
+  coc:
+    - automotive-vehicles/auto-repair-shop/brake-shop/
+proper_niche: Brake Service
+plural_niche: Brake Services
+proper_organization: Brake Shop
+plural_organization: Brake Shops
+warning_terms: 
+disqualify: 
+discriminator: 

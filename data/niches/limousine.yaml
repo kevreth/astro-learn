@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - limo-service
+  coc:
+    - moving-transport/limousines-shuttle-services/limousine-service/
+proper_niche: Limousine
+plural_niche: Limousines
+proper_organization: Limousine Service
+plural_organization: Limousine Services
+warning_terms: 
+disqualify: 
+discriminator: 

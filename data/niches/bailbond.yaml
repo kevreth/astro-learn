@@ -1,0 +1,13 @@
+urls:
+  bbb:
+    - bail-bonds
+  coc:
+    - bail-bonds-service
+    - financial-services/loans-advances/bail-bonds-service/
+proper_niche: Bail Bond
+plural_niche: Bail Bonds
+proper_organization: Bail Bond
+plural_organization: Bail Bonds
+warning_terms:
+disqualify:
+discriminator:

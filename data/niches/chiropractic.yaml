@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - chiropractors-dc
+  coc:
+    - health-medicine/medical-specialties/chiropractor/
+proper_niche: Chiropractic
+plural_niche: Chiropractic
+proper_organization: Chiropractic Clinic
+plural_organization: Chiropractic Clinics
+warning_terms: 
+disqualify: 
+discriminator: 

@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - criminal-lawyer/
+  coc:
+    - legal/criminal-law/
+proper_niche: Criminal Law Attorney
+plural_niche: Criminal Law Attornies
+proper_organization: Criminal Law Firm
+plural_organization: Criminal Law Firms
+warning_terms: 
+disqualify: 
+discriminator: 

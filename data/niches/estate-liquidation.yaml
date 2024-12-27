@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - estate-liquidators
+  coc:
+    - real-estate/real-estate-services/estate-liquidator/
+proper_niche: Estate Liquidator
+plural_niche: Estate Liquidators
+proper_organization: Estate Liquidator Company
+plural_organization: Estate Liquidator Companies
+warning_terms: 
+disqualify: 
+discriminator: 

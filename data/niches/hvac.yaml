@@ -1,0 +1,26 @@
+urls:
+  bbb:
+    - hvac-contractors
+    - air-conditioning-contractor
+    - heating-and-air-conditioning
+    - residential-air-conditioning-contractors
+  coc:
+    - contractors/heating-air/hvac-contractor
+    - contractors/heating-air/heating-contractor
+    - contractors/heating-air/air-conditioning-contractor/
+proper_niche: HVAC Contractor
+plural_niche: HVAC Contractors
+proper_organization: HVAC Contractor
+plural_organization: HVAC Contractors
+warning_terms:
+disqualify:
+  - Sears
+  - Aire Serv
+  - One Hour
+  - TemperaturePro
+  - Carrier
+  - Rheem
+  - Scientific Systems
+  - Trane
+  - Ferguson
+discriminator:

@@ -1,0 +1,18 @@
+urls:
+  bbb:
+    - flooring-contractors
+    - epoxy-floor-coating
+    - hardwood-floor-contractors
+    - floor-installation
+  coc:
+    - contractors/carpet-flooring/flooring-contractor/
+    - contractors/carpet-flooring/wood-floor-installation-service/
+    - contractors/carpet-flooring/tile-contractor/
+    - contractors/carpet-flooring/flooring/
+proper_niche: 
+plural_niche: 
+proper_organization: 
+plural_organization: 
+warning_terms: 
+disqualify: 
+discriminator: 

@@ -1,0 +1,13 @@
+urls:
+  bbb:
+    - real-estate-broker
+    - real-estate-agent
+  coc:
+    - real-estate/real-estate-agents-brokers/real-estate-agency/
+proper_niche: Real Estate Agent
+plural_niche: Real Estate Agents
+proper_organization: Real Estate Agent
+plural_organization: Real Estate Agents
+warning_terms: 
+disqualify: 
+discriminator: 

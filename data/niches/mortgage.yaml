@@ -1,0 +1,14 @@
+urls:
+  bbb:
+    - mortgage-lenders
+    - mortgage-broker
+  coc:
+    - real-estate/mortgage-services/mortgage-lender/
+    - real-estate/mortgage-services/mortgage-broker/
+proper_niche: Mortgage Lender
+plural_niche: Mortgage Lenders
+proper_organization: Mortgage Lending Firm
+plural_organization: Mortgage Lending Firms
+warning_terms: 
+disqualify: 
+discriminator: 

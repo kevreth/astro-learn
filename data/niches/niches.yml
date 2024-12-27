@@ -1,0 +1,1923 @@
+- automotive:
+  hyponyms:
+  - - automotive
+    - automobile
+    - auto
+    - car
+    - truck
+    - van
+  - - repair
+    - mechanic
+    - garage
+    - shop
+    - maintenance
+    - overhaul
+  niches:
+  - niche: body
+    canon: automotive body repair
+    services:
+    - dent removal
+    - collision repair
+    - paint repair
+  - niche: brakes
+  - niche: wash
+    canon: automobive wash
+    services:
+    - detailing
+      windows
+      headlights
+  - niche: customization
+    canon: automotive customization
+  - niche: detailing
+    canon: automotive detailing
+  - niche: diesel engine
+    canon: diesel engine repair
+    services:
+    - engine diagnostics
+    - engine rebuild
+    - fuel system repair
+  - niche: electric vehicle
+    canon: electric vehicle repair
+    services:
+    - battery management service
+    - software updates
+    - electrical system repair
+  - niche: emergency roadside assistance
+    services:
+    - flat tire change
+    - battery jump start
+    - lockout service
+  - niche: engine
+    canon: automobile engine repair
+    services:
+    - engine tune-up
+    - oil change
+    - cooling system service
+  - niche: glass
+    canon: automotive glass replacement
+    services:
+    - windshield replacement
+    - window repair
+    - tinting
+  - niche: hybrid
+    canon: hybrid vehicle repair
+    services:
+    - hybrid battery replacement
+    - system diagnostics
+    - regenerative braking repair
+  - niche: motorcycle
+    canon: motorcycle repair
+    services:
+    - engine repair
+    - tire change
+    - brake service
+  - niche: exhaust system
+    hyponyms:
+    - muffler
+    - exhaust system
+  - niche: oil change
+  - niche: painting
+    canon: automotive painting
+    services:
+    - auto painting
+    - scratch repair
+    - custom paint jobs
+  - niche: restoration
+    canon: automotive restoration
+    services:
+    - vehicle restoration
+    - interior refurbishing
+    - rust removal
+  - niche: sound system
+    canon: automotive sound system
+    services:
+    - sound system installation
+    - speaker upgrade
+    - audio tuning
+  - niche: tinting
+    canon: automotive window tinting
+    services:
+    - UV shielding installation
+    - privacy tint application
+    - heat reduction film installation
+  - niche: tires
+    services:
+    - tire installation
+    - tire rotation
+    - wheel balancing
+  - niche: towing
+    services:
+    - vehicle recovery
+    - roadside assistance
+    - illegal parking towing
+    - long-distance towing
+  - niche: transmission
+    services:
+    - transmission repair
+    - fluid replacement
+    - transmission rebuild
+    - clutch replacement
+  - niche: tune-up
+    services:
+    - engine tuning
+    - spark plug replacement
+    - air filter change
+    - fuel system cleaning
+  - niche: upholstery
+    canon: automotive upholstery
+    services:
+    - seat cover installation
+    - upholstery repair
+    - custom upholstery
+    - leather and vinyl repair
+  - niche: inspection
+    services:
+    - pre-purchase inspection
+    - emissions testing
+    - safety inspection
+    - annual inspection
+  - niche: alignment
+    services:
+    - alignment check
+    - tire alignment
+    - suspension repair
+    - steering adjustment
+- child:
+  niches:
+  - niche: adoption
+    services:
+    - adoption consulting
+    - home study services
+    - legal guidance
+    - post-placement support
+    - international adoption services
+  - niche: babyproofing
+    services:
+    - home safety assessment
+    - outlet cover installation
+    - cabinet and drawer locks
+    - gate installation
+    - furniture anchoring
+  - childcare:
+    niches:
+    - niche: after school
+      canon: after school care
+      services:
+      - homework help
+      - activities and games
+      - snack and meal provision
+      - transportation (optional)
+      - outdoor play
+    - niche: daycare
+      services:
+      - child supervision
+      - educational programs
+      - meal services
+    - niche: nanny
+      services:
+      - home childcare
+      - meal preparation
+      - housekeeping
+      - transportation
+      - educational activities
+    - niche: preschool
+      services:
+      - early childhood education
+      - social and emotional development
+      - play-based learning
+      - preparation for kindergarten
+      - outdoor play and exploration
+  - entertainers:
+    niches:
+    - niche: actor
+      services:
+      - children's parties
+      - educational performances
+      - character appearances
+      - storytelling
+      - puppet shows
+    - niche: clown
+      services:
+      - birthday parties
+      - corporate events
+      - balloon twisting
+      - face painting
+      - slapstick comedy
+    - niche: magician
+      services:
+      - magic shows
+      - close-up magic
+      - stage magic
+      - interactive performances
+      - magic workshops for children
+    - niche: puppeteer
+      services:
+      - puppet shows
+      - educational performances
+      - interactive storytelling
+      - puppet-making workshops
+  - niche: midwife
+    hyponyms:
+    - midwife
+    - midwives
+    services:
+    - prenatal care
+    - labor and delivery support
+    - postpartum care
+    - breastfeeding support
+    - newborn care education
+  - sports:
+    niches:
+    - niche: ballet
+    - niche: baseball
+    - niche: basketball
+    - niche: football
+    - niche: gymnastic
+    - niche: soccer
+    - niche: swimming
+    - niche: tennis
+  - tutoring:
+    hyponyms:
+    - - tutoring
+      - instruction
+      - lessons
+      - classes
+      - courses
+    niches:
+    - niche: math
+      canon: math tutoring
+      services:
+      - arithmetic
+      - algebra
+      - geometry
+      - calculus
+      - statistics
+    - niche: reading
+      canon: reading tutoring
+      services:
+      - phonics
+      - comprehension
+      - vocabulary
+      - dyslexia
+    - niche: science
+      canon: science tutoring
+      services:
+      - biology
+      - chemistry
+      - physics
+    - niche: technology
+      canon: technology tutoring
+      services:
+      - computer basics
+      - coding instruction
+      - software skills
+      - digital literacy
+      - robotics
+    - niche: writing
+      services:
+      - grammar and mechanics
+      - essay writing
+      - creative writing
+      - college application essays
+      - research papers
+- domestic:
+  niches:
+  - niche: gardening
+    services:
+    - landscape design
+    - planting and maintenance
+    - lawn care
+    - tree and shrub care
+    - vegetable garden installation
+  - niche: geriatric home healthcare
+    hyponyms:
+    - - elderly
+      - geriatric
+      - senior
+    - - care
+      - healthcare
+    services:
+    - companionship
+    - assistance with daily activities
+    - medication reminders
+    - housekeeping
+    - meal preparation
+  - niche: home healthcare
+    services:
+    - personal care and hygiene
+    - wound care
+    - medication administration
+    - physical therapy assistance
+    - companionship
+  - niche: housekeeping
+    hyponyms:
+    - housekeeping
+    - housekeeper
+    - house cleaning
+    services:
+    - general cleaning
+    - deep cleaning
+    - laundry and ironing
+    - window cleaning
+    - carpet cleaning
+  - niche: house sitting
+    hyponyms:
+    - sitting
+    - sitter
+    services:
+    - mail and package collection
+    - plant watering
+    - pet care
+    - security checks
+  - niche: laundry
+    services:
+    - wash and fold
+    - dry cleaning
+    - ironing and pressing
+    - stain removal
+    - pickup and delivery
+  - niche: lawn care
+      services:
+    - mowing
+    - edging
+    - trimming
+    - fertilization
+    - weed control
+  - niche: organizing
+    canon: home organizing
+    hyponyms:
+    - organizing
+    - organization
+    services:
+    - decluttering
+    - closet organization
+    - kitchen pantry organization
+    - garage organization
+    - home office optimization
+  - niche: personal chef
+    hyponyms:
+    - chef
+    - cook
+    services:
+    - meal planning
+    - grocery shopping
+    - in-home meal preparation
+    - dietary restrictions accommodation
+  - niche: shopping
+    canon: personal shopping
+    hyponyms:
+    - shopping
+    - shopper
+    - errands
+- education:
+  niches:
+  - art:
+    niches:
+    - niche: calligraphy
+      hyponyms:
+      - calligraphy
+      - calligrapher
+    - niche: drawing
+    - niche: jewelry
+      hyponyms:
+      - jeweler
+      - jewelry
+    - niche: painting
+      hyponyms:
+      - painting
+      - painter
+    - niche: photography
+      hyponyms:
+      - photography
+      - photographer
+    - niche: pottery
+    - niche: sculpting
+      hyponyms:
+      - sculpting
+      - sculptor
+  - niche: career counseling
+    services:
+    - career aptitude testing
+    - resume and cover letter assistance
+    - interview preparation
+    - job search strategies
+    - career exploration
+  - niche: computer
+    canon: computer training
+    services:
+    - basic computer skills
+    - software training
+    - web development
+    - programming languages
+    - IT certifications
+  - niche: cooking
+    canon: cooking class
+    services:
+    - basic cooking techniques
+    - baking
+    - international cuisine
+    - healthy cooking
+    - culinary workshops
+  - dance:
+    niches:
+    - niche: ballroom
+      canon: ballroom dancing
+    - niche: ballet
+    - niche: country
+      canon: country dancing
+    - niche: salsa
+    - niche: swing
+      canon: swing dancing
+  - niche: driving
+    canon: driving school
+    services:
+    - driver's education
+    - behind-the-wheel training
+    - defensive driving
+    - license test preparation
+  - niche: financial literacy
+    services:
+    - budgeting
+    - debt management
+    - saving and investing
+    - retirement planning
+    - credit score education
+  - fitness:
+    niches:
+    - niche: aerobic
+    - niche: aquatic
+      canon: aquatic fitness
+    - niche: crossfit
+    - niche: kickboxing
+    - niche: personal training
+    - niche: pilates
+    - niche: senior
+      canon: senior fitness
+      hyponyms:
+      - senior
+      - geriatric
+      - elderly
+    - niche: spinning
+    - niche: strength training
+      hyponyms:
+      - strength training
+      - bodybuilding
+      - isotonic exercise
+    - niche: yoga
+    - niche: zumba
+  - language:
+    niches:
+    - niche: arabic
+    - niche: chinese
+    - niche: english
+    - niche: french
+    - niche: german
+    - niche: hindi
+    - niche: japanese
+    - niche: korean
+    - niche: russian
+    - niche: sign language
+    - niche: spanish
+  - niche: life coaching
+    services:
+    - goal setting
+    - overcoming obstacles
+    - personal development
+    - relationship coaching
+    also: education/career coaching
+  - niche: meditation
+    services:
+    - guided meditation
+    - mindfulness techniques
+    - stress reduction
+    - yoga nidra
+  - music:
+    niches:
+    - niche: piano
+    - niche: flute
+    - niche: guitar
+    - niche: drums
+    - niche: saxophone
+    - niche: singing
+    - niche: trumpet
+    - niche: violin
+  - niche: parenting
+    services:
+    - newborn care
+    - potty training
+    - positive discipline techniques
+    - child development education
+    - special needs parenting
+    - first aid
+  - self-defense:
+    niches:
+    - niche: aikido
+    - niche: jiu-jitsu
+    - niche: judo
+    - niche: karate
+    - niche: kung fu
+    - niche: mma
+      canon: mixed martial art
+    - niche: muay thai
+      hyponyms:
+      - art
+      - artist
+    - niche: taekwondo
+  - niche: college test preparation
+    hyponyms:
+    - - test
+      - exam
+    - - college
+      - university
+      - higher education
+- events:
+  niches:
+  - niche: catering
+    services:
+    - menu planning
+    - food preparation
+    - on-site serving
+    - buffet setup
+    - plated meals
+  - niche: disk jockey
+    canon: djs
+    services:
+    - music selection and playlists
+    - sound system setup
+    - MC services
+    - lighting effects
+  - niche: equipment rental
+    canon: event equipment rentals
+    services:
+    - tables and chairs
+    - tents and canopies
+    - linens and tableware
+    - sound systems
+    - lighting and staging
+  - niche: cleaning
+    canon: event cleaning
+    services:
+    - pre-event cleaning
+    - post-event cleaning
+    - trash removal
+    - venue restoration
+  - niche: planning
+    canon: event planning
+    services:
+    - venue selection
+    - vendor coordination
+    - budget management
+    - timeline creation
+    - day-of coordination
+  - niche: funeral
+    hyponyms:
+    - funerals
+    - burials
+    - tombstones
+    - caskets
+    - vaults
+    services:
+    - funeral planning
+    - burial arrangements
+    - cremation services
+    - obituary writing
+    - grief counseling resources
+  - niche: lighting and sound
+    services:
+    - sound system setup and operation
+    - stage lighting design
+    - special effects lighting
+    - audio-visual support
+  - niche: photography
+    services:
+    - event photography
+    - portrait photography
+    - photo booth services
+    - album creation
+  - niche: videography
+    services:
+    - event filming
+    - video editing
+    - highlight reels
+    - documentary-style videos
+  - niche: wedding
+    services:
+    - wedding planning
+    - dress and attire selection
+    - venue selection and decor
+    - florist and catering coordination
+    - officiant services
+- finance:
+  niches:
+  - accounting:
+    niches:
+      - niche: CPA
+        services:
+        - tax audit representation
+        - tax returns
+        - tax planning
+      - niche: Enrolled Agents
+      - niche: Tax Preparers
+  - niche: bookkeeping
+    hyponyms:
+    - bookkeeping
+    - bookkeeper
+  - niche: check cashing
+  - niche: credit repair
+  - niche: debt counseling
+    hyponyms:
+    - counseling
+    - counselor
+    services:
+    - financial assessment
+    - budgeting assistance
+    - debt repayment plans
+    - credit education
+  - niche: estate liquidation
+    hyponyms:
+    - liquidation
+    - liquidator
+    services:
+    - donation coordination
+    - estate appraisal
+    - estate sales
+    - property cleanout
+  - niche: financial planner
+    services:
+    - retirement planning
+    - investment management
+    - tax planning
+    - budgeting
+    - estate planning
+  - niche: insurance
+      services:
+    - life
+    - health
+    - auto
+    - homeowner
+  - lending:
+    niches:
+    - niche: automobile
+      canon: automobile loans
+    - niche: consumer finance
+    - niche: debt consolidation
+    - niche: payday
+      canon: payday loans
+      hyponyms:
+      - loan
+      - advance
+      also:
+    - niche: personal
+      canon: personal loans
+    - niche: title
+      canon: title loans
+    - real estate:
+      hyponyms:
+      - - house
+        - housing
+        - home
+        - property
+        - lot
+        - commercial
+        - real estate
+        - residential
+        - single-family
+        - condo
+        - condominium
+        - sf
+        - sfh
+      niches:
+      - niche: appraisal
+        canon: real estate appraisal
+        hyponyms:
+        - - appraisal
+          - appraiser
+      - niche: brokerage
+        hyponyms:
+        - brokerage
+        - broker
+        - sales
+        - salesman
+        - saleswoman
+        - salesperson
+        canon: real estate brokerage
+      - niche: home inspection
+        hyponyms:
+        - inspection
+        - inspector
+      - niche: surveying
+        hyponyms:
+        - surveying
+        - real restate surveyor
+      - niche: mortgage
+        hyponyms:
+        - mortgage
+        - mortgage broker
+        also: finance/lending
+      - niche: property management
+- health:
+  hyponyms:
+  - - -ology
+    - ologist
+  - - -apy
+    - apist
+  - - -tics
+    - tist
+  - - -iatry
+    - iatrist
+  niches:
+  - allied health:
+    niches:
+    - niche: audiology
+    - niche: home healthcare
+    - niche: nutrition
+      hyponyms:
+      - nutritionist
+      - dietitian
+      - nutrition
+      - diet
+    - niche: optometry
+      hyponyms:
+      - optometry
+      - optometrist
+    - niche: optical
+      hyponyms:
+      - opticians
+      - optical
+      - optics
+    - niche: physical therapy
+    - niche: rehabilitation
+    - niche: respiratory therapy    
+    - niche: speech pathology
+  - alternative medicine:
+    niches:
+    - niche: acupuncture
+      hyponyms:
+      - acupuncture
+      - acupuncturist
+    - niche: aromatherapy
+      hyponyms:
+      - aromatherapy
+      - aromatherapist
+    - niche: chiropractic
+      hyponyms:
+      - chiropractic
+      - chiropractor
+    - niche: herbal medicine
+    - niche: homeopathy 
+    - niche: massage therapy
+    - niche: naturopathy
+      hyponyms:
+      - naturopathy
+      - naturopath
+    - niche: reiki
+  - dental:
+    hyponyms:
+    - -odontic
+    - -odontia
+    - -odontial
+    - -odontist
+    niches:
+    - niche: endodontic
+      hyponyms:
+      - endodontics
+      - cavity dentist
+    - niche: general dentistry
+      hyponyms:
+      - general dentistry
+      - dentist
+      - dentistry
+      - dental
+    - niche: periodontic
+    - niche: orthodontic
+      hyponyms:
+      - orthodontics
+      - braces
+    - niche: prosthodontia
+    - niche: stomatology
+      canon: oral surgery
+      hyponyms:
+      -  - surgery
+         - surgeon
+      -  - stomatology
+         - oral
+         - maxillofacial
+  - medical:
+    hyponyms:
+    - - doctor
+      - physician
+      - medicine
+      - practitioner
+    niches:
+    - niche: anesthesiology
+      hyponyms:
+      - anesthesiology
+      - pain doctor
+      - pain clinic
+    - niche: cardiology
+      hyponyms:
+      - cardiology
+      - heart doctor
+    - niche: dermatology
+      hyponyms:
+      - dermatology
+      - skin doctor
+    - niche: endocrinology
+      hyponyms:
+      - endocrinology
+      - kidney doctor
+    - niche: family medicine
+    - niche: gastroenterology     
+    - niche: general practice
+      hyponyms:
+      - general practice
+      - primary care doctor
+      - PCP
+      - GP
+    - niche: geriatric
+      hyponyms:
+      - geriatric
+      - elderly doctor
+    - niche: hematology
+      hyponyms:
+      - blood doctor
+    - niche: internal medicine
+      hyponyms:
+      - internal medicine
+      - internist
+    - niche: neurology
+      hyponyms:
+      - - neurology
+        - brain doctor
+      - - brain
+        - spine
+    - niche: ob/gyn
+      hyponyms:
+      - ob/gyn
+      - obstetrician
+      - gynecology
+      - women's doctor
+    - niche: oncology       
+    - niche: ophthalmology
+      hyponyms:
+      - - ophthalmology
+        - eye doctor
+      - - eye
+        - vision
+    - niche: orthopedic
+      hyponyms:
+      - orthopedic
+      - orthopedist
+      - bone doctor
+    - niche: otolaryngology
+      hyponyms:
+      - otolaryngology
+      - ENT
+    - niche: pediatric
+      hyponyms:
+      - pediatric
+      - children's doctor
+      - pediatrician
+      also: children
+    - niche: podiatry
+      hyponyms:
+      - podiatry
+      - foot doctor
+    - niche: psychiatry
+      hyponyms:
+      - psychiatry
+      - psychiatrist
+      - shrink
+      also: health/mental health
+    - niche: pulmonology
+      hyponyms:
+      - pulmonology
+      - lung doctor
+    - niche: sleep
+      hyponyms:
+      - sleep
+      - sleep doctor
+    - niche: rheumatology       
+    - niche: sports medicine      
+    - niche: surgery
+    - niche: urology
+      hyponyms:
+      - urology
+      - urine doctor
+      - men's doctor
+  - mental health:
+    hyponyms:
+    - - psychology
+      - social work
+      - counseling
+      - therapy
+      - psychologist
+      - social worker
+      - counselor
+      - therapist
+    also: health/medical/psychiatry
+    niches:
+    - niche: substance abuse
+      canon: substance abuse counseling
+      hyponyms:
+      - substance abuse
+      - addiction disorder
+      - addiction
+    - niche: eating
+      canon: eating disorder counseling
+    - niche: child
+      canon: child psychology
+      also: child
+    - niche: family
+      canon: family counseling
+    - niche: clinical
+      canon: clinical psychology
+    - niche: occupational
+      canon: occupational therapy
+    - niche: relationships
+      canon: couples counseling
+    - niche: depression
+      canon: depression therapy
+    - niche: LBGTQ+
+      canon: LBGTQ+ counseling
+    - niche: PTSD
+      canon: clinical counseling
+    - niche: ADHD
+      canon: ADHD therapy
+    - niche: anxiety
+      canon: addiction disorder counseling
+    - niche: disability
+      canon: disability counseling
+    - niche: OCD
+      canon: OCD therapy
+    - niche: geriatric
+      canon: geriatric counseling
+    - niche: suicide
+      canon: suicide prevention
+  - clinics:
+      niche: urgent care center
+      niche: emergency care
+      niche: community care
+- home:
+  - appliances:
+    niches:
+    - niche: refrigerator
+      canon: refrigerator repair
+    - niche: stove and oven
+      hyponyms:
+      - stoves and ovens
+      - stove repair
+      - oven repair
+    - niche: washer and dryer
+      hyponyms:
+      - washers and dryers
+      - washer repair
+      - dryer repair
+  - construction:
+    niches:
+    - niche: addition
+    - niche: home builder
+  - home improvement:
+    hyponyms:
+    - - construction
+      - installer
+      - installation
+      - installing
+      - reconstruction
+      - rehab
+      - rehabbing
+      - rehabilitate
+      - rehabilitation
+      - rehabilitating
+      - remodel
+      - remodeler
+      - remodeling
+      - renovate
+      - renovator
+      - renovating
+      - renovation
+      - repair
+      - repairing
+      - replace
+      - replacing
+      - replacement
+      - replacing
+      - restore
+      - restorer
+      - restoration
+      - restoring
+    - - roof
+      - roofing
+      - roofer
+    - - mason
+      - masonry
+    - - floor
+      - flooring
+    niches:
+    - niche: basement
+    - niche: bathroom
+    - niche: brick masonry
+    - niche: cabinet
+      canon: cabinet installation
+      hyponyms:
+      - cabinet
+      - cabinetry
+    - niche: carpentry
+    - niche: carpet
+      canon:
+      - carpet installation
+    - niche: closet
+    - niche: concrete
+      hyponyms:
+      - cement
+      - concrete
+    - niche: concrete lifting
+      hyponyms:
+      - leveling
+    - niche: concrete cutting
+      hyponyms:
+      - leveling      
+    - niche: countertop
+    - niche: deck
+      hyponyms:
+      - deck
+      - balcony
+      canon:
+      - deck installation
+    - niche: door
+      canon:
+      - door installation
+    - niche: driveway
+      canon:
+      - driveway installation
+    - niche: drywall
+      canon:
+      - drywall installation
+    - niche: electrical
+      hyponyms:
+      - electrician
+      - electrical
+    - niche: energy audit
+    - niche: epoxy
+    - niche: fireplace
+      canon:
+      - fireplace installation
+    - niche: furniture
+      canon:
+      - furniture repair
+    - niche: garage
+      canon:
+      - garage construction
+    - niche: garage door
+      canon:
+      - garage door installation
+    - niche: gutter
+      canon:
+      - gutter installation
+    - niche: hardwood flooring
+    - niche: hot tub
+      hyponyms:
+      - - hot tub
+        - whirlpool
+        - jacuzzi
+      canon: hot tub installation
+    - niche: hvac
+      hyponyms:
+      - hvac
+      - heating
+      - ventilation
+      - air conditioning
+      - heating, ventilation, and air conditioning
+      canon: hvac installation
+    - niche: insulation
+    - niche: kitchen
+      canon: kitchen remodeling
+    - niche: laminate & vinyl flooring
+    - niche: painting and staining
+    - niche: patio
+      hyponyms:
+      - patio
+      - porch
+      canon: patio construction
+    - niche: plumbing
+      hyponyms:
+      - plumbing
+      - plumber
+      services:
+      - leak repair
+      - pipe installation
+      - drain cleaning
+    - niche: metal roofing replacement
+    - niche: sauna
+      canon: sauna installation
+    - niche: shelving
+      canon: shelving installation
+    - niche: shingle roofing
+      canon: shingle roofing replacement
+    - niche: solar
+      canon: solar panel installation
+    - niche: stair
+      canon: stair replacement
+    - niche: stone masonry
+      canon: stone masonry construction
+    - niche: stucco
+    - niche: tile flooring
+      canon: tile flooring replacement
+    - niche: upholstery
+    - niche: wallpapering
+    - niche: window blind
+      hyponyms:
+      - window
+      - venetian
+      canon: window blind replacement
+    - niche: window
+      canon:
+      - window replacement
+    - niche: wood flooring
+      canon:
+      - wood flooring installation
+  - cleaning:
+    hyponyms:
+    - cleaning
+    - cleaner
+    niches:
+    - niche: attic and basement
+      canon: attic and basement cleaning
+    - niche: carpet
+      canon: carpet cleaning
+    - niche: chimney
+      canon: chimney cleaning
+      hyponyms:
+      - cleaning
+      - sweep
+    - niche: duct
+      hyponyms:
+      - duct
+      - vent
+      canon: duct cleaning
+    - niche: gutter
+      canon: gutter cleaning
+    - niche: pool
+      hyponyms:
+      - pool
+      - swimming pool
+      canon: pool cleaning
+    - niche: pressure washing
+      hyponyms:
+      - washing
+      - washer
+    - niche: septic system
+      canon: septic system cleaning
+    - niche: window
+      canon: window cleaning
+  - other:
+    niches:
+    - niche: automation
+      canon: home automation
+    - niche: furniture assembly
+      hyponyms:
+      - assembly
+      - assembler
+    - niche: home security
+    - niche: interior decoration
+      hyponyms:
+      - decoration
+      - decorator
+    - niche: locksmith
+    - niche: moving service
+    - niche: pest control
+      hyponyms:
+      - - control
+        - exterminator
+        - eliminator
+      - - pest
+        - insect
+        - varmint
+        - vermin
+        - rodent
+      - - exterminator
+        - extermination
+      - - eliminator
+        - elimination
+- legal:
+  niches:
+  - attorney:
+    hyponyms:
+    - - lawyer
+      - lawyers
+      - attorneys
+      - barrister
+      - barristers
+      - solicitor
+      - solicitors
+      - counselor
+      - counselors
+      - attorney-at-law
+      - attorneys-at-law
+      - litigator
+      - litigators
+    niches:
+    - niche: automobile accident
+      canon: automobile accident attorney
+      services:
+        - accident investigation
+        - insurance companies negotiation
+        - representation in court
+        - assistance with medical bills
+        - compensation recovery      
+    - niche: bankruptcy
+      canon: bankruptcy attorney
+      services:
+        - legal advice on bankruptcy options
+        - preparation and filing of bankruptcy petitions
+        - representation in bankruptcy court
+        - debt restructuring assistance       
+    - niche: corporate
+      canon: corporate attorney
+      services:
+        - business formation and structuring 
+        - contract drafting and review
+        - mergers and acquisitions
+        - intellectual property protection 
+        - regulatory compliance      
+    - niche: criminal defense
+      canon: criminal defense attorney
+      services:
+        - representation at all stages of criminal proceedings 
+        - plea negotiations 
+        - defense in court 
+        - appeals       
+    - niche: cybercrime
+      canon: cybercrime attorney
+      services:
+        - data breach response 
+        - cybercrime investigation 
+        - legal representation in cybercrime cases
+        - cybersecurity policy development       
+    - niche: divorce
+      canon: divorce attorney
+      services:
+        - legal advice on divorce process 
+        - child custody and support determination
+        - property division 
+        - alimony/spousal support negotiation      
+    - niche: employment
+      canon: employment attorney
+      services:
+        - discrimination and harassment claims 
+        - wrongful termination lawsuits 
+        - wage and hour disputes 
+        - employment contract review       
+    - niche: entertainment
+      canon: entertainment attorney
+      services:
+        - contract negotiation and drafting 
+        - intellectual property protection (trademarks, copyrights)
+        - royalty disputes
+        - licensing agreements       
+    - niche: estate planning
+      canon: estate planning attorney
+      services: 
+        - will and trust creation 
+        - power of attorney 
+        - healthcare directives
+        - tax planning       
+    - niche: family law
+      canon: family law attorney
+      services:
+        - divorce and separation
+        - child custody and support
+        - adoption
+        - paternity matters      
+    - niche: general practice
+      canon: general practice attorney
+      services:
+        - basic legal advice on various matters 
+        - document preparation 
+        - referrals to specialists       
+    - niche: immigration
+      hyponyms:
+      - immigration
+      - migration
+      canon: immigration attorney
+      services:
+        - visa applications
+        - green card petitions
+        - citizenship assistance 
+        - deportation defense       
+    - niche: intellectual property
+      canon: intellectual property attorney
+      services:
+        - patent filing and prosecution
+        - trademark registration 
+        - copyright protection 
+        - trade secret litigation       
+    - niche: landlord-tenant
+      canon: landlord-tenant attorney
+      services:
+        - lease drafting and review 
+        - eviction proceedings
+        - security deposit disputes 
+        - property damage claims       
+    - niche: maritime
+      canon: maritime attorney
+      services:
+        - vessel registration and documentation
+        - maritime contracts
+        - cargo claims 
+        - injury lawsuits       
+    - niche: medical malpractice
+      canon: medical malpractice attorney
+      hyponyms:
+      - malpractice
+      - medical malpractice
+      services:
+        - investigation of medical negligence claims
+        - representation in malpractice lawsuits
+        - assistance with compensation recovery      
+    - niche: nursing home
+      hyponyms:
+      - - nursing
+        - retirement
+      - - nursing home
+        - assisted living
+      canon: nursing home attorney
+      services:
+        - representation in cases of abuse or neglect 
+        - contract disputes 
+        - regulatory compliance issues      
+    - niche: personal injury
+      canon: personal injury attorney
+      hyponyms:
+      - personal injury
+      - accident
+      - slip-and-fall
+      services:
+        - car accidents 
+        - slip and fall injuries
+        - product liability 
+        - medical malpractice       
+      canon: personal injury attorney
+    - niche: real estate
+      canon: real estate attorney
+      services:
+        - property purchase and sale agreements 
+        - title searches 
+        - zoning and land use disputes 
+        - landlord-tenant    
+    - niche: sports
+      canon: sports attorney
+      services:
+        - contract negotiation for athletes and teams
+        - endorsement deals
+        - disciplinary hearings 
+        - liability waivers       
+    - niche: tax
+      canon: tax attorney
+      services:
+        - tax preparation and filing (individual and business)
+        - tax planning and advice 
+        - IRS audit representation      
+    - niche: traffic
+      canon: traffic attorney
+      services:
+        - representation for traffic violations 
+        - DUI/DWI defense 
+        - license suspension hearings 
+        - points reduction assistance
+    - niche: workers' compensation 
+      services:
+        - filing workers' compensation claims
+        - representation in benefits disputes
+        - appeals           
+  - niche: bail bond
+    services:
+      - posting bail for defendants
+      - assistance with bail conditions
+      - coordination with courts
+      - federal  
+  - niche: private investigator
+    services:
+      - surveillance
+      - background checks
+      - infidelity investigations
+      - asset searches
+  - niche: notary public
+    services:
+      - document witnessing
+      - signature verification
+      - administering oaths and affirmations       
+- personal care:
+  niches:
+  - niche: barber
+    services:
+    - beard
+    - facials
+    - hair styling
+    - haircutting
+    - manicure
+    - pedicure
+    - scalps
+    - shaving
+    - color
+  - niche: beauty clinic
+    services:
+    - acne
+    - anti-aging
+    - balance facial
+    - brown lift
+    - chemical peel
+    - dermaplaning
+    - exfoliation
+    - facelift 
+    - glass skin
+    - hair loss
+    - hydration therapy
+    - illumanate facial
+    - injectable
+    - laser treatment
+    - light therapy facial
+    - microblading
+    - microdermabrasion
+    - neck lift
+    - revive facial
+    scalp:
+    - massage
+    - micropigmentation
+    - treatment
+    skin:
+    - analysis
+    - tightening
+    - glass skin
+    - skin lifting: HIFU and SHURINK
+  - niche: bridal
+    also: events/weddings
+    services: 
+    - hair
+    - makeup
+  - niche: eyebrow
+    services:
+    - lamination
+    - microblading
+    - shaping
+    - tinting
+    - eyebrow threading 
+    - eyebrow care
+    - eyebrow tint 
+  - niche: eyelash
+    services:
+    - lash health
+    - lash fills 
+    - lash lifts
+    - extensions
+    - lift
+    - perm
+  - niche: hair salon
+    services:
+    - curly hair
+    - hair color
+    - haircut
+    - highlighting
+    - styling
+    - treatment
+  - niche: hair removal
+    services:
+    - waxing
+    - laser removal
+    - electrolysis
+    - threading
+  - niche: makeup
+    services:
+    - bridal makeup
+    - event makeup
+    - makeup lessons
+    - rho makeup
+  - niche: nail salon
+    services:
+    - acrylic
+    - artisitc
+    - dip powder
+    - fixes
+    - gel manicure 
+    - manicure
+    - nail art
+    - nail care
+    - nail cut
+    - nail design
+    - nail extension
+    - nail painting
+    - nail polish changes
+    - nail repair
+    - pedicure
+    - polish removal
+    - stiletto nails
+  - niche: permanent makeup
+    services:
+    - blushing
+    - botox treatments
+    - chemical peels
+    - eye liner
+    - eye tattoo
+    - eyebrow tattooing 
+    - eyeliner
+    - hair stroke 
+    - laser treatment 
+    - lashliner
+    - lip blushing
+    - micropigmentation
+    - nanobrows
+    - permanent eyeliner
+    - powder brows
+  - niche: scalp
+    services:
+    - hair loss treatment
+    - scalp massage
+    - scalp treatment
+  - niche: spa
+    services:
+    - aroma massage
+    - aromatherapy
+    - body contouring 
+    - body massage
+    - body wraps
+    - botox treatments
+    - chakra healing 
+    - coolsculpting 
+    - cooltone
+    - dermaplaning 
+    - hydrotherapy
+    - massage therapy
+    - microneedling 
+    - pregnancy massage
+    - prenatal massage
+    - salt massage
+    - seasonal massage
+    - tarot reading 
+  - niche: tanning
+    services:
+    - beach tanning 
+    - body bronzing
+    - custom organic spray tanning
+    - custom spray tanning 
+    - half legs
+    - indoor tanning 
+    - organic tanning 
+    - spray tanner 
+    - red light therapy 
+    - sunbed tanning 
+    - tanning bed 
+    - tanning tips
+    - UV tanning
+  - niche: tattoo
+    services:
+    - 3d-photo real tattoos
+    - 3d-style tattoos
+    - abstract tattoos
+    - color ink tattoos 
+    - cover-up tattoos
+    - custom tattoo design
+    - custom work
+    - delicate dot work tattoos
+    - female tattoos 
+    - figurative tattoos
+    - fine line tattoos 
+    - male tattoos
+    - mandala tattoos
+    - old-fashion tattoos
+    - photo-realistic tattoos
+    - tattoo application
+    - tattoo design
+  - niche: tattoo removal
+    services:
+    - chemical peels
+    - color tattoos
+    - cover-up tattoo
+    - dermabrasion 
+    - eyebrow tattoo removal
+    - face tattoo removel
+    - laser tattoo removal
+    - laser tattoo removal treatment 
+    - pico lasers
+    - red light tattoo removel
+    - skin discoloration 
+    - small tattoos
+    - surgical tattoo removal
+    - tattoo fading
+    - tattoo removal on dark skin
+    - tattoo removal sessions 
+  - niche: waxing
+    services:
+    - arm hair removal
+    - arms full
+    - arms half
+    - back hair removal
+    - bikini brazilian line
+    - bikini waxing
+    - body wax
+    - brazialian waxing
+    - brazilian
+    - chest hair removal
+    - chin waxing 
+    - eyebrow waxing
+    - leg hair removal 
+    - lip hair removal
+    - neck hair removel
+    - stomach hair removal
+    - underarms
+- pets:
+  hyponyms:
+  - pet
+  - dog
+  - cat
+  niches:
+  - niche: aquarium
+    services:
+      - aquarium setup and design
+      - tank maintenance and cleaning
+      - fish and plant selection
+      - water quality testing
+      - disease treatment  
+  - niche: behavioral consultant
+    canon: pet behavioral consultation
+    hyponyms:
+    - behavioral consultation
+    - psychology
+    - psychologist
+    services:
+      - obedience training
+      - aggression management
+      - anxiety and stress reduction
+      - behavior modification plans
+      - socialization    
+  - niche: boarding
+    canon: pet boarding
+    services:
+      - overnight stays
+      - daily exercise and playtime
+      - feeding and medication administration 
+      - specialized care   
+  - niche: grooming
+    canon: pet grooming
+    services:
+    - washing
+    - fur trimming
+    - nail clipping
+    - brushing
+    - ear cleanin
+  - niche: photography
+    canon: pet photography
+    services:
+      - pet portrait sessions
+      - action shots
+      - candid pet photography
+      - photoshoots with owners     
+  - niche: rehabilitation
+    canon: pet rehabilitation
+    services:
+      - physical therapy for injuries
+      - post-surgery recovery programs
+      - weight management 
+      - behavioral rehabilitation     
+  - niche: sitting
+    canon: pet sitting
+    services:
+      - in-home pet visits 
+      - feeding and water refills
+      - playtime and walks 
+      - litter box cleaning     
+  - niche: training
+    canon: pet training
+    services:
+      - basic obedience commands
+      - advanced tricks
+      - agility training
+      - service dog training 
+      - therapy dog training     
+  - niche: veterinary
+    hyponyms:
+    - veterinary
+    - veterinarian
+    services:
+    - pet vaccinations
+    - emergency care
+    - spay and neuter services
+    - dental
+    - microchipping
+    - wellness exams    
+  - niche: walking
+    canon: pet walking
+- transportation:
+  hyponyms:
+  - rental
+  - rent
+  - lease
+  niches:
+  - niche: automobile rental
+    services:
+      - short-term car rentals
+      - long-term car rentals
+      - variety of vehicle types (economy, luxury, SUV, etc.)
+  - niche: executive car
+    services:
+      - luxury car rentals with chauffeur
+      - airport transfers
+      - corporate event transportation
+      - special occasion transportation 
+  - niche: horse carriage
+    services:
+      - scenic rides
+      - special occasion carriage rentals (weddings, etc.)  
+  - niche: limousine
+    services:
+      - stretch limousine rentals
+      - airport transfers
+      - prom and party transportation
+      - wedding transportation packages 
+  - niche: luxury car rental
+    services:
+      - high-end sports car rentals
+      - exotic car rentals
+      - short and long-term options
+  - niche: sports car rental
+    services:
+      - performance car rentals
+      - track day rentals
+      - luxury sports car rentals 
+  - niche: taxi
+    services:
+      - on-demand transportation
+      - airport transfers
+      - pre-scheduled rides
+  - niche: moving truck rental
+    services:
+      - various truck sizes
+      - moving supplies
+      - short and long-distance rentals
+      - storage
+- travel:
+  hyponyms:
+  - - vacation
+    - travel
+  niches:
+  - niche: agency
+    canon: travel agency
+    hyponyms:
+    - - agent
+      - agency
+      - agencies
+    services:
+      - flight booking
+      - hotel reservations
+      - cruise packages
+      - tour arrangements
+      - travel insurance       
+  - niche: concierge
+    services:
+      - personalized travel planning
+      - restaurant reservations
+      - activity and event bookings
+      - VIP access
+      - itinerary creation   
+  - niche: gear rental
+    canon: travel gear rental
+    hyponyms:
+    - - travel gear
+      - baggage
+    services:
+      - baggage
+      - camping
+      - hiking and backpacking equipment
+      - water sports
+      - ski and snowboard rentals      
+  - niche: luxury
+    canon: luxury travel
+    services:
+      - high-end accommodations
+      - exclusive tours and experiences
+      - private transportation 
+      - gourmet dining     
+  - niche: tour
+    hyponyms:
+    - tour
+    - tour guide
+    services:
+      - guided city tours
+      - historical and cultural tours
+      - adventure and outdoor tours
+      - food and wine tours     
+- yard:
+  hyponyms:
+  - artificial turf
+  - astroturf
+  niches:
+  - niche: artificial turf
+    services:
+    - artificial turf installation
+    - maintenance and cleaning
+    - design and customization   
+  - niche: dumpster
+    services:
+    - dumpster rental (various sizes)
+    - debris removal 
+    - construction waste disposal 
+  - niche: excavation
+    hyponyms:
+    - - excavation
+      - excavator
+      - heavy equipment operator
+    services:
+    - site preparation
+    - grading and leveling
+    - trench digging
+    - foundation excavation       
+  - niche: fencing
+    hyponyms:
+    - - fencing
+      - fence
+    services:
+    - fence installation (various materials)
+    - fence repair
+    - privacy fencing
+    - decorative fencing       
+  - niche: irrigation
+    hyponyms:
+    - - irrigation
+      - irrigator
+    canon: yard irrigation
+    services:
+    - sprinkler system installation
+    - drip irrigation systems
+    - irrigation system repair and maintenance    
+  - niche: landscaping
+    hyponyms:
+    - - landscaping
+      - landscaper
+    services:
+    - landscape design
+    - lawn care and maintenance
+    - tree and shrub planting and pruning
+    - hardscaping
+    - garden design    
+  - niche: outbuilding
+    services:
+      - shed construction
+      - gazebo and pergola installation
+      - small garage construction 
+  - niche: outdoor lighting
+    services:
+      - landscape lighting design and installation
+      - security lighting
+      - path and walkway lighting
+      - holiday lighting 
+  - niche: pond
+    services:
+      - pond design and installation
+      - waterfall and fountain features
+      - fish and plant stocking
+      - pond maintenance 
+  - niche: septic service
+    hyponyms:
+    - septic
+    - septic tank
+    services:
+      - septic tank pumping
+      - septic system inspection
+      - septic system repair     
+  - niche: soil testing
+    services:
+      - soil analysis 
+      - nutrient and pH testing 
+      - recommendations for soil improvement 
+  - niche: swimming pool
+    services:
+      - pool construction 
+      - pool maintenance and cleaning
+      - pool repair 
+  - niche: tree service
+    hyponyms:
+    - tree service
+    - arborist
+    - tree trimmer
+    - tree cutter
+    - tree service technician
+    - stump removal
+    - stump grinder
+    services:
+      - tree trimming 
+      - tree removal 
+      - stump grinding
+      - emergency tree services
+      - tree health assessments     
+  - niche: waste removal
+    hyponyms:
+    - - waste
+      - trash
+      - refuse
+      - debris
+    - - removal
+      - pickup
+    services:
+      - junk removal 
+      - appliance removal 
+      - furniture removal 
+      - yard waste removal       

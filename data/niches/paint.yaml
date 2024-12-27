@@ -1,0 +1,13 @@
+urls:
+  bbb:
+    - painting-contractors
+  coc:
+    - contractors/painting-siding/painter/
+    - contractors/painting-siding/painting/
+proper_niche: 
+plural_niche: 
+proper_organization: 
+plural_organization: 
+warning_terms: 
+disqualify: 
+discriminator: 

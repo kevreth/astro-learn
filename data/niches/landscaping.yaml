@@ -1,0 +1,13 @@
+urls:
+  bbb:
+    - landscape-contractors
+    - landscape-maintenance
+  coc:
+    - home-garden/lawn-garden/landscaper/
+proper_niche: Landscaping
+plural_niche: Landscaping
+proper_organization: Landscaping Contractor
+plural_organization: Landscaping Contractors
+warning_terms: 
+disqualify: 
+discriminator: 

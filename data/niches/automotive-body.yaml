@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - auto-body-repair-and-painting
+  coc:
+    - automotive-vehicles/auto-body-shop/
+proper_niche: Automotive Body
+plural_niche: Automotive Body
+proper_organization: Automotive Body Shop
+plural_organization: Automotive Body Shops
+warning_terms: 
+disqualify: 
+discriminator: 

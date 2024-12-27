@@ -1,0 +1,25 @@
+urls:
+  bbb:
+    - tree-service
+  coc:
+    - home-garden/lawn-garden/tree-service/
+  # yelp:
+  #   - https://www.yelp.com/search?find_desc=tree+service&find_loc={LOCALITY}%2C+{REGION}%2C+{COUNTRY}
+proper_niche: Tree Service
+plural_niche: Tree Services
+proper_organization: Tree Service
+plural_organization: Tree Services
+warning_terms:
+  - landscape
+  - handyman
+  - stump
+  - lawn care
+  - tree care
+  - excavate
+  - demolition
+disqualify:
+  - Spring Green
+  - Kirk's Tree Service
+  - Davey
+discriminator:
+  - climb trees with chainsaws

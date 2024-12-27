@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - house-cleaning
+  coc:
+    - home-garden/cleaning-services/house-cleaning-service/
+proper_niche: Housekeeping
+plural_niche: Housekeeping
+proper_organization: Housekeeping Company
+plural_organization: Housekeeping Companies
+warning_terms: 
+disqualify: 
+discriminator: 

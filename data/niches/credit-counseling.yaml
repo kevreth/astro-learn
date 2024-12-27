@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - credit-and-debt-counseling
+  coc:
+    - financial-services/credit-debt-management/credit-counseling-service/
+proper_niche: Credit Counselor
+plural_niche: Credit Counselors
+proper_organization: Credit Counseling Firm
+plural_organization: Credit Counseling Firms
+warning_terms: 
+disqualify: 
+discriminator: 

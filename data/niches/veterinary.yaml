@@ -1,0 +1,16 @@
+urls:
+  bbb:
+    - veterinarian
+    - veterinary-surgery
+    - animal-hospital
+  coc:
+    - pets/veterinarian-services/
+    - pets/veterinarian-services/emergency-veterinarian-service/
+    - pets/animal-hospital/
+proper_niche: Veterinarian
+plural_niche: Veterinarians
+proper_organization: Veterinary Clinic
+plural_organization: Veterinary Clinics
+warning_terms: 
+disqualify: 
+discriminator: 

@@ -1,0 +1,15 @@
+urls:
+  bbb:
+    - air-duct-cleaning
+    - duct-cleaning
+  coc:
+    - home-garden/cleaning-services/air-duct-cleaning-service/
+proper_niche: Air Duct Cleaner
+plural_niche: Air Duct Cleaners
+proper_organization: Air Duct Cleaning Company
+plural_organization: Air Duct Cleaning Companies
+warning_terms: 
+disqualify:
+  - servpro
+  - servicemaster
+discriminator: 

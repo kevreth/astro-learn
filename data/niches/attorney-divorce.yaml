@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - divorce-lawyers/
+  coc:
+    - legal/divorce-lawyer/
+proper_niche: Divorce Lawyer
+plural_niche: Divorce Lawyers
+proper_organization: Divorce Law Firm
+plural_organization: Divorce Law Firms
+warning_terms:
+disqualify:
+discriminator:

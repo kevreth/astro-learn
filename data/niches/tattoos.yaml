@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - tattoos
+  coc:
+    - beauty-spas/tattoo-piercing-shop/tattoo-shop/
+proper_niche: Tattoo
+plural_niche: Tattoos
+proper_organization: Tattoo Shop
+plural_organization: Tattoo Shops
+warning_terms: 
+disqualify: 
+discriminator: 

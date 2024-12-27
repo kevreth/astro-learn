@@ -1,0 +1,13 @@
+urls:
+  bbb:
+    - concrete
+  coc:
+    - contractors/foundations-masonry/concrete-contractor/
+    - concrete-contractor/
+proper_niche: Concrete Contractor
+plural_niche: Concrete Contractors
+proper_organization: Concrete Contractor
+plural_organization: Concrete Contractors
+warning_terms:
+disqualify:
+discriminator:

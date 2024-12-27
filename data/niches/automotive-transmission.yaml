@@ -1,0 +1,13 @@
+urls:
+  bbb:
+    - transmission
+  coc:
+    - automotive-vehicles/auto-repair-shop/transmission-shop/
+proper_niche: Transmission
+plural_niche: Transmissions
+proper_organization: Transmission Shop
+plural_organization: Transmission Shops
+warning_terms: 
+disqualify: 
+  - Midas
+discriminator: 

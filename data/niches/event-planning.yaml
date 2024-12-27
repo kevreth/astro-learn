@@ -1,0 +1,20 @@
+urls:
+  bbb:
+    - party-planning
+    - event-planner
+    - event-design
+    - wedding-consultant
+    - party-decoration-contractors
+  coc:
+    - shopping/event-planning/event-planner
+    - arts-event-services/event-management-company
+    - arts-event-services/party-planner
+    - family-community/wedding-services/wedding-planner
+    - family-community/wedding-services/wedding-service
+proper_niche: Event Planner
+plural_niche: Event Planners
+proper_organization: Event Planning Company
+plural_organization: Event Planning Companies
+warning_terms: 
+disqualify: 
+discriminator: 

@@ -1,0 +1,14 @@
+urls:
+  bbb:
+    - optometrist
+  coc:
+    - health-medicine/doctors-physicians/optometrist/
+proper_niche: 
+plural_niche: 
+proper_organization: 
+plural_organization: 
+warning_terms: 
+disqualify: 
+  - Pearle Vision
+  - Lenscrafters
+discriminator: 

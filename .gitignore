@@ -1,6 +1,10 @@
 # build output
 dist/
 
+# prebuild output
+pages/
+sites/
+
 # generated types
 .astro/
 

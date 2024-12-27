@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - electrician
+  coc:
+    - contractors/electrical-lighting/electrician/
+proper_niche: 
+plural_niche: 
+proper_organization: 
+plural_organization: 
+warning_terms: 
+disqualify: 
+discriminator: 

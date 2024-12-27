@@ -1,0 +1,13 @@
+urls:
+  bbb:
+    - window-installation
+    - windows
+  coc:
+    - contractors/glass-windows/window-installation-service/
+proper_niche: Window
+plural_niche: Windows
+proper_organization: Window Contractor
+plural_organization: Window Contractors
+warning_terms: 
+disqualify: 
+discriminator: 

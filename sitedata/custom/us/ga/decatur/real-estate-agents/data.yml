@@ -1,0 +1,24 @@
+name: Real Estate Agents
+title: Sample Decatur, Georgia Real Estate Agent Site
+description: Decatur, Georgia Real Estate Agent|Jenny Peterson
+nav1:
+  - label: Directory
+    path: /us/ga/decatur/real-estate-agents/directory
+  - label: Services
+    path: /us/ga/decatur/real-estate-agents/services
+  - label: About Us
+    path: /us/ga/decatur/real-estate-agents/about
+nav2:
+  - label: Testimonials
+    path: /us/ga/decatur/real-estate-agents/testimonials
+logo:
+  src: 'https://img.freepik.com/premium-photo/realtor-woman-is-showing-home-sale-sign-keys_85574-12099.jpg'
+  alt: "Jenny Peterson"
+  slogan: 'Your Hometown Real Estate Professional'
+header: Jenny Peterson - Your Hometown Real Estate Professional
+footer: (731) 555-3494
+priority: Joseph Carty
+backgroundImages:
+  - https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+colors:
+  primaryColor: green

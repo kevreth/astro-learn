@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - drywall-contractors
+  coc:
+    - contractors/walls-insulation/dry-wall-contractor/
+proper_niche: Drywall Installer
+plural_niche: Drywall Installers
+proper_organization: Drywall Contractor
+plural_organization: Drywall Contractors
+warning_terms: 
+disqualify: 
+discriminator: 

@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - locksmith
+  coc:
+    - home-garden/locksmith/
+proper_niche: Locksmith
+plural_niche: Locksmith
+proper_organization: Locksmith Company
+plural_organization: Locksmith Companies
+warning_terms: 
+disqualify: 
+discriminator: 

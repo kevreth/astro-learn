@@ -1,0 +1,12 @@
+urls:
+  bbb:
+    - personal-injury-lawyer
+  coc:
+    - legal/personal-injury-law/personal-injury-attorney/
+proper_niche: Personal Injury Attorney
+plural_niche: Personal Injury Attorneys
+proper_organization: Personal Injury Law Firm
+plural_organization: Personal Injury Law Firms
+warning_terms:
+disqualify:
+discriminator:
