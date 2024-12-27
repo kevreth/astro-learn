@@ -1,8 +1,9 @@
 import { JSDOM } from 'jsdom'
 import { loadTemplate } from './library'
 import { TestLocation } from './location.test'
-import { Locality, LocalityData } from './locality'
+import { Locality, type LocalityData } from './locality'
 import { beforeEach, describe, it, expect } from "vitest"
+import type { LocniData } from './locni_data'
 const TEMPLATE_FILE_PATH = 'src/scripts/prebuild/locality.md'
 const SAMPLE_DATA: LocalityData = {
     region: 'ak',
@@ -15,7 +16,7 @@ export class TestLocality extends TestLocation {
     factory(): Locality {
         return new Locality()
     }
-    testFormatContent(sampleData): void {
+    testFormatContent(sampleData: LocniData): void {
         const template: string = loadTemplate(TEMPLATE_FILE_PATH)
         const content = this.factory().formatContent(template, sampleData)
         const dom = new JSDOM(content)
@@ -24,7 +25,7 @@ export class TestLocality extends TestLocation {
         expect(activeTexts).toContain('CPA')
         expect(activeTexts).not.toContain('Roofing')
     }
-    testAddToFileList(tmpPath: string, sampleData): void {
+    testAddToFileList(tmpPath: string, sampleData: LocniData): void {
         const templateContentRegion: string = loadTemplate(TEMPLATE_FILE_PATH)
         const actual = this.factory().createFileList(templateContentRegion, tmpPath, sampleData)
         expect(Array.isArray(actual)).toBe(true)

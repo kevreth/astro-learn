@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest'
 import { get_path, generate } from './generate'
-import { LocniData } from './locni_data'
+import { type LocniData } from './locni_data'
 import { writeFile, loadTemplate } from './library'
 vi.mock('./library', () => ({
     loadTemplate: vi.fn(),

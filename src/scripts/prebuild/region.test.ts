@@ -3,6 +3,7 @@ import { beforeEach, describe, it, expect } from "vitest"
 import { Region, iteration, isActive, localityEntries, createContent } from './region'
 import { loadTemplate } from './library'
 import { JSDOM } from 'jsdom'
+import type { LocniData } from './locni_data'
 const TEMPLATE_FILE_PATH = 'src/scripts/prebuild/regions.md'
 const EXPECTED = '            <li><a class="active" id="momback" href="/us/ak/momback">Momback</a></li>\n'
 class TestRegion extends TestLocation {
@@ -13,14 +14,14 @@ class TestRegion extends TestLocation {
         const actual = iteration('ak', 'momback', 'Momback', true)
         expect(actual).toBe(EXPECTED)
     }
-    testIsActive(sampleData): void {
+    testIsActive(sampleData: LocniData): void {
         const localityData = sampleData.regions['ak']['localities']
         const actual2 = isActive(localityData,'momback')
         expect(actual2).toEqual(true)
         const actual1 = isActive(localityData,'adak')
         expect(actual1).toEqual(false)
     }
-    testLocalityEntries(sampleData): void {
+    testLocalityEntries(sampleData: LocniData): void {
         const localityData = sampleData.regions['ak']['localities']
         const actual = localityEntries('ak', localityData)
         expect(actual.length).toBe(2)
@@ -32,7 +33,7 @@ class TestRegion extends TestLocation {
         expect(actual).toContain('LOCALITIES')
         expect(actual).toContain('Illinois')
     }
-    testFormatContent(sampleData): void {
+    testFormatContent(sampleData: LocniData): void {
         const templateContentRegion: string = loadTemplate(TEMPLATE_FILE_PATH)
         const firstRegionKey = Object.keys(sampleData.regions)[0]
         const firstRegionData = { [firstRegionKey]: sampleData.regions[firstRegionKey] }
@@ -44,7 +45,7 @@ class TestRegion extends TestLocation {
         expect(activeTexts).not.toContain('Adak')
         expect(activeTexts).toContain('Momback')
     }
-    testAddToFileList(tmpPath, sampleData): void {
+    testAddToFileList(tmpPath:string, sampleData: LocniData): void {
         const templateContentRegion: string = loadTemplate(TEMPLATE_FILE_PATH)
         const actual = this.factory().createFileList(templateContentRegion, tmpPath, sampleData)
         expect(actual.length).toBe(1)

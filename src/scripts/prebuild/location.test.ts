@@ -1,7 +1,7 @@
 import * as path from "path"
 import { expect, it, beforeEach, describe, vitest } from "vitest"
 import { AbstractTest } from "./abstract_test"
-import {LocniData} from './locni_data'
+import {type LocniData} from './locni_data'
 import {Location} from './location'
 export abstract class TestLocation extends AbstractTest<Location> {
     public static sampleData(): LocniData {
