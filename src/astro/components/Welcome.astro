@@ -15,6 +15,7 @@ const goal = 3
 const skillColor = "navy"
 const fontWeight = "bold";
 const textCase = "uppercase";
+const fontSize = "2rem";
 ---
 <Layout pageTitle={pageTitle}>
 	<div id="container">
@@ -46,14 +47,13 @@ const textCase = "uppercase";
 		</main>
 	</div>
 </Layout>
-<style define:vars={{skillColor, fontWeight, textCase}}>
+<style define:vars={{skillColor, fontWeight, textCase, fontSize}}>
 	h1 {
-		font-size: 22px;
 		margin-top: 0.25em;
 		color: var(--skillColor);
 		font-weight: var(--fontWeight);
 		text-transform: var(--textCase);
-		font-size: 4rem;
+		font-size: var(--fontSize);
 	}
 	.skill {
 	  color: var(--skillColor);
@@ -74,7 +74,7 @@ const textCase = "uppercase";
 		align-items: center;
 		flex-direction: column;
 		justify-content: center;
-		padding: 16px;
+		padding: 2px;
 		width: 100%;
 	}
 	#links {
