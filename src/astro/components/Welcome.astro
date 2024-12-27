@@ -1,0 +1,98 @@
+---
+import Layout from '../layouts/Layout.astro'
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+const pageTitle = "Sasha's Learning Site"
+const identity = {
+	firstName: "Sarah",
+	country: "Canada",
+	occupation: "Technical Writer",
+	hobbies: ["photography", "birdwatching", "baseball"],
+}
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"]
+const happy = true
+const finished = false
+const goal = 3
+const skillColor = "navy"
+const fontWeight = "bold";
+const textCase = "uppercase";
+---
+<Layout pageTitle={pageTitle}>
+	<div id="container">
+		<main>
+			<section id="hero">
+				<h1>{pageTitle}</h1>
+				<p>This is where I will post about my journey learning Astro.</p>
+				<ul>
+					<li><a href="/posts/post-1/">Post 1</a></li>
+					<li><a href="/posts/post-2/">Post 2</a></li>
+					<li><a href="/posts/post-3/">Post 3</a></li>
+				</ul>
+				<p>Here are a few facts about me:</p>
+				<ul>
+					<li>My name is {identity.firstName}.</li>
+					<li>I live in {identity.country} and I work as a {identity.occupation}.</li>
+					{identity.hobbies.length >= 2 &&
+						<li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+					}
+				</ul>
+				<p>My skills are:</p>
+				<ul>
+					  {skills.map((skill) => <li>{skill}</li>)}
+				</ul>
+				{happy && <p>I am happy to be learning Astro!</p>}
+				{finished && <p>I finished this tutorial!</p>}
+				{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
+			</section>
+		</main>
+	</div>
+</Layout>
+<style define:vars={{skillColor, fontWeight, textCase}}>
+	h1 {
+		font-size: 22px;
+		margin-top: 0.25em;
+		color: var(--skillColor);
+		font-weight: var(--fontWeight);
+		text-transform: var(--textCase);
+		font-size: 4rem;
+	}
+	.skill {
+	  color: var(--skillColor);
+	  font-weight: var(--fontWeight);
+	  text-transform: var(--textCase);
+	}
+	#container {
+		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+		height: 100%;
+	}
+	main {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	#hero {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		padding: 16px;
+		width: 100%;
+	}
+	#links {
+		display: flex;
+		gap: 16px;
+	}
+	h2 {
+		margin: 0 0 1em;
+		font-weight: normal;
+		color: #111827;
+		font-size: 20px;
+	}
+	p {
+		color: #4b5563;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: -0.006em;
+		margin: 0;
+	}
+</style>
