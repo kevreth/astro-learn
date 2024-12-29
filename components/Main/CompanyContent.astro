@@ -1,0 +1,10 @@
+---
+const { data } = Astro.props;
+---
+<div>
+  {
+    Astro.slots.pageCustom ? 
+    <slot name="pageCustom"></slot> : 
+    <div class="mainContent" id="main-wrapper" set:html={data}></div>
+  }
+</div>
