@@ -1,0 +1,21 @@
+---
+const { nav1, nav2 } = Astro.props;
+---
+<nav>
+  <div class="navlink" id="navlink">
+    <ul class="nav-item">
+      {nav1.map((item) => (
+        <li key={item.path}>
+          <a href={item.path}>{item.label}</a>
+        </li>
+      ))}
+    </ul>
+    <ul class="nav-item">
+      {nav2.map((item) => (
+        <li key={item.path}>
+          <a href={item.path}>{item.label}</a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</nav>

@@ -7,9 +7,5 @@
   ],
   "exclude": [
     "dist"
-  ],
-  "compilerOptions": {
-    "jsx": "preserve",
-    "typeRoots": ["./node_modules/@types", "./src/types"]
-  }
+  ]
 }
