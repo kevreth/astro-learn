@@ -1,0 +1,9 @@
+---
+const { breadcrumbs } = Astro.props;
+---
+<nav class="breadcrumbs" id="breadcrumb" aria-label="breadcrumb" set:html={breadcrumbs}></nav>
+
+<script>
+  import { formatBreadcrumbs } from '../src/scripts/breadcrumbUtils';
+  formatBreadcrumbs('#breadcrumb');
+</script>
