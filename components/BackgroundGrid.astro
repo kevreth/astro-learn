@@ -1,0 +1,24 @@
+---
+const getRandomImages = (imageList: string[], count: number): string[] => {
+  const availableImages = [...imageList];
+  const selected: string[] = [];
+  while (selected.length < count && availableImages.length) {
+    const index = Math.floor(Math.random() * availableImages.length);
+    selected.push(availableImages.splice(index, 1)[0]);
+  }
+  return selected;
+};
+
+const backgroundImages = Astro.props.backgroundImages;
+const selectedImages = getRandomImages(backgroundImages, 6);
+---
+
+<div class={`background-image ${selectedImages.length > 1 ? 'grid' : ''}`} id="background-image">
+  {selectedImages.length === 1 ? (
+    <div class="single-cell" style={`background-image: url(${selectedImages[0]})`}></div>
+  ) : (
+    selectedImages.map((image, index) => (
+      <div class="background-grid" style={`background-image: url(${image})`}></div>
+    ))
+  )}
+</div>
