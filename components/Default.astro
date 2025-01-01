@@ -1,0 +1,56 @@
+---
+import Header from '../components/Header.astro';
+import Logo from '../components/Logo.astro';
+import NavBar from '../components/NavBar.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import MainCompanyContent from '../components/Main/CompanyContent.astro';
+import BackgroundGrid from '../components/BackgroundGrid.astro';
+import Tabulator from '../components/Tabulator.astro';
+import Aside from '../components/Aside.astro';
+import Footer from '../components/Footer.astro';
+import { usePageSetup } from '../composables/usePageSetup';
+import { initializeLayout } from "../src/scripts/layout.manager/layoutManager"
+const { data } = Astro.props;
+const { setupBlogContent } = usePageSetup(data);
+
+Astro.onMount(() => {
+  setupBlogContent();
+  initializeLayout(data);
+});
+---
+<div class="page-container">
+  <Header header={data.header} style={{ backgroundColor: data.colors.primaryColor }} />
+  <main>
+    <div class="logo-navbar-wrapper">
+      <Logo logo={data.logo} />
+      <NavBar nav1={data.nav1} nav2={data.nav2} />
+    </div>
+    <div class="main-container" id="main-container">
+      <div class="breadcrumb-container">
+        <Breadcrumb breadcrumbs={data.breadcrumb} />
+      </div>
+      {Astro.slots.pageCustom ? <slot name="pageCustom" /> : <MainCompanyContent data={data.content} />}
+      <BackgroundGrid backgroundImages={data.backgroundImages} />
+      <Tabulator priority={data.priority} />
+    </div>
+    <Aside aside={data.aside} />
+  </main>
+  {Astro.slots.footerCustom ? <slot name="footerCustom" /> : <Footer footer={data.footer} style={{ backgroundColor: data.colors.primaryColor }} />}
+</div>
+
+<style>
+  @media (max-width: 600px) {
+    .hidden {
+      display: none;
+    }
+
+    .breadcrumb-below-nav {
+      position: relative;
+      margin-bottom: 5px;
+    }
+    .breadcrumb-left {
+      margin-left: 0 !important;
+      min-height: auto !important;
+    }
+  }
+</style>
