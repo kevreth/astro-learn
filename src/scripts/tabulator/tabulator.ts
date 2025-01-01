@@ -101,7 +101,7 @@ export const svgIcon = `
                   </g>
                   </svg>
             `
-export function prioritySorter(a, b, aRow, bRow, dir) {
+export function prioritySorter(a: string, b: string, aRow: { getData: any; }, bRow: { getData: any; }, dir: string) {
     const aPriority = aRow.getData().priority ? 1 : 0
     const bPriority = bRow.getData().priority ? 1 : 0
     let retval = 0
@@ -113,7 +113,7 @@ export function prioritySorter(a, b, aRow, bRow, dir) {
     else retval = 0
     return retval
 }
-export function StringSorter(a, b, aRow, bRow, column, dir, sorterParams) {
+export function StringSorter(a: string, b: string, aRow: { getData: any; }, bRow: { getData: any; }, column: null, dir: string, sorterParams: null) {
     let retval = prioritySorter(a, b, aRow, bRow, dir)
     if (retval === 0) {
         retval = String(a).toLowerCase().localeCompare(String(b).toLowerCase())
@@ -281,7 +281,7 @@ export function showDynamicTable(doc: Document) {
     const dynamicTable = doc.getElementById('dynamic-table') as HTMLElement;
     dynamicTable.style.display = 'block';
 }
-export function updatePriority(tData, name) {
+export function updatePriority(tData: any[], name: string) {
     tData.forEach(item => {
         let priority = false;
         const original = item.OriginalName;
@@ -317,7 +317,7 @@ export function setupInteractions(tabulator: Tabulator, doc: Document) {
         });
     }
 }
-export const rowFormatter_ = function (row) {
+export const rowFormatter_ = function (row: { getData: () => any; getElement: () => any; getCells: () => any; }) {
     let data = row.getData();
     const rowElement = row.getElement();
     if (data.priority) {
@@ -326,7 +326,7 @@ export const rowFormatter_ = function (row) {
         rowElement.style.fontWeight = "bold";
         rowElement.style.fontSize = "17px";
         const links = rowElement.querySelectorAll('a');
-        links.forEach(link => {
+        links.forEach((link: { style: { color: string; verticalAlign: string; }; }) => {
             link.style.color = '#003366';
             link.style.verticalAlign = 'middle';
         });
@@ -364,9 +364,13 @@ export function buildTable(tab: Tabulator, doc:Document) {
       adjustColumnVisibility(tab);
     });
 }
-export function getTable(doc: Document, priority, cols) {
+export function getTable(doc: Document, priority: string, cols: ({ title: string; field: string; sorter: (a: any, b: any, aRow: { getData: () => { (): any; new(): any; OriginalName: any; }; }, bRow: { getData: () => { (): any; new(): any; OriginalName: any; }; }, column: any, dir: any, sorterParams: any) => number; headerFilter: string; formatter: string; responsive: number; resizable: boolean; visible?: undefined; headerSort?: undefined; width?: undefined; } | {
+        title: string; field: string; sorter: (a: any, b: any, aRow: { getData: () => { (): any; new(): any; OriginalName: any; }; }, bRow: { getData: () => { (): any; new(): any; OriginalName: any; }; }, column: any, dir: any, sorterParams: any) => number; headerFilter: string; formatter: (cell: {
+            getRow: () => { (): any; new(): any; getData: { (): any; new(): any; }; };
+        }) => string; visible: boolean; resizable: boolean; responsive?: undefined; headerSort?: undefined; width?: undefined;
+    } | { title: string; field: string; formatter: (cell: { getValue: () => any; }) => HTMLDivElement; headerSort: boolean; width: number; resizable: boolean; sorter?: undefined; headerFilter?: undefined; responsive?: undefined; visible?: undefined; } | { title: string; field: string; sorter: (a: string, b: string, aRow: { getData: any; }, bRow: { getData: any; }, column: null, dir: string, sorterParams: null) => number; headerFilter: string; resizable: boolean; formatter?: undefined; responsive?: undefined; visible?: undefined; headerSort?: undefined; width?: undefined; } | { title: string; field: string; sorter: (a: string, b: string, aRow: { getData: any; }, bRow: { getData: any; }, column: null, dir: string, sorterParams: null) => number; headerFilter: string; width: number; resizable: boolean; formatter?: undefined; responsive?: undefined; visible?: undefined; headerSort?: undefined; } | { title: string; field: string; visible: boolean; sorter?: undefined; headerFilter?: undefined; formatter?: undefined; responsive?: undefined; resizable?: undefined; headerSort?: undefined; width?: undefined; })[]) {
     const tData = readStaticTableData(doc);
-    updatePriority(tData,priority)
+    updatePriority(tData, priority)
     if (!tData || tData.length === 0) {
       console.log('Static table ID not found');
       return;
@@ -375,7 +379,11 @@ export function getTable(doc: Document, priority, cols) {
     buildTable(t, doc);
     return t
   }
-export function mounted(doc:Document, priority, cols) {
+export function mounted(doc:Document, priority: string, cols: ({ title: string; field: string; sorter: (a: any, b: any, aRow: { getData: () => { (): any; new(): any; OriginalName: any; }; }, bRow: { getData: () => { (): any; new(): any; OriginalName: any; }; }, column: any, dir: any, sorterParams: any) => number; headerFilter: string; formatter: string; responsive: number; resizable: boolean; visible?: undefined; headerSort?: undefined; width?: undefined; } | {
+        title: string; field: string; sorter: (a: any, b: any, aRow: { getData: () => { (): any; new(): any; OriginalName: any; }; }, bRow: { getData: () => { (): any; new(): any; OriginalName: any; }; }, column: any, dir: any, sorterParams: any) => number; headerFilter: string; formatter: (cell: {
+            getRow: () => { (): any; new(): any; getData: { (): any; new(): any; }; };
+        }) => string; visible: boolean; resizable: boolean; responsive?: undefined; headerSort?: undefined; width?: undefined;
+    } | { title: string; field: string; formatter: (cell: { getValue: () => any; }) => HTMLDivElement; headerSort: boolean; width: number; resizable: boolean; sorter?: undefined; headerFilter?: undefined; responsive?: undefined; visible?: undefined; } | { title: string; field: string; sorter: (a: string, b: string, aRow: { getData: any; }, bRow: { getData: any; }, column: null, dir: string, sorterParams: null) => number; headerFilter: string; resizable: boolean; formatter?: undefined; responsive?: undefined; visible?: undefined; headerSort?: undefined; width?: undefined; } | { title: string; field: string; sorter: (a: string, b: string, aRow: { getData: any; }, bRow: { getData: any; }, column: null, dir: string, sorterParams: null) => number; headerFilter: string; width: number; resizable: boolean; formatter?: undefined; responsive?: undefined; visible?: undefined; headerSort?: undefined; } | { title: string; field: string; visible: boolean; sorter?: undefined; headerFilter?: undefined; formatter?: undefined; responsive?: undefined; resizable?: undefined; headerSort?: undefined; width?: undefined; })[]) {
     addDynamicTableId(doc);
     addToggleBtn(doc);
     const t = getTable(doc, priority, cols)
