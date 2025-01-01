@@ -391,3 +391,7 @@ export function mounted(doc:Document, priority: string, cols: ({ title: string; 
     window.addEventListener('resize', () => adjustColumnVisibility(t))
     return t
 }
+//entry point protected for testing
+if (typeof window !== 'undefined') {
+    (window as any).mounted = mounted
+}

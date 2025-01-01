@@ -22,15 +22,4 @@ test('Tabulator with prop', async () => {
     const props = doc.getElementById('props') as HTMLElement;
     const priority = parseInt(props.dataset.priority as string);
     expect(priority).toEqual(1);
-    const doc2 = props.dataset.doc
-    // const parser = new DOMParser();
-    // const doc3 = new JSDOM(doc2, { contentType: "application/xml" });
-    // const doc3 = parser.parseFromString(doc2, "application/xml");
-    // console.log(doc3);
-    // expect(jsonData.doc.location.href).toBeDefined();
-    // expect(jsonData.doc.location.href).not.toBe('');
-
-    // const scriptTag2 = dom2.window.document.querySelector('#mount');
-    // const content = scriptTag2?.textContent || '';
-    // console.log(scriptTag2)
 });
