@@ -4,9 +4,10 @@ const { tabulatorText, priority, doc } = Astro.props;
 ---
 <div id="props" data-doc={doc} data-priority={priority}></div>
 <div class="table">{tabulatorText}</div>
-<script src="./tabulator.ts" type="module" client:idle></script>
+<script src="http://localhost:3000/tabulator.js" type="module" is:inline></script>
 <script id="mount" is:inline>
     const props = document.getElementById('props');
     const priority = props.dataset.priority
+    console.log(priority)
     mounted(document, priority, columns);
 </script>
