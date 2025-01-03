@@ -4,7 +4,6 @@ import { expect, test } from 'vitest'
 import { JSDOM } from 'jsdom'
 import Tabulator from './Tabulator.astro'
 import axios from 'axios'
-import { console } from 'inspector'
 import { mounted } from 'src/scripts/tabulator/tabulator'
 test('Tabulator with prop', async () => {
     const result = await getResult()
