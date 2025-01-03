@@ -1,13 +1,11 @@
 import { startStaticServer } from '../src/scripts/server.controller'
 import { experimental_AstroContainer as AstroContainer } from 'astro/container';
-import { expect, test, vi, beforeEach } from 'vitest';
+import { expect, test } from 'vitest';
 import { JSDOM } from 'jsdom';
 import Tabulator from './Tabulator.astro';
 import axios from 'axios';
 test('Tabulator with prop', async () => {
-    const container = await AstroContainer.create();
-    const dom = new JSDOM('', { url: "http://localhost" });
-    const result = await container.renderToString(Tabulator, {props: { tabulatorText: "World", priority: 1, doc: dom.window.document }});
+    const result = await getResult();
     expect(result).not.toContain("24phlaweifh");
     expect(result).toContain("World");
     const dom2 = new JSDOM(result);
@@ -25,10 +23,14 @@ test('Tabulator with prop', async () => {
     expect(response.status).toBe(200);
     expect(response.data).toContain('"Tabulator loaded"');
 
-    const container = await AstroContainer.create();
-    const dom = new JSDOM('', { url: "http://localhost" });
-    const result = await container.renderToString(Tabulator, {props: { tabulatorText: "World", priority: 1, doc: dom.window.document }});
+    const result = await getResult();
     const dom3 = new JSDOM(result, {runScripts: "dangerously", resources: "usable"})
     const doc2 = dom3.window.document
-    console.log(doc2)
 });
+async function getResult() {
+    const container = await AstroContainer.create();
+    const dom = new JSDOM('', { url: "http://localhost" });
+    const result = await container.renderToString(Tabulator, { props: { tabulatorText: "World", priority: 1, doc: dom.window.document } });
+    return result;
+}
+
