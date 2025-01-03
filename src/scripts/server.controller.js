@@ -3,9 +3,7 @@ let server;
 
 export async function startStaticServer(port = 3000, root = './dist') {
   return new Promise((resolve, reject) => {
-    console.log("Creating server with root:", root);
     server = createServer({ root });
-    console.log("Server created, starting to listen on port:", port);
     server.listen(port, (err) => {
       if (err) {
         console.error("Error starting server:", err);

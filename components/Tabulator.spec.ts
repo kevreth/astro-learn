@@ -10,19 +10,16 @@ test('Tabulator with prop', async () => {
     const result = await container.renderToString(Tabulator, {props: { tabulatorText: "World", priority: 1, doc: dom.window.document }});
     expect(result).not.toContain("24phlaweifh");
     expect(result).toContain("World");
-    console.log(result);
     const dom2 = new JSDOM(result);
     const doc = dom2.window.document;
     const scriptTag = doc.querySelector('#mount') as HTMLElement;
     const content = scriptTag.textContent
-    console.log(content);
     expect(content).toContain('mounted(document, priority, columns)');
     const props = doc.getElementById('props') as HTMLElement;
     const priority = parseInt(props.dataset.priority as string);
     expect(priority).toEqual(1);
 });
 test('Tabulator with prop', async () => {
-    console.log("starting server")
     await startStaticServer(3000, './dist')
     const response = await axios.get('http://localhost:3000/tabulator.js');
     expect(response.status).toBe(200);
