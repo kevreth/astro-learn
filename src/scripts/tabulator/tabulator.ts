@@ -379,14 +379,12 @@ export function getTable(doc: Document, priority: string, cols: ({ title: string
     buildTable(t, doc);
     return t
   }
-export function mounted(doc:Document, priority: string, cols: ({ title: string; field: string; sorter: (a: any, b: any, aRow: { getData: () => { (): any; new(): any; OriginalName: any; }; }, bRow: { getData: () => { (): any; new(): any; OriginalName: any; }; }, column: any, dir: any, sorterParams: any) => number; headerFilter: string; formatter: string; responsive: number; resizable: boolean; visible?: undefined; headerSort?: undefined; width?: undefined; } | {
-        title: string; field: string; sorter: (a: any, b: any, aRow: { getData: () => { (): any; new(): any; OriginalName: any; }; }, bRow: { getData: () => { (): any; new(): any; OriginalName: any; }; }, column: any, dir: any, sorterParams: any) => number; headerFilter: string; formatter: (cell: {
-            getRow: () => { (): any; new(): any; getData: { (): any; new(): any; }; };
-        }) => string; visible: boolean; resizable: boolean; responsive?: undefined; headerSort?: undefined; width?: undefined;
-    } | { title: string; field: string; formatter: (cell: { getValue: () => any; }) => HTMLDivElement; headerSort: boolean; width: number; resizable: boolean; sorter?: undefined; headerFilter?: undefined; responsive?: undefined; visible?: undefined; } | { title: string; field: string; sorter: (a: string, b: string, aRow: { getData: any; }, bRow: { getData: any; }, column: null, dir: string, sorterParams: null) => number; headerFilter: string; resizable: boolean; formatter?: undefined; responsive?: undefined; visible?: undefined; headerSort?: undefined; width?: undefined; } | { title: string; field: string; sorter: (a: string, b: string, aRow: { getData: any; }, bRow: { getData: any; }, column: null, dir: string, sorterParams: null) => number; headerFilter: string; width: number; resizable: boolean; formatter?: undefined; responsive?: undefined; visible?: undefined; headerSort?: undefined; } | { title: string; field: string; visible: boolean; sorter?: undefined; headerFilter?: undefined; formatter?: undefined; responsive?: undefined; resizable?: undefined; headerSort?: undefined; width?: undefined; })[]) {
+export function mounted(doc:Document) {
     addDynamicTableId(doc);
     addToggleBtn(doc);
-    const t = getTable(doc, priority, cols)
+    const props = document.getElementById('props') as HTMLElement;
+    const priority = props.dataset.priority as string;
+    const t = getTable(doc, priority, columns)
     if(!t) return;
     window.addEventListener('resize', () => adjustColumnVisibility(t))
     return t
