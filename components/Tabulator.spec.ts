@@ -5,6 +5,7 @@ import { JSDOM } from 'jsdom'
 import Tabulator from './Tabulator.astro'
 import axios from 'axios'
 import { console } from 'inspector'
+import { mounted } from 'src/scripts/tabulator/tabulator'
 test('Tabulator with prop', async () => {
     const result = await getResult()
     expect(result).not.toContain("24phlaweifh")
@@ -28,6 +29,7 @@ test('mounted executes', async () => {
     const result = await getResult()
     const dom3 = new JSDOM(result, {runScripts: "dangerously", resources: "usable"})
     const doc2 = dom3.window.document.body.innerText
+    console.log("mounted exercises")
     console.log(doc2)
     // expect(doc2).toContain('World')
 })
