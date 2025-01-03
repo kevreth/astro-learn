@@ -13,7 +13,7 @@ test('Tabulator with prop', async () => {
     const doc = dom2.window.document
     const scriptTag = doc.querySelector('#mount') as HTMLElement
     const content = scriptTag.textContent
-    expect(content).toContain('mounted(document)')
+    expect(content).toContain('mounted()')
     const props = doc.getElementById('props') as HTMLElement
     const priority = parseInt(props.dataset.priority as string)
     expect(priority).toEqual(1)
@@ -26,6 +26,7 @@ test('tabulator.js served', async () => {
 })
 test('mounted executes', async () => {
     const result = await getResult()
+    console.log(result)
     const dom3 = new JSDOM(result, {runScripts: "dangerously", resources: "usable"})
     const doc2 = dom3.window.document.body.innerText
     console.log("mounted exercises")
@@ -35,7 +36,7 @@ test('mounted executes', async () => {
 async function getResult() {
     const container = await AstroContainer.create()
     const dom = new JSDOM('', { url: "http://localhost" })
-    const result = await container.renderToString(Tabulator, { props: { tabulatorText: "World", priority: 1, doc: dom.window.document } })
+    const result = await container.renderToString(Tabulator, { props: { tabulatorText: "World", priority: 1 } })
     return result
 }
 

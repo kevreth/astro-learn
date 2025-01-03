@@ -379,11 +379,13 @@ export function getTable(doc: Document, priority: string, cols: ({ title: string
     buildTable(t, doc);
     return t
   }
-export function mounted(doc:Document) {
+export function mounted() {
+    console.log('executed mounted()')
+    const doc:Document = document
+    const props = doc.getElementById('props') as HTMLElement;
+    const priority = props.dataset.priority as string;
     addDynamicTableId(doc);
     addToggleBtn(doc);
-    const props = document.getElementById('props') as HTMLElement;
-    const priority = props.dataset.priority as string;
     const t = getTable(doc, priority, columns)
     if(!t) return;
     window.addEventListener('resize', () => adjustColumnVisibility(t))
