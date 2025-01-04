@@ -1431,6 +1431,13 @@
   dependencies:
     "@babel/types" "^7.20.7"
 
+"@types/connect@*":
+  version "3.4.38"
+  resolved "https://registry.yarnpkg.com/@types/connect/-/connect-3.4.38.tgz#5ba7f3bc4fbbdeaff8dded952e5ff2cc53f8d858"
+  integrity sha512-K6uROf1LD88uDQqJCktA4yzL1YYAK6NgfsI0v/mTgyPKWsX1CnJ0XPSDhViejru1GcRkLWb8RlzFYJRqGUbaug==
+  dependencies:
+    "@types/node" "*"
+
 "@types/cookie@^0.6.0":
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/@types/cookie/-/cookie-0.6.0.tgz#eac397f28bf1d6ae0ae081363eca2f425bedf0d5"
@@ -1469,6 +1476,13 @@
   integrity sha512-WPs+bbQw5aCj+x6laNGWLH3wviHtoCv/P3+otBhbOhJgG8qtpdAMlTCxLtsTWA7LH1Oh/bFCHsBn0TPS5m30EQ==
   dependencies:
     "@types/unist" "*"
+
+"@types/http-server@^0.12.4":
+  version "0.12.4"
+  resolved "https://registry.yarnpkg.com/@types/http-server/-/http-server-0.12.4.tgz#32c32928feb5aba3e3afa3880cce79eed5704f88"
+  integrity sha512-vsn4pvP2oRFALLuM5Rca6qUmSPG7u0VNjOuqvL57l3bKldQRWdUZPeSiARhzagDxgfNCHn/o8WlWk4KinBauUg==
+  dependencies:
+    "@types/connect" "*"
 
 "@types/js-yaml@4.0.9":
   version "4.0.9"

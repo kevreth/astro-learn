@@ -1,10 +1,10 @@
 import { createServer } from 'http-server';
-let server;
+let server:any = null;
 
 export async function startStaticServer(port = 3000, root = './dist') {
   return new Promise((resolve, reject) => {
     server = createServer({ root });
-    server.listen(port, (err) => {
+    server.listen(port, (err:any) => {
       if (err) {
         console.error("Error starting server:", err);
         return reject(err);
@@ -19,7 +19,7 @@ export async function stopStaticServer() {
   return new Promise((resolve, reject) => {
     if (server) {
       console.log("Stopping server...");
-      server.close((err) => {
+      server.close((err:any) => {
         if (err) {
           console.error("Error stopping server:", err);
           return reject(err);
