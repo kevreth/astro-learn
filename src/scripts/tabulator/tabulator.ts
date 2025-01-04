@@ -380,7 +380,7 @@ export function getTable(doc: Document, priority: string, cols: ({ title: string
     return t
   }
 export function mounted() {
-    console.log('executed mounted()')
+    document.write('executed mounted()')
     const doc:Document = document
     const props = doc.getElementById('props') as HTMLElement;
     const priority = props.dataset.priority as string;

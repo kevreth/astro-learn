@@ -35,6 +35,18 @@ test('mounted executes', async () => {
 async function getResult() {
     const container = await AstroContainer.create()
     const result = await container.renderToString(Tabulator, { props: { tabulatorText: "World", priority: 1 } })
-    return result
+    return `
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Tabulator Test</title>
+        </head>
+        <body>
+            ${result}
+        </body>
+        </html>
+    `
 }
 
