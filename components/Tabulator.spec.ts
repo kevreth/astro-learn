@@ -4,7 +4,6 @@ import { expect, test } from 'vitest'
 import { JSDOM } from 'jsdom'
 import Tabulator from './Tabulator.astro'
 import axios from 'axios'
-import { mounted } from 'src/scripts/tabulator/tabulator'
 test('Tabulator with prop', async () => {
     const result = await getResult()
     expect(result).not.toContain("24phlaweifh")
@@ -12,7 +11,7 @@ test('Tabulator with prop', async () => {
     const dom2 = new JSDOM(result)
     const doc = dom2.window.document
     const scriptTag = doc.querySelector('#mount') as HTMLElement
-    const content = scriptTag.textContent
+    const content = (scriptTag.attributes.getNamedItem('onload') as Attr).value
     expect(content).toContain('mounted()')
     const props = doc.getElementById('props') as HTMLElement
     const priority = parseInt(props.dataset.priority as string)
@@ -35,7 +34,6 @@ test('mounted executes', async () => {
 })
 async function getResult() {
     const container = await AstroContainer.create()
-    const dom = new JSDOM('', { url: "http://localhost" })
     const result = await container.renderToString(Tabulator, { props: { tabulatorText: "World", priority: 1 } })
     return result
 }
