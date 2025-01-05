@@ -1,0 +1,32 @@
+name: Inquirita
+title: Inquirita
+description: Local service business listings around the world
+logo:
+  src: 'https://i.imgur.com/oBnOitT.jpeg'
+  alt: "The Inquiring Rita logo. It features a young brunette looking over her right shoulder to the camera and smiling. She's wearing a brown shirt."
+  slogan: 'Inquiring Rita wants to know!'
+header: 'Inquirita'
+footer: (855) 463-9309
+aside: ''
+nav1:
+  # - label: Blog
+  #   path: /blog
+  # - label: About
+  #   path: /about
+  # - label: Services
+  #   path: /services
+  # - label: Wiki
+  #   path: /wiki
+nav2: []
+backgroundImages:
+  - https://i.imgur.com/S5Jew7M.jpeg
+  - https://i.imgur.com/OLEeuXk.jpeg
+  - https://i.imgur.com/g7dZoYG.jpeg
+  - https://i.imgur.com/bgV0a7B.jpeg
+  - https://i.imgur.com/qvz0KKl.jpeg
+  - https://i.imgur.com/XWCEX71.jpeg
+  - https://i.imgur.com/owORtdN.jpeg
+  - https://i.imgur.com/FfbjwxI.jpeg
+colors:
+  primaryColor: "#244189"
+
