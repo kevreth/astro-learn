@@ -1,19 +1,20 @@
 ---
-import Header from '../components/Header.astro';
-import Logo from '../components/Logo.astro';
-import NavBar from '../components/NavBar.astro';
-import Breadcrumb from '../components/Breadcrumb.astro';
-import MainCompanyContent from '../components/Main/CompanyContent.astro';
-import BackgroundGrid from '../components/BackgroundGrid.astro';
-import Tabulator from '../components/Tabulator.astro';
-import Aside from '../components/Aside.astro';
-import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import NavBar from '../components/NavBar.astro'
+import Logo from '../components/Logo.astro'
+import Breadcrumb from '../components/Breadcrumb.astro'
+import MainCompanyContent from '../components/CompanyContent.astro'
+import BackgroundGrid from '../components/BackgroundGrid.astro'
+import Tabulator from '../components/Tabulator.astro'
+import Aside from '../components/Aside.astro'
 import { initializeLayout } from "../../scripts/layout.manager/layoutManager"
-const { data } = Astro.props;
-initializeLayout(data);
+const { data } = Astro.props
+// initializeLayout(data)
 ---
 <div class="page-container">
-  <Header header={data.header} style={{ backgroundColor: data.colors.primaryColor }} />
+  <!-- <Header title={data.title} subtitle={data.subtitle} /> -->
+  <Header title={data.title} subtitle={data.subtitle} style={{ backgroundColor: data.colors.primaryColor }} />
   <main>
     <div class="logo-navbar-wrapper">
       <Logo logo={data.logo} />
@@ -29,20 +30,20 @@ initializeLayout(data);
     </div>
     <Aside aside={data.aside} />
   </main>
-  {Astro.slots.footerCustom ? <slot name="footerCustom" /> : <Footer footer={data.footer} style={{ backgroundColor: data.colors.primaryColor }} />}
+  <Footer footerText={data.footer} style={{ backgroundColor: data.colors.primaryColor }} />}
 </div>
 <style>
   @media (max-width: 600px) {
     .hidden {
-      display: none;
+      display: none
     }
     .breadcrumb-below-nav {
-      position: relative;
-      margin-bottom: 5px;
+      position: relative
+      margin-bottom: 5px
     }
     .breadcrumb-left {
-      margin-left: 0 !important;
-      min-height: auto !important;
+      margin-left: 0 !important
+      min-height: auto !important
     }
   }
 </style>
