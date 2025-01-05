@@ -8,15 +8,9 @@ import BackgroundGrid from '../components/BackgroundGrid.astro';
 import Tabulator from '../components/Tabulator.astro';
 import Aside from '../components/Aside.astro';
 import Footer from '../components/Footer.astro';
-import { usePageSetup } from '../composables/usePageSetup';
-import { initializeLayout } from "../src/scripts/layout.manager/layoutManager"
+import { initializeLayout } from "../../scripts/layout.manager/layoutManager"
 const { data } = Astro.props;
-const { setupBlogContent } = usePageSetup(data);
-
-Astro.onMount(() => {
-  setupBlogContent();
-  initializeLayout(data);
-});
+initializeLayout(data);
 ---
 <div class="page-container">
   <Header header={data.header} style={{ backgroundColor: data.colors.primaryColor }} />
@@ -37,13 +31,11 @@ Astro.onMount(() => {
   </main>
   {Astro.slots.footerCustom ? <slot name="footerCustom" /> : <Footer footer={data.footer} style={{ backgroundColor: data.colors.primaryColor }} />}
 </div>
-
 <style>
   @media (max-width: 600px) {
     .hidden {
       display: none;
     }
-
     .breadcrumb-below-nav {
       position: relative;
       margin-bottom: 5px;
