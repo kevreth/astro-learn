@@ -1,5 +1,8 @@
 ---
 const { data } = Astro.props;
+import Header from "../components/Header.astro";
+import NavBar from "../components/NavBar.astro";
+import Footer from "../components/Footer.astro";
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -11,10 +14,10 @@ const { data } = Astro.props;
 </head>
 <body>
   <Header title={data.title} subtitle={data.subtitle} />
-  <NavBar links={data.links} />
+  <NavBar nav1={data.nav1} nav2={data.nav2} />
   <main>
     <slot />
   </main>
-  <Footer footerText={data.footerText} />
+  <Footer footerText={data.footer} />
 </body>
 </html>

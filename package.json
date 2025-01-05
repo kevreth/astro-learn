@@ -11,7 +11,7 @@
     "clean": "rm -rf dist pages/ playwright-report/ test-results/ sites/ .output package-lock.json",
     "test:unit": "yarn test:unit:prebuild && yarn test:unit:layout && yarn test:unit:astro",
     "test:unit:prebuild": "npx vitest --run src/scripts/prebuild",
-    "test:unit:astro": "npx rollup -c && npx vitest --run components/",
+    "test:unit:astro": "npx rollup -c && npx vitest --run src/astro/components/",
     "test:unit:layout": "npx vitest --run src/scripts/layout",
     "pregen:dev": "tsx src/scripts/prebuild/pregenerate.ts http://localhost:3000",
     "pregen:prod": "tsx src/scripts/prebuild/pregenerate.ts http://inquirita.com",
