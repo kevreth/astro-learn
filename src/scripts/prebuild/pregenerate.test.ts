@@ -13,7 +13,7 @@ describe('copyFileCommand', () => {
     const subDir = 'testDir'
     vi.spyOn(fs, 'existsSync' as keyof typeof fs).mockReturnValueOnce(true)
     const result = pregen.copyFileCommand(subDir)
-    expect(result).toEqual({ targetFile: join(subDir, 'index.vue'), exists: true })
+    expect(result).toEqual({ targetFile: join(subDir, 'index.astro'), exists: true })
   })
 })
 describe('copyFileCommands', () => {
@@ -24,27 +24,27 @@ describe('copyFileCommands', () => {
     vi.spyOn(fs, 'existsSync').mockReturnValue(true)
     const result = pregen.copyFileCommands(dir)
     expect(result).toHaveLength(entries.length)
-    expect(result[0]).toEqual({ targetFile: join(entries[0], 'index.vue'), exists: true })
+    expect(result[0]).toEqual({ targetFile: join(entries[0], 'index.astro'), exists: true })
   })
 })
 describe('copyFiles', () => {
   it('copies files correctly', () => {
-    const fileCommands: Array<{ targetFile: string; exists: boolean }> = [{ targetFile: 'file1.vue', exists: false }, { targetFile: 'file2.vue', exists: true }]
-    const indexFile = 'index.vue'
+    const fileCommands: Array<{ targetFile: string; exists: boolean }> = [{ targetFile: 'file1.astro', exists: false }, { targetFile: 'file2.astro', exists: true }]
+    const indexFile = 'index.astro'
     const copySpy = vi.spyOn(fs, 'copyFileSync' as keyof typeof fs).mockImplementation(() => {})
     pregen.copyFiles(fileCommands, indexFile)
-    expect(copySpy).toHaveBeenCalledWith('index.vue', 'file1.vue')
+    expect(copySpy).toHaveBeenCalledWith('index.astro', 'file1.astro')
     expect(copySpy).toHaveBeenCalledTimes(1)
   })
 })
-// describe('copyIndexVueToSubdirectories', () => {
-//   it('copies index.vue to all subdirectories', () => {
+// describe('copyIndexAstroToSubdirectories', () => {
+//   it('copies index.astro to all subdirectories', () => {
 //     const dir = 'testDir'
-//     const indexFile = 'index.vue'
-//     const fileCommands = [{ targetFile: 'subDir1/index.vue', exists: false }]
+//     const indexFile = 'index.astro'
+//     const fileCommands = [{ targetFile: 'subDir1/index.astro', exists: false }]
 //     const copySpy1 = vi.spyOn(pregen, 'copyFileCommands').mockImplementation(() => fileCommands)
 //     const copySpy2 = vi.spyOn(pregen, 'copyFiles')
-//     pregen.copyIndexVueToSubdirectories(dir, indexFile)
+//     pregen.copyIndexAstroToSubdirectories(dir, indexFile)
 //     expect(copySpy1).toHaveBeenCalled()
 //     expect(copySpy2).toHaveBeenCalled()
 //   })
@@ -63,14 +63,14 @@ describe('recreatePagesDirectory', () => {
 // describe('main', () => {
 //   it('executes the main workflow correctly', () => {
 //     const baseUrl = 'http://example.com'
-//     const indexFile = 'pages/index.vue'
+//     const indexFile = 'pages/index.astro'
 //     const data: LocniData = load()
 //     const target = 'pages/'
 //     const recreateSpy = vi.spyOn(pregen as any, 'recreatePagesDirectory').mockImplementation(() => {})
 //     const generateSpy = vi.spyOn(generate as any, 'generate').mockImplementation(() => {})
 //     const directorySpy = vi.spyOn(directory as any, 'directory').mockImplementation(() => {})
 //     const processSpy = vi.spyOn(processAllTemplates as any, 'processAllTemplates').mockImplementation(() => {})
-//     const copySpy = vi.spyOn(pregen as any, 'copyIndexVueToSubdirectories').mockImplementation(() => {})
+//     const copySpy = vi.spyOn(pregen as any, 'copyIndexAstroToSubdirectories').mockImplementation(() => {})
 //     const makeDataSpy = vi.spyOn(make_data_json as any, 'make_data_json').mockImplementation(() => {})
 //     pregen.main(baseUrl, indexFile, data, target)
 //     expect(recreateSpy).toHaveBeenCalled()

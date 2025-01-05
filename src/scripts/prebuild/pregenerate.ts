@@ -14,7 +14,7 @@ export interface FileCommand {
   exists: boolean
 }
 export function copyFileCommand(subDir: string): FileCommand {
-  const targetFile = join(subDir, 'index.vue')
+  const targetFile = join(subDir, 'index.astro')
   const exists = fs.existsSync(targetFile)
   return { targetFile, exists }
 }
@@ -28,7 +28,7 @@ export function copyFiles(fileCommands: FileCommand[], indexFile: string) {
     if (!exists) fs.copyFileSync(indexFile, targetFile)
   })
 }
-export function copyIndexVueToSubdirectories(dir: string, indexFile: string) {
+export function copyIndexAstroToSubdirectories(dir: string, indexFile: string) {
   const fileCommands: FileCommand[] = copyFileCommands(dir)
   copyFiles(fileCommands, indexFile)
 }
@@ -52,7 +52,7 @@ export function main(baseUrl: string, indexFile:string, target:string) {
   directory(data)
   generate(target + 'us', data)
   processAllTemplates(data)
-  copyIndexVueToSubdirectories(target, indexFile)
+  copyIndexAstroToSubdirectories(target, indexFile)
   make_data_json(baseUrl, target)
 }
 if (import.meta.url === `file://${process.argv[1]}`) {
@@ -63,7 +63,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   }
   else {
     const target = 'pages/'
-    const indexFile = join(target, 'index.vue')
+    const indexFile = join(target, 'index.astro')
     main(baseUrl, indexFile, target)
   }
 }
