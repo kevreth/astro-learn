@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title></title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 20px;
+    }
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+    th {
+      background-color: #2c3e50;
+      color: white;
+      padding: 12px;
+      text-align: left;
+      font-weight: bold;
+    }
+    td {
+      background-color: #ffffff;
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+    tr:nth-child(even) td {
+      background-color: #f2f2f2;
+    }
+    tr:hover td {
+      background-color: #e9f5ff;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Inquirita CSS/Layout Testing Procedure</h1>
+  <table>
+    <tr>
+      <th>Link</th><th>Scenario</th><th>What to look for</th>
+    </tr>
+    <td><a href="http://localhost:3000/">Home</a></td>
+    <td>Homepage</td>
+    <td><ul>
+      <li>The logo appears in the correct place with proper spacing from the other content</li>
+      <li>The slogan is  centered underneath the logo</li>
+      <li>The country list is centered towards the top</li>
+      <li>No extra vertical space between the header and content</li>
+    </ul></td>
+  </tr>
+    </tr>
+      <td><a href="http://localhost:3000/us">USA</a></td>
+      <td>Country, US specific</td>
+      <td><ul>
+        <li>The blue box is roughly square and horizontally centered on the page.</li>
+      </ul></td>
+    </tr>
+    <tr>
+      <td><a href="http://localhost:3000/us/la">Louisiana</a></td>
+      <td>Region table, short</td>
+      <td><ul>
+        <li>Table cells are normal height</li>
+        <li>Table height is suitable for content.</li>
+      </ul></td>
+    </tr>
+    <tr>
+      <td><a href="http://localhost:3000/us/ca">California</a></td>
+      <td>Region table, long</td>
+      <td><ul>
+        <li>Scroll bar appears and functions</li>
+        <li>Last line appears in full (last item is "Yucca Valley")</li>
+        <li>Small gap above footer</li>
+      </ul></td>
+    </tr>
+    <tr>
+      <td><a href="http://localhost:3000/us/tn/murfreesboro">Murfreesboro, TN</a></td>
+      <td>Locality table</td>
+      <td>
+        Make the screen too short for the content.
+        <ul>
+          <li>Scroll bar appears and the bottom arrow appears just above the footer</li>
+          <li>Last line is fully visible, with the title "Yard"</li>
+        </ul>
+        Make the screen too narrow for the content.
+        <ul>
+          <li>All the blue boxes rearrange nicely and are fully visible</li>
+          <li>Last line is fully visible, with the title "Yard"</li>
+      </ul>
+    </td>
+    <tr>
+      <td><a href="http://localhost:3000/us/ks/lawrence/tree-service/">Lawrence, KS tree service</a></td>
+      <td>Niche</td>
+      <td><ul>
+        <li>Proper formatting; bullets appear, content left justified.</li>
+      </ul></td>
+    </tr>
+    </tr>
+    <tr>
+      <td><a href="http://localhost:3000/us/ca/covina/hvac/directory">Covina, CA HVAC directory</a></td>
+      <td>Directory Table, Short</td>
+      <td>
+        <ul>
+          <li>The bottom border wraps properly around the last row</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="http://localhost:3000/us/tx/austin/cpa/directory/">Austin, TX CPA directory</a></td>
+      <td>Directory Table, Long</td>
+      <td rowspan="2">
+        <ul>
+          <li>Scroll bars appear and function</li>
+          <li>Small gap above footer</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

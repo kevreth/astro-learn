@@ -4,6 +4,7 @@
 # prebuild output
 /pages/
 /sites/
+/src/astro/pages/
 
 # generated types
 .astro/

@@ -1,0 +1,108 @@
+$desktop: 600px;
+
+@mixin holygrail {
+  @media (min-width: $desktop) {
+    main {
+      display: flex;
+      padding: 0;
+    }
+
+    .float-title {
+      position: absolute !important;
+      top: 0;
+      margin-top: 5px;
+    }
+
+    .logo-navbar-wrapper {
+      flex-direction: column !important; 
+      align-items: normal !important;
+      position: relative !important;
+      justify-content: flex-start !important;
+      padding: 5px;
+    }
+
+    .logoImg-desktop {
+      max-width: 100% !important;
+      object-fit: contain;
+      height: auto !important;
+    }
+
+    nav {
+      display: unset !important;
+      flex: none !important;
+      padding-left: 5px;
+      max-height: fit-content !important;
+    }
+    .navlink {
+      width: auto !important;
+      transform: none !important;
+      position: unset !important;
+    }
+
+    .nav-item {
+      display: flex !important;
+      flex-direction: column;
+      text-align: left !important;
+      line-height: unset !important;
+    }
+
+    aside,
+    .logo-navbar-wrapper {
+      width: 15%;
+      flex-shrink: 0; 
+    }
+
+    .main-container {
+      flex: 1;
+    }
+  }
+}
+
+@mixin breadcrumbHolygrail {
+  @media (min-width: $desktop) {
+    .breadcrumbs {
+      font-size: 1em;
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+  
+    .breadcrumb-container {
+      margin-left: 0;
+      margin-top: 5px;
+      padding: 0;
+      display: block ruby;
+      text-align: left;
+    }
+  
+    .breadcrumb-item {
+      display: block ruby;
+    }
+  }
+}
+
+@mixin toggleSwitchHolyGrail {
+  @media (min-width: $desktop) {
+    .header-container {
+      grid-template-columns: minmax(153px, 1fr) auto minmax(153px, 1fr);
+      gap: 5px;
+    }
+
+    .header-container h1 {
+      grid-column: 2;
+    }
+
+    .toggle-container {
+      position: absolute !important;
+      grid-column: 1;
+      width: fit-content;
+      align-self: end;
+    }
+
+    .float-toggle {
+      display: flex;
+      top: 10px;
+      margin-bottom: 10px;
+      position: relative !important;
+    }
+  }
+}

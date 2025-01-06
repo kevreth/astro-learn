@@ -1,0 +1,107 @@
+@use "variables";
+@use 'holygrail';
+
+.header-container {
+  display: grid;
+  align-items: center;
+}
+.fas.fa-info-circle {
+  color: #17a2b8;
+  font-size: 16px;
+  cursor: pointer;
+}
+.toggle-container {
+  padding: 5px 0;
+  gap: 5px;
+}
+.toggle-switch {
+  display: none;
+}
+.label-span {
+  display: flex;
+}
+.label-div {
+  color: #ffffff; 
+  text-shadow: 
+    -1px -1px 0 #000, 
+      1px -1px 0 #000, 
+    -1px  1px 0 #000, 
+      1px  1px 0 #000; 
+  background: rgba(0, 0, 0, 0.6); 
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 18px;
+}
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 9px;
+}
+.switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 1px;
+  bottom: 1px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.toggle-switch:checked + .slider {
+  background-color: #4caf50;
+}
+.toggle-switch:checked + .slider:before {
+  transform: translateX(16px);
+}
+
+// infomation bar
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  position: relative;
+  background-color: variables.$primary-color;
+  color: variables.$white-text-color;
+  margin: 10% auto;
+  padding: 10px;
+  width: 50%;
+  box-shadow: 0px 0px 20px 0px #244189;
+  text-align: left;
+}
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-body {
+  padding: 15px;
+}
+
+@include holygrail.toggleSwitchHolyGrail;

@@ -8,7 +8,7 @@ logo:
 header: 'Inquirita'
 footer: (855) 463-9309
 aside: ''
-nav1:
+nav1: []
   # - label: Blog
   #   path: /blog
   # - label: About

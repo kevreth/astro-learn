@@ -1,0 +1,36 @@
+.tabulator-row .tabulator-cell {
+  white-space: normal !important;
+  word-break: break-word;
+  height: auto !important;
+}
+.tabulator {
+  overflow-y: auto; 
+  height: fit-content;
+  background-color: #fff !important;
+  display: flex !important;
+  flex-direction: column;
+  height: 100%;
+  border: none !important;
+}
+.tabulator-tableholder {
+  flex: 1 !important;
+  scrollbar-width: thin;
+}
+
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content  {
+background-color: #244189;
+color: white;
+}
+
+.tabulator a {
+  text-decoration: none;
+}
+
+.tabulator a:hover {
+  text-decoration: underline;
+}
+
+
+  
+
+

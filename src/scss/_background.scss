@@ -1,0 +1,34 @@
+.background-image {
+    display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+.background-grid {
+    background-size: cover;
+    background-position: center;
+    opacity: 0.80;
+    filter: brightness(0.7);
+}
+.single-cell {
+    background-size: cover;
+    background-position: center;
+}
+@media (orientation: landscape) {
+    .background-image.grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+@media (orientation: portrait) {
+    .background-image.grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
