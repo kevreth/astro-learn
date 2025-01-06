@@ -23,7 +23,7 @@ describe('createDevCsvs', () => {
             devItems: vi.fn()
         }))
         createDevCsvs(mockData)
-        expect(fs.readFileSync).toHaveBeenCalledWith('sitedata/dev.txt', 'utf-8')
+        expect(fs.readFileSync).toHaveBeenCalledWith('data/dev.txt', 'utf-8')
         expect(parseLine).toHaveBeenCalledTimes(3)
         expect(parseLine).toHaveBeenCalledWith('line1')
         expect(parseLine).toHaveBeenCalledWith('line2')

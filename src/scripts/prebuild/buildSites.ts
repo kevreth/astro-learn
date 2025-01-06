@@ -35,8 +35,8 @@ export function getDirectoriesWithUncommittedChanges(customDir: string) {
 export function buildSites() {
     fs.removeSync('sites')
     fs.ensureDirSync('sites')
-    cpSync('sitedata/sitewide', 'sites', { recursive: true })
-    const customDir = 'sitedata/custom/'
+    cpSync('data/sitewide', 'sites', { recursive: true })
+    const customDir = 'data/custom/'
     const custom_flag = hasUncommittedChanges(customDir)
     if (custom_flag) buildCustom(customDir)
 }
