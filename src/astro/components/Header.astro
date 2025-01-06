@@ -1,7 +1,6 @@
 ---
-const { title, subtitle } = Astro.props;
+const { header, style } = Astro.props;
 ---
-<header>
-  <h1>{title}</h1>
-  <h2>{subtitle}</h2>
+<header style={style}>
+  {header}
 </header>

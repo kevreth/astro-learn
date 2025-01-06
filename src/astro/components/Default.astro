@@ -13,8 +13,7 @@ const { data } = Astro.props
 // initializeLayout(data)
 ---
 <div class="page-container">
-  <!-- <Header title={data.title} subtitle={data.subtitle} /> -->
-  <Header title={data.title} subtitle={data.subtitle} style={{ backgroundColor: data.colors.primaryColor }} />
+  <Header header={data.header} style={`background-color: ${data.colors.primaryColor}`} />
   <main>
     <div class="logo-navbar-wrapper">
       <Logo logo={data.logo} />
@@ -30,7 +29,7 @@ const { data } = Astro.props
     </div>
     <Aside aside={data.aside} />
   </main>
-  <Footer footerText={data.footer} style={{ backgroundColor: data.colors.primaryColor }} />
+  <Footer footer={data.footer} style={`background-color: ${data.colors.primaryColor}`} />
 </div>
 <style>
   @media (max-width: 600px) {

@@ -1,6 +1,6 @@
 ---
-const { footerText } = Astro.props;
+const { footer, style } = Astro.props;
 ---
-<footer>
-  <p>{footerText}</p>
+<footer style={style}>
+  {footer}
 </footer>
