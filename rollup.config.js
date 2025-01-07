@@ -2,19 +2,31 @@ import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import typescript from 'rollup-plugin-typescript2';
 
-export default {
-  input: 'src/scripts/tabulator/tabulator.ts',
-  output: {
-    file: 'dist/tabulator.js',
-    format: 'umd', // UMD format
-    name: 'TabulatorModule' // Global variable name for the UMD build
-  },
+const createConfig = (input, outputFileName, globalName) => ({
+  input,
+  output: [
+    {
+      file: `dist/${outputFileName}`,
+      format: 'umd',
+      name: globalName
+    },
+    {
+      file: `public/${outputFileName}`,
+      format: 'umd',
+      name: globalName
+    }
+  ],
   plugins: [
-    resolve(), // Resolve node_modules
-    commonjs(), // Convert CommonJS modules to ES6
+    resolve(),
+    commonjs(),
     typescript({
-      check: false, // Disables type checking
-      tsconfigOverride: { compilerOptions: { noEmitOnError: false } } // Prevents build failure on errors
+      check: false,
+      tsconfigOverride: { compilerOptions: { noEmitOnError: false } }
     })
   ]
-};
+});
+
+export default [
+  createConfig('src/scripts/tabulator/tabulator.ts', 'tabulator.js', 'TabulatorModule'),
+  createConfig('src/scripts/layout.manager/layoutManager.ts', 'layout.manager.js', 'LayoutManagerModule')
+];

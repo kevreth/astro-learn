@@ -5,6 +5,8 @@
 /pages/
 /sites/
 /src/astro/pages/
+/public/layout.manager.js
+/public/tabulator.js
 
 # generated types
 .astro/
