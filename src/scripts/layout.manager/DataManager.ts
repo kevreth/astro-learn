@@ -1,7 +1,7 @@
 import { IDataManager } from "./IDataManager"
 export class DataManager implements IDataManager {
-    navbar = document.querySelector('.navbar') as HTMLElement
-    logo = document.querySelector('.logoImg img') as HTMLImageElement
+    navbar = document.querySelector('.navlink') as HTMLElement
+    logo = document.querySelector('.logo') as HTMLImageElement
     mainWrapper = document.getElementById('main-wrapper') as HTMLElement
     title = document.querySelector('#main-wrapper h1') as HTMLElement
     breadcrumbContainer = document.querySelector(".breadcrumb-container") as HTMLElement
