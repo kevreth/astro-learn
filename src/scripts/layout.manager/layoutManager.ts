@@ -111,8 +111,15 @@ export function initLayout(dm: DataManager) {
         adjustLogoSize(dm)
     })
 }
-export function initializeLayout(data:any): void {
+export function initializeLayout(): void {
+    const element = document.getElementById('data-container') as HTMLElement;
+    const attribute = element.getAttribute('data-content') as string;
+    const data = JSON.parse(attribute);
     const dm = new DataManager()
     dm.setData(data.nav1, data.nav2, data.breadcrumb)
     initLayout(dm)
+}
+//entry point protected for testing
+if (typeof window !== 'undefined') {
+    (window as any).initializeLayout = initializeLayout
 }

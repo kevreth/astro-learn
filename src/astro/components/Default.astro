@@ -8,41 +8,61 @@ import MainCompanyContent from '../components/CompanyContent.astro'
 import BackgroundGrid from '../components/BackgroundGrid.astro'
 import Tabulator from '../components/Tabulator.astro'
 import Aside from '../components/Aside.astro'
-import { initializeLayout } from "../../scripts/layout.manager/layoutManager"
 const { data } = Astro.props
-// initializeLayout(data)
 ---
+<div id="data-container" data-content={JSON.stringify(data)}></div>
 <div class="page-container">
   <Header header={data.header} style={`background-color: ${data.colors.primaryColor}`} />
   <main>
     <div class="logo-navbar-wrapper">
-      <Logo logo={data.logo} />
-      <NavBar nav1={data.nav1} nav2={data.nav2} />
+        <Logo logo={data.logo} />
+        <NavBar nav1={data.nav1} nav2={data.nav2} />
     </div>
     <div class="main-container" id="main-container">
       <div class="breadcrumb-container">
-        <Breadcrumb breadcrumbs={data.breadcrumb} />
-      </div>
-      {Astro.slots.pageCustom ? <slot name="pageCustom" /> : <MainCompanyContent data={data.content} />}
-      <BackgroundGrid backgroundImages={data.backgroundImages} />
-      <Tabulator priority={data.priority} />
+            <Breadcrumb breadcrumbs={data.breadcrumb} />
+        </div>
+        {Astro.slots.pageCustom ? <slot name="pageCustom" /> : <MainCompanyContent data={data.content} />}
+        <BackgroundGrid backgroundImages={data.backgroundImages} />
+        <Tabulator priority={data.priority} />
     </div>
     <Aside aside={data.aside} />
   </main>
   <Footer footer={data.footer} style={`background-color: ${data.colors.primaryColor}`} />
 </div>
 <style>
-  @media (max-width: 600px) {
-    .hidden {
-      display: none
+    @media (max-width: 600px) {
+        .hidden {
+            display: none
+        }
+        .breadcrumb-below-nav {
+            position: relative
+            margin-bottom: 5px
+        }
+        .breadcrumb-left {
+            margin-left: 0 !important
+            min-height: auto !important
+        }
     }
-    .breadcrumb-below-nav {
-      position: relative
-      margin-bottom: 5px
-    }
-    .breadcrumb-left {
-      margin-left: 0 !important
-      min-height: auto !important
-    }
-  }
 </style>
+<script id="init" src="http://localhost:3000/layout.manager.js" is:inline onload="initializeLayout()"></script>
+<!-- <script type="module">
+    document.addEventListener('DOMContentLoaded', () => {
+    (async () => {
+        const module = await import('http://localhost:3000/layout.manager.js');
+        const initializeLayout = module.initializeLayout || module.default?.initializeLayout;
+        if (module)
+            if(typeof initializeLayout === 'function') {
+                const element = document.getElementById('data-container');
+                const attribute = element.getAttribute('data-content');
+                const data = JSON.parse(attribute);
+                initializeLayout(data);
+            } else {
+                console.error(module.initializeLayout)
+                console.error('initializeLayout is not a function or not available in the module');
+        } else {
+            console.error('layout.manager.js is not available in the module');
+        }
+    })();
+})
+</script> -->
