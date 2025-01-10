@@ -36,6 +36,7 @@ process.on('unhandledRejection', (err) => {
   console.error('Unhandled rejection:', err);
 });
 if (import.meta.url === `file://${process.argv[1]}`) {
+  console.log("starting web server")
   startServer()
     .then(() => console.log(`Server running on http://localhost:${PORT}`))
     .catch((err) => {
