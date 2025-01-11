@@ -60,6 +60,7 @@
     "@types/papaparse": "5.3.15",
     "@types/tabulator-tables": "6.2.3",
     "@vitejs/plugin-vue": "5.2.1",
+    "@types/xml2js": "0.4.14",
     "astro": "4.16.17",
     "axios": "1.7.9",
     "cheerio": "1.0.0",
