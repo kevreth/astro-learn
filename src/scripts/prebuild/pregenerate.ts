@@ -55,6 +55,9 @@ export function main(baseUrl: string, indexFile:string, target:string) {
   copyIndexAstroToSubdirectories(target, indexFile)
   make_data_json(baseUrl, target)
 }
+export function production(baseUrl:string) {
+  console.log("PRODUCTION: " + baseUrl)
+}
 if (import.meta.url === `file://${process.argv[1]}`) {
   const baseUrl = process.argv[2]
   if (!baseUrl) {
@@ -62,8 +65,14 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     process.exit(1)
   }
   else {
-    const target = 'pages/'
-    const indexFile = join(target, 'index.astro')
-    main(baseUrl, indexFile, target)
+    //TODO: testing the baseUrl is hackish and requires a more robust solution
+    if(baseUrl == 'http://inquirita.com') {
+      production(baseUrl)
+    }
+    else {
+      const target = 'pages/'
+      const indexFile = join(target, 'index.astro')
+      main(baseUrl, indexFile, target)
+    }
   }
 }
