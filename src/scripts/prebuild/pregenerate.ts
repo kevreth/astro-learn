@@ -9,6 +9,7 @@ import { walkSync } from './library'
 import {buildSites} from './buildSites'
 import {createDevCsvs} from './createDevCsvs'
 import { createCustomCsvs } from './createCustomCsvs'
+import { cpSync, mkdirSync } from 'fs'
 export interface FileCommand {
   targetFile: string
   exists: boolean
@@ -37,26 +38,27 @@ export function recreatePagesDirectory() {
   fs.mkdirSync('./pages')
   fs.copySync('./sites', './pages', { dereference: true })
 }
-function createDevInSites(): LocniData {
+function createDevInSites(): void {
   //load must be called twice because it depends on the content of sites/
   let data: LocniData = load() //requires buildSites
   createDevCsvs(data) //requires the first load()
   createCustomCsvs(data)
-  data = load() //requires createDevCsvs
-  return data
 }
-export function main(baseUrl: string, indexFile:string, target:string) {
-  buildSites()
-  const data: LocniData = createDevInSites()
-  recreatePagesDirectory()
+// data = load() //requires createDevCsvs
+// return data
+export function main(baseUrl: string, indexFile:string, target:string, data: LocniData) {
   directory(data)
   generate(target + 'us', data)
   processAllTemplates(data)
   copyIndexAstroToSubdirectories(target, indexFile)
   make_data_json(baseUrl, target)
 }
-export function production(baseUrl:string) {
-  console.log("PRODUCTION: " + baseUrl)
+function development() {
+  createDevInSites()
+}
+
+export function production() {
+  fs.copySync('./build/us', './src/astro/pages/us', { dereference: true })
 }
 if (import.meta.url === `file://${process.argv[1]}`) {
   const baseUrl = process.argv[2]
@@ -67,12 +69,21 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   else {
     //TODO: testing the baseUrl is hackish and requires a more robust solution
     if(baseUrl == 'http://inquirita.com') {
-      production(baseUrl)
+      console.log("PRODUCTION: " + baseUrl)
+      fs.removeSync('sites')
+      fs.ensureDirSync('sites')
+      cpSync('data/sitewide', 'sites', { recursive: true })
+      cpSync('data/sitewide', './src/astro/pages/', { recursive: true })
+      production()
     }
     else {
-      const target = 'pages/'
-      const indexFile = join(target, 'index.astro')
-      main(baseUrl, indexFile, target)
+      buildSites()
     }
+    // development()
+    const target = './src/astro/pages/'
+    const indexFile = join(target, 'index.astro')
+    const data = load()
+    recreatePagesDirectory()
+    main(baseUrl, indexFile, target, data)
   }
 }
