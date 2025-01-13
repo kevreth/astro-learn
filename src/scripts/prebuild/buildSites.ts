@@ -32,6 +32,10 @@ export function getDirectoriesWithUncommittedChanges(customDir: string) {
     const changedDirs = directories.filter(hasUncommittedChanges)
     return changedDirs
 }
+export function buildProd() {
+    const directories = getDirectories('sites')
+    directories.forEach(item => {buildLocni(item, 'sites')})
+}
 export function buildSites() {
     fs.removeSync('sites')
     fs.ensureDirSync('sites')

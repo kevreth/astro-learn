@@ -6,9 +6,10 @@ import fs from 'fs-extra'
 import { load, type LocniData } from './locni_data'
 import {make_data_json} from './mkdatajson'
 import { walkSync } from './library'
-import {buildSites} from './buildSites'
+import {buildSites, buildProd} from './buildSites'
 import {createDevCsvs} from './createDevCsvs'
 import { createCustomCsvs } from './createCustomCsvs'
+import { createProdCsvs } from './createProdCsvs'
 import { cpSync, mkdirSync } from 'fs'
 export interface FileCommand {
   targetFile: string
@@ -44,8 +45,6 @@ function createDevInSites(): void {
   createDevCsvs(data) //requires the first load()
   createCustomCsvs(data)
 }
-// data = load() //requires createDevCsvs
-// return data
 export function main(baseUrl: string, indexFile:string, target:string, data: LocniData) {
   directory(data)
   generate(target + 'us', data)
@@ -54,11 +53,18 @@ export function main(baseUrl: string, indexFile:string, target:string, data: Loc
   make_data_json(baseUrl, target)
 }
 function development() {
+  buildSites()
   createDevInSites()
 }
-
 export function production() {
+  fs.removeSync('sites')
+  fs.ensureDirSync('sites')
+  cpSync('data/sitewide', 'sites', { recursive: true })
+  cpSync('data/sitewide', './src/astro/pages/', { recursive: true })
   fs.copySync('./build/us', './src/astro/pages/us', { dereference: true })
+  let data: LocniData = load()
+  createProdCsvs(data)
+  buildProd()
 }
 if (import.meta.url === `file://${process.argv[1]}`) {
   const baseUrl = process.argv[2]
@@ -70,16 +76,11 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     //TODO: testing the baseUrl is hackish and requires a more robust solution
     if(baseUrl == 'http://inquirita.com') {
       console.log("PRODUCTION: " + baseUrl)
-      fs.removeSync('sites')
-      fs.ensureDirSync('sites')
-      cpSync('data/sitewide', 'sites', { recursive: true })
-      cpSync('data/sitewide', './src/astro/pages/', { recursive: true })
       production()
     }
     else {
-      buildSites()
+      development()
     }
-    // development()
     const target = './src/astro/pages/'
     const indexFile = join(target, 'index.astro')
     const data = load()
