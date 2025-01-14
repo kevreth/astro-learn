@@ -6,7 +6,7 @@ import fs from 'fs-extra'
 import { load, type LocniData } from './locni_data'
 import {make_data_json} from './mkdatajson'
 import { walkSync } from './library'
-import {buildSites} from './buildSites'
+import {  createSitesDir,  buildCustomSites} from './buildSites'
 import {createDevCsvs} from './createDevCsvs'
 import { createCustomCsvs } from './createCustomCsvs'
 import { cpSync } from 'fs'
@@ -47,7 +47,8 @@ function createDevInSites(): LocniData {
   return data
 }
 export function main(baseUrl: string, indexFile:string, target:string) {
-  buildSites()
+  createSitesDir()
+  buildCustomSites()
   const data: LocniData = createDevInSites()
   recreatePagesDirectory()
   directory(data)
