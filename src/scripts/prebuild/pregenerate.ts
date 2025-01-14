@@ -47,10 +47,6 @@ function createDevInSites(): LocniData {
   data = load() //requires createDevCsvs
   return data
 }
-function createProdInSites(): void {
-  let data: LocniData = load()
-  createProdCsvs(data)
-}
 export function main(baseUrl: string, indexFile:string, target:string, data:LocniData) {
   recreatePagesDirectory()
   directory(data)
@@ -59,9 +55,6 @@ export function main(baseUrl: string, indexFile:string, target:string, data:Locn
   copyIndexAstroToSubdirectories(target, indexFile)
   make_data_json(baseUrl, target)
 }
-export function production() {
-
-}
 if (import.meta.url === `file://${process.argv[1]}`) {
   const baseUrl = process.argv[2]
   if (!baseUrl) {
@@ -69,18 +62,17 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     process.exit(1)
   }
   else {
+    const target = 'pages/'
+    const indexFile = join(target, 'index.astro')
+    createSitesDir()
     //TODO: testing the baseUrl is hackish and requires a more robust solution
     if(baseUrl == 'http://inquirita.com') {
       console.log("PRODUCTION: " + baseUrl)
-      fs.removeSync('sites')
-      fs.ensureDirSync('sites')
-      cpSync('data/sitewide', 'sites', { recursive: true })
-      production()
+      let data: LocniData = load()
+      createProdCsvs(data)
+      main(baseUrl, indexFile, target, data)
     }
     else {
-      const target = 'pages/'
-      const indexFile = join(target, 'index.astro')
-      createSitesDir()
       buildCustomSites()
       const data: LocniData = createDevInSites()
       main(baseUrl, indexFile, target, data)
