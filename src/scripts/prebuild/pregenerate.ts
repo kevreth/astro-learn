@@ -9,6 +9,7 @@ import { walkSync } from './library'
 import {  createSitesDir,  buildCustomSites} from './buildSites'
 import {createDevCsvs} from './createDevCsvs'
 import { createCustomCsvs } from './createCustomCsvs'
+import { createProdCsvs } from './createProdCsvs'
 import { cpSync } from 'fs'
 export interface FileCommand {
   targetFile: string
@@ -46,10 +47,11 @@ function createDevInSites(): LocniData {
   data = load() //requires createDevCsvs
   return data
 }
-export function main(baseUrl: string, indexFile:string, target:string) {
-  createSitesDir()
-  buildCustomSites()
-  const data: LocniData = createDevInSites()
+function createProdInSites(): void {
+  let data: LocniData = load()
+  createProdCsvs(data)
+}
+export function main(baseUrl: string, indexFile:string, target:string, data:LocniData) {
   recreatePagesDirectory()
   directory(data)
   generate(target + 'us', data)
@@ -78,7 +80,10 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     else {
       const target = 'pages/'
       const indexFile = join(target, 'index.astro')
-      main(baseUrl, indexFile, target)
+      createSitesDir()
+      buildCustomSites()
+      const data: LocniData = createDevInSites()
+      main(baseUrl, indexFile, target, data)
     }
   }
 }
