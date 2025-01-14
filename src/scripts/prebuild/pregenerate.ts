@@ -9,6 +9,7 @@ import { walkSync } from './library'
 import {buildSites} from './buildSites'
 import {createDevCsvs} from './createDevCsvs'
 import { createCustomCsvs } from './createCustomCsvs'
+import { cpSync } from 'fs'
 export interface FileCommand {
   targetFile: string
   exists: boolean
@@ -55,6 +56,9 @@ export function main(baseUrl: string, indexFile:string, target:string) {
   copyIndexAstroToSubdirectories(target, indexFile)
   make_data_json(baseUrl, target)
 }
+export function production() {
+
+}
 if (import.meta.url === `file://${process.argv[1]}`) {
   const baseUrl = process.argv[2]
   if (!baseUrl) {
@@ -62,8 +66,18 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     process.exit(1)
   }
   else {
-    const target = 'pages/'
-    const indexFile = join(target, 'index.astro')
-    main(baseUrl, indexFile, target)
+    //TODO: testing the baseUrl is hackish and requires a more robust solution
+    if(baseUrl == 'http://inquirita.com') {
+      console.log("PRODUCTION: " + baseUrl)
+      fs.removeSync('sites')
+      fs.ensureDirSync('sites')
+      cpSync('data/sitewide', 'sites', { recursive: true })
+      production()
+    }
+    else {
+      const target = 'pages/'
+      const indexFile = join(target, 'index.astro')
+      main(baseUrl, indexFile, target)
+    }
   }
 }
