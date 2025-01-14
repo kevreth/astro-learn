@@ -27,9 +27,9 @@
     "prebuild": "yarn install --frozen-lockfile && yarn clean && yarn test:unit && yarn pregen:dev && yarn pregen:test && mv pages/* src/astro/pages/ && yarn sass",
     "build": "yarn generate",
     "postbuild": "yarn test:e2e && yarn serve",
-    "prebuild:prod": "yarn install --frozen-lockfile && yarn clean && yarn pregen:prod && yarn pregen:test",
+    "prebuild:prod": "yarn install --frozen-lockfile && yarn clean && yarn pregen:prod && yarn sass",
     "build:prod": "yarn generate:prod && yarn sass",
-    "postbuild:prod": "yarn lastmod:prod && yarn test:e2e && yarn serve",
+    "postbuild:prod": "yarn serve",
     "deploy": "lftp -p 7822 -u root sftp://inquirita.com -e \"mirror -R ~/git/rankrent/rankrent-fe/dist/ /var/www/html/; quit\""
   },
   "dependencies": {
