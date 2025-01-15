@@ -6,7 +6,7 @@ import fs from 'fs-extra'
 import { load, type LocniData } from './locni_data'
 import {make_data_json} from './mkdatajson'
 import { walkSync } from './library'
-import {  createSitesDir,  buildCustomSites} from './buildSites'
+import {  createSitesDir,  buildCustomSites, buildProdSites} from './buildSites'
 import {createDevCsvs} from './createDevCsvs'
 import { createCustomCsvs } from './createCustomCsvs'
 import { createProdCsvs } from './createProdCsvs'
@@ -70,14 +70,16 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       console.log("PRODUCTION: " + baseUrl)
       let data: LocniData = load()
       // createProdCsvs(data)
-      cpSync('build/us', 'src/astro/pages/us', { recursive: true })
-      cpSync('sites/us', 'src/astro/pages/us', { recursive: true })
-      // main(baseUrl, indexFile, 'src/astro/pages/', data)
+      // buildProdSites()
+      cpSync('build/us', 'sites/us', { recursive: true })
+      cpSync('sites/us', 'pages/us', { recursive: true })
+      cpSync('pages/us', 'src/astro/pages/us', { recursive: true })
+      main(baseUrl, indexFile, 'src/astro/pages/', data)
     }
     else {
-      buildCustomSites()
-      const data: LocniData = createDevInSites()
-      main(baseUrl, indexFile, target, data)
+      // buildCustomSites()
+      // const data: LocniData = createDevInSites()
+      // main(baseUrl, indexFile, target, data)
     }
   }
 }

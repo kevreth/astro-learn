@@ -32,6 +32,11 @@ export function getDirectoriesWithUncommittedChanges(customDir: string) {
     const changedDirs = directories.filter(hasUncommittedChanges)
     return changedDirs
 }
+export function buildProdSites() {
+    const prodDir = 'data/build/'
+    const directories = getDirectories(prodDir)
+    directories.forEach(item => {buildLocni(item, prodDir)})
+}
 export function buildCustomSites() {
     const customDir = 'data/custom/'
     const custom_flag = hasUncommittedChanges(customDir)
