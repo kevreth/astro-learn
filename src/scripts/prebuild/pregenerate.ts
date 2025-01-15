@@ -69,8 +69,10 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     if(baseUrl == 'http://inquirita.com') {
       console.log("PRODUCTION: " + baseUrl)
       let data: LocniData = load()
-      createProdCsvs(data)
-      main(baseUrl, indexFile, target, data)
+      // createProdCsvs(data)
+      cpSync('build/us', 'src/astro/pages/us', { recursive: true })
+      cpSync('sites/us', 'src/astro/pages/us', { recursive: true })
+      // main(baseUrl, indexFile, 'src/astro/pages/', data)
     }
     else {
       buildCustomSites()
