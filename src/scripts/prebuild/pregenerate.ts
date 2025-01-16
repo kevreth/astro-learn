@@ -32,11 +32,11 @@ export function copyIndexAstroToSubdirectories(dir: string, indexFile: string) {
   const fileCommands: FileCommand[] = copyFileCommands(dir)
   copyFiles(fileCommands, indexFile)
 }
-export function recreatePagesDirectory() {
-  fs.removeSync('./pages')
-  fs.mkdirSync('./pages')
-  fs.copySync('./sites', './pages', { dereference: true })
-}
+// export function recreatePagesDirectory() {
+//   fs.removeSync('./pages')
+//   fs.mkdirSync('./pages')
+//   fs.copySync('./sites', './pages', { dereference: true })
+// }
 function createDevInSites(): LocniData {
   //load must be called twice because it depends on the content of sites/
   let data: LocniData = load() //requires buildSites
@@ -48,7 +48,7 @@ function createDevInSites(): LocniData {
 export function main(baseUrl: string, indexFile:string, target:string) {
   buildSites()
   const data: LocniData = createDevInSites()
-  recreatePagesDirectory()
+  // recreatePagesDirectory()
   directory(data)
   generate(target + 'us', data)
   processAllTemplates(data)
@@ -62,7 +62,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     process.exit(1)
   }
   else {
-    const target = 'pages/'
+    const target = 'sites/'
     const indexFile = join(target, 'index.astro')
     main(baseUrl, indexFile, target)
   }

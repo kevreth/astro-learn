@@ -263,7 +263,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.error('Error: REQUIRED_VARIABLE is not set.')
     process.exit(1)
   }
-  make_data_json(baseUrl, 'pages/')
+  make_data_json(baseUrl, 'sites/')
 }
   // function processCompanies(rootDir: string, companyLocnis: any) {
   //   function writeJson(jsonFile: string, data: any) {

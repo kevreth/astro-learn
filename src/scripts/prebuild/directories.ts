@@ -115,7 +115,7 @@ export function findFiles(dir: string, filename: string) {
     return files
 }
 export function directory(data:LocniData) {
-    const csvFiles = findFiles('pages','content.csv')
+    const csvFiles = findFiles('sites','content.csv')
     csvFiles.forEach(csv_file => {
         const dirPath = path.dirname(csv_file)
         const pathComponents = dirPath.split('/').slice(1,5)

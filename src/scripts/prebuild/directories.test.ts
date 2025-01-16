@@ -65,8 +65,8 @@ vi.mock('fs', () => {
 describe('findFiles',()=>{
   it('should find files with given name',()=>{
     (fs.readdirSync as vi.Mock).mockReturnValue([{name:'content.csv',isDirectory:()=>false,isFile:()=>true}] as any)
-    const result = findFiles('pages','content.csv')
-    expect(result).toEqual([path.join('pages','content.csv')])
+    const result = findFiles('sites','content.csv')
+    expect(result).toEqual([path.join('sites','content.csv')])
   })
 })
 // vi.mock('fs', async (importOriginal) => {

@@ -71,7 +71,7 @@ export function processPaths(paths: string[]) {
 }
 export function processAllTemplates(data:LocniData) {
     const template = 'data/template/'
-    const output = 'pages'
+    const output = 'sites'
     const files = findFiles('sites/us', 'content.csv')
     let result = processPaths(files)
     result.regions.forEach(file => {

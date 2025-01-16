@@ -49,17 +49,6 @@ describe('copyFiles', () => {
 //     expect(copySpy2).toHaveBeenCalled()
 //   })
 // })
-describe('recreatePagesDirectory', () => {
-  it('recreates the pages directory correctly', () => {
-    const removeSpy = vi.spyOn(fs, 'removeSync' as keyof typeof fs).mockImplementation(() => {})
-    const mkdirSpy = vi.spyOn(fs, 'mkdirSync' as keyof typeof fs).mockImplementation(() => {})
-    const copySpy = vi.spyOn(fs, 'copySync' as keyof typeof fs).mockImplementation(() => {})
-    pregen.recreatePagesDirectory()
-    expect(removeSpy).toHaveBeenCalledWith('./pages')
-    expect(mkdirSpy).toHaveBeenCalledWith('./pages')
-    expect(copySpy).toHaveBeenCalledWith('./sites', './pages', { dereference: true })
-  })
-})
 // describe('main', () => {
 //   it('executes the main workflow correctly', () => {
 //     const baseUrl = 'http://example.com'
