@@ -24,7 +24,7 @@
     "lastmod:prod": "tsx src/scripts/lastmod.ts sites/ .output/public/sitemap.xml http://inquirita.com",
     "test:e2e": "rm -rf test-results/* && NODE_OPTIONS=--max-old-space-size=8192 npx playwright test --tsconfig src/tests/postbuild/tsconfig.json tests/postbuild/",
     "test:e2e:enh": "rm -rf test-results/* && PLAYWRIGHT_ENHANCED=true NODE_OPTIONS=--max-old-space-size=8192 npx playwright test tests/postbuild/",
-    "prebuild": "yarn install --frozen-lockfile && yarn clean && yarn test:unit && yarn pregen:dev && yarn pregen:test && mv sites/* src/astro/pages/ && yarn sass",
+    "prebuild": "yarn install --frozen-lockfile && yarn clean && mkdir sites && cp -a build/* sites/ && yarn test:unit && yarn pregen:dev && yarn pregen:test && mv sites/* src/astro/pages/ && yarn sass",
     "build": "yarn generate",
     "postbuild": "yarn test:e2e && yarn serve",
     "prebuild:prod": "yarn install --frozen-lockfile && yarn clean && yarn pregen:prod && yarn pregen:test",
