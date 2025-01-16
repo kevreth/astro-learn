@@ -2,6 +2,7 @@ import {generate} from './generate'
 import {directory} from './directories'
 import {processAllTemplates} from './processAllTemplates'
 import { join } from 'path'
+import { cpSync } from 'fs'
 import fs from 'fs-extra'
 import { load, type LocniData } from './locni_data'
 import {make_data_json} from './mkdatajson'
@@ -56,6 +57,10 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     process.exit(1)
   }
   else {
+    if(baseUrl == 'http://inquirita.com') {
+      console.log(baseUrl)
+      cpSync('build/us', 'sites/us', { recursive: true })
+    }
     const target = 'sites/'
     const indexFile = join(target, 'index.astro')
     main(baseUrl, indexFile, target)
