@@ -1,7 +1,7 @@
 ---
 const { nav1, nav2 } = Astro.props;
 ---
-<nav>
+<nav class="navbar">
   <div class="navlink" id="navlink">
     <ul class="nav-item">
       {nav1.map((item: { path: string | URL | null | undefined; label: unknown; }) => (
