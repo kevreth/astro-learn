@@ -37,7 +37,6 @@
     "tabulator-tables": "6.3.0"
   },
   "devDependencies": {
-    "@astrojs/vue": "5.0.3",
     "@ayco/astro-resume": "0.4.3",
     "@babel/parser": "7.26.3",
     "@babel/types": "7.26.3",
@@ -47,7 +46,6 @@
     "@rollup/plugin-yaml": "4.1.2",
     "@testing-library/dom": "10.4.0",
     "@testing-library/jest-dom": "6.6.3",
-    "@testing-library/vue": "8.1.0",
     "@types/argparse": "2.0.17",
     "@types/babel__core": "7.20.5",
     "@types/form-data": "2.5.2",
@@ -61,7 +59,6 @@
     "@types/papaparse": "5.3.15",
     "@types/tabulator-tables": "6.2.3",
     "@types/xml2js": "0.4.14",
-    "@vitejs/plugin-vue": "5.2.1",
     "astro": "4.16.17",
     "axios": "1.7.9",
     "cheerio": "1.0.0",
@@ -94,8 +91,6 @@
     "tsx": "4.19.2",
     "typescript": "5.7.2",
     "vitest": "2.1.8",
-    "vue": "3.5.13",
-    "vue-router": "4.4.5",
     "wait-on": "8.0.1",
     "xml2js": "0.6.2"
   }
