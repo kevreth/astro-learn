@@ -33,10 +33,10 @@
     "deploy": "lftp -p 7822 -u root sftp://inquirita.com -e \"mirror -R ~/git/rankrent/rankrent-fe/dist/ /var/www/html/; quit\""
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.2.1",
     "tabulator-tables": "6.3.0"
   },
   "devDependencies": {
+    "@astrojs/sitemap": "3.2.1",
     "@ayco/astro-resume": "0.4.3",
     "@babel/parser": "7.26.3",
     "@babel/types": "7.26.3",
