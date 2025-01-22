@@ -1,4 +1,8 @@
 ---
 const { logo } = Astro.props;
 ---
-<img src={logo.src} alt={logo.alt} class="logo" />
+<div class="logo">
+    <a href="/" class="logoImg">
+        <img src={logo.src} alt={logo.alt}/>
+    </a>
+</div>
