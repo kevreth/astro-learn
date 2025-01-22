@@ -10,39 +10,52 @@ import Tabulator from '../components/Tabulator.astro'
 import Aside from '../components/Aside.astro'
 const { data } = Astro.props
 ---
-<div id="data-container" data-content={JSON.stringify(data)}></div>
-<div class="page-container">
-  <Header header={data.header} style={`background-color: ${data.colors.primaryColor}`} />
-  <main>
-    <div class="logo-navbar-wrapper">
-        <Logo logo={data.logo} />
-        <NavBar nav1={data.nav1} nav2={data.nav2} />
-    </div>
-    <div class="main-container" id="main-container">
-      <div class="breadcrumb-container">
-            <Breadcrumb breadcrumbs={data.breadcrumb} />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{data.title || "Default Title"}</title>
+    <meta name="description" content={data.description || "Default description"} />
+    <link rel="stylesheet" href="/sites/style.css" />
+  </head>
+  <body>
+    <div id="data-container" data-content={JSON.stringify(data)}></div>
+    <div class="page-container">
+      <Header header={data.header} style={`background-color: ${data.colors.primaryColor}`} />
+      <main>
+        <div class="logo-navbar-wrapper">
+            <Logo logo={data.logo} />
+            <NavBar nav1={data.nav1} nav2={data.nav2} />
         </div>
-        {Astro.slots.pageCustom ? <slot name="pageCustom" /> : <MainCompanyContent data={data.content} />}
-        <BackgroundGrid backgroundImages={data.backgroundImages} />
-        <Tabulator priority={data.priority} />
+        <div class="main-container" id="main-container">
+          <div class="breadcrumb-container">
+                <Breadcrumb breadcrumbs={data.breadcrumb} />
+            </div>
+            {Astro.slots.pageCustom ? <slot name="pageCustom" /> : <MainCompanyContent data={data.content} />}
+            <BackgroundGrid backgroundImages={data.backgroundImages} />
+            <Tabulator priority={data.priority} />
+        </div>
+        <Aside aside={data.aside} />
+      </main>
+      <Footer footer={data.footer} style={`background-color: ${data.colors.primaryColor}`} />
     </div>
-    <Aside aside={data.aside} />
-  </main>
-  <Footer footer={data.footer} style={`background-color: ${data.colors.primaryColor}`} />
-</div>
-<style>
-    @media (max-width: 600px) {
-        .hidden {
-            display: none
-        }
-        .breadcrumb-below-nav {
-            position: relative
-            margin-bottom: 5px
-        }
-        .breadcrumb-left {
-            margin-left: 0 !important
-            min-height: auto !important
-        }
-    }
+    <style>
+        @media (max-width: 600px) {
+            .hidden {
+                display: none
+            }
+            .breadcrumb-below-nav {
+                position: relative
+                margin-bottom: 5px
+            }
+            .breadcrumb-left {
+                margin-left: 0 !important
+                min-height: auto !important
+            }
+        }  </body>
+</html>
+
+
 </style>
 <script id="init" src="http://localhost:3000/layout.manager.js" is:inline onload="initializeLayout()"></script>
