@@ -25,7 +25,7 @@
     "test:e2e": "rm -rf test-results/* && NODE_OPTIONS=--max-old-space-size=8192 npx playwright test --tsconfig src/tests/postbuild/tsconfig.json tests/postbuild/",
     "test:e2e:enh": "rm -rf test-results/* && PLAYWRIGHT_ENHANCED=true NODE_OPTIONS=--max-old-space-size=8192 npx playwright test tests/postbuild/",
     "prebuild:prod": "yarn install --frozen-lockfile && yarn clean && mkdir sites && cp -a build/* sites/ && yarn test:unit && yarn pregen:prod && yarn pregen:test && mv sites/* src/astro/pages/ && yarn sass",
-    "prebuild":      "yarn install --frozen-lockfile && yarn clean && mkdir sites && yarn test:unit && yarn pregen:dev && yarn pregen:test && mv sites/* src/astro/pages/ && yarn sass",
+    "prebuild": "yarn install --frozen-lockfile && yarn clean && mkdir sites && yarn test:unit && yarn pregen:dev && yarn pregen:test && mv sites/* src/astro/pages/ && yarn sass",
     "build": "yarn generate",
     "postbuild": "yarn test:e2e && yarn serve",
     "build:prod": "yarn generate:prod && yarn sass",
@@ -33,6 +33,7 @@
     "deploy": "lftp -p 7822 -u root sftp://inquirita.com -e \"mirror -R ~/git/rankrent/rankrent-fe/dist/ /var/www/html/; quit\""
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.2.1",
     "tabulator-tables": "6.3.0"
   },
   "devDependencies": {
@@ -59,8 +60,8 @@
     "@types/node-fetch": "2.6.12",
     "@types/papaparse": "5.3.15",
     "@types/tabulator-tables": "6.2.3",
-    "@vitejs/plugin-vue": "5.2.1",
     "@types/xml2js": "0.4.14",
+    "@vitejs/plugin-vue": "5.2.1",
     "astro": "4.16.17",
     "axios": "1.7.9",
     "cheerio": "1.0.0",
