@@ -7,22 +7,32 @@ export class Mobile extends Modes {
     const breadcrumbContainer = dm.breadcrumbContainer;
     const title = dm.title;
     const logoImg = dm.logoImg;
-    const logoImgWidth = logoImg.offsetWidth;
-    const logoImgHeight = logoImg.offsetHeight;
     navbar.classList.add('hidden');
     navbar.classList.remove('transparent');
     logoNavbarWrapper.classList.remove('breadcrumb-below-nav');
-    // Indent logo if width as 2 times height
-    if (logoImgWidth >= 2 * logoImgHeight) {
-      logoImg.style.setProperty('max-width', '25vw');
-      logoNavbarWrapper.style.setProperty('position', 'unset');
-      logoNavbarWrapper.style.setProperty('justify-content', 'center');
-      breadcrumbContainer.classList.add('breadcrumb-left');
-    }
-    // logo as same height with breadcrumbs when in same line
-    if (logoImg && breadcrumbContainer) {
-      breadcrumbContainer.style.minHeight = `${logoImgHeight}px`;
-      breadcrumbContainer.style.marginLeft = `${logoImgWidth + 10}px`;
+
+    if (typeof window !== 'undefined') {
+      const initializeDimensions = () => {
+        const logoImgWidth = logoImg.offsetWidth;
+        const logoImgHeight = logoImg.offsetHeight;
+        // Indent logo if width as 2 times height
+        if (logoImgWidth >= 2 * logoImgHeight) {
+          logoImg.style.setProperty('max-width', '25vw');
+          logoNavbarWrapper.style.setProperty('position', 'unset');
+          logoNavbarWrapper.style.setProperty('justify-content', 'center');
+          breadcrumbContainer.classList.add('breadcrumb-left');
+        }
+        // logo as same height with breadcrumbs when in same line
+        if (logoImg && breadcrumbContainer) {
+          breadcrumbContainer.style.minHeight = `${logoImgHeight}px`;
+          breadcrumbContainer.style.marginLeft = `${logoImgWidth + 10}px`;
+        }
+      };
+      // Trigger the calculation on initial page load
+      window.addEventListener('load', initializeDimensions);
+
+      // Recalculate on resize
+      window.addEventListener('resize', initializeDimensions);
     }
     // title jump up when no breadcrumbs
     const isBreadcrumbEmpty = dm.isBreadcrumbEmpty;
