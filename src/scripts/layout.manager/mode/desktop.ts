@@ -2,26 +2,20 @@ import { IDataManager } from '../IDataManager';
 import { Modes } from './modes';
 export class Desktop extends Modes {
   handleView(dm: IDataManager) {
-    console.log('handleView called for Desktop');
     const navbar = dm.navbar;
-    console.log('Navbar element found:', navbar);
     const logoNavbarWrapper = dm.logoNavbarWrapper;
     const breadcrumbContainer = dm.breadcrumbContainer;
     const title = dm.title;
     navbar.classList.remove('hidden');
     navbar.classList.add('transparent');
-    console.log(
-      "Added 'transparent' class to navbar. Current classes:",
-      navbar.className
-    );
     logoNavbarWrapper.classList.remove('breadcrumb-below-nav');
     breadcrumbContainer.style.setProperty('margin-left', '0');
     breadcrumbContainer.style.setProperty('min-height', 'auto');
     title.classList.remove('title');
   }
   calculateAvailableDimensions(dm: IDataManager): {
-    availableHeight;
-    availableWidth;
+    availableHeight: number;
+    availableWidth: number;
   } {
     let availableHeight = this.getAvailableHeight(dm);
     const logoNavbarWrapper = dm.logoNavbarWrapper;
