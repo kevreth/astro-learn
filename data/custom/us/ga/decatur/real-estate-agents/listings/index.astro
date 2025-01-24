@@ -1,0 +1,117 @@
+---
+import data from './data.json';
+const maxLength = 250;
+const truncatedText = data.detail_description.length > maxLength
+  ? data.detail_description.slice(0, maxLength) + '...'
+  : data.detail_description;
+const relatedListings = data.listings.filter(listing => listing.id !== 1).sort(() => Math.random() - 0.5).slice(0, 3);
+---
+<div id="main-wrapper" class="mainContent">
+  <div class="text-content">
+    <div class="property-detail-container">
+      <!-- Mobile image slider -->
+      <div class="property-details-image-slider">
+        <!-- Replace with an appropriate gallery slider or images -->
+      </div>
+
+      <!-- Content -->
+      <div class="detail-container">
+        <div class="left-column">
+          <div class="content-header">
+            <h2>{data.price}</h2>
+            <p>{data.subStats}</p>
+            <p>{data.location}</p>
+          </div>
+          <div class="separator-dark"></div>
+          <div class="content-description">
+            <div class="content-left">
+              <ul class="property-stats no-padding">
+                <!-- Add stats as necessary -->
+              </ul>
+            </div>
+            <div class="content-right">
+              <div class="property-description">
+                <p>{data.detail_description.length > maxLength ? truncatedText : data.detail_description}</p>
+                {data.detail_description.length > maxLength && (
+                  <span class="read-more">
+                    Read More +
+                  </span>
+                )}
+              </div>
+            </div>
+          </div>
+          <div class="map">
+            <h2>Map</h2>
+            <iframe
+              src={data.map.iframe_src}
+              width="100%"
+              height="20%"
+              style="border: 0;"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <p class="map-address">{data.location}</p>
+          </div>
+          <div class="separator-dark"></div>
+          <div class="property-details">
+            {data.interior_features && (
+              <div class="feature-details">
+                <div class="feature-title">
+                  <img src="https://img.icons8.com/ios/50/sofa.png" alt="sofa" width="20" height="20" />
+                  <h3>Interior Features</h3>
+                </div>
+                <ul class="feature-list">
+                  {data.interior_features.map((feature, index) => (
+                    <li key={index}>
+                      <span class="feature-label">{feature.label}</span>
+                      <ul class="feature-value">
+                        {feature.value.map((row, rowIndex) => (
+                          <li key={rowIndex}>{row}</li>
+                        ))}
+                      </ul>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        </div>
+        <div class="right-column">
+          <div class="agent-card">
+            <div class="agent-details">
+              <h3 class="agent-name">{data.agent.name}</h3>
+              <div class="agent-info">
+                <div class="mobile-info row-info">
+                  <p class="label">Mobile number</p>
+                  <p class="value">{data.agent.phone}</p>
+                </div>
+                <hr />
+                <div class="email-info row-info">
+                  <p class="label">Email</p>
+                  <p class="value">{data.agent.email}</p>
+                </div>
+              </div>
+            </div>
+            <div class="agent-contact">
+              <a href="/us/ga/decatur/real-estate-agents/contact" class="btn-primary">Contact agent</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Related Listings -->
+      <div class="related-listings">
+        <h2>Related Listings</h2>
+        <div class="related-listings-grid">
+          {relatedListings.map(related => (
+            <div class="related-listing-card" key={related.id}>
+              <img src={related.image} alt={related.title} />
+              <h4>{related.title} - {related.price}</h4>
+              <a href={related.link} class="view-details">View Details</a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
