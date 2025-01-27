@@ -10,29 +10,28 @@ export class Mobile extends Modes {
     navbar.classList.add('hidden');
     navbar.classList.remove('transparent');
     logoNavbarWrapper.classList.remove('breadcrumb-below-nav');
+    const logoImgWidth = logoImg.offsetWidth;
+    const logoImgHeight = logoImg.offsetHeight;
 
     if (typeof window !== 'undefined') {
+      // Indent logo if width as 2 times height
       const initializeDimensions = () => {
-        const logoImgWidth = logoImg.offsetWidth;
-        const logoImgHeight = logoImg.offsetHeight;
-        // Indent logo if width as 2 times height
         if (logoImgWidth >= 2 * logoImgHeight) {
           logoImg.style.setProperty('max-width', '25vw');
           logoNavbarWrapper.style.setProperty('position', 'unset');
           logoNavbarWrapper.style.setProperty('justify-content', 'center');
           breadcrumbContainer.classList.add('breadcrumb-left');
         }
-        // logo as same height with breadcrumbs when in same line
+        adjustBreadcrumbHeight();
+      };
+      // logo as same height with breadcrumbs when in same line
+      const adjustBreadcrumbHeight = () => {
         if (logoImg && breadcrumbContainer) {
           breadcrumbContainer.style.minHeight = `${logoImgHeight}px`;
           breadcrumbContainer.style.marginLeft = `${logoImgWidth + 10}px`;
         }
       };
-      // Trigger the calculation on initial page load
-      window.addEventListener('load', initializeDimensions);
-
-      // Recalculate on resize
-      window.addEventListener('resize', initializeDimensions);
+      initializeDimensions();
     }
     // title jump up when no breadcrumbs
     const isBreadcrumbEmpty = dm.isBreadcrumbEmpty;
@@ -43,8 +42,8 @@ export class Mobile extends Modes {
     }
   }
   calculateAvailableDimensions(dm: IDataManager): {
-    availableHeight;
-    availableWidth;
+    availableHeight: number;
+    availableWidth: number;
   } {
     let availableHeight = this.getAvailableHeight(dm);
     const navbar = dm.navbar;
