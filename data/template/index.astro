@@ -1,0 +1,15 @@
+---
+import Default from '/src/astro/components/Default.astro';
+import data from './data.json';
+---
+
+<Default data={data}>
+    <div slot="pageCustom">
+        <div class="mainContent" id="main-wrapper">
+            <h1>title</h1>
+            <div class="text-content">
+                <p>Your content here</p>
+            </div>
+        </div>
+    </template>
+</Default>

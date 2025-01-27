@@ -1,0 +1,49 @@
+$desktop: 600px;
+
+.nav-icon {
+    display: none;
+}
+
+.custom-navbar li.active {
+    background-color: transparent;
+    border-bottom: 2px solid #555;
+}
+
+@media (min-width: $desktop) {
+    .custom-navbar {
+        text-shadow: none;
+    }
+
+    .custom-navbar li {
+        display: inline-block;
+        border-bottom: 1px solid #33473c;
+        cursor: pointer;
+        padding: 5px 0;
+    }
+
+    .custom-navbar li.active .nav-icon {
+        filter: brightness(0) invert(1);
+    }
+
+    .custom-navbar li:hover {
+        background-color: rgba(85, 85, 85, 0.8);
+    }
+
+    .custom-navbar li:hover a {
+        color: aqua !important;
+        text-shadow: none !important;
+        transition: color 0.3s ease;
+    }
+
+    .custom-navbar li:hover img {
+        filter: invert(73%) sepia(14%) saturate(7496%) hue-rotate(180deg) brightness(105%) contrast(102%);
+    }
+
+    .nav-icon {
+        width: 20px;
+        height: 20px;
+        margin-left: 0;
+        margin-right: 8px;
+        display: inline-block !important;
+    }
+}

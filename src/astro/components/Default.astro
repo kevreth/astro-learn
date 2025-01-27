@@ -8,6 +8,7 @@ import MainCompanyContent from '../components/CompanyContent.astro'
 import BackgroundGrid from '../components/BackgroundGrid.astro'
 import Tabulator from '../components/Tabulator.astro'
 import Aside from '../components/Aside.astro'
+import '/src/scss/style.scss'
 const { data } = Astro.props
 ---
 <!DOCTYPE html>
@@ -18,7 +19,7 @@ const { data } = Astro.props
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{data.title || "Default Title"}</title>
     <meta name="description" content={data.description || "Default description"} />
-    <link rel="stylesheet" href="/sites/style.css" />
+    <link rel="stylesheet" href="http://localhost:3000/style.css" />
 </head>
 
 <body>
@@ -28,7 +29,7 @@ const { data } = Astro.props
         <main>
             <div class="logo-navbar-wrapper">
                 <Logo logo={data.logo} />
-                <NavBar nav1={data.nav1} nav2={data.nav2} />
+                <NavBar nav1={data.nav1} nav2={data.nav2} class={data.navCustom}/>
             </div>
             <div class="main-container" id="main-container">
                 <div class="breadcrumb-container">

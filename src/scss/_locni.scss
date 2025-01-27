@@ -1,0 +1,222 @@
+@media (min-width: 600px) {
+  .locni-container ul {
+    margin-left: 20px;
+  }
+  .locni-section {
+    flex-direction: row !important;
+    margin: 30px 50px !important;
+    align-items: center;
+  }
+  .locni-section-img {
+    order: 2;
+  } 
+}
+
+.bottom-line {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.bottom-line:last-child, .bottom-line-no-padding :last-child {
+  border-bottom: none;
+}
+
+.bottom-line-no-padding {
+  border-bottom: 1px solid #ccc;
+}
+
+.no-scroll-content {
+  overflow: hidden !important;
+}
+
+.scroll-content {
+  overflow-y: auto;
+  overscroll-behavior: none; /* Prevents bounce on scroll */
+    -webkit-overflow-scrolling: none; 
+}
+
+.no-margin-padding p {
+  padding: 0;
+  margin: 0;
+}
+
+.no-padding, .no-padding p {
+  padding: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.padding-top {
+  padding-top: 20px;
+}
+
+.locni-section {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  margin: 0;
+}
+
+.locni-section-img {
+  flex: 1;
+}
+
+.locni-section-img img {
+  max-width: 400px;
+}
+
+.locni-section-content {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  order: 2;
+}
+
+.locni-title {
+  font-size: 1.25rem;
+  color: #1e2a39;
+}
+
+.locni-description {
+  color: #555;
+}
+
+.locni-features {
+  margin-top: 10px;
+}
+
+.locni-features ul li {
+  margin-bottom: 10px;
+}
+
+.locni-features ul li strong {
+  font-weight: bold;
+  color: #000;
+}
+
+.locni-text-light-color p {
+  line-height: 1.6;
+  text-align: unset;
+  color: #444;
+}
+
+.locni-text-bigger-font p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(38, 38, 37);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #444;
+}
+
+.btn-outline {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.btn-outline a {
+  display: inline-block;
+  padding: 12px 20px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #999;
+  color: #222;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-outline a:hover {
+  background: #000;
+  color: #fff;
+}
+
+.locni-container {
+  h1, h2 {
+    color: #1e2a39;
+  }
+  h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 15px;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  p {
+    margin: 10px 0;
+  }
+}
+
+.card-content h3, .property-details-title {
+  text-align: left;
+  margin: 0;
+}
+
+.card-content .price, .property-details-price {
+  font-size: 1rem;
+  color: #555;
+  font-weight: bold;
+  line-height: 1.4;
+  padding: 0;
+}
+
+.card-content .card-description, .property-details-description {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+// scrollbar
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #999;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.quote.expanded {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+.read-more {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}

@@ -1,99 +1,93 @@
 ---
-import data from './data.json'
+import Default from '../src/astro/components/Default.astro';
+import data from './data.json';
+// import '/src/scss/style.scss'
 const listings = data.listings
 ---
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{data.title || "Default Title"}</title>
-    <meta name="description" content={data.description || "Default description"} />
-    <link rel="stylesheet" href="/sites/style.css" />
-</head>
-<body>
-<main>
-  <section id="main-wrapper" class="mainContent no-scroll-content">
-    <h1>Jenny Peterson - Helping you buy, sell, and find your dream home with ease.</h1>
-    <div class="text-content scroll-content locni-text-light-color">
-      <div class="locni-container">
-        <div class="no-margin-padding">
-          <h2>Your Trusted Advisor for Buying, Selling, and Investing in Real Estate</h2>
-          <p>Welcome to Jenny Peterson's Real Estate Services – your trusted partner in finding the perfect home or investment. With a personalized approach and deep local expertise, I am committed to helping you buy, sell, or invest with confidence. Let’s turn your real estate dreams into reality!</p>
-        </div>
-        <div class="summary-about locni-section">
-          <div class="locni-section-img">
-            <img src="https://images.squarespace-cdn.com/content/v1/64938f7bf470205219e0b9e4/812c689e-a572-44a1-80dc-25d203330467/2022-10-17_CompassRealEstate_JenniferFerlandLifestyle+-124217C.jpg" alt="Jenny Peterson">
-          </div>
-          <div class="locni-section-content">
-            <h2>Your Local Expert for Seamless Real Estate Transactions</h2>
-            <p>Passionate about connecting people with their perfect homes, I specialize in buying, selling, and investing in real estate. With a personalized approach and local expertise, I guide my clients every step of the way to ensure seamless and successful property transactions.</p>
-            <a class="btn-primary locni-section-btn" href="/us/ga/decatur/real-estate-agents/about">Learn More</a>
-          </div>
-        </div>
-        <div class="summary-contact locni-section">
-          <div class="summary-contact-content locni-section-content">
-            <h2>What I Bring to Your Real Estate Journey</h2>
-            <p>Working with me means partnering with someone who truly understands your goals. Whether you're buying your dream home, selling for top value, or investing in real estate, I provide personalized attention, expert guidance, and a commitment to making your experience smooth and stress-free. Let’s achieve your real estate dreams together!</p>
-            <a class="btn-primary locni-section-btn" href="/us/ga/decatur/real-estate-agents/contact">Working With Me</a>
-          </div>
-          <div class="summary-contact-img locni-section-img">
-            <img src="https://images.squarespace-cdn.com/content/v1/64938f7bf470205219e0b9e4/050f0445-bff6-4b05-b1d5-12e5c74920ee/2022-10-17_CompassRealEstate_JenniferFerlandLifestyle+-125825A.jpg" alt="Jenny Peterson">
-          </div>
-        </div>
-        <section class="services-offers">
-          <h2 class="section-title">Services Offers</h2>
-          <div class="services-grid">
-            <div class="service-card">
-              <img class="service-image" src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YnV5aW5nJTIwcmVhbCUyMGVzdGF0ZXxlbnwwfHwwfHx8MA%3D%3D" alt="Buying">
-              <h3 class="service-title">Buying</h3>
-              <p class="service-description">Find your ideal home with expert guidance and market insights.</p>
-              <a class="btn-primary" href="/us/ga/decatur/real-estate-agents/buying">Learn More</a>
+<Default data={data}>
+  <div slot="pageCustom">
+      <section id="main-wrapper" class="mainContent no-scroll-content">
+        <h1>Jenny Peterson - Helping you buy, sell, and find your dream home with ease.</h1>
+        <div class="text-content scroll-content locni-text-light-color">
+          <div class="locni-container">
+            <div class="no-margin-padding">
+              <h2>Your Trusted Advisor for Buying, Selling, and Investing in Real Estate</h2>
+              <p>Welcome to Jenny Peterson's Real Estate Services – your trusted partner in finding the perfect home or investment. With a personalized approach and deep local expertise, I am committed to helping you buy, sell, or invest with confidence. Let’s turn your real estate dreams into reality!</p>
             </div>
-            <div class="service-card">
-              <img class="service-image" src="https://images.unsplash.com/photo-1512699355324-f07e3106dae5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHNlbGxpbmclMjByZWFsJTIwZXN0YXRlfGVufDB8fDB8fHww" alt="Selling">
-              <h3 class="service-title">Selling</h3>
-              <p class="service-description">Get top value for your property with tailored strategies and expert marketing.</p>
-              <a class="btn-primary" href="/us/ga/decatur/real-estate-agents/selling">Learn More</a>
-            </div>
-            <div class="service-card">
-              <img class="service-image" src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fHNlbGxpbmclMjByZWFsJTIwZXN0YXRlfGVufDB8fDB8fHww" alt="Listings Property">
-              <h3 class="service-title">Listings Property</h3>
-              <p class="service-description">Discover exclusive property listings that fit your needs and lifestyle.</p>
-              <a class="btn-primary" href="/us/ga/decatur/real-estate-agents/listings">Learn More</a>
-            </div>
-            <div class="service-card">
-              <img class="service-image" src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fHNlbGxpbmclMjByZWFsJTIwZXN0YXRlfGVufDB8fDB8fHww" alt="Real Estate Consulting">
-              <h3 class="service-title">Real Estate Consulting</h3>
-              <p class="service-description">Get expert advice and tailored strategies to navigate the real estate market with confidence.</p>
-              <a class="btn-primary" href="/us/ga/decatur/real-estate-agents/services">Learn More</a>
-            </div>
-          </div>
-        </section>
-        <section class="property-listing">
-            <div class="listing-grid">
-              <!-- Astro-compatible iteration -->
-              {listings.slice(0, 3).map((listing) => (
-              <div class="property-card" key={listing.id}>
-                <a href={listing.link}>
-                  <div class="for-sale-img-contanier">
-                    <img src={listing.image} alt="Property"/>
-                    <div class="badge">For Sale</div>
-                  </div>
-                  <div class="property-details">
-                    <h2>{listing.price}</h2>
-                    <p>{listing.location}</p>
-                    <p>{listing.subStats}</p>
-                  </div>
-                </a>
+            <div class="summary-about locni-section">
+              <div class="locni-section-img">
+                <img src="https://images.squarespace-cdn.com/content/v1/64938f7bf470205219e0b9e4/812c689e-a572-44a1-80dc-25d203330467/2022-10-17_CompassRealEstate_JenniferFerlandLifestyle+-124217C.jpg" alt="Jenny Peterson">
               </div>
-              ))}
-          </section>
-      </div>
+              <div class="locni-section-content">
+                <h2>Your Local Expert for Seamless Real Estate Transactions</h2>
+                <p>Passionate about connecting people with their perfect homes, I specialize in buying, selling, and investing in real estate. With a personalized approach and local expertise, I guide my clients every step of the way to ensure seamless and successful property transactions.</p>
+                <a class="btn-primary locni-section-btn" href="/us/ga/decatur/real-estate-agents/about">Learn More</a>
+              </div>
+            </div>
+            <div class="summary-contact locni-section">
+              <div class="summary-contact-content locni-section-content">
+                <h2>What I Bring to Your Real Estate Journey</h2>
+                <p>Working with me means partnering with someone who truly understands your goals. Whether you're buying your dream home, selling for top value, or investing in real estate, I provide personalized attention, expert guidance, and a commitment to making your experience smooth and stress-free. Let’s achieve your real estate dreams together!</p>
+                <a class="btn-primary locni-section-btn" href="/us/ga/decatur/real-estate-agents/contact">Working With Me</a>
+              </div>
+              <div class="summary-contact-img locni-section-img">
+                <img src="https://images.squarespace-cdn.com/content/v1/64938f7bf470205219e0b9e4/050f0445-bff6-4b05-b1d5-12e5c74920ee/2022-10-17_CompassRealEstate_JenniferFerlandLifestyle+-125825A.jpg" alt="Jenny Peterson">
+              </div>
+            </div>
+            <section class="services-offers">
+              <h2 class="section-title">Services Offers</h2>
+              <div class="services-grid">
+                <div class="service-card">
+                  <img class="service-image" src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YnV5aW5nJTIwcmVhbCUyMGVzdGF0ZXxlbnwwfHwwfHx8MA%3D%3D" alt="Buying">
+                  <h3 class="service-title">Buying</h3>
+                  <p class="service-description">Find your ideal home with expert guidance and market insights.</p>
+                  <a class="btn-primary" href="/us/ga/decatur/real-estate-agents/buying">Learn More</a>
+                </div>
+                <div class="service-card">
+                  <img class="service-image" src="https://images.unsplash.com/photo-1512699355324-f07e3106dae5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHNlbGxpbmclMjByZWFsJTIwZXN0YXRlfGVufDB8fDB8fHww" alt="Selling">
+                  <h3 class="service-title">Selling</h3>
+                  <p class="service-description">Get top value for your property with tailored strategies and expert marketing.</p>
+                  <a class="btn-primary" href="/us/ga/decatur/real-estate-agents/selling">Learn More</a>
+                </div>
+                <div class="service-card">
+                  <img class="service-image" src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fHNlbGxpbmclMjByZWFsJTIwZXN0YXRlfGVufDB8fDB8fHww" alt="Listings Property">
+                  <h3 class="service-title">Listings Property</h3>
+                  <p class="service-description">Discover exclusive property listings that fit your needs and lifestyle.</p>
+                  <a class="btn-primary" href="/us/ga/decatur/real-estate-agents/listings">Learn More</a>
+                </div>
+                <div class="service-card">
+                  <img class="service-image" src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fHNlbGxpbmclMjByZWFsJTIwZXN0YXRlfGVufDB8fDB8fHww" alt="Real Estate Consulting">
+                  <h3 class="service-title">Real Estate Consulting</h3>
+                  <p class="service-description">Get expert advice and tailored strategies to navigate the real estate market with confidence.</p>
+                  <a class="btn-primary" href="/us/ga/decatur/real-estate-agents/services">Learn More</a>
+                </div>
+              </div>
+            </section>
+            <section class="property-listing">
+                <div class="listing-grid">
+                  <!-- Astro-compatible iteration -->
+                  {listings.slice(0, 3).map((listing: any) => (
+                  <div class="property-card">
+                    <a href={listing.link}>
+                      <div class="for-sale-img-contanier">
+                        <img src={listing.image} alt="Property"/>
+                        <div class="badge">For Sale</div>
+                      </div>
+                      <div class="property-details">
+                        <h2>{listing.price}</h2>
+                        <p>{listing.location}</p>
+                        <p>{listing.subStats}</p>
+                      </div>
+                    </a>
+                  </div>
+                  ))}
+              </section>
+          </div>
+        </div>
+      </section>
     </div>
-  </section>
-</main>
+</Default>
 <style>
     @media (min-width: 600px) {
       .service-card {
@@ -112,10 +106,10 @@ const listings = data.listings
       .listing-grid {
         display: grid;
         gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
       }
       .property-listing {
         padding: 50px 20px;
-        grid-template-columns: repeat(3, 1fr) !important;
       }
     }
     
@@ -165,7 +159,6 @@ const listings = data.listings
       transform: scale(1.1); 
     }
     .property-listing {
-      grid-template-columns: none;
       display: grid;
       gap: 10px;
     }
