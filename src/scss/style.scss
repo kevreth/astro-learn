@@ -31,6 +31,7 @@ body {
     Noto Sans,
     sans-serif;
   overflow: hidden;
+  overscroll-behavior: none; /* Disable bounce effect on iphone */
 }
 
 .page-container {
@@ -59,7 +60,6 @@ header,
 footer {
   font-size: 24px;
   color: variables.$white-text-color;
-  // background-color: variables.$primary-color;
   text-align: center;
 }
 
@@ -120,14 +120,14 @@ main {
   .navbar {
     display: flex;
     z-index: 2;
-    color: #ffffff;
-    text-shadow:
-      -1px -1px 0 #000,
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-      1px 1px 0 #000;
-    background: rgba(0, 0, 0, 0.6);
-
+    // color: #ffffff;
+    // text-shadow:
+    //   -1px -1px 0 #000,
+    //   1px -1px 0 #000,
+    //   -1px 1px 0 #000,
+    //   1px 1px 0 #000;
+    // background: rgba(0, 0, 0, 0.6);
+    background: rgb(241, 238, 233, 0.6);
     flex: 1;
     align-items: center;
     text-wrap: nowrap;
@@ -150,25 +150,31 @@ main {
       list-style: none;
       width: 100%;
       text-align: center;
-
       display: flex;
       justify-content: space-evenly;
       line-height: 1.3;
     }
 
     li a {
-      color: aqua;
+      // color: aqua;
+      color: #222;
       font-weight: bold;
       text-decoration: none;
+      display: block;
+      width: 100%;
+      height: 100%;
+      display: flex;
     }
 
-    li a:hover {
-      color: #007b7b;
-      text-decoration: underline;
-    }
+    // .nav-item li:hover {
+    //   background-color: rgba(85, 85, 85, 0.8);
+    // }
   }
 
   .mainContent {
+    overscroll-behavior: none; /* Prevents bounce on scroll */
+    -webkit-overflow-scrolling: none; /* Stops momentum scrolling on iOS */
+
     display: flex;
     flex-direction: column;
     overflow-y: auto;
@@ -181,19 +187,20 @@ main {
     h1 {
       font-size: 1em;
       font-weight: bold;
-      color: #ffffff;
+      // color: #ffffff;
       text-transform: uppercase;
       text-align: center;
       position: relative;
       padding: 20px !important;
       margin-bottom: 5px;
       width: fit-content;
-      text-shadow:
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
-      background: rgba(0, 0, 0, 0.6);
+      // text-shadow:
+      //   -1px -1px 0 #000,
+      //   1px -1px 0 #000,
+      //   -1px 1px 0 #000,
+      //   1px 1px 0 #000;
+      // background: rgba(0, 0, 0, 0.6);
+      background: rgb(241, 238, 233, 0.6);
       left: 50%;
       transform: translate(-50%, 0%);
     }
@@ -205,4 +212,5 @@ main {
     }
   }
 }
+
 @include holygrail.holygrail;

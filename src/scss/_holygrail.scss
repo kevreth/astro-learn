@@ -14,7 +14,7 @@ $desktop: 600px;
     }
 
     .logo-navbar-wrapper {
-      flex-direction: column !important; 
+      flex-direction: column !important;
       align-items: normal !important;
       position: relative !important;
       justify-content: flex-start !important;
@@ -33,6 +33,7 @@ $desktop: 600px;
       padding-left: 5px;
       max-height: fit-content !important;
     }
+
     .navlink {
       width: auto !important;
       transform: none !important;
@@ -46,10 +47,20 @@ $desktop: 600px;
       line-height: unset !important;
     }
 
+    .nav-item li.active {
+      background-color: #045858 !important;
+      border-bottom: none !important;
+
+      a {
+        color: white;
+        font-weight: normal;
+      }
+    }
+
     aside,
     .logo-navbar-wrapper {
       width: 15%;
-      flex-shrink: 0; 
+      flex-shrink: 0;
     }
 
     .main-container {
@@ -62,10 +73,10 @@ $desktop: 600px;
   @media (min-width: $desktop) {
     .breadcrumbs {
       font-size: 1em;
-      margin-left: 0px;
-      margin-top: 0px;
+      margin-left: 0;
+      margin-top: 0;
     }
-  
+
     .breadcrumb-container {
       margin-left: 0;
       margin-top: 5px;
@@ -73,7 +84,7 @@ $desktop: 600px;
       display: block ruby;
       text-align: left;
     }
-  
+
     .breadcrumb-item {
       display: block ruby;
     }

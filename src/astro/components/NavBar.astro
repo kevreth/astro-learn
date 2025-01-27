@@ -2,7 +2,7 @@
 const { nav1, nav2 } = Astro.props;
 ---
 
-<nav class="navbar" id="navbar">
+<nav class={`navbar ${Astro.props.class || ''}`} id="navbar">
     <div class="navlink" id="navlink">
         <!-- First Navigation Section -->
         <ul class="nav-item">
