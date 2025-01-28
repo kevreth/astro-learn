@@ -19,7 +19,7 @@
     "generate": "NODE_OPTIONS='--max-old-space-size=32768' astro build",
     "generate:dev": "BASE_URL=http://localhost:3000 yarn generate",
     "generate:prod": "BASE_URL=http://inquirita.com yarn generate",
-    "sass": "sass ./src/scss:./sites/",
+    "sass": "sass ./src/scss:./src/astro/pages/",
     "lastmod:dev": "tsx src/scripts/lastmod.ts sites/ .output/public/sitemap.xml http://localhost:3000",
     "lastmod:prod": "tsx src/scripts/lastmod.ts sites/ .output/public/sitemap.xml http://inquirita.com",
     "test:e2e": "rm -rf test-results/* && NODE_OPTIONS=--max-old-space-size=8192 npx playwright test --tsconfig src/tests/postbuild/tsconfig.json tests/postbuild/",
