@@ -1,5 +1,7 @@
 ---
+import Default from '../src/astro/components/Default.astro';
 import data from './data.json';
+const listings = data.listing
 export function getStaticPaths() {
   return data.listings.map((listing) => ({ params: { id: listing.id.toString() } }));
 }
@@ -8,10 +10,11 @@ const id = Astro.params.id;
 const listing = data.listings.find((item) => item.id.toString() === id);
 const maxLength = 250;
 const truncatedText = listing.detail_description.length > maxLength
-  ? listing.detail_description.slice(0, maxLength) + '...'
-  : listing.detail_description;
+? listing.detail_description.slice(0, maxLength) + '...'
+: listing.detail_description;
 const relatedListings = data.listings.filter(item => item.id.toString() !== id).sort(() => Math.random() - 0.5).slice(0, 3);
 ---
+<Default data={data}>
 <div id="main-wrapper" class="mainContent">
   <div class="text-content">
     <div class="property-detail-container">
