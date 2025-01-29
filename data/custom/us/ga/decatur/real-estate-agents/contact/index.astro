@@ -1,0 +1,166 @@
+---
+import Default from "../src/astro/components/Default.astro";
+import data from "./data.json";
+---
+
+<Default data={data}>
+    <div slot="pageCustom">
+        <div class="mainContent" id="main-wrapper">
+            <div class="text-content">
+                <div class="contact-container locni-section">
+                    <div class="contact-section locni-section-img">
+                        <img
+                            class="contact-image"
+                            src="https://images.squarespace-cdn.com/content/v1/64938f7bf470205219e0b9e4/812c689e-a572-44a1-80dc-25d203330467/2022-10-17_CompassRealEstate_JenniferFerlandLifestyle+-124217C.jpg"
+                            alt="Jenny Peterson"
+                        />
+                        <div class="form-section locni-section-content">
+                            <div class="contact-details">
+                                <h2>Jenny Peterson</h2>
+                                <p>
+                                    <i class="fa fa-phone-alt"></i>
+                                    {data.agent.phone}
+                                </p>
+                                <p>
+                                    <i class="fa fa-envelope"></i>
+                                    <a href={`mailto:${data.agent.email}`}
+                                        >{data.agent.email}</a
+                                    >
+                                </p>
+                                <p>DRE {data.agent.dre}</p>
+                                <p>{data.agent.address}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section.locni-section-content">
+                        <h2>Contact Jen</h2>
+                        <p>
+                            Buying, selling, or just curious on how or when to
+                            get started? Use the form below to schedule a
+                            consultation or ask any questions about real estate.
+                            Whether you're ready to take the next step or simply
+                            need guidance, I'm happy to provide the support you
+                            need.
+                        </p>
+                        <form class="contact-form" action="#" method="post">
+                            <label for="firstName">Name</label>
+                            <div class="input-row">
+                                <input
+                                    id="firstName"
+                                    type="text"
+                                    placeholder="First Name*"
+                                    required
+                                />
+                                <input
+                                    id="lastName"
+                                    type="text"
+                                    placeholder="Last Name*"
+                                    required
+                                />
+                            </div>
+                            <label for="phone">Phone</label>
+                            <input
+                                id="phone"
+                                type="tel"
+                                placeholder="Phone*"
+                                required
+                            />
+                            <label for="email">Email</label>
+                            <input
+                                id="email"
+                                type="email"
+                                placeholder="Your Email*"
+                                required
+                            />
+                            <label for="message">Message</label>
+                            <textarea
+                                id="message"
+                                placeholder="Your Message Here*"
+                                required></textarea>
+                            <button class="btn-primary" type="submit"
+                                >Send</button
+                            >
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</Default>
+<style>
+    @media (min-width: 600px) {
+        .input-row {
+            flex-direction: row !important;
+        }
+    }
+
+    .contact-details {
+        text-align: left;
+    }
+
+    .contact-details i {
+        padding-right: 10px;
+    }
+
+    .form-section {
+        flex: 2;
+        text-align: left;
+    }
+
+    .form-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .form-section p {
+        margin-bottom: 20px;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    form label {
+        display: block;
+        font-weight: bold;
+        margin: 10px 0 5px;
+    }
+
+    .input-row {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .input-row input,
+    .contact-form input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .checkbox-group {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .checkbox-group label {
+        font-weight: normal;
+    }
+
+    input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+        resize: none;
+    }
+</style>
