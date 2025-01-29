@@ -1,0 +1,114 @@
+---
+import Default from "../src/astro/components/Default.astro";
+import data from "./data.json";
+---
+<Default data={data}>
+    <div slot="pageCustom">
+        <div class="mainContent" id="main-wrapper">
+            <h1>Listings Properties</h1>
+            <div class="text-content scroll-content">
+                <div class="listing-container">
+                    <div class="listings-grid">
+                        {
+                            data.listings.map((listing) => (
+                                <div class="listing-card" key={listing.id}>
+                                    <div class="for-sale-img-container">
+                                        <img src={listing.image} />
+                                        <div class="badge">For Sale</div>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="card-content-header">
+                                            <h2 class="price-list-property">
+                                                {listing.price}
+                                            </h2>
+                                            <p class="location">
+                                                {listing.location}
+                                            </p>
+                                            <p class="sub-stats">
+                                                {listing.subStats}
+                                            </p>
+                                        </div>
+                                        <div class="btn-outline listings-btn-outline">
+                                            <a href="#">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</Default>
+<style>
+    @media (min-width: 600px) {
+      .card-content {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+      }
+    }
+    .listing-container .btn-outline {
+      justify-content: center;
+    }
+    .listings-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    
+    .listing-card {
+      position: relative;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .listing-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    .listing-card img {
+      width: 100%;
+      /* height: 200px; */
+      object-fit: cover;
+    }
+    
+    .card-content {
+      padding: 10px;
+      display: block;
+    }
+    
+    .card-content .description {
+        padding-top: 20px;
+    }
+    .card-content .price {
+        margin: 0;
+    }
+    .card-content-header {
+        display: flex;
+        /* flex-direction: row; */
+        flex-direction: column;
+        justify-content: space-between;
+    
+        /* align-items: center; */
+        align-items: baseline;
+        line-height: 0.5;
+    }
+    
+    .price-list-property  {
+      /* order: 1; */
+      padding-bottom: 10px;
+    }
+    .listings-btn-outline a {
+      border-radius: 20px;
+    }
+    </style>
