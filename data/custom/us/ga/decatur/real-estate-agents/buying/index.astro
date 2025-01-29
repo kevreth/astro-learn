@@ -1,0 +1,50 @@
+---
+import Default from "../src/astro/components/Default.astro";
+import data from "./data.json";
+---
+
+<Default data={data}>
+    <div slot="pageCustom">
+        <div class="mainContent" id="main-wrapper">
+            <h1>Buying Your Dream Home</h1>
+            <div class="text-content scroll-content">
+                <div class="buying-container locni-section">
+                    <div class="locni-text-bigger-font locni-section-content">
+                        <p class="no-padding">
+                            Find your perfect home with our expert guidance.
+                        </p>
+                        <p>
+                            With years of experience and a deep understanding of
+                            the competitive real estate landscape, I use proven
+                            methods to help buyers stand out. I focus on
+                            securing homes that align perfectly with your goals
+                            and lifestyle—never rushing or pushing decisions
+                            that don't feel right. My extensive network in the
+                            real estate community allows me access to both
+                            public and private listings, giving you an
+                            unparalleled advantage. Whether you're ready to
+                            explore homes now or just starting the journey, I'm
+                            committed to guiding you every step of the way.
+                            Let's find the home you've been dreaming of, on your
+                            timeline and at your pace.
+                        </p>
+                        <div class="btn-outline bottom-btn-outline">
+                            <a href="/us/ga/decatur/real-estate-agents/about"
+                                >LEARN MORE</a
+                            >
+                            <a href="/us/ga/decatur/real-estate-agents/contact"
+                                >BOOK A CONSULTATION</a
+                            >
+                        </div>
+                    </div>
+                    <div class="locni-section-img">
+                        <img
+                            src="https://images.squarespace-cdn.com/content/v1/64938f7bf470205219e0b9e4/07c1c87c-5d4e-41a5-985c-0f8a3b226014/SFrealtorbrandphotoshoot-7.jpg"
+                            alt="Dream Home"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</Default>
