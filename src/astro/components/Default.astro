@@ -42,8 +42,7 @@ const { data } = Astro.props
         <Footer footer={data.footer} style={`background-color: ${data.colors.primaryColor}`} />
     </div>
     <!-- <script id="init" src="http://localhost:3000/layout.manager.js" is:inline onload="initializeLayout()"></script> -->
-    <script src="http://192.168.1.10:3000/layout.manager.js" defer></script>  
-    
+    <script src="http://192.168.1.10:3000/layout.manager.js" defer onload="initializeLayout()"></script> 
     <style>
         @media (max-width: 600px) {
             .hidden {
