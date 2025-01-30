@@ -117,22 +117,21 @@ export function adjustHeightAndLayout(dm: IDataManager): void {
   });
 }
 export function initLayout(dm: DataManager) {
-  // const logo = dm.logo
-  // if (logo && !logo.complete) {
-  //     logo.onload = () => {
-  //         adjustHeightAndLayout(dm)
-  //         adjustLogoSize(dm)
-  //     }
-  // } else {
-  //     adjustHeightAndLayout(dm)
-  //     adjustLogoSize(dm)
-  // }
   dm.window.addEventListener('resize', () => {
     adjustHeightAndLayout(dm);
     adjustLogoSize(dm);
   });
 }
-export function initializeLayout(): void {
+
+// declare initializeLayout globally accessible on window for real devices mobile use
+declare global {
+  interface Window {
+    initializeLayout: () => void;
+  }
+}
+
+window.initializeLayout = function () {
+  console.log('initializeLayout function is now available globally!');
   const element = document.getElementById('data-container') as HTMLElement;
   const attribute = element.getAttribute('data-content') as string;
   const data = JSON.parse(attribute);
@@ -141,8 +140,9 @@ export function initializeLayout(): void {
   initLayout(dm);
   adjustHeightAndLayout(dm);
   adjustLogoSize(dm);
-}
+};
+
 //entry point protected for testing
 if (typeof window !== 'undefined') {
-  (window as any).initializeLayout = initializeLayout;
+  window.initializeLayout();
 }
