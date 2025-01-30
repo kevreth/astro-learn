@@ -9,7 +9,7 @@
   }
   .locni-section-img {
     order: 2;
-  } 
+  }
 }
 
 .bottom-line {
@@ -17,7 +17,8 @@
   border-bottom: 1px solid #ccc;
 }
 
-.bottom-line:last-child, .bottom-line-no-padding :last-child {
+.bottom-line:last-child,
+.bottom-line-no-padding :last-child {
   border-bottom: none;
 }
 
@@ -32,7 +33,7 @@
 .scroll-content {
   overflow-y: auto;
   overscroll-behavior: none; /* Prevents bounce on scroll */
-    -webkit-overflow-scrolling: none; 
+  -webkit-overflow-scrolling: none;
 }
 
 .no-margin-padding p {
@@ -40,7 +41,8 @@
   margin: 0;
 }
 
-.no-padding, .no-padding p {
+.no-padding,
+.no-padding p {
   padding: 0 !important;
 }
 
@@ -118,7 +120,9 @@
   font-weight: bold;
   border-radius: 5px;
   text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .btn-primary:hover {
@@ -148,7 +152,8 @@
 }
 
 .locni-container {
-  h1, h2 {
+  h1,
+  h2 {
     color: #1e2a39;
   }
   h3 {
@@ -166,12 +171,14 @@
   }
 }
 
-.card-content h3, .property-details-title {
+.card-content h3,
+.property-details-title {
   text-align: left;
   margin: 0;
 }
 
-.card-content .price, .property-details-price {
+.card-content .price,
+.property-details-price {
   font-size: 1rem;
   color: #555;
   font-weight: bold;
@@ -179,9 +186,22 @@
   padding: 0;
 }
 
-.card-content .card-description, .property-details-description {
+.card-content .card-description,
+.property-details-description {
   font-size: 0.9rem;
   color: #777;
+}
+
+.card-content-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  line-height: 0.5;
+}
+.card-content-header .location {
+  word-break: break-word;
+  line-height: 1.1;
 }
 
 // scrollbar
