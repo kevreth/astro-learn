@@ -17,22 +17,21 @@ import data from "./data.json";
                         <div class="form-section locni-section-content">
                             <div class="contact-details">
                                 <h2>Jenny Peterson</h2>
-                                <p>
-                                    <i class="fa fa-phone-alt"></i>
-                                    {data.agent.phone}
-                                </p>
-                                <p>
-                                    <i class="fa fa-envelope"></i>
-                                    <a href={`mailto:${data.agent.email}`}
-                                        >{data.agent.email}</a
-                                    >
-                                </p>
-                                <p>DRE {data.agent.dre}</p>
-                                <p>{data.agent.address}</p>
+                                <i class="fa fa-phone-alt"></i>
+                                {data.agent.phone}
+                                <br />
+                                <i class="fa fa-envelope"></i>
+                                <a href={`mailto:${data.agent.email}`}
+                                    >{data.agent.email}</a
+                                >
+                                <br />
+                                DRE {data.agent.dre}
+                                <br />
+                                {data.agent.address}
                             </div>
                         </div>
                     </div>
-                    <div class="form-section.locni-section-content">
+                    <div class="form-section locni-section-content">
                         <h2>Contact Jen</h2>
                         <p>
                             Buying, selling, or just curious on how or when to
