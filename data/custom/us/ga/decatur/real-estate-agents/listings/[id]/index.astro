@@ -1,20 +1,21 @@
 ---
+import ImageSlider from "../src/astro/components/ImageSlider.astro";
 import Default from "../src/astro/components/Default.astro";
 import data from "./data.json";
 export function getStaticPaths() {
-  return data.listings.map((listing) => ({
+  return (data.listings || []).map((listing: { id: number }) => ({
     params: { id: listing.id.toString() },
   }));
 }
 const id = Astro.params.id;
-const listing = data.listings.find((item) => item.id.toString() === id);
+const listing = (data.listings || []).find((item: { id: number }) => item.id.toString() === id);
 const maxLength = 250;
 const truncatedText =
   listing.detail_description.length > maxLength
     ? listing.detail_description.slice(0, maxLength) + "..."
     : listing.detail_description;
 const relatedListings = data.listings
-  .filter((item) => item.id.toString() !== id)
+  .filter((item: { id: number }) => item.id.toString() !== id)
   .sort(() => Math.random() - 0.5)
   .slice(0, 3);
 ---
@@ -25,9 +26,7 @@ const relatedListings = data.listings
       <div class="text-content">
         <div class="property-detail-container">
           <!-- Mobile image slider -->
-          <div class="property-details-image-slider">
-            <!-- Replace with an appropriate gallery slider or images -->
-          </div>
+          <ImageSlider gallery={listing.gallery || []}/>
 
           <!-- Content -->
           <div class="detail-container">

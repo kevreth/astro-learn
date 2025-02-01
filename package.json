@@ -32,6 +32,7 @@
     "deploy": "lftp -p 7822 -u root sftp://inquirita.com -e \"mirror -R ~/git/rankrent/rankrent-fe/dist/ /var/www/html/; quit\""
   },
   "dependencies": {
+    "swiper": "^11.2.2",
     "tabulator-tables": "6.3.1"
   },
   "devDependencies": {

@@ -1,0 +1,120 @@
+---
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import {ImageSlider} from '../src/scripts/property.details/imageSlider';
+
+const props = Astro.props;
+
+const slider = new ImageSlider(props.gallery);
+---
+
+<section class="image-slider-mobile">
+  <div class="swiper main-swiper">
+    <div class="swiper-wrapper">
+      {slider.gallery.map((photo, index) => (
+        <div class="swiper-slide" onClick={() => slider.openImageModal(index)}>
+          <img class="slide-mobile" src={photo.src} alt={`Image ${index + 1}`} />
+        </div>
+      ))}
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<section class="image-grid">
+  {slider.gallery.length > 0 && (
+    <div class="main-image" onClick={() => slider.openImageModal(0)}>
+      <img src={slider.gallery[0].src} alt="Main Image" />
+    </div>
+  )}
+
+  <div class="small-images">
+    {slider.gallery.slice(1, 5).map((photo, index) => (
+      <img
+        key={photo.src}
+        src={photo.src}
+        alt={`Small Image ${index + 1}`}
+        onClick={() => slider.openImageModal(index + 1)}
+      />
+    ))}
+  </div>
+
+  <div class="view-all">
+    <button onClick={slider.openGridModal}>View All</button>
+  </div>
+</section>
+
+{slider.isGridModalOpen && (
+  <div class="modal all-photos-grid">
+    <div class="grid-modal-header">
+      <button class="close-grid" onClick={() => (slider.isGridModalOpen = false)}>x</button>
+    </div>
+    <div class="grid-container">
+      {slider.gallery.map((photo, index) => (
+        <img
+          class="grid-photo"
+          src={photo.src}
+          alt={`Grid Photo ${index + 1}`}
+          onClick={() => slider.openImageModal(index)}
+        />
+      ))}
+    </div>
+  </div>
+)}
+
+{slider.isImageModalOpen && (
+  <div class="modal" onClick={slider.handleModalClick}>
+    <div class="swiper modal-swiper desktop-modal-swiper">
+      <div class="swiper-wrapper">
+        {slider.gallery.map((photo, index) => (
+          <div class="swiper-slide">
+            <img class="modal-image" src={photo.src} alt={`Modal Image ${index + 1}`} />
+          </div>
+        ))}
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <button class="close-btn" onClick={slider.closeImageModal}>Close</button>
+    <div class="counter-image">{slider.currentIndex + 1} / {slider.gallery.length}</div>
+    <button class="view-all-grid all-grid-mobile" onClick={slider.openGridModal}>
+      <span class="icon"><i class="fas fa-th-large"></i></span>
+      <span class="text">View all photos</span>
+    </button>
+  </div>
+)}
+
+<script>
+    import Swiper from 'swiper';
+    import { Pagination, Navigation } from 'swiper/modules';
+  
+    // Initialize the mobile slider
+    new Swiper('.main-swiper', {
+      modules: [Pagination],
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  
+    // Initialize the modal slider (if present)
+    if (document.querySelector('.modal-swiper')) {
+      new Swiper('.modal-swiper', {
+        modules: [Pagination, Navigation],
+        pagination: {
+          el: '.modal-swiper .swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.modal-swiper .swiper-button-next',
+          prevEl: '.modal-swiper .swiper-button-prev',
+        },
+      });
+    }
+  
+    // If you have a custom function for initializing the slider, you can also call it:
+    // ImageSlider();
+  </script>
+  
