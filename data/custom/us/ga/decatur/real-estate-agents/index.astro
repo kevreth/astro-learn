@@ -74,8 +74,10 @@ const listings = data.listings
                       </div>
                       <div class="property-details">
                         <h2>{listing.price}</h2>
-                        <p>{listing.location}</p>
-                        <p>{listing.subStats}</p>
+                        <div class="no-padding">
+                          <p>{listing.location}</p>
+                          <p>{listing.subStats}</p>
+                        </div>
                       </div>
                     </a>
                   </div>
@@ -147,6 +149,9 @@ const listings = data.listings
       overflow: hidden;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+    }
+    .property-card a {
       text-decoration: none;
     }
     .property-card:hover {
