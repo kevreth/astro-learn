@@ -29,5 +29,6 @@ const createConfig = (input, outputFileName, globalName) => (
 
 export default [
   createConfig('src/scripts/tabulator/tabulator.ts', 'tabulator.js', 'TabulatorModule'),
-  createConfig('src/scripts/layout.manager/layoutManager.ts', 'layout.manager.js', 'LayoutManagerModule')
+  createConfig('src/scripts/layout.manager/layoutManager.ts', 'layout.manager.js', 'LayoutManagerModule'),
+  createConfig('src/scripts/property.details/imageSlider.ts', 'imageSlider.js', 'ImageSliderModule')
 ];
