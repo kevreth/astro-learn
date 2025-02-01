@@ -41,7 +41,6 @@ const { data } = Astro.props
         </main>
         <Footer footer={data.footer} style={`background-color: ${data.colors.primaryColor}`} />
     </div>
-    <!-- <script id="init" src="http://localhost:3000/layout.manager.js" is:inline onload="initializeLayout()"></script> -->
     <script src="/layout.manager.js" defer onload="initializeLayout()"></script> 
     <style>
         @media (max-width: 600px) {
