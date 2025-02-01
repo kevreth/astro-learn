@@ -1,0 +1,45 @@
+name: Luxury Homes
+title: Decatur, GA Luxury Homes
+description:  Decatur, GA Luxury Homes | Jenny Peterson
+nav1:
+  - label: Directory
+    path: /us/ga/decatur/real-estate-agents/directory
+    icon: /svg/directory.svg
+  - label: Services
+    path: /us/ga/decatur/real-estate-agents/services
+    icon: /svg/services.svg
+  - label: About
+    path: /us/ga/decatur/real-estate-agents/about
+    icon: /svg/about.svg
+  - label: Contact
+    path: /us/ga/decatur/real-estate-agents/contact
+    icon: /svg/contact.svg
+nav2:
+  - label: Listings
+    path: /us/ga/decatur/real-estate-agents/listings
+    icon: /svg/listings.svg
+  - label: Buying
+    path: /us/ga/decatur/real-estate-agents/buying
+    icon: /svg/buying.svg
+  - label: Selling
+    path: /us/ga/decatur/real-estate-agents/selling
+    icon: /svg/selling.svg
+  - label: Testimonials
+    path: /us/ga/decatur/real-estate-agents/testimonials
+    icon: /svg/testimonials.svg
+logo:
+  src: 'https://images.squarespace-cdn.com/content/v1/64938f7bf470205219e0b9e4/302cba51-05cf-48f5-9a36-301c4903f1d9/SFrealtorbrandphotoshoot-24.jpg'
+  alt: "Jenny Peterson"
+  slogan: 'Your Hometown Real Estate Professional'
+header: Jenny Peterson - Your Hometown Real Estate Professional
+footer: &copy; 2024 Inquirita.com
+backgroundImages:
+  - https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+colors:
+  primaryColor: "#045858"
+agent:
+  name: "Jenny Peterson"
+  phone: "530.990.5366"
+  email: "jennyperterson@gmail.com"
+  dre: "01995816"
+  address: "3512 16th Street | San Francisco, CA 94114"
