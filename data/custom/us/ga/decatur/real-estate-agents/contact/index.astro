@@ -17,17 +17,19 @@ import data from "./data.json";
                         <div class="form-section locni-section-content">
                             <div class="contact-details">
                                 <h2>Jenny Peterson</h2>
-                                <i class="fa fa-phone-alt"></i>
-                                {data.agent.phone}
-                                <br />
-                                <i class="fa fa-envelope"></i>
-                                <a href={`mailto:${data.agent.email}`}
-                                    >{data.agent.email}</a
-                                >
-                                <br />
-                                DRE {data.agent.dre}
-                                <br />
-                                {data.agent.address}
+                                <div class="contact-details-content">
+                                    <i class="fa fa-phone-alt"></i>
+                                    {data.agent.phone}
+                                    <br />
+                                    <i class="fa fa-envelope"></i>
+                                    <a href={`mailto:${data.agent.email}`}
+                                        >{data.agent.email}</a
+                                    >
+                                    <br />
+                                    DRE {data.agent.dre}
+                                    <br />
+                                    {data.agent.address}
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -95,6 +97,10 @@ import data from "./data.json";
 
     .contact-details {
         text-align: left;
+    }
+
+    .contact-details-content {
+        line-height: 1.7;
     }
 
     .contact-details i {
