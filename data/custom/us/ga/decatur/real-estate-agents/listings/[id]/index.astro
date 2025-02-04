@@ -48,7 +48,7 @@ const relatedListings = data.listings
                 </div>
                 <div class="content-right">
                   <div class="property-description">
-                    <p>
+                    <p id="description">
                       {
                         listing.detail_description.length > maxLength
                           ? truncatedText
@@ -57,7 +57,9 @@ const relatedListings = data.listings
                     </p>
                     {
                       listing.detail_description.length > maxLength && (
-                        <span class="read-more">Read More +</span>
+                        <span class="read-more" id="readMore" data-fulltext={listing.detail_description} data-truncated={truncatedText}>
+                          Read More +
+                        </span>
                       )
                     }
                   </div>
@@ -206,4 +208,21 @@ const relatedListings = data.listings
       </div>
     </div>
   </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const readMore = document.getElementById("readMore")
+      const description = document.getElementById("description")
+      if(readMore && description) {
+        const fullText = readMore.getAttribute('data-fulltext')
+        const truncatedText = readMore.getAttribute("data-truncated")
+        let isExpanded = false
+        readMore.addEventListener("click", function() {
+          isExpanded = !isExpanded
+          description.textContent = isExpanded ? fullText : truncatedText
+          readMore.textContent = isExpanded ? 'Read Less -' : 'Read More +'
+        })
+      }
+    })
+  </script>
 </Default>
