@@ -70,9 +70,12 @@ const listings = data.listings
                     <a href={listing.link}>
                       <div class="for-sale-img-contanier">
                         <img src={listing.image} alt="Property"/>
-                        <div class="badge">For Sale</div>
+                        {/* <div class="badge">For Sale</div> */}
                       </div>
                       <div class="property-details">
+                        <div class="status">
+                          <span class="dot"></span> {listing.status}
+                        </div>
                         <h2>{listing.price}</h2>
                         <div class="no-padding">
                           <p>{listing.location}</p>

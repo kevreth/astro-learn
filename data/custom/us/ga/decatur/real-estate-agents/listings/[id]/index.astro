@@ -3,21 +3,24 @@ import ImageSlider from "../src/astro/components/ImageSlider.astro";
 import Default from "../src/astro/components/Default.astro";
 import data from "./data.json";
 export function getStaticPaths() {
-  return (data.listings || []).map((listing: { id: number }) => ({
+  return (data.listings_details || []).map((listing: { id: number }) => ({
     params: { id: listing.id.toString() },
   }));
 }
 const id = Astro.params.id;
-const listing = (data.listings || []).find((item: { id: number }) => item.id.toString() === id);
+const listing = (data.listings_details || []).find((item: { id: number }) => item.id.toString() === id);
 const maxLength = 250;
 const truncatedText =
   listing.detail_description.length > maxLength
     ? listing.detail_description.slice(0, maxLength) + "..."
     : listing.detail_description;
-const relatedListings = data.listings
-  .filter((item: { id: number }) => item.id.toString() !== id)
-  .sort(() => Math.random() - 0.5)
-  .slice(0, 3);
+// const relatedListings = data.listings
+//   .filter((item: { id: number }) => item.id.toString() !== id)
+//   .sort(() => Math.random() - 0.5)
+//   .slice(0, 3);
+//   console.log(data.listings);
+const currentId = data.listings_details.map(item => item.id)
+const relatedListings = data.listings.filter(listing => !currentId.includes(listing.id))
 ---
 
 <Default data={data}>
@@ -33,7 +36,7 @@ const relatedListings = data.listings
             <div class="left-column">
               <div class="content-header">
                 <div class="status">
-                  <span class="dot"></span> House for sale
+                  <span class="dot"></span> {listing.status}
                 </div>
                 <h2>{listing.price}</h2>
                 <p>{listing.subStats}</p>
@@ -185,9 +188,37 @@ const relatedListings = data.listings
               </div>
             </div>
           </div>
-          <!-- Related Listings -->
+          <div class="separator-dark"></div>
+          <!-- Similar homes -->
           <div class="related-listings">
-            <h2>Related Listings</h2>
+            <h2>Similar homes</h2>
+            <div class="related-listings-grid">
+              {
+                relatedListings.slice(0, 4).map((related) => (
+                  <div class="related-listing-card" key={related.id}>
+                    <img src={related.image} alt={`Image of ${related.location}`} />
+                    <div class="status">
+                      <span class="dot"></span> {related.status}
+                    </div>
+                    <h2>
+                      {related.price}
+                    </h2>
+                    <p class="location">
+                        {related.location}
+                    </p>
+                    <p class="sub-stats">
+                        {related.subStats}
+                    </p>
+                    <a href={related.link} class="view-details">
+                      View Details
+                    </a>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+          <!-- <div class="related-listings">
+            <h2>Similar homes</h2>
             <div class="related-listings-grid">
               {
                 relatedListings.map((related) => (
@@ -203,7 +234,7 @@ const relatedListings = data.listings
                 ))
               }
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
