@@ -63,10 +63,10 @@
         pointer-events: none;
         cursor: not-allowed;
     }
-    a:visited {
+    /* a:visited {
         text-decoration: none;
         color: white;
-    }
+    } */
 </style>
 <h1>Inquirita Services in {locality_proper}, {region_proper}</h1>
 <div class="container">

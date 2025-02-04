@@ -35,10 +35,10 @@
     .spacer {
         width: 30px;
     }
-    a:visited {
+    /* a:visited {
         text-decoration: none;
         color: white;
-    }
+    } */
 </style>
 <h1>Inquirita Services available in the USA</h1>
 <div class="flag-table">
