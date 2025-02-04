@@ -32,6 +32,9 @@ const relatedListings = data.listings
           <div class="detail-container">
             <div class="left-column">
               <div class="content-header">
+                <div class="status">
+                  <span class="dot"></span> House for sale
+                </div>
                 <h2>{listing.price}</h2>
                 <p>{listing.subStats}</p>
                 <p>{listing.location}</p>
@@ -103,6 +106,56 @@ const relatedListings = data.listings
                     </div>
                   )
                 }
+                {listing.exterior_features && (
+                  <div class="feature-details">
+                  <div class="feature-title">
+                    <img
+                    src="https://img.icons8.com/ios/50/exterior.png"
+                    alt="exterior"
+                    width="20"
+                    height="20"
+                    />
+                    <h3>Exterior/Building Features</h3>
+                  </div>
+                  <ul class="feature-list">
+                    {listing.exterior_features.map((feature, index) => (
+                    <li key={index}>
+                      <span class="feature-label">{feature.label}</span>
+                      <ul class="feature-value">
+                      {feature.value.map((row, rowIndex) => (
+                        <li key={rowIndex}>{row}</li>
+                      ))}
+                      </ul>
+                    </li>
+                    ))}
+                  </ul>
+                  </div>
+                )}
+                {listing.additional_info && (
+                  <div class="feature-details">
+                  <div class="feature-title">
+                    <img
+                    src="https://img.icons8.com/ios/50/features-list.png"
+                    alt="features-list"
+                    width="20"
+                    height="20"
+                    />
+                    <h3>Additional Information</h3>
+                  </div>
+                  <ul class="feature-list">
+                    {listing.additional_info.map((feature, index) => (
+                    <li key={index}>
+                      <span class="feature-label">{feature.label}</span>
+                      <ul class="feature-value">
+                      {feature.value.map((row, rowIndex) => (
+                        <li key={rowIndex}>{row}</li>
+                      ))}
+                      </ul>
+                    </li>
+                    ))}
+                  </ul>
+                  </div>
+                )}
               </div>
             </div>
             <div class="right-column">
