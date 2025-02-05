@@ -1,6 +1,6 @@
 name: Single Family Homes
 title: Decatur, GA Single Family Homes
-description:  Decatur, GA Single Family Homes | Jenny Peterson
+description: Decatur, GA Single Family Homes | Jenny Peterson
 nav1:
   - label: Directory
     path: /us/ga/decatur/real-estate-agents/directory
@@ -29,51 +29,57 @@ nav2:
     icon: /svg/testimonials.svg
 logo:
   src: 'https://images.squarespace-cdn.com/content/v1/64938f7bf470205219e0b9e4/302cba51-05cf-48f5-9a36-301c4903f1d9/SFrealtorbrandphotoshoot-24.jpg'
-  alt: "Jenny Peterson"
+  alt: 'Jenny Peterson'
   slogan: 'Your Hometown Real Estate Professional'
 header: Jenny Peterson - Your Hometown Real Estate Professional
 footer: &copy; 2024 Inquirita.com
 backgroundImages:
   - https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 colors:
-  primaryColor: "#045858"
+  primaryColor: '#045858'
 agent:
-  name: "Jenny Peterson"
-  phone: "530.990.5366"
-  email: "jennyperterson@gmail.com"
-  dre: "01995816"
-  address: "3512 16th Street | San Francisco, CA 94114"
+  name: 'Jenny Peterson'
+  phone: '530.990.5366'
+  email: 'jennyperterson@gmail.com'
+  dre: '01995816'
+  address: '3512 16th Street | San Francisco, CA 94114'
 listings:
   - id: 1
-    price: "$35,000"
-    location: "2050 Reamsey Dr, Decatur, IL, 62526"
-    subStats: "4 Beds | 2 Baths | 1,855 sqft"
-    image: "https://ap.rdcpix.com/7c67ba10bace13f426dee622cd66d698l-m3998782334rd-w960_h720.webp"
-    link: "/us/ga/decatur/real-estate-agents/listings/1"
+    status: 'House for sale'
+    price: '$375,000'
+    location: '1875 Creekside Ct, Decatur, GA 30032'
+    subStats: '3 Beds | 2 Baths | 1,685 sqft'
+    image: 'https://photos.zillowstatic.com/fp/4b69bcfcb1e0502887ed172010fb3941-sc_1920_1280.webp'
+    link: '/us/ga/decatur/single-family-homes/1'
 
   - id: 2
-    price: "$157,900"
-    location: "56 N Maple Ct, Decatur, IL 62526"
-    subStats: "3 Beds | 2 Baths | 1,826 sqft"
-    image: "https://ap.rdcpix.com/3421a71a2a394f6f45057a3284e5140al-m2890641835rd-w960_h720.webp"
-    link: "/us/ga/decatur/real-estate-agents/listings/2"
+    status: 'House for sale'
+    price: '$698,000'
+    location: '3325 Piedmont RD NE, 1702, Atlanta, GA, United States'
+    subStats: '2 Beds | 3 Baths | 1,932 sqft'
+    image: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/641/661/182/1738693435.webp?SQ1v01oNB8CitZ6OBcrLqnkC3LBzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTAzJTJGNDQwZGFmZWNlMjJkNzI5NjU5ZTVmZGFkMDBkZWE0MjMlMkYxMzI4MzY5MDA2LmpwZWc='
+    link: '/us/ga/decatur/single-family-homes/2'
 
   - id: 3
-    price: "$1,200,000"
-    image: "https://images.unsplash.com/photo-1605352081508-2e09927ecfe3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fEx1eHVyeSUyMFdhdGVyZnJvbnQlMjBWaWxsYXxlbnwwfHwwfHx8MA%3D%3D"
-    link: ""
+    status: 'House for sale'
+    price: '$1,200,000'
+    image: 'https://images.unsplash.com/photo-1605352081508-2e09927ecfe3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fEx1eHVyeSUyMFdhdGVyZnJvbnQlMjBWaWxsYXxlbnwwfHwwfHx8MA%3D%3D'
+    link: ''
 
   - id: 4
-    price: "$500,000"
-    image: "https://nancysaedi.lovinltd.com/API/File/Download?id=ae0aa303-c0f6-48ae-a036-91fef62fecb7"
-    link: ""
+    status: 'House for sale'
+    price: '$500,000'
+    image: 'https://nancysaedi.lovinltd.com/API/File/Download?id=ae0aa303-c0f6-48ae-a036-91fef62fecb7'
+    link: ''
 
   - id: 5
-    price: "$725,000"
-    image: "https://nancysaedi.lovinltd.com/API/File/Download?id=f640c328-0503-45a1-9dd0-2f30b0c057e3"
-    link: ""
+    status: 'House for sale'
+    price: '$725,000'
+    image: 'https://nancysaedi.lovinltd.com/API/File/Download?id=f640c328-0503-45a1-9dd0-2f30b0c057e3'
+    link: ''
 
   - id: 6
-    price: "$350,000"
-    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGZhbWlseSUyMGhvdXNlfGVufDB8fDB8fHww"
-    link: ""
+    status: 'House for sale'
+    price: '$350,000'
+    image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGZhbWlseSUyMGhvdXNlfGVufDB8fDB8fHww'
+    link: ''

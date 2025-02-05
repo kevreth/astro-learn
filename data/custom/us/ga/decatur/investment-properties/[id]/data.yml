@@ -5,18 +5,18 @@ listings_details:
   - id: 1
     agent:
     status: 'House for sale'
-    price: '$1,459,000'
-    location: '152 Maediris Drive, Decatur, GA, United States'
-    subStats: '5 Beds | 6 Baths | 5065 sqft'
+    price: '$350,000'
+    location: ' 3496 Wesley Chapel Rd - 3496 Wesley Chapel Road Decatur, Georgia 3003 '
+    subStats: '1 Residential Income Lot'
     gallery:
-      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/16x9-fhd/000/638/888/999/1730202824.webp?WGeTp+UG6/069pK92v5tnyWOnNZzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTIxODQyOS5qcGclM0ZEYXRlJTNET2N0JTI1MjAyOCUyNTIwMjAyNCUyNTIwJTI1MjAxJTNBMzNQTQ=='
-      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/638/889/000/1730202825.webp?VnRQJp0RhvVAoDZ7XJbYSHSwBdpzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTIxODQyOSUyRjEyMTg0MjktMi5qcGclM0ZEYXRlJTNET2N0JTI1MjAyOCUyNTIwMjAyNCUyNTIwJTI1MjAxJTNBMzNQTQ=='
-      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/638/889/001/1730202825.webp?yiqH9xvh1VIKWdiHhFdn4otcLwxzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTIxODQyOSUyRjEyMTg0MjktMy5qcGclM0ZEYXRlJTNET2N0JTI1MjAyOCUyNTIwMjAyNCUyNTIwJTI1MjAxJTNBMzNQTQ=='
-      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/638/889/002/1730202825.webp?GUnTBNbDqSdbe9wjcJ99Eq/jUbhzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTIxODQyOSUyRjEyMTg0MjktNC5qcGclM0ZEYXRlJTNET2N0JTI1MjAyOCUyNTIwMjAyNCUyNTIwJTI1MjAxJTNBMzNQTQ=='
-      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/638/889/004/1730202825.webp?MMtEC2FqBSZn9tzzotFa7CxZk0ZzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTIxODQyOSUyRjEyMTg0MjktNi5qcGclM0ZEYXRlJTNET2N0JTI1MjAyOCUyNTIwMjAyNCUyNTIwJTI1MjAxJTNBMzNQTQ=='
-      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/638/889/009/1730202825.webp?MCNHunNnFieP1cWntWNUizmfg8RzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTIxODQyOSUyRjEyMTg0MjktMTEuanBnJTNGRGF0ZSUzRE9jdCUyNTIwMjglMjUyMDIwMjQlMjUyMCUyNTIwMSUzQTMzUE0='
-      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/638/889/008/1730202825.webp?jWG981LL71kt7MvuOVV4Zar2+BJzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTIxODQyOSUyRjEyMTg0MjktMTAuanBnJTNGRGF0ZSUzRE9jdCUyNTIwMjglMjUyMDIwMjQlMjUyMCUyNTIwMSUzQTMzUE0='
-    link: '/us/ga/decatur/luxury-homes/1'
+      - src: 'https://images1.loopnet.com/i2/L_2bw8fx8a3s58ec219v4Du3MMPjmWOzgzqlnSoGS2s/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-4-Large.jpg'
+      - src: 'https://images1.loopnet.com/i2/lXXaYsyToqH-F1qI70uAX2kcv5_ADVqku_UaA7cKa3Y/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-3-Large.jpg'
+      - src: 'https://images1.loopnet.com/i2/E6fCy-Ml0y6PHXVpFSBb0N8NJl5U1V31kIjLkuTCtIg/110/3496-Wesley-Chapel-Rd-Decatur-GA-Primary-Photo-1-Large.jpg'
+      - src: 'https://images1.loopnet.com/i2/Kga-vq_EwMA-0ep-SsVAkhM-a4NaFjrTbD1ilX5Bezs/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-5-Large.jpg'
+      - src: 'https://images1.loopnet.com/i2/phpI1FBP_AqbNQk1QDmJM6ZzLQJmgvtlRMZnGKCnPh8/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-6-Large.jpg'
+      - src: 'https://images1.loopnet.com/i2/knTaXQv5kxBoBA219K7qbR7jJcTFUjZ62wZya2dm2q0/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-10-Large.jpg'
+      - src: 'hhttps://images1.loopnet.com/i2/4OFzd4HRdvzK1Gx-rJuH_gL8LSoExOn0tC4FpiF7d1c/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-7-Large.png'
+    link: '/us/ga/decatur/investment-properties/1'
     detail_description: >
       Start your new year off right by prioritizing health and wellness- with a 1 year FAMILY PASS to the YMCA, located just across the street! You will have everything you need to accomplish your family''s fitness goals for 2025 and beyond. Ideally located within blocks of multiple shopping centers, this home offers an ideal marriage of urban access and southern charm. Step on to the inviting front porch and into a home that perfectly blends style and comfort. Inside, cathedral ceilings and a cozy stone fireplace set the tone for a warm, welcoming atmosphere ideal for gatherings or quiet evenings. The eat-in kitchen and elegant dining room make hosting a breeze, while the main floor''s luxurious primary suite and adjacent office provide a serene retreat. Relax on the spacious rear deck, overlooking a lush backyard perfect for al fresco dining or unwinding after a long day. Upstairs, you''ll find an open den, three guest bedrooms, and ample storage space. The versatile lower level offers endless possibilities, whether it''s a guest suite, family room, or game area, with easy access to the backyard''s grilling area for summer BBQs. This energy-efficient home features an EV charging station, fenced yards for privacy, and invisible fencing for your furry friends. Enjoy all the perks of a connected community and the comfort of your own space. Schedule your showing today and make this dream home the start of your best year yet! Home Comes Fully Furnished!*
     map:
