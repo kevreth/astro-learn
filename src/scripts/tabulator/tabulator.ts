@@ -1,90 +1,92 @@
-import { Tabulator } from "tabulator-tables"
-import { tabulatorFactory } from './tabulatorFactory'
+import { Tabulator } from 'tabulator-tables';
+import { tabulatorFactory } from './tabulatorFactory';
 export function readStaticTableData(doc: Document) {
-    const staticTable = doc.querySelector('#static-table tbody')
-    if (!staticTable) return []
-    const rows = staticTable.querySelectorAll('tr')
-    return Array.from(rows).map(row => {
-        const cells = row.querySelectorAll('td')
-        const originalName = cells[0].textContent || ''
-        const newLocal = cells[1] as HTMLTableCellElement
-        const content = newLocal.textContent as string
-        const url = content.trim()
-        const name = url ? `<a href="${url}" rel="nofollow sponsored">${originalName}</a>` : originalName
-        return {
-            OriginalName: originalName,
-            Name: name,
-            Phone: cells[2].textContent || '',
-            Street: cells[3].textContent || '',
-            Postal: cells[4].textContent || '',
-        }
-    })
+  const staticTable = doc.querySelector('#static-table tbody');
+  if (!staticTable) return [];
+  const rows = staticTable.querySelectorAll('tr');
+  return Array.from(rows).map(row => {
+    const cells = row.querySelectorAll('td');
+    const originalName = cells[0].textContent || '';
+    const newLocal = cells[1] as HTMLTableCellElement;
+    const content = newLocal.textContent as string;
+    const url = content.trim();
+    const name = url
+      ? `<a href="${url}" rel="nofollow sponsored">${originalName}</a>`
+      : originalName;
+    return {
+      OriginalName: originalName,
+      Name: name,
+      Phone: cells[2].textContent || '',
+      Street: cells[3].textContent || '',
+      Postal: cells[4].textContent || '',
+    };
+  });
 }
 export const sortByName = (
-    a: any,
-    b: any,
-    aRow: { getData: () => { (): any; new(): any; OriginalName: any } },
-    bRow: { getData: () => { (): any; new(): any; OriginalName: any } },
-    column: any,
-    dir: any,
-    sorterParams: any
+  a: any,
+  b: any,
+  aRow: { getData: () => { (): any; new (): any; OriginalName: any } },
+  bRow: { getData: () => { (): any; new (): any; OriginalName: any } },
+  column: any,
+  dir: any,
+  sorterParams: any
 ) => {
-    let retval = prioritySorter(a, b, aRow, bRow, dir)
-    if (retval === 0) {
-        let aName = aRow.getData().OriginalName
-        let bName = bRow.getData().OriginalName
-        retval = aName.localeCompare(bName)
-    }
-    return retval
-}
+  let retval = prioritySorter(a, b, aRow, bRow, dir);
+  if (retval === 0) {
+    let aName = aRow.getData().OriginalName;
+    let bName = bRow.getData().OriginalName;
+    retval = aName.localeCompare(bName);
+  }
+  return retval;
+};
 export const columns = [
-    {
-        title: 'Name',
-        field: 'Name',
-        sorter: sortByName,
-        headerFilter: 'input',
-        formatter: 'html',
-        responsive: 0,
-        resizable: false,
-    },
-    {
-        title: 'Name',
-        field: 'Combined',
-        sorter: sortByName,
-        headerFilter: 'input',
-        formatter: nameAndStreetFormatter,
-        visible: false,
-        resizable: false,
-    },
-    {
-        title: '',
-        field: 'Phone',
-        formatter: phoneIconFormatter,
-        headerSort: false,
-        width: 10,
-        resizable: false,
-    },
-    {
-        title: 'Street',
-        field: 'Street',
-        sorter: StringSorter,
-        headerFilter: 'input',
-        resizable: false,
-    },
-    {
-        title: 'Postal',
-        field: 'Postal',
-        sorter: StringSorter,
-        headerFilter: 'input',
-        width: 100,
-        resizable: false,
-    },
-    {
-        title: "Priority",
-        field: "priority",
-        visible: false
-    },
-]
+  {
+    title: 'Name',
+    field: 'Name',
+    sorter: sortByName,
+    headerFilter: 'input',
+    formatter: 'html',
+    responsive: 0,
+    resizable: false,
+  },
+  {
+    title: 'Name',
+    field: 'Combined',
+    sorter: sortByName,
+    headerFilter: 'input',
+    formatter: nameAndStreetFormatter,
+    visible: false,
+    resizable: false,
+  },
+  {
+    title: '',
+    field: 'Phone',
+    formatter: phoneIconFormatter,
+    headerSort: false,
+    width: 10,
+    resizable: false,
+  },
+  {
+    title: 'Street',
+    field: 'Street',
+    sorter: StringSorter,
+    headerFilter: 'input',
+    resizable: false,
+  },
+  {
+    title: 'Postal',
+    field: 'Postal',
+    sorter: StringSorter,
+    headerFilter: 'input',
+    width: 100,
+    resizable: false,
+  },
+  {
+    title: 'Priority',
+    field: 'priority',
+    visible: false,
+  },
+];
 export const svgIcon = `
                <?xml version="1.0" encoding="UTF-8"?>
                   <!-- Designed by Vexels.com - 2016 All Rights Reserved - https://vexels.com/terms-and-conditions/  -->
@@ -100,297 +102,434 @@ export const svgIcon = `
                     <polygon fill="#FFFFFF" points="600.758,335.135 644.161,423.045 741.132,437.13 670.956,505.564 687.543,602.192 600.758,556.585    513.994,602.192 530.579,505.564 460.382,437.13 557.353,423.045  "/>
                   </g>
                   </svg>
-            `
-export function prioritySorter(a: string, b: string, aRow: { getData: any; }, bRow: { getData: any; }, dir: string) {
-    const aPriority = aRow.getData().priority ? 1 : 0
-    const bPriority = bRow.getData().priority ? 1 : 0
-    let retval = 0
-    if (aPriority !== bPriority) {
-        if (dir === 'asc') retval = aPriority > bPriority ? -1 : 1
-        else if (dir === 'desc') retval = aPriority > bPriority ? 1 : -1
-        else throw new DOMException("Invalid dir value: " + dir + "whencomparing " + a + " and " + b)
-    }
-    else retval = 0
-    return retval
+            `;
+export function prioritySorter(
+  a: string,
+  b: string,
+  aRow: { getData: any },
+  bRow: { getData: any },
+  dir: string
+) {
+  const aPriority = aRow.getData().priority ? 1 : 0;
+  const bPriority = bRow.getData().priority ? 1 : 0;
+  let retval = 0;
+  if (aPriority !== bPriority) {
+    if (dir === 'asc') retval = aPriority > bPriority ? -1 : 1;
+    else if (dir === 'desc') retval = aPriority > bPriority ? 1 : -1;
+    else
+      throw new DOMException(
+        'Invalid dir value: ' + dir + 'whencomparing ' + a + ' and ' + b
+      );
+  } else retval = 0;
+  return retval;
 }
-export function StringSorter(a: string, b: string, aRow: { getData: any; }, bRow: { getData: any; }, column: null, dir: string, sorterParams: null) {
-    let retval = prioritySorter(a, b, aRow, bRow, dir)
-    if (retval === 0) {
-        retval = String(a).toLowerCase().localeCompare(String(b).toLowerCase())
-    }
-    return retval
+export function StringSorter(
+  a: string,
+  b: string,
+  aRow: { getData: any },
+  bRow: { getData: any },
+  column: null,
+  dir: string,
+  sorterParams: null
+) {
+  let retval = prioritySorter(a, b, aRow, bRow, dir);
+  if (retval === 0) {
+    retval = String(a).toLowerCase().localeCompare(String(b).toLowerCase());
+  }
+  return retval;
 }
 export function nameAndStreetFormatter(cell: {
-    getRow: () => { (): any; new(): any; getData: { (): any; new(): any } }
+  getRow: () => { (): any; new (): any; getData: { (): any; new (): any } };
 }) {
-    const rowData = cell.getRow().getData()
-    const name = rowData.Name || ''
-    const street = rowData.Street || ''
-    const priorityIcon = rowData.priority ? `<div style="display: inline-block">${svgIcon}</div}` : ''
-    return `
+  const rowData = cell.getRow().getData();
+  const name = rowData.Name || '';
+  const street = rowData.Street || '';
+  const priorityIcon = rowData.priority
+    ? `<div style="display: inline-block">${svgIcon}</div}`
+    : '';
+  return `
     ${priorityIcon}
     <div>${name}</div>
-    <div style='margin-top: 5px;'>${street}</div>`
+    <div style='margin-top: 5px;'>${street}</div>`;
 }
 export function phoneIconFormatter(cell: { getValue: () => any }) {
-    const phoneNumber = cell.getValue()
-    const phoneContainer = document.createElement('div')
-    phoneContainer.className = 'phone-container'
-    phoneContainer.style.display = 'flex'
-    phoneContainer.style.alignItems = 'center'
-    phoneContainer.style.justifyContent = 'center'
-    phoneContainer.style.height = '100%'
-    phoneContainer.style.width = '100%'
-    if (phoneNumber && phoneNumber.trim() !== '') {
-        const icon = document.createElement('span')
-        icon.className = 'phone-icon'
-        icon.className = 'fa-solid fa-phone'; // phone icon
-        icon.style.cursor = 'pointer'
-        icon.style.textAlign = 'center'
-        icon.style.display = 'block'
-        icon.title = 'Click to see phone number'
-        icon.addEventListener('click', function () {
-            document
-                .querySelectorAll('.call-interface')
-                .forEach(element => element.remove())
-            const modal = document.createElement('div')
-            modal.className = 'call-interface'
-            modal.style.position = 'fixed'
-            modal.style.top = '50%'
-            modal.style.left = '50%'
-            modal.style.transform = 'translate(-50%, -50%)'
-            modal.style.border = '1px solid black'
-            modal.style.padding = '20px'
-            modal.style.backgroundColor = 'white'
-            modal.style.zIndex = '1000'
-            const span = document.createElement('span')
-            span.textContent = phoneNumber
-            const buttonContainer = document.createElement('div')
-            buttonContainer.style.display = 'flex'
-            buttonContainer.style.justifyContent = 'space-evenly'
-            const cancelButton = document.createElement('button')
-            cancelButton.textContent = 'Cancel'
-            cancelButton.onclick = function () {
-                modal.remove()
-            }
-            const callButton = document.createElement('button')
-            callButton.textContent = 'Call'
-            callButton.onclick = function () {
-                window.location.href = 'tel:' + phoneNumber
-            }
-            buttonContainer.appendChild(cancelButton)
-            buttonContainer.appendChild(callButton)
-            modal.appendChild(span)
-            modal.appendChild(buttonContainer)
-            document.body.appendChild(modal)
-        })
-        phoneContainer.appendChild(icon)
-    } else {
-        phoneContainer.innerHTML = ''
-    }
-    return phoneContainer
+  const phoneNumber = cell.getValue();
+  const phoneContainer = document.createElement('div');
+  phoneContainer.className = 'phone-container';
+  phoneContainer.style.display = 'flex';
+  phoneContainer.style.alignItems = 'center';
+  phoneContainer.style.justifyContent = 'center';
+  phoneContainer.style.height = '100%';
+  phoneContainer.style.width = '100%';
+  if (phoneNumber && phoneNumber.trim() !== '') {
+    const icon = document.createElement('span');
+    icon.className = 'phone-icon';
+    icon.className = 'fa-solid fa-phone'; // phone icon
+    icon.style.cursor = 'pointer';
+    icon.style.textAlign = 'center';
+    icon.style.display = 'block';
+    icon.title = 'Click to see phone number';
+    icon.addEventListener('click', function () {
+      document
+        .querySelectorAll('.call-interface')
+        .forEach(element => element.remove());
+      const modal = document.createElement('div');
+      modal.className = 'call-interface';
+      modal.style.position = 'fixed';
+      modal.style.top = '50%';
+      modal.style.left = '50%';
+      modal.style.transform = 'translate(-50%, -50%)';
+      modal.style.border = '1px solid black';
+      modal.style.padding = '20px';
+      modal.style.backgroundColor = 'white';
+      modal.style.zIndex = '1000';
+      const span = document.createElement('span');
+      span.textContent = phoneNumber;
+      const buttonContainer = document.createElement('div');
+      buttonContainer.style.display = 'flex';
+      buttonContainer.style.justifyContent = 'space-evenly';
+      const cancelButton = document.createElement('button');
+      cancelButton.textContent = 'Cancel';
+      cancelButton.onclick = function () {
+        modal.remove();
+      };
+      const callButton = document.createElement('button');
+      callButton.textContent = 'Call';
+      callButton.onclick = function () {
+        window.location.href = 'tel:' + phoneNumber;
+      };
+      buttonContainer.appendChild(cancelButton);
+      buttonContainer.appendChild(callButton);
+      modal.appendChild(span);
+      modal.appendChild(buttonContainer);
+      document.body.appendChild(modal);
+    });
+    phoneContainer.appendChild(icon);
+  } else {
+    phoneContainer.innerHTML = '';
+  }
+  return phoneContainer;
 }
 export function addToggleBtn(doc: Document) {
-    const isTabulatorPage = doc.querySelector('#dynamic-table')
-    if (!isTabulatorPage) return
-    if (doc.querySelector('.toggle-container')) {
-        return
-    }
-    var toggleContainer = doc.createElement('div')
-    toggleContainer.className = 'toggle-container'
-    toggleContainer.style.display = 'flex'
-    toggleContainer.style.alignItems = 'center'
-    toggleContainer.style.justifyContent = 'flex-start'
-    toggleContainer.style.position = 'relative'
-    var toggleSwitch = doc.createElement('input')
-    toggleSwitch.type = 'checkbox'
-    toggleSwitch.className = 'toggle-switch'
-    toggleSwitch.id = 'toggleSwitch'
-    toggleSwitch.checked = true; // Default toggled on
-    toggleSwitch.style.cursor = 'pointer'
-    var toggleLabel = doc.createElement('label')
-    toggleLabel.className = 'switch'
-    toggleLabel.appendChild(toggleSwitch)
-    var slider = doc.createElement('span')
-    slider.className = 'slider round'
-    toggleLabel.appendChild(slider)
-    var labelText = doc.createElement('span')
-    labelText.classList.add('label-span')
-    var labelDiv = doc.createElement('div')
-    labelDiv.classList.add('label-div')
-    labelDiv.textContent = 'Websites only'
-    labelDiv.style.position = 'relative'
-    // Information icon
-    var infoIcon = doc.createElement('i')
-    infoIcon = doc.createElement('span')
-    infoIcon.className = 'fas fa-info-circle'
-    infoIcon.style.position = 'relative'
-    infoIcon.style.top = '-6px'
-    infoIcon.style.cursor = 'pointer'
-    labelText.appendChild(labelDiv)
-    toggleContainer.appendChild(toggleLabel)
-    toggleContainer.appendChild(labelText)
-    labelText.appendChild(infoIcon)
-    var headerElement = doc.querySelector('h1') as HTMLElement
-    var headerContainer = doc.createElement('div') as HTMLElement
-    headerContainer.className = 'header-container'
-    const parentNode = headerElement.parentNode as HTMLElement
-    parentNode.insertBefore(headerContainer, headerElement)
-    headerContainer.appendChild(headerElement)
-    headerContainer.appendChild(toggleContainer)
+  const isTabulatorPage = doc.querySelector('#dynamic-table');
+  if (!isTabulatorPage) return;
+  if (doc.querySelector('.toggle-container')) {
+    return;
+  }
+  var toggleContainer = doc.createElement('div');
+  toggleContainer.className = 'toggle-container';
+  toggleContainer.style.display = 'flex';
+  toggleContainer.style.alignItems = 'center';
+  toggleContainer.style.justifyContent = 'flex-start';
+  toggleContainer.style.position = 'relative';
+  var toggleSwitch = doc.createElement('input');
+  toggleSwitch.type = 'checkbox';
+  toggleSwitch.className = 'toggle-switch';
+  toggleSwitch.id = 'toggleSwitch';
+  toggleSwitch.checked = true; // Default toggled on
+  toggleSwitch.style.cursor = 'pointer';
+  var toggleLabel = doc.createElement('label');
+  toggleLabel.className = 'switch';
+  toggleLabel.appendChild(toggleSwitch);
+  var slider = doc.createElement('span');
+  slider.className = 'slider round';
+  toggleLabel.appendChild(slider);
+  var labelText = doc.createElement('span');
+  labelText.classList.add('label-span');
+  var labelDiv = doc.createElement('div');
+  labelDiv.classList.add('label-div');
+  labelDiv.textContent = 'Websites only';
+  labelDiv.style.position = 'relative';
+  // Information icon
+  var infoIcon = doc.createElement('i');
+  infoIcon = doc.createElement('span');
+  infoIcon.className = 'fas fa-info-circle';
+  infoIcon.style.position = 'relative';
+  infoIcon.style.top = '-6px';
+  infoIcon.style.cursor = 'pointer';
+  labelText.appendChild(labelDiv);
+  toggleContainer.appendChild(toggleLabel);
+  toggleContainer.appendChild(labelText);
+  labelText.appendChild(infoIcon);
+  var headerElement = doc.querySelector('h1') as HTMLElement;
+  var headerContainer = doc.createElement('div') as HTMLElement;
+  headerContainer.className = 'header-container';
+  const parentNode = headerElement.parentNode as HTMLElement;
+  parentNode.insertBefore(headerContainer, headerElement);
+  headerContainer.appendChild(headerElement);
+  headerContainer.appendChild(toggleContainer);
 }
-export function createInfoModal(doc: Document, win:Window) {
-    const modal = doc.createElement('div')
-    modal.id = 'infoModal'
-    modal.className = 'modal'
-    const modalContent = doc.createElement('div')
-    modalContent.className = 'modal-content'
-    modalContent.innerHTML = `
+export function createInfoModal(doc: Document, win: Window) {
+  const modal = doc.createElement('div');
+  modal.id = 'infoModal';
+  modal.className = 'modal';
+  const modalContent = doc.createElement('div');
+  modalContent.className = 'modal-content';
+  modalContent.innerHTML = `
       <div class="modal-header">
           <span class="close">&times
       </div>
       <div class="modal-body">
           <p>Inquirita verifies Websites for valid content. If we cannot find a Website for a listing we do not attempt to validate the listing. "Hide listings without Websites" ensures you only view listings where we have examined and verified the phone number and address and the business appears to be operating.</nobr></p>
       </div>
-  `
-    modal.appendChild(modalContent)
-    doc.body.appendChild(modal)
-    const closeButton = modal.querySelector('.close') as HTMLInputElement
-    closeButton.onclick = function () {
-        modal.style.display = 'none'
+  `;
+  modal.appendChild(modalContent);
+  doc.body.appendChild(modal);
+  const closeButton = modal.querySelector('.close') as HTMLInputElement;
+  closeButton.onclick = function () {
+    modal.style.display = 'none';
+  };
+  win.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = 'none';
     }
-    win.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = 'none'
-        }
-    }
-    return modal
+  };
+  return modal;
 }
 export function addDynamicTableId(doc: Document) {
-    var staticTable = doc.getElementById('static-table') as HTMLElement
-    if (staticTable) {
-        var newDiv = doc.createElement('div')
-        newDiv.id = 'dynamic-table'
-        const parentNode = staticTable.parentNode as HTMLElement
-        parentNode.insertBefore(newDiv, staticTable.nextSibling)
-    }
+  var staticTable = doc.getElementById('static-table') as HTMLElement;
+  if (staticTable) {
+    var newDiv = doc.createElement('div');
+    newDiv.id = 'dynamic-table';
+    const parentNode = staticTable.parentNode as HTMLElement;
+    parentNode.insertBefore(newDiv, staticTable.nextSibling);
+  }
 }
 export function showDynamicTable(doc: Document) {
-    const staticTable = doc.getElementById('static-table') as HTMLElement
-    staticTable.style.display = 'none'
-    const dynamicTable = doc.getElementById('dynamic-table') as HTMLElement
-    dynamicTable.style.display = 'block'
+  const staticTable = doc.getElementById('static-table') as HTMLElement;
+  staticTable.style.display = 'none';
+  const dynamicTable = doc.getElementById('dynamic-table') as HTMLElement;
+  dynamicTable.style.display = 'block';
 }
 export function updatePriority(tData: any[], name: string) {
-    tData.forEach(item => {
-        let priority = false
-        const original = item.OriginalName
-        if (original === name) priority = true
-        item.priority = priority
-    })
+  tData.forEach(item => {
+    let priority = false;
+    const original = item.OriginalName;
+    if (original === name) priority = true;
+    item.priority = priority;
+  });
 }
 export function setupInteractions(tabulator: Tabulator, doc: Document) {
-    const toggleSwitch = doc.getElementById('toggleSwitch') as HTMLInputElement
-    const infoIcon = doc.querySelector('.fa-info-circle') as HTMLElement
-    if (toggleSwitch) {
-        toggleSwitch.addEventListener('change', () => {
-            if (toggleSwitch.checked) {
-                tabulator.setFilter('Name', 'like', '<a href=')
-            } else {
-                tabulator.clearFilter(false)
-            }
-        })
+  const toggleSwitch = doc.getElementById('toggleSwitch') as HTMLInputElement;
+  const infoIcon = doc.querySelector('.fa-info-circle') as HTMLElement;
+  if (toggleSwitch) {
+    toggleSwitch.addEventListener('change', () => {
+      if (toggleSwitch.checked) {
+        tabulator.setFilter('Name', 'like', '<a href=');
+      } else {
+        tabulator.clearFilter(false);
+      }
+    });
 
-        // Set initial state based on toggle switch
-        if (toggleSwitch.checked) {
-            tabulator.setFilter('Name', 'like', '<a href=')
-        }
+    // Set initial state based on toggle switch
+    if (toggleSwitch.checked) {
+      tabulator.setFilter('Name', 'like', '<a href=');
     }
-
-    if (infoIcon) {
-        infoIcon.addEventListener('click', () => {
-            let modal = doc.getElementById('infoModal')
-            if (!modal) {
-                modal = createInfoModal(doc,window)
-            }
-            modal.style.display = 'block'
-        })
-    }
-}
-export const rowFormatter_ = function (row: { getData: () => any; getElement: () => any; getCells: () => any; }) {
-    let data = row.getData()
-    const rowElement = row.getElement()
-    if (data.priority) {
-        rowElement.style.background = "linear-gradient(to bottom, #FFDF77, #FFC107)"
-        rowElement.style.color = "black"
-        rowElement.style.fontWeight = "bold"
-        rowElement.style.fontSize = "17px"
-        const links = rowElement.querySelectorAll('a')
-        links.forEach((link: { style: { color: string; verticalAlign: string; }; }) => {
-            link.style.color = '#003366'
-            link.style.verticalAlign = 'middle'
-        })
-        let cells = row.getCells()
-        let firstCellElement = cells[0].getElement()
-        if (firstCellElement) {
-            const svgName = document.createElement('div')
-            svgName.innerHTML = svgIcon
-            svgName.style.display = 'inline-block'
-            svgName.style.marginRight = '5px'
-            svgName.style.verticalAlign = 'middle'
-            firstCellElement.prepend(svgName)
-        }
-    }
-}
-export const adjustColumnVisibility = (tabulatorInstance: Tabulator) => {
-    if (tabulatorInstance) {
-        if (window.innerWidth <= 600) {
-            tabulatorInstance.hideColumn('Postal')
-            tabulatorInstance.hideColumn('Street')
-            tabulatorInstance.hideColumn('Name')
-            tabulatorInstance.showColumn('Combined')
-        } else {
-            tabulatorInstance.showColumn('Postal')
-            tabulatorInstance.showColumn('Street')
-            tabulatorInstance.showColumn('Name')
-            tabulatorInstance.hideColumn('Combined')
-        }
-    }
-}
-export function buildTable(tab: Tabulator, doc:Document) {
-    tab.on('tableBuilt', () => {
-      setupInteractions(tab, doc)
-      showDynamicTable(doc)
-      adjustColumnVisibility(tab)
-    })
-}
-export function getTable(doc: Document, priority: string, cols: ({ title: string; field: string; sorter: (a: any, b: any, aRow: { getData: () => { (): any; new(): any; OriginalName: any; }; }, bRow: { getData: () => { (): any; new(): any; OriginalName: any; }; }, column: any, dir: any, sorterParams: any) => number; headerFilter: string; formatter: string; responsive: number; resizable: boolean; visible?: undefined; headerSort?: undefined; width?: undefined; } | {
-        title: string; field: string; sorter: (a: any, b: any, aRow: { getData: () => { (): any; new(): any; OriginalName: any; }; }, bRow: { getData: () => { (): any; new(): any; OriginalName: any; }; }, column: any, dir: any, sorterParams: any) => number; headerFilter: string; formatter: (cell: {
-            getRow: () => { (): any; new(): any; getData: { (): any; new(): any; }; }
-        }) => string; visible: boolean; resizable: boolean; responsive?: undefined; headerSort?: undefined; width?: undefined
-    } | { title: string; field: string; formatter: (cell: { getValue: () => any; }) => HTMLDivElement; headerSort: boolean; width: number; resizable: boolean; sorter?: undefined; headerFilter?: undefined; responsive?: undefined; visible?: undefined; } | { title: string; field: string; sorter: (a: string, b: string, aRow: { getData: any; }, bRow: { getData: any; }, column: null, dir: string, sorterParams: null) => number; headerFilter: string; resizable: boolean; formatter?: undefined; responsive?: undefined; visible?: undefined; headerSort?: undefined; width?: undefined; } | { title: string; field: string; sorter: (a: string, b: string, aRow: { getData: any; }, bRow: { getData: any; }, column: null, dir: string, sorterParams: null) => number; headerFilter: string; width: number; resizable: boolean; formatter?: undefined; responsive?: undefined; visible?: undefined; headerSort?: undefined; } | { title: string; field: string; visible: boolean; sorter?: undefined; headerFilter?: undefined; formatter?: undefined; responsive?: undefined; resizable?: undefined; headerSort?: undefined; width?: undefined; })[]) {
-    const tData = readStaticTableData(doc)
-    updatePriority(tData, priority)
-    if (!tData || tData.length === 0) {
-      console.log('Static table ID not found')
-      return
-    }
-    const t = tabulatorFactory(tData, cols, rowFormatter_)
-    buildTable(t, doc)
-    return t
   }
+
+  if (infoIcon) {
+    infoIcon.addEventListener('click', () => {
+      let modal = doc.getElementById('infoModal');
+      if (!modal) {
+        modal = createInfoModal(doc, window);
+      }
+      modal.style.display = 'block';
+    });
+  }
+}
+export const rowFormatter_ = function (row: {
+  getData: () => any;
+  getElement: () => any;
+  getCells: () => any;
+}) {
+  let data = row.getData();
+  const rowElement = row.getElement();
+  if (data.priority) {
+    rowElement.style.background =
+      'linear-gradient(to bottom, #FFDF77, #FFC107)';
+    rowElement.style.color = 'black';
+    rowElement.style.fontWeight = 'bold';
+    rowElement.style.fontSize = '17px';
+    const links = rowElement.querySelectorAll('a');
+    links.forEach(
+      (link: { style: { color: string; verticalAlign: string } }) => {
+        link.style.color = '#003366';
+        link.style.verticalAlign = 'middle';
+      }
+    );
+    let cells = row.getCells();
+    let firstCellElement = cells[0].getElement();
+    if (firstCellElement) {
+      const svgName = document.createElement('div');
+      svgName.innerHTML = svgIcon;
+      svgName.style.display = 'inline-block';
+      svgName.style.marginRight = '5px';
+      svgName.style.verticalAlign = 'middle';
+      firstCellElement.prepend(svgName);
+    }
+  }
+};
+export const adjustColumnVisibility = (tabulatorInstance: Tabulator) => {
+  if (tabulatorInstance) {
+    if (window.innerWidth <= 600) {
+      tabulatorInstance.hideColumn('Postal');
+      tabulatorInstance.hideColumn('Street');
+      tabulatorInstance.hideColumn('Name');
+      tabulatorInstance.showColumn('Combined');
+    } else {
+      tabulatorInstance.showColumn('Postal');
+      tabulatorInstance.showColumn('Street');
+      tabulatorInstance.showColumn('Name');
+      tabulatorInstance.hideColumn('Combined');
+    }
+    tabulatorInstance.redraw(true);
+  }
+};
+export function buildTable(tab: Tabulator, doc: Document) {
+  tab.on('tableBuilt', () => {
+    setupInteractions(tab, doc);
+    showDynamicTable(doc);
+    adjustColumnVisibility(tab);
+  });
+}
+export function getTable(
+  doc: Document,
+  priority: string,
+  cols: (
+    | {
+        title: string;
+        field: string;
+        sorter: (
+          a: any,
+          b: any,
+          aRow: { getData: () => { (): any; new (): any; OriginalName: any } },
+          bRow: { getData: () => { (): any; new (): any; OriginalName: any } },
+          column: any,
+          dir: any,
+          sorterParams: any
+        ) => number;
+        headerFilter: string;
+        formatter: string;
+        responsive: number;
+        resizable: boolean;
+        visible?: undefined;
+        headerSort?: undefined;
+        width?: undefined;
+      }
+    | {
+        title: string;
+        field: string;
+        sorter: (
+          a: any,
+          b: any,
+          aRow: { getData: () => { (): any; new (): any; OriginalName: any } },
+          bRow: { getData: () => { (): any; new (): any; OriginalName: any } },
+          column: any,
+          dir: any,
+          sorterParams: any
+        ) => number;
+        headerFilter: string;
+        formatter: (cell: {
+          getRow: () => {
+            (): any;
+            new (): any;
+            getData: { (): any; new (): any };
+          };
+        }) => string;
+        visible: boolean;
+        resizable: boolean;
+        responsive?: undefined;
+        headerSort?: undefined;
+        width?: undefined;
+      }
+    | {
+        title: string;
+        field: string;
+        formatter: (cell: { getValue: () => any }) => HTMLDivElement;
+        headerSort: boolean;
+        width: number;
+        resizable: boolean;
+        sorter?: undefined;
+        headerFilter?: undefined;
+        responsive?: undefined;
+        visible?: undefined;
+      }
+    | {
+        title: string;
+        field: string;
+        sorter: (
+          a: string,
+          b: string,
+          aRow: { getData: any },
+          bRow: { getData: any },
+          column: null,
+          dir: string,
+          sorterParams: null
+        ) => number;
+        headerFilter: string;
+        resizable: boolean;
+        formatter?: undefined;
+        responsive?: undefined;
+        visible?: undefined;
+        headerSort?: undefined;
+        width?: undefined;
+      }
+    | {
+        title: string;
+        field: string;
+        sorter: (
+          a: string,
+          b: string,
+          aRow: { getData: any },
+          bRow: { getData: any },
+          column: null,
+          dir: string,
+          sorterParams: null
+        ) => number;
+        headerFilter: string;
+        width: number;
+        resizable: boolean;
+        formatter?: undefined;
+        responsive?: undefined;
+        visible?: undefined;
+        headerSort?: undefined;
+      }
+    | {
+        title: string;
+        field: string;
+        visible: boolean;
+        sorter?: undefined;
+        headerFilter?: undefined;
+        formatter?: undefined;
+        responsive?: undefined;
+        resizable?: undefined;
+        headerSort?: undefined;
+        width?: undefined;
+      }
+  )[]
+) {
+  const tData = readStaticTableData(doc);
+  updatePriority(tData, priority);
+  if (!tData || tData.length === 0) {
+    console.log('Static table ID not found');
+    return;
+  }
+  const t = tabulatorFactory(tData, cols, rowFormatter_);
+  buildTable(t, doc);
+  return t;
+}
 export function mounted() {
-    const doc:Document = document
-    const props = doc.getElementById('props') as HTMLElement
-    const priority = props.dataset.priority as string
-    addDynamicTableId(doc)
-    addToggleBtn(doc)
-    const t = getTable(doc, priority, columns)
-    if(!t) return
-    window.addEventListener('resize', () => adjustColumnVisibility(t))
-    return t
+  const doc: Document = document;
+  const props = doc.getElementById('props') as HTMLElement;
+  const priority = props.dataset.priority as string;
+  addDynamicTableId(doc);
+  addToggleBtn(doc);
+  const t = getTable(doc, priority, columns);
+  if (!t) return;
+  window.addEventListener('resize', () => adjustColumnVisibility(t));
+  return t;
 }
 //entry point protected for testing
 if (typeof window !== 'undefined') {
-    (window as any).mounted = mounted
+  (window as any).mounted = mounted;
 }

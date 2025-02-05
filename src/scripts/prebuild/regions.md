@@ -57,10 +57,10 @@
         pointer-events: none;
         cursor: not-allowed;
     }
-    a:visited {
+    /* a:visited {
         text-decoration: none;
         color: white;
-    }
+    } */
 </style>
 <div class="table-container">
     <h1>Inquirita Services in {region}</h1>

@@ -45,6 +45,9 @@ $desktop: 600px;
       flex-direction: column;
       text-align: left !important;
       line-height: unset !important;
+      a {
+        justify-content: unset !important;
+      }
     }
 
     .nav-item li.active {
