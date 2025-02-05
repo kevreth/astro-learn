@@ -1,6 +1,6 @@
 name: Luxury Homes
 title: Decatur, GA Luxury Homes
-description:  Decatur, GA Luxury Homes | Jenny Peterson
+description: Decatur, GA Luxury Homes | Jenny Peterson
 nav1:
   - label: Directory
     path: /us/ga/decatur/real-estate-agents/directory
@@ -29,17 +29,67 @@ nav2:
     icon: /svg/testimonials.svg
 logo:
   src: 'https://images.squarespace-cdn.com/content/v1/64938f7bf470205219e0b9e4/302cba51-05cf-48f5-9a36-301c4903f1d9/SFrealtorbrandphotoshoot-24.jpg'
-  alt: "Jenny Peterson"
+  alt: 'Jenny Peterson'
   slogan: 'Your Hometown Real Estate Professional'
 header: Jenny Peterson - Your Hometown Real Estate Professional
 footer: &copy; 2024 Inquirita.com
 backgroundImages:
   - https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 colors:
-  primaryColor: "#045858"
+  primaryColor: '#045858'
 agent:
-  name: "Jenny Peterson"
-  phone: "530.990.5366"
-  email: "jennyperterson@gmail.com"
-  dre: "01995816"
-  address: "3512 16th Street | San Francisco, CA 94114"
+  name: 'Jenny Peterson'
+  phone: '530.990.5366'
+  email: 'jennyperterson@gmail.com'
+  dre: '01995816'
+  address: '3512 16th Street | San Francisco, CA 94114'
+listings:
+  # - id:
+  #   status:
+  #   price:
+  #   location:
+  #   subStats: '3 Beds | 2 Baths | 1,826 sqft'
+  #   image:
+  #   link: '/us/ga/decatur/luxury-homes/listings/1'
+  - id: 1
+    status: 'House for sale'
+    price: '$1,459,000'
+    location: '152 Maediris Drive, Decatur, GA, United States'
+    subStats: '5 Beds | 6 Baths | 5065 sqft'
+    image: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/16x9-fhd/000/638/888/999/1730202824.webp?WGeTp+UG6/069pK92v5tnyWOnNZzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTIxODQyOS5qcGclM0ZEYXRlJTNET2N0JTI1MjAyOCUyNTIwMjAyNCUyNTIwJTI1MjAxJTNBMzNQTQ=='
+    link: '/us/ga/decatur/luxury-homes/1'
+  - id: 2
+    status: 'House for sale'
+    price: '$1,050,000'
+    location: '3420 Aviary Lane, Acworth, GA, United States'
+    subStats: '4 Beds | 6 Baths | 4875 sqft'
+    image: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/16x9-fhd/000/640/499/609/1734872002.webp?jy1WKe7ExK6VFZKnc1RDvx2dHuxzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTI0NzIzOS5qcGclM0ZEYXRlJTNERGVjJTI1MjAyMSUyNTIwMjAyNCUyNTIwMTElM0EyNkFN'
+    link: '/us/ga/decatur/luxury-homes/2'
+  - id: 3
+    status: 'House for sale'
+    price: '$1,050,000'
+    location: '3420 Aviary Lane, Acworth, GA, United States'
+    subStats: '4 Beds | 6 Baths | 4875 sqft'
+    image: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/16x9-fhd/000/640/499/609/1734872002.webp?jy1WKe7ExK6VFZKnc1RDvx2dHuxzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTI0NzIzOS5qcGclM0ZEYXRlJTNERGVjJTI1MjAyMSUyNTIwMjAyNCUyNTIwMTElM0EyNkFN'
+    link: '/us/ga/decatur/luxury-homes/'
+  - id: 4
+    status: 'House for sale'
+    price: '$1,050,000'
+    location: '3420 Aviary Lane, Acworth, GA, United States'
+    subStats: '4 Beds | 6 Baths | 4875 sqft'
+    image: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/16x9-fhd/000/640/499/609/1734872002.webp?jy1WKe7ExK6VFZKnc1RDvx2dHuxzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTI0NzIzOS5qcGclM0ZEYXRlJTNERGVjJTI1MjAyMSUyNTIwMjAyNCUyNTIwMTElM0EyNkFN'
+    link: '/us/ga/decatur/luxury-homes/'
+  - id: 5
+    status: 'House for sale'
+    price: '$1,050,000'
+    location: '3420 Aviary Lane, Acworth, GA, United States'
+    subStats: '4 Beds | 6 Baths | 4875 sqft'
+    image: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/16x9-fhd/000/640/499/609/1734872002.webp?jy1WKe7ExK6VFZKnc1RDvx2dHuxzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTI0NzIzOS5qcGclM0ZEYXRlJTNERGVjJTI1MjAyMSUyNTIwMjAyNCUyNTIwMTElM0EyNkFN'
+    link: '/us/ga/decatur/luxury-homes/'
+  - id: 6
+    status: 'House for sale'
+    price: '$1,050,000'
+    location: '3420 Aviary Lane, Acworth, GA, United States'
+    subStats: '4 Beds | 6 Baths | 4875 sqft'
+    image: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/16x9-fhd/000/640/499/609/1734872002.webp?jy1WKe7ExK6VFZKnc1RDvx2dHuxzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTI0NzIzOS5qcGclM0ZEYXRlJTNERGVjJTI1MjAyMSUyNTIwMjAyNCUyNTIwMTElM0EyNkFN'
+    link: '/us/ga/decatur/luxury-homes/'
