@@ -153,6 +153,10 @@ main {
       display: flex;
       justify-content: space-evenly;
       line-height: 1.3;
+
+      a {
+        justify-content: center;
+      }
     }
 
     li a {
