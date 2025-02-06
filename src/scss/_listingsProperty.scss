@@ -29,10 +29,15 @@
     box-shadow 0.3s ease;
 }
 
-.listing-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+.listing-card a {
+  text-decoration: none;
+  color: black;
 }
+
+// .listing-card:hover {
+//   transform: translateY(-5px);
+//   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+// }
 
 .listing-card img {
   width: 100%;
@@ -50,6 +55,13 @@
 }
 .card-content .price {
   margin: 0;
+}
+.content-row {
+  display: flex;
+  gap: 8px;
+}
+.card-content p {
+  color: #333;
 }
 /* .card-content-header {
       display: flex;

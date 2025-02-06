@@ -13,28 +13,28 @@ import data from "./data.json";
                         {
                             data.listings.map((listing) => (
                                 <div class="listing-card" key={listing.id}>
-                                    <div class="for-sale-img-container">
-                                        <img src={listing.image} />
-                                    </div>
-                                    <div class="card-content">
-                                        <div class="card-content-header">
-                                          {/* <div class="status">
-                                            <span class="dot"></span> {listing.status}
-                                          </div> */}
-                                            <h2 class="price-list-property">
-                                                {listing.price}
-                                            </h2>
-                                            <p class="location">
-                                                {listing.location}
-                                            </p>
-                                            <p class="sub-stats">
-                                                {listing.subStats}
-                                            </p>
+                                    <a href={listing.link}>
+                                        <div class="for-sale-img-container">
+                                            <img src={listing.image} />
+                                            {/* <div class="badge">For Sale</div> */}
                                         </div>
-                                        <div class="btn-outline listings-btn-outline">
-                                            <a href={listing.link}>View Details</a>
+                                        <div class="card-content">
+                                            <div class="card-content-header">
+                                                {/* <div class="status">
+                                                    <span class="dot"></span> {listing.status}
+                                                </div> */}
+                                                <h2 class="price-list-property">
+                                                    {listing.price}
+                                                </h2>
+                                                <p class="location">
+                                                    {listing.location}
+                                                </p>
+                                                <p class="sub-stats">
+                                                    {listing.subStats}
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             ))
                         }
