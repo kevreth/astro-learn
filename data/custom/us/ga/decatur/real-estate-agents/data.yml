@@ -1,6 +1,8 @@
 name: Real Estate Agents
-title: Sample Decatur, Georgia Real Estate Agent Site
-description: Decatur, Georgia Real Estate Agent|Jenny Peterson
+# title: Sample Decatur, Georgia Real Estate Agent Site
+# description: Decatur, Georgia Real Estate Agent|Jenny Peterson
+title: 'Your Trusted Advisor for Buying, Selling, and Investing in Real Estate'
+description: "Welcome to Jenny Peterson's Real Estate Services – your trusted partner in finding the perfect home or investment. With a personalized approach and deep local expertise, I am committed to helping you buy, sell, or invest with confidence. Let’s turn your real estate dreams into reality!"
 nav1:
   - label: Directory
     path: /us/ga/decatur/real-estate-agents/directory
@@ -48,6 +50,42 @@ agent:
   dre: '01995816'
   address: '3512 16th Street | San Francisco, CA 94114'
 navCustom: 'custom-navbar'
+about:
+  title: 'Your Local Expert for Seamless Real Estate Transactions'
+  description: 'Passionate about connecting people with their perfect homes, I specialize in buying, selling, and investing in real estate. With a personalized approach and local expertise, I guide my clients every step of the way to ensure seamless and successful property transactions.'
+  image: 'https://images.squarespace-cdn.com/content/v1/64938f7bf470205219e0b9e4/812c689e-a572-44a1-80dc-25d203330467/2022-10-17_CompassRealEstate_JenniferFerlandLifestyle+-124217C.jpg'
+  link:
+    text: 'Learn More'
+    url: '/us/ga/decatur/real-estate-agents/about'
+contact:
+  title: 'What I Bring to Your Real Estate Journey'
+  description: "Working with me means partnering with someone who truly understands your goals. Whether you're buying your dream home, selling for top value, or investing in real estate, I provide personalized attention, expert guidance, and a commitment to making your experience smooth and stress-free. Let’s achieve your real estate dreams together!"
+  image: 'https://images.squarespace-cdn.com/content/v1/64938f7bf470205219e0b9e4/050f0445-bff6-4b05-b1d5-12e5c74920ee/2022-10-17_CompassRealEstate_JenniferFerlandLifestyle+-125825A.jpg'
+  link:
+    text: 'Working With Me'
+    url: '/us/ga/decatur/real-estate-agents/contact'
+services:
+  title: 'Services Offers'
+  items:
+    - title: 'Buying'
+      description: 'Find your ideal home with expert guidance and market insights.'
+      image: 'https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YnV5aW5nJTIwcmVhbCUyMGVzdGF0ZXxlbnwwfHwwfHx8MA%3D%3D'
+      link: '/us/ga/decatur/real-estate-agents/buying'
+
+    - title: 'Selling'
+      description: 'Get top value for your property with tailored strategies and expert marketing.'
+      image: 'https://images.unsplash.com/photo-1512699355324-f07e3106dae5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHNlbGxpbmclMjByZWFsJTIwZXN0YXRlfGVufDB8fDB8fHww'
+      link: '/us/ga/decatur/real-estate-agents/selling'
+
+    - title: 'Listings Property'
+      description: 'Discover exclusive property listings that fit your needs and lifestyle.'
+      image: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fHNlbGxpbmclMjByZWFsJTIwZXN0YXRlfGVufDB8fDB8fHww'
+      link: '/us/ga/decatur/real-estate-agents/listings'
+
+    - title: 'Real Estate Consulting'
+      description: 'Get expert advice and tailored strategies to navigate the real estate market with confidence.'
+      image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fHNlbGxpbmclMjByZWFsJTIwZXN0YXRlfGVufDB8fDB8fHww'
+      link: '/us/ga/decatur/real-estate-agents/services'
 listings:
   - id: 1
     status: 'House for sale'
