@@ -45,20 +45,18 @@ agent:
   address: '3512 16th Street | San Francisco, CA 94114'
 listings:
   - id: 1
-    status: 'House for sale'
     price: '$350,000'
-    location: ' 3496 Wesley Chapel Rd - 3496 Wesley Chapel Road Decatur, Georgia 3003 '
+    location: '3496 Wesley Chapel Road Decatur, Georgia 3003 '
     subStats: '1 Residential Income Lot'
     image: 'https://images1.loopnet.com/i2/L_2bw8fx8a3s58ec219v4Du3MMPjmWOzgzqlnSoGS2s/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-4-Large.jpg'
     link: '/us/ga/decatur/investment-properties/1'
 
   - id: 2
-    status: 'House for sale'
-    price: '$698,000'
-    location: '3325 Piedmont RD NE, 1702, Atlanta, GA, United States'
-    subStats: '2 Beds | 3 Baths | 1,932 sqft'
-    image: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/641/661/182/1738693435.webp?SQ1v01oNB8CitZ6OBcrLqnkC3LBzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTAzJTJGNDQwZGFmZWNlMjJkNzI5NjU5ZTVmZGFkMDBkZWE0MjMlMkYxMzI4MzY5MDA2LmpwZWc='
-    link: '/us/ga/decatur/single-family-homes/2'
+    price: '$650,000'
+    location: '2369 Whites Mill Rd, Decatur, GA 30032'
+    subStats: '4 Unit Apartment Building'
+    image: 'https://images1.loopnet.com/i2/jQQr0HThgtPR1nwtWQgsQZps6io6x2b7dtkw6MAfcBw/110/2369-Whites-Mill-Rd-Decatur-GA-Primary-Photo-1-Large.jpg'
+    link: '/us/ga/decatur/investment-properties/2'
 
   - id: 3
     status: 'House for sale'
