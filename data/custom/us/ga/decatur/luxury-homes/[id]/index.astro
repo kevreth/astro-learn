@@ -34,8 +34,8 @@ const relatedListings = data.listings.filter(listing => !currentId.includes(list
                   <span class="dot"></span> {listing.status}
                 </div>
                 <h2>{listing.price}</h2>
-                <p>{listing.subStats}</p>
                 <p>{listing.location}</p>
+                <p>{listing.subStats}</p>
               </div>
               <div class="separator-dark"></div>
               <div class="content-description">
@@ -191,22 +191,21 @@ const relatedListings = data.listings.filter(listing => !currentId.includes(list
               {
                 relatedListings.slice(0, 4).map((related) => (
                   <div class="related-listing-card" key={related.id}>
-                    <img src={related.image} alt={`Image of ${related.location}`} />
-                    <div class="status">
-                      <span class="dot"></span> {related.status}
-                    </div>
-                    <h2>
-                      {related.price}
-                    </h2>
-                    <p class="location">
-                        {related.location}
-                    </p>
-                    <p class="sub-stats">
-                        {related.subStats}
-                    </p>
-                    <div class="btn-outline listings-btn-outline">
-                        <a href={related.link}>View Details</a>
-                    </div>
+                    <a href={related.link}>
+                      <img src={related.image} alt={`Image of ${related.location}`} />
+                      <div class="status">
+                        <span class="dot"></span> {related.status}
+                      </div>
+                      <h2>
+                        {related.price}
+                      </h2>
+                      <p class="location">
+                          {related.location}
+                      </p>
+                      <p class="sub-stats">
+                          {related.subStats}
+                      </p>
+                    </a>
                   </div>
                 ))
               }
