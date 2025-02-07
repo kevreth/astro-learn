@@ -1,3 +1,8 @@
 name: About
 title: About Jenny Peterson
-description:  About Jenny Peterson| Inquirita
+description: About Jenny Peterson| Inquirita
+about_bio:
+  # profile_image: 'https://images.squarespace-cdn.com/content/v1/64938f7bf470205219e0b9e4/302cba51-05cf-48f5-9a36-301c4903f1d9/SFrealtorbrandphotoshoot-24.jpg'
+  - 'Jenny started in real estate in 2014 after working in human resources for six years. In that time, Jenny has enabled hundreds of clients to realize their home selling or buying dreams.'
+  - "Jenny's approach is simple: personalized service, honest advice, and a commitment to delivering exceptional results. She prides herself on building lasting relationships with her clients, guiding them every step of the way, and making the complex world of real estate easy to navigate."
+  - "Let's work together to turn your real estate goals into reality!"

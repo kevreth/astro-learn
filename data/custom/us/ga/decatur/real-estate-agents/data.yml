@@ -54,18 +54,13 @@ about:
   title: 'Your Local Expert for Seamless Real Estate Transactions'
   description: 'Passionate about connecting people with their perfect homes, I specialize in buying, selling, and investing in real estate. With a personalized approach and local expertise, I guide my clients every step of the way to ensure seamless and successful property transactions.'
   image: 'https://images.squarespace-cdn.com/content/v1/64938f7bf470205219e0b9e4/812c689e-a572-44a1-80dc-25d203330467/2022-10-17_CompassRealEstate_JenniferFerlandLifestyle+-124217C.jpg'
-  link:
-    text: 'Learn More'
-    url: '/us/ga/decatur/real-estate-agents/about'
+  link: '/us/ga/decatur/real-estate-agents/about'
 contact:
   title: 'What I Bring to Your Real Estate Journey'
   description: "Working with me means partnering with someone who truly understands your goals. Whether you're buying your dream home, selling for top value, or investing in real estate, I provide personalized attention, expert guidance, and a commitment to making your experience smooth and stress-free. Let’s achieve your real estate dreams together!"
   image: 'https://images.squarespace-cdn.com/content/v1/64938f7bf470205219e0b9e4/050f0445-bff6-4b05-b1d5-12e5c74920ee/2022-10-17_CompassRealEstate_JenniferFerlandLifestyle+-125825A.jpg'
-  link:
-    text: 'Working With Me'
-    url: '/us/ga/decatur/real-estate-agents/contact'
+  link: '/us/ga/decatur/real-estate-agents/contact'
 services:
-  title: 'Services Offers'
   items:
     - title: 'Buying'
       description: 'Find your ideal home with expert guidance and market insights.'

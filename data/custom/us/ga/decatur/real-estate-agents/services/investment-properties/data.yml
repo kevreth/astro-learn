@@ -1,3 +1,31 @@
 name: Commercial
 title: Commercial Services Offers
 description: Commercial Services Offers| Inquirita
+investment_properties:
+  title: 'Commercial Real Estate'
+  link:
+    text: 'Investment Properties'
+    url: '/us/ga/decatur/investment-properties'
+  description: "Investing in real estate can provide your business with the foundation it needs to grow and thrive. Whether you're looking for office space, retail locations, industrial, or residential properties, we specialize in connecting you with the right opportunities to meet your goals."
+  services:
+    - title: 'Our Services in Investment Real Estate'
+      items:
+        - 'Lease Negotiation and Tenant Representation: Secure favorable lease terms tailored to your business needs.'
+        - 'Zoning and Compliance Guidance: Navigate complex zoning laws and regulations with ease.'
+        - 'Strategic Market Analysis: Receive insights into market trends and prime locations.'
+    - title: 'Why Invest in Commercial Real Estate?'
+      items:
+        - 'Long-Term Stability: Commercial properties often provide consistent rental income and equity growth over time.'
+        - 'Business Expansion: The right location can significantly boost your business visibility and profitability.'
+        - 'Portfolio Diversification: Diversify your investment portfolio with high-value commercial assets.'
+    - title: 'Tailored Solutions for Your Business'
+      items:
+        - "We understand that every business has unique requirements. That's why our team works closely with you to identify the right commercial properties, ensuring they align with your operational needs and financial goals."
+    - title: 'Get Started Today'
+      items:
+        - "Whether you're a first-time investor or an experienced entrepreneur, our expertise in commercial real estate will guide you every step of the way. Contact us to learn more about the opportunities waiting for you!"
+  buttons:
+    - text: 'Investment Properties'
+      url: '/us/ga/decatur/investment-properties'
+    - text: 'Schedule a Consultation'
+      url: '/us/ga/decatur/real-estate-agents/contact'

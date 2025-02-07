@@ -1,3 +1,16 @@
 name: Selling
 title: Selling Jenny Peterson
-description:  Selling Jenny Peterson| Inquirita
+description: Selling Jenny Peterson| Inquirita
+selling:
+  title: 'Find Your Dream Buyer Today'
+  description:
+    - 'Effortlessly sell your home with expert guidance. From strategic pricing to targeted marketing, I ensure your property stands out, attracting the best offers quickly and stress-free.'
+    - "Selling your home is a significant decision, and I am here to make the process as seamless and rewarding as possible. With a tailored approach to each property, I ensure your home is presented in the best light to attract serious buyers. From staging and professional photography to strategic pricing and marketing, every detail is meticulously planned to maximize your property's value. My deep understanding of the market, combined with strong negotiation skills, ensures you get the best offer in the shortest time. Whether you're upsizing, downsizing, or relocating, I'll guide you through every step with expertise and care."
+  image:
+    src: 'https://images.squarespace-cdn.com/content/v1/64938f7bf470205219e0b9e4/07c1c87c-5d4e-41a5-985c-0f8a3b226014/SFrealtorbrandphotoshoot-7.jpg'
+    alt: 'Dream Home'
+  buttons:
+    - text: 'LEARN MORE'
+      url: '/us/ga/decatur/real-estate-agents/about'
+    - text: 'BOOK A CONSULTATION'
+      url: '/us/ga/decatur/real-estate-agents/contact'

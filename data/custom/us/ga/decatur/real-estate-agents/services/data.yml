@@ -1,3 +1,27 @@
 name: Services
 title: Services Jenny Offers
 description: Services Jenny Offers| Inquirita
+services_consulting:
+  page_title: 'Our Real Estate Services'
+  services:
+    - title: 'Single-Family Homes'
+      description: 'Looking for your dream home? Our expertise in residential real estate ensures that you find the perfect home that fits your lifestyle and budget.'
+      features:
+        - 'Assistance with buying, selling, or renting residential properties.'
+        - 'Comprehensive market analysis to find the best value for your investment.'
+        - 'A personalized approach to meet your unique needs.'
+      link: '/us/ga/decatur/real-estate-agents/services/single-family-homes'
+    - title: 'Luxury Homes'
+      description: 'Discover some of the most exclusive luxury homes and estates in the market. Our team specializes in high-end properties and offers a tailored service to help you find a property that matches your vision.'
+      features:
+        - 'Access to exclusive luxury property listings.'
+        - 'Customized strategies for luxury property marketing.'
+        - 'Professional staging and high-quality photography to highlight your property.'
+      link: '/us/ga/decatur/real-estate-agents/services/luxury-homes'
+    - title: 'Investment Properties'
+      description: 'Real estate investing can be a game-changer for your business. Let us connect you with the right opportunities.'
+      features:
+        - 'Lease negotiation and tenant representation.'
+        - 'Guidance on zoning and compliance regulations.'
+        - 'Market analysis for strategic investments.'
+      link: '/us/ga/decatur/real-estate-agents/services/investment-properties'

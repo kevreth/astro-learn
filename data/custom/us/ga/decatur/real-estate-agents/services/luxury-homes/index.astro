@@ -6,99 +6,49 @@ import data from "./data.json";
 <Default data={data}>
     <div slot="pageCustom">
         <div class="mainContent no-scroll-content" id="main-wrapper">
-            <h1>Explore Luxury Properties</h1>
+            <h1>{data.luxury_properties.title}</h1>
             <div class="text-content scroll-content">
                 <div class="luxury-container">
                     <p class="locni-description">
-                        Luxury homes are more than just properties—they are a
-                        lifestyle. Our exclusive luxury listings showcase the
-                        finest estates, featuring breathtaking designs,
-                        unmatched locations, and premium amenities. From elegant
-                        city penthouses to serene countryside retreats, we have
-                        the perfect home waiting for you.
+                        {data.luxury_properties.description}
                     </p>
                     <div class="luxury-features">
-                        <h3>What Sets Our Luxury Listings Apart?</h3>
-                        <ul class="padding-top">
-                            <li>
-                                <strong>Exclusive Access: </strong>Gain entry to
-                                some of the most sought-after luxury properties,
-                                many of which are not publicly listed.
-                            </li>
-                            <li>
-                                <strong>Tailored Search: </strong>Your
-                                preferences matter. We customize your property
-                                search to ensure every listing matches your
-                                vision and lifestyle.
-                            </li>
-                            <li>
-                                <strong>Premium Amenities: </strong>Explore
-                                homes with features such as:
-                            </li>
-                            <ul>
-                                <li>Private pools and spas</li>
-                                <li>Gourmet kitchens</li>
-                                <li>
-                                    Expansive gardens and outdoor living spaces
-                                </li>
-                                <li>
-                                    State-of-the-art home automation systems
-                                </li>
-                                <li>
-                                    Proximity to world-class schools, golf
-                                    courses, and entertainment hubs
-                                </li>
-                            </ul>
-                        </ul>
-                        <a class="btn-primary" href="/us/ga/decatur/luxury-homes"
-                        >Luxury Homes</a>
-                        <div class="bottom-line"></div>
-                        <h3>Our Expertise in Luxury Real Estate</h3>
-                        <p>
-                            Our team specializes in understanding the nuances of
-                            the luxury market. We work closely with
-                            high-net-worth individuals to identify and secure
-                            properties that not only meet their needs but exceed
-                            their expectations.
-                        </p>
-                        <ul>
-                            <li>
-                                <strong
-                                    >Confidentiality and Discretion:
-                                </strong>Your privacy is our priority.
-                            </li>
-                            <li>
-                                <strong>Global Network: </strong>Access to
-                                international luxury properties through our
-                                network of partners.
-                            </li>
-                            <li>
-                                <strong>Personalized Support: </strong>From
-                                property tours to negotiations, we ensure a
-                                seamless experience.
-                            </li>
-                        </ul>
-                        <div class="bottom-line"></div>
-                        <h3>Your Dream Home Awaits</h3>
-                        <p>
-                            Start your journey toward finding a luxury property
-                            that truly reflects your lifestyle. Contact us today
-                            to explore exclusive properties and let us make your
-                            dream a reality.
-                        </p>
+                        {data.luxury_properties.features.map(feature => (
+                            <div class="bottom-line"></div>
+                            <div>
+                                <h3>{feature.title}</h3>
+                                {feature.description && <p>{feature.description}</p>}
+
+                                {feature.items && (
+                                <ul class="padding-top">
+                                    {feature.items.map(item => (
+                                    <li>
+                                        <strong>{item.title}:</strong> {item.description}
+                                        {item.subitems && (
+                                        <ul>
+                                            {item.subitems.map(subitem => (
+                                            <li>{subitem}</li>
+                                            ))}
+                                        </ul>
+                                        )}
+                                    </li>
+                                    ))}
+                                </ul>
+                                )}
+                            </div>
+                        ))}
                     </div>
-                    <div class="padding-top">
-                        <a class="btn-primary" href="/us/ga/decatur/luxury-homes"
-                        >Luxury Homes</a>
-                        <a class="btn-primary" href="/us/ga/decatur/real-estate-agents/contact"
-                            >Schedule a Consultation</a
-                        >
+                    <div class="padding-top flex-gap">
+                        {data.luxury_properties.buttons.map(button => (
+                            <a class="btn-primary" href={button.url}>{button.text}</a>
+                        ))}
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </Default>
+
 <style>
     .luxury-container h3 {
         font-size: 1.5rem;

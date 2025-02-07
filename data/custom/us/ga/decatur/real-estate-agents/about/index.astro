@@ -5,37 +5,24 @@ import data from "./data.json";
 <Default data={data}>
   <div slot="pageCustom">
     <div class="mainContent no-scroll-content" id="main-wrapper">
-      <h1>About Jenny</h1>
+      <h1>{data.title}</h1>
       <div class="text-content scroll-content">
         <div class="about-container locni-container">
           <div class="about-header locni-section locni-text-light-color">
             <div class="locni-section-img">
               <img
                 class="profile-image"
-                src="https://images.squarespace-cdn.com/content/v1/64938f7bf470205219e0b9e4/302cba51-05cf-48f5-9a36-301c4903f1d9/SFrealtorbrandphotoshoot-24.jpg"
-                alt="Jenny Peterson"
+                src={data.about.image} 
+                alt={data.agent.name}
               />
-              <p class="call-now">CALL NOW: 530.990.5366</p>
+              <p class="call-now">CALL NOW: {data.agent.phone}</p>
             </div>
             <div class="about-bio locni-section-content">
               <h2>GET TO KNOW ME</h2>
               <div class="bottom-line-no-padding"></div>
-              <p>
-                Jenny started in real estate in 2014 after working in human
-                resources for six years. In that time, Jenny has enabled
-                hundreds of clients to realize their home selling or buying
-                dreams.
-              </p>
-              <p>
-                Jenny's approach is simple: personalized service, honest advice,
-                and a commitment to delivering exceptional results. She prides
-                herself on building lasting relationships with her clients,
-                guiding them every step of the way, and making the complex world
-                of real estate easy to navigate.
-              </p>
-              <p>
-                Let's work together to turn your real estate goals into reality!
-              </p>
+              {data.about_bio.map(p => (
+                <p>{p}</p>
+              ))}
             </div>
           </div>
         </div>

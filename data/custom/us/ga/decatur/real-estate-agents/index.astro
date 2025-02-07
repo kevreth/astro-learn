@@ -21,14 +21,14 @@ const listings = data.listings
                 <div class="locni-section-content">
                   <h2>{data.about.title}</h2>
                   <p>{data.about.description}</p>
-                  <a class="btn-primary locni-section-btn" href="/us/ga/decatur/real-estate-agents/about">Learn More</a>
+                  <a class="btn-primary locni-section-btn" href={data.about.link}>Learn More</a>
                 </div>
               </div>
               <div class="summary-contact locni-section">
                 <div class="summary-contact-content locni-section-content">
                   <h2>{data.contact.title}</h2>
                   <p>{data.contact.description}</p>
-                  <a class="btn-primary locni-section-btn" href="/us/ga/decatur/real-estate-agents/contact">Working With Me</a>
+                  <a class="btn-primary locni-section-btn" href={data.contact.link}>Working With Me</a>
                 </div>
                 <div class="summary-contact-img locni-section-img">
                   <img src={data.contact.image} alt={data.agent.name}>

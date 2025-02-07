@@ -1,3 +1,58 @@
 name: Residental
 title: Residental Services Offers
 description: Residental Services Offers| Inquirita
+single_family_homes:
+  title: 'Single-Family Homes'
+  link:
+    text: 'Single Family Homes'
+    url: '/us/ga/decatur/single-family-homes'
+  services:
+    title: 'Our Residential Real Estate Services'
+    categories:
+      - title: 'Buying a Home'
+        items:
+          - 'Tailored property searches based on your preferences.'
+          - 'Expert advice on neighborhoods, schools, amenities, and commute options.'
+          - 'Support during the negotiation process to secure the best deal.'
+      - title: 'Selling Your Home'
+        items:
+          - 'Accurate property valuation using market trends and data analysis.'
+          - 'Professional marketing, including high-quality photography and virtual tours.'
+          - 'Guidance on preparing and staging your home to attract the best offers.'
+      - title: 'Renting and Leasing'
+        items:
+          - 'Assistance in finding the perfect rental property.'
+          - 'Helping landlords connect with reliable tenants.'
+          - 'Negotiation of fair and transparent lease terms.'
+
+      - title: 'Why Choose Us?'
+        items:
+          - 'Market Knowledge: We stay up-to-date with the latest trends, ensuring you make informed decisions.'
+          - 'Personalized Approach: Your needs and goals are our top priority, and we tailor our services to suit you.'
+          - 'Stress-Free Experience: From paperwork to negotiations, we handle the complexities so you can focus on what matters most.'
+
+      - title: 'Tips for Homebuyers'
+        items:
+          - 'Set a Budget: Understand your financial limits and get pre-approved for a mortgage.'
+          - 'Do Your Research: Explore neighborhoods and think about your long-term needs.'
+          - 'Think Beyond the Purchase Price: Consider additional costs like taxes, maintenance, and insurance.'
+
+  faqs:
+    title: 'FAQs'
+    questions:
+      - question: "How do I know if I'm ready to buy a home?"
+        answer: 'Start by assessing your finances and lifestyle needs. Our team can guide you through every step.'
+      - question: 'Can you help with financing options?'
+        answer: 'Yes! We can connect you with trusted mortgage advisors to explore financing solutions.'
+      - question: 'What should I look for during a property viewing?'
+        answer: 'Pay attention to structural integrity, layout, lighting, and any necessary repairs.'
+
+  contact:
+    title: 'Contact Us'
+    text: "Are you ready to take the next step toward finding your dream home? Reach out to our team today, and let's make it happen!"
+
+  buttons:
+    - text: 'Single Family Homes'
+      url: '/us/ga/decatur/single-family-homes'
+    - text: 'Schedule a Consultation'
+      url: '/us/ga/decatur/real-estate-agents/contact'

@@ -6,60 +6,43 @@ import data from "./data.json";
 <Default data={data}>
     <div slot="pageCustom">
         <div class="mainContent no-scroll-content" id="main-wrapper">
-            <h1>Single-Family Homes</h1>
+            <h1>{data.single_family_homes.title}</h1>
             <div class="text-content scroll-content">
                 <div class="residental-container locni-container locni-text-light-color">
-                    <a class="btn-primary" href="/us/ga/decatur/single-family-homes">Single Family Homes</a>
+                    <a class="btn-primary margin-top " href={data.single_family_homes.link.url}>
+                        {data.single_family_homes.link.text}
+                    </a>
                     <div class="bottom-line"></div>
-                    <h2>Our Residential Real Estate Services</h2>
+                    <h2>{data.single_family_homes.services.title}</h2>
                     <div class="locni-features residental-services">
-                        <h3>Buying a Home</h3>
-                        <ul>
-                            <li>Tailored property searches based on your preferences.</li>
-                            <li>Expert advice on neighborhoods, schools, amenities, and commute options.</li>
-                            <li>Support during the negotiation process to secure the best deal.</li>
-                        </ul>
-                        <h3>Selling Your Home</h3>
-                        <ul>
-                            <li>Accurate property valuation using market trends and data analysis.</li>
-                            <li>Professional marketing, including high-quality photography and virtual tours.</li>
-                            <li>Guidance on preparing and staging your home to attract the best offers.</li>
-                        </ul>
-                        <h3>Renting and Leasing</h3>
-                        <ul>
-                            <li>Assistance in finding the perfect rental property.</li>
-                            <li>Helping landlords connect with reliable tenants.</li>
-                            <li>Negotiation of fair and transparent lease terms.</li>
-                        </ul>
+                        {data.single_family_homes.services.categories.map(category => (
+                            <div>
+                                <h3>{category.title}</h3>
+                                <ul>
+                                    {category.items.map(item => (
+                                        <li>{item}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
                     </div>
                     <div class="bottom-line"></div>
-                    <h2>Why Choose Us?</h2>
-                    <ul>
-                        <li>Market Knowledge: We stay up-to-date with the latest trends, ensuring you make informed decisions.</li>
-                        <li>Personalized Approach: Your needs and goals are our top priority, and we tailor our services to suit you.</li>
-                        <li>Stress-Free Experience: From paperwork to negotiations, we handle the complexities so you can focus on what matters most.</li>
-                    </ul>
+                    <h2>{data.single_family_homes.faqs.title}</h2>
+                    {data.single_family_homes.faqs.questions.map(faq => (
+                        <>
+                            <h4>Q: {faq.question}</h4>
+                            <p>{faq.answer}</p>
+                        </>
+                    ))}
                     <div class="bottom-line"></div>
-                    <h2>Tips for Homebuyers</h2>
-                    <ul>
-                        <li>Set a Budget: Understand your financial limits and get pre-approved for a mortgage.</li>
-                        <li>Do Your Research: Explore neighborhoods and think about your long-term needs.</li>
-                        <li>Think Beyond the Purchase Price: Consider additional costs like taxes, maintenance, and insurance.</li>
-                    </ul>
-                    <div class="bottom-line"></div>
-                    <h2>FAQs</h2>
-                    <h4>Q: How do I know if I'm ready to buy a home?</h4>
-                    <p>Start by assessing your finances and lifestyle needs. Our team can guide you through every step.</p>
-                    <h4>Q: Can you help with financing options?</h4>
-                    <p>Yes! We can connect you with trusted mortgage advisors to explore financing solutions.</p>
-                    <h4>Q: What should I look for during a property viewing?</h4>
-                    <p>Pay attention to structural integrity, layout, lighting, and any necessary repairs.</p>
-                    <div class="bottom-line"></div>
-                    <h2>Contact Us</h2>
-                    <p>Are you ready to take the next step toward finding your dream home? Reach out to our team today, and let's make it happen!</p>
-                    <div class="padding-top">
-                        <a class="btn-primary" href="/us/ga/decatur/single-family-homes">Single Family Homes</a>
-                        <a class="btn-primary" href="/us/ga/decatur/real-estate-agents/contact">Schedule a Consultation</a>
+                    <h2>{data.single_family_homes.contact.title}</h2>
+                    <p>{data.single_family_homes.contact.text}</p>
+                    <div class="padding-top flex-gap">
+                        {data.single_family_homes.buttons.map(button => (
+                            <a class="btn-primary" href={button.url}>
+                                {button.text}
+                            </a>
+                        ))}
                     </div>
                 </div>
             </div>

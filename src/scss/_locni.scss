@@ -18,10 +18,10 @@
   border-bottom: 1px solid #ccc;
 }
 
-.bottom-line:last-child,
-.bottom-line-no-padding :last-child {
-  border-bottom: none;
-}
+// .bottom-line:last-child,
+// .bottom-line-no-padding :last-child {
+//   border-bottom: none;
+// }
 
 .bottom-line-no-padding {
   border-bottom: 1px solid #ccc;
@@ -51,8 +51,17 @@
   margin: 0 !important;
 }
 
+.margin-top {
+  margin-top: 20px;
+}
 .padding-top {
   padding-top: 20px;
+}
+
+.flex-gap {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
 }
 
 .locni-section {
@@ -162,21 +171,21 @@
 //   border-color: rgb(105, 97, 89);
 // }
 
-// .btn-outline a {
-//   display: inline-block;
-//   padding: 12px 20px;
-//   font-weight: bold;
-//   text-align: center;
-//   border: 2px solid #999;
-//   color: #222;
-//   text-decoration: none;
-//   transition: all 0.3s ease;
-// }
+.btn-outline a {
+  display: inline-block;
+  padding: 12px 20px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #999;
+  color: #222;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
 
-// .btn-outline a:hover {
-//   background: #000;
-//   color: #fff;
-// }
+.btn-outline a:hover {
+  background: #000;
+  color: #fff;
+}
 
 .locni-container {
   h1,

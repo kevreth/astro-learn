@@ -6,91 +6,41 @@ import data from "./data.json";
 <Default data={data}>
     <div slot="pageCustom">
         <div class="mainContent no-scroll-content" id="main-wrapper">
-            <h1>Commercial Real Estate</h1>
+            <h1>{data.investment_properties.title}</h1>
             <div class="text-content scroll-content">
                 <div class="commercial-container locni-container">
                     <p class="locni-description">
-                        Investing in real estate can provide your
-                        business with the foundation it needs to grow and
-                        thrive. Whether you're looking for office space, retail
-                        locations, industrial, or residential properties, we specialize in
-                        connecting you with the right opportunities to meet your
-                        goals.
+                        {data.investment_properties.description}
                     </p>
+                    <a class="btn-primary" href={data.investment_properties.link.url}>
+                        {data.investment_properties.link.text}
+                    </a>
+                    <div class="bottom-line"></div>
                     <div class="locni-features">
-                        <h2>Our Services in Investment Real Estate</h2>
-                        <ul class="padding-top">
-                            <li>
-                                <strong
-                                    >Lease Negotiation and Tenant
-                                    Representation:
-                                </strong>Secure favorable lease terms tailored
-                                to your business needs. Benefit from expert
-                                representation during negotiations.
-                            </li>
-                            <li>
-                                <strong
-                                    >Zoning and Compliance Guidance:
-                                </strong>Navigate complex zoning laws and
-                                regulations with ease. Ensure your property
-                                meets all necessary legal and operational
-                                requirements.
-                            </li>
-                            <li>
-                                <strong
-                                    >Strategic Market Analysis:
-                                </strong>Receive insights into market trends and
-                                prime locations. Identify properties with high
-                                growth potential for your business.
-                            </li>
-                        </ul>
-                        <a class="btn-primary" href="/us/ga/decatur/investment-properties"
-                        >Investment Properties</a>
-                        <div class="bottom-line"></div>
-                        <h2>Why Invest in Commercial Real Estate?</h2>
-                        <ul class="padding-top">
-                            <li>
-                                <strong>Long-Term Stability: </strong>Commercial
-                                properties often provide consistent rental
-                                income and equity growth over time.
-                            </li>
-                            <li>
-                                <strong>Business Expansion: </strong>The right
-                                location can significantly boost your business
-                                visibility and profitability.
-                            </li>
-                            <li>
-                                <strong
-                                    >Portfolio Diversification:
-                                </strong>Diversify your investment portfolio
-                                with high-value commercial assets.
-                            </li>
-                        </ul>
-                        <div class="bottom-line"></div>
-                        <h2>Tailored Solutions for Your Business</h2>
-                        <p>
-                            We understand that every business has unique
-                            requirements. That's why our team works closely with
-                            you to identify the right commercial properties,
-                            ensuring they align with your operational needs and
-                            financial goals.
-                        </p>
-                        <div class="bottom-line"></div>
-                        <h2>Get Started Today</h2>
-                        <p>
-                            Whether you're a first-time investor or an
-                            experienced entrepreneur, our expertise in
-                            commercial real estate will guide you every step of
-                            the way. Contact us to learn more about the
-                            opportunities waiting for you!
-                        </p>
-                    </div>
-                    <div class="padding-top">
-                        <a class="btn-primary" href="/us/ga/decatur/investment-properties"
-                        >Investment Properties</a>
-                        <a class="btn-primary" href="/us/ga/decatur/real-estate-agents/contact"
-                            >Schedule a Consultation</a
-                        >
+                        {data.investment_properties.services.map(service => (
+                            <div>
+                              <h2>{service.title}</h2>
+                              <ul>
+                                {service.items.map(item => {
+                                    if (item.includes(':')) {
+                                        const [boldText, normalText] = item.split(':');
+                                        return (
+                                            <li>
+                                                <strong>{boldText}:</strong>{normalText}
+                                            </li>
+                                        )
+                                    } else {
+                                        return <li>{item}</li>
+                                    }
+                                })}
+                              </ul>
+                              <div class="bottom-line"></div> 
+                            </div>
+                          ))}
+                    <div class="padding-top flex-gap">
+                        {data.investment_properties.buttons.map(button => (
+                          <a class="btn-primary" href={button.url}>{button.text}</a>
+                        ))}
                     </div>
                 </div>
             </div>
