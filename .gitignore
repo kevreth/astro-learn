@@ -8,6 +8,8 @@
 /test-results/
 /public/layout.manager.js
 /public/tabulator.js
+/public/style.css*
+/public/imageSlider.js
 
 # generated types
 .astro/
