@@ -1,6 +1,6 @@
 name: Investment Properties
 title: Decatur, GA Investment Properties
-description:  Decatur, GA Investment Properties | Jenny Peterson
+description: Decatur, GA Investment Properties | Jenny Peterson
 nav1:
   - label: Directory
     path: /us/ga/decatur/real-estate-agents/directory
@@ -29,17 +29,57 @@ nav2:
     icon: /svg/testimonials.svg
 logo:
   src: 'https://images.squarespace-cdn.com/content/v1/64938f7bf470205219e0b9e4/302cba51-05cf-48f5-9a36-301c4903f1d9/SFrealtorbrandphotoshoot-24.jpg'
-  alt: "Jenny Peterson"
+  alt: 'Jenny Peterson'
   slogan: 'Your Hometown Real Estate Professional'
 header: Jenny Peterson - Your Hometown Real Estate Professional
 footer: &copy; 2024 Inquirita.com
 backgroundImages:
   - https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 colors:
-  primaryColor: "#045858"
+  primaryColor: '#045858'
 agent:
-  name: "Jenny Peterson"
-  phone: "530.990.5366"
-  email: "jennyperterson@gmail.com"
-  dre: "01995816"
-  address: "3512 16th Street | San Francisco, CA 94114"
+  name: 'Jenny Peterson'
+  phone: '530.990.5366'
+  email: 'jennyperterson@gmail.com'
+  dre: '01995816'
+  address: '3512 16th Street | San Francisco, CA 94114'
+listings:
+  - id: 1
+    status: 'For sale'
+    price: '$350,000'
+    location: '3496 Wesley Chapel Road Decatur, Georgia 3003 '
+    subStats: '1 Residential Income Lot'
+    image: 'https://images1.loopnet.com/i2/L_2bw8fx8a3s58ec219v4Du3MMPjmWOzgzqlnSoGS2s/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-4-Large.jpg'
+    link: '/us/ga/decatur/investment-properties/1'
+
+  - id: 2
+    status: 'For sale'
+    price: '$650,000'
+    location: '2369 Whites Mill Rd, Decatur, GA 30032'
+    subStats: '4 Unit Apartment Building'
+    image: 'https://images1.loopnet.com/i2/jQQr0HThgtPR1nwtWQgsQZps6io6x2b7dtkw6MAfcBw/110/2369-Whites-Mill-Rd-Decatur-GA-Primary-Photo-1-Large.jpg'
+    link: '/us/ga/decatur/investment-properties/2'
+
+  - id: 3
+    status: 'For sale'
+    price: '$1,200,000'
+    image: 'https://images.unsplash.com/photo-1605352081508-2e09927ecfe3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fEx1eHVyeSUyMFdhdGVyZnJvbnQlMjBWaWxsYXxlbnwwfHwwfHx8MA%3D%3D'
+    link: ''
+
+  - id: 4
+    status: 'For sale'
+    price: '$500,000'
+    image: 'https://nancysaedi.lovinltd.com/API/File/Download?id=ae0aa303-c0f6-48ae-a036-91fef62fecb7'
+    link: ''
+
+  - id: 5
+    status: 'For sale'
+    price: '$725,000'
+    image: 'https://nancysaedi.lovinltd.com/API/File/Download?id=f640c328-0503-45a1-9dd0-2f30b0c057e3'
+    link: ''
+
+  - id: 6
+    status: 'For sale'
+    price: '$350,000'
+    image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGZhbWlseSUyMGhvdXNlfGVufDB8fDB8fHww'
+    link: ''

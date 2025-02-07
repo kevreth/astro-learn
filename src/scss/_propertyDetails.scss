@@ -383,6 +383,11 @@ hr {
   margin-bottom: 10px;
 }
 
+.related-listing-card a {
+  text-decoration: none;
+  color: black;
+}
+
 .related-listing-card h4 {
   font-size: 16px;
   color: #33473c;
@@ -444,7 +449,7 @@ hr {
   align-items: center;
   font-size: 14px;
   color: #444;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .status .dot {
@@ -454,6 +459,40 @@ hr {
   border-radius: 50%;
   display: inline-block;
   margin-right: 5px;
+}
+
+// Property facts
+.property-facts {
+  color: #000;
+  // max-width: 600px;
+  margin: 20px auto;
+}
+
+// .property-facts h2 {
+//   font-size: 20px;
+//   font-weight: bold;
+//   margin-bottom: 10px;
+// }
+
+.property-facts .facts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.property-facts .fact-item {
+  width: 48%;
+  margin-bottom: 10px;
+}
+
+.property-facts .fact-label {
+  font-weight: normal;
+  color: #333;
+}
+
+.property-facts .fact-value {
+  font-weight: bold;
+  color: #000;
 }
 
 @media (min-width: $desktop) {
