@@ -62,9 +62,11 @@ listings:
 
   - id: 3
     status: 'For sale'
-    price: '$1,200,000'
-    image: 'https://images.unsplash.com/photo-1605352081508-2e09927ecfe3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fEx1eHVyeSUyMFdhdGVyZnJvbnQlMjBWaWxsYXxlbnwwfHwwfHx8MA%3D%3D'
-    link: ''
+    price: '$635,000'
+    location: '4889 Covington Hwy, Decatur, GA 30035'
+    subStats: 'Prime Corner Commercial Lot'
+    image: 'https://images.crexi.com/assets/1113875/a2dd8f2e76fa410cbb3b1060a1a8c43c_1306x734.jpgx1eHVyeSUyMFdhdGVyZnJvbnQlMjBWaWxsYXxlbnwwfHwwfHx8MA%3D%3D'
+    link: '/us/ga/decatur/investment-properties/3'
 
   - id: 4
     status: 'For sale'

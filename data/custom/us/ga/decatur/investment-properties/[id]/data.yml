@@ -1,12 +1,9 @@
-name: Investment Properties
-title: Investment Properties
+name: Investment Properties details
+title: Investment Properties details
 description: Investment Properties Detail Property| Inquirita
 listings_details:
   - id: 1
     agent:
-    price: '$350,000'
-    location: ' 3496 Wesley Chapel Rd - 3496 Wesley Chapel Road Decatur, Georgia 3003 '
-    subStats: '1 Residential Income Lot'
     gallery:
       - src: 'https://images1.loopnet.com/i2/L_2bw8fx8a3s58ec219v4Du3MMPjmWOzgzqlnSoGS2s/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-4-Large.jpg'
       - src: 'https://images1.loopnet.com/i2/lXXaYsyToqH-F1qI70uAX2kcv5_ADVqku_UaA7cKa3Y/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-3-Large.jpg'
@@ -36,9 +33,6 @@ listings_details:
         value: '1'
   - id: 2
     agent:
-    price: '$650,000'
-    location: '2369 Whites Mill Rd, Decatur, GA 30032'
-    subStats: '4 Unit Apartment Building'
     gallery:
       - src: 'https://images1.loopnet.com/i2/jQQr0HThgtPR1nwtWQgsQZps6io6x2b7dtkw6MAfcBw/110/2369-Whites-Mill-Rd-Decatur-GA-Primary-Photo-1-Large.jpg'
       - src: 'https://images1.loopnet.com/i2/UgE3cy8TBOsTqXLG8jGXGNXm5Th_Y27rgcYCIU-RgZ8/116/2369-Whites-Mill-Rd-Decatur-GA-Building-Photo-64-LargeHighDefinition.jpg'
@@ -76,3 +70,51 @@ listings_details:
         value: '2'
       - label: 'Year Built/Renovated'
         value: '1958/2025'
+  - id: 3
+    agent:
+    gallery:
+      - src: 'https://images.crexi.com/assets/1113875/a2dd8f2e76fa410cbb3b1060a1a8c43c_1306x734.jpgx1eHVyeSUyMFdhdGVyZnJvbnQlMjBWaWxsYXxlbnwwfHwwfHx8MA%3D%3D'
+      - src: 'https://images.crexi.com/assets/1113875/7876d9cb82bf487f9e96a86d697d23a9_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1113875/7efdd1f2a0c74be981a5cd0869668a56_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1113875/f85cd9c370264b3c82e62e9d8f766c73_3000x2000_resize.jpg'
+      - src: 'https://images.crexi.com/assets/1113875/f407a2834fc54140831358f3c3607076_3000x2000_resize.jpg'
+      - src: 'https://images.crexi.com/assets/1113875/62776ef7ec044723966a81eaf39578d0_3000x2000_resize.jpg'
+      - src: 'https://images.crexi.com/assets/1113875/7c0f8787c2904df292a7280842972f8a_3000x2000_resize.jpg'
+      - src: 'https://images.crexi.com/assets/1113875/4757a0fb347840a18feee24df1b012fb_3000x2000_resize.jpg'
+    detail_description: >
+      Introducing 4889 Covington Highway, Decatur – a prime commercial property with unlimited potential, waiting for your entrepreneurial vision! This versatile space, situated on a desirable corner lot, is perfect for those looking to establish a thriving business in a bustling area.
+
+      Located in the heart of Decatur, this commercial zoned property boasts a partially built-out seafood restaurant setup, complete with a grease trap and ready-to-use equipment. The 4,331 sq. ft. space provides ample room for your dining establishment, whether you're looking to serve up delectable seafood dishes, or explore a different culinary concept altogether.
+
+      Not in the food industry? No problem! With its flexible floor plan and prime location, 4889 Covington Highway can easily be converted to accommodate a variety of retail options, such as specialty grocery stores, fitness centers, office spaces, salons, gas stations, car washes, auto body shops, tattoos, and more.
+
+      The corner lot positioning of this property ensures maximum visibility on the bustling Covington Highway, attracting a steady flow of foot traffic and generating excellent exposure for your business. Don't miss out on the opportunity to turn 4889 Covington Highway into the perfect space for your thriving enterprise.
+
+      Schedule a showing today and let your entrepreneurial dreams become reality!
+    map:
+      iframe_src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509317!2d-122.42037928468142!3d37.774929279758874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df04cbb5%3A0xdf978c470c530d3a!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1699378351969!5m2!1sen!2sus'
+    property_facts:
+      - label: 'Property Type'
+        value: 'Retail'
+      - label: 'Subtype'
+        value: 'Convenience Store, Grocery Store, Storefront'
+      - label: 'Investment Type'
+        value: 'Owner/User'
+      - label: 'Tenancy'
+        value: 'Single'
+      - label: 'Square Footage'
+        value: '4,331'
+      - label: 'Net Rentable (sq ft)'
+        value: '4,331'
+      - label: 'Year Built'
+        value: '1960'
+      - label: 'Year Renovated'
+        value: '2016'
+      - label: 'Stories'
+        value: '1'
+      - label: 'Zoning'
+        value: 'C2'
+      - label: 'Parking (spaces)'
+        value: '10'
+      - label: 'Broker Co-Op'
+        value: 'Yes'

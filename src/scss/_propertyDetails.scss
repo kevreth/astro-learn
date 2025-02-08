@@ -481,8 +481,12 @@ hr {
 }
 
 .property-facts .fact-item {
-  width: 48%;
   margin-bottom: 10px;
+  min-width: 200px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex: 1;
 }
 
 .property-facts .fact-label {
@@ -493,9 +497,15 @@ hr {
 .property-facts .fact-value {
   font-weight: bold;
   color: #000;
+  text-align: right;
 }
 
 @media (min-width: $desktop) {
+  .property-facts .fact-item {
+    width: 48%;
+    min-width: unset !important;
+    flex: unset !important;
+  }
   .content-header {
     margin-bottom: 20px;
   }
