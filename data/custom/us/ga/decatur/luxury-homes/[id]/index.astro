@@ -2,20 +2,15 @@
 import ImageSlider from "../src/astro/components/ImageSlider.astro";
 import Default from "../src/astro/components/Default.astro";
 import data from "./data.json";
+import { generateStaticPaths, findListingById, getTruncatedText, getRelatedListings } from "src/scripts/property.details/listing";
+
 export function getStaticPaths() {
-  return (data.listings_details || []).map((listing: { id: number }) => ({
-    params: { id: listing.id.toString() },
-  }));
+  return generateStaticPaths(data);
 }
+
 const id = Astro.params.id;
-const listing = (data.listings_details || []).find((item: { id: number }) => item.id.toString() === id);
-const maxLength = 250;
-const truncatedText =
-  listing.detail_description.length > maxLength
-    ? listing.detail_description.slice(0, maxLength) + "..."
-    : listing.detail_description;
-const currentId = data.listings_details.map(item => item.id)
-const relatedListings = data.listings.filter(listing => !currentId.includes(listing.id))
+const { mainListing, listing } = findListingById(data, id);
+const relatedListings = getRelatedListings(data)
 ---
 
 <Default data={data}>
@@ -31,11 +26,11 @@ const relatedListings = data.listings.filter(listing => !currentId.includes(list
             <div class="left-column">
               <div class="content-header">
                 <div class="status">
-                  <span class="dot"></span> {listing.status}
+                  <span class="dot"></span> {mainListing.status}
                 </div>
-                <h2>{listing.price}</h2>
-                <p>{listing.location}</p>
-                <p>{listing.subStats}</p>
+                <h2>{mainListing.price}</h2>
+                <p>{mainListing.location}</p>
+                <p>{mainListing.subStats}</p>
               </div>
               <div class="separator-dark"></div>
               <div class="content-description">
@@ -47,19 +42,7 @@ const relatedListings = data.listings.filter(listing => !currentId.includes(list
                 <div class="content-right">
                   <div class="property-description">
                     <p id="description">
-                      {
-                        listing.detail_description.length > maxLength
-                          ? truncatedText
-                          : listing.detail_description
-                      }
-                    </p>
-                    {
-                      listing.detail_description.length > maxLength && (
-                        <span class="read-more" id="readMore" data-fulltext={listing.detail_description} data-truncated={truncatedText}>
-                          Read More +
-                        </span>
-                      )
-                    }
+                      {listing.detail_description}
                   </div>
                 </div>
               </div>
@@ -215,21 +198,4 @@ const relatedListings = data.listings.filter(listing => !currentId.includes(list
       </div>
     </div>
   </div>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const readMore = document.getElementById("readMore")
-      const description = document.getElementById("description")
-      if(readMore && description) {
-        const fullText = readMore.getAttribute('data-fulltext')
-        const truncatedText = readMore.getAttribute("data-truncated")
-        let isExpanded = false
-        readMore.addEventListener("click", function() {
-          isExpanded = !isExpanded
-          description.textContent = isExpanded ? fullText : truncatedText
-          readMore.textContent = isExpanded ? 'Read Less -' : 'Read More +'
-        })
-      }
-    })
-  </script>
 </Default>

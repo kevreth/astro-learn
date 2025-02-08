@@ -4,10 +4,6 @@ description: Real Estate Detail Property| Inquirita
 listings_details:
   - id: 1
     agent: asdf
-    status: 'House for sale'
-    price: '$35,000'
-    location: '2050 Reamsey Dr, Decatur, IL, 62526'
-    subStats: '4 Beds | 2 Baths | 1,855 sqft'
     gallery:
       - src: 'https://ap.rdcpix.com/7c67ba10bace13f426dee622cd66d698l-m3998782334rd-w960_h720.webp'
       - src: 'https://ap.rdcpix.com/7c67ba10bace13f426dee622cd66d698l-m2547424480rd-w1280_h960.webp'
@@ -18,8 +14,12 @@ listings_details:
       - src: 'https://ap.rdcpix.com/7c67ba10bace13f426dee622cd66d698l-m2411980298rd-w1280_h960.webp'
       - src: 'https://ap.rdcpix.com/7c67ba10bace13f426dee622cd66d698l-m709670263rd-w1280_h960.webp'
     # price_per_sqft: $4,025.98 per sqft
-    detail_description: >
-      Charming Cape Cod-style home offering approximately 1, 510 square feet of finished living space, perfect for those seeking a home to personalize. This property features 4 bedrooms and 2 full baths, providing ample room for family or guests. Enjoy the convenience of a full partially finished basement, ideal for additional storage or future finishing. The 1.5-car detached garage includes an attached screened-in patio, perfect for outdoor relaxation. A large front deck enhances the curb appeal and provides a welcoming space for morning coffee or evening gatherings. Located in Decatur, it offers great potential but requires extensive repairs and updates. Please note: this property will not qualify for FHA, VA, or USDA financing. This property is being sold as-is, property is lender-owned and U.S. Bank National Association is making no representations or warranties.
+    detail_description: |
+      Charming Cape Cod-style home offering approximately 1, 510 square feet of finished living space, perfect for those seeking a home to personalize. 
+
+      This property features 4 bedrooms and 2 full baths, providing ample room for family or guests. Enjoy the convenience of a full partially finished basement, ideal for additional storage or future finishing. The 1.5-car detached garage includes an attached screened-in patio, perfect for outdoor relaxation. A large front deck enhances the curb appeal and provides a welcoming space for morning coffee or evening gatherings. Located in Decatur, it offers great potential but requires extensive repairs and updates. 
+
+      Please note: this property will not qualify for FHA, VA, or USDA financing. This property is being sold as-is, property is lender-owned and U.S. Bank National Association is making no representations or warranties.
     map:
       iframe_src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509317!2d-122.42037928468142!3d37.774929279758874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df04cbb5%3A0xdf978c470c530d3a!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1699378351969!5m2!1sen!2sus'
     interior_features:
