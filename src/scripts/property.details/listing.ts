@@ -14,12 +14,3 @@ export function findListingById(data: any, id: string) {
     ),
   };
 }
-
-export function getRelatedListings(data: any) {
-  const currentIds = data.listings_details.map(
-    (item: { id: number }) => item.id
-  );
-  return data.listings.filter(
-    (listing: { id: number }) => !currentIds.includes(listing.id)
-  );
-}

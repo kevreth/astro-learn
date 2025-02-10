@@ -2,7 +2,8 @@
 import ImageSlider from "../src/astro/components/ImageSlider.astro";
 import Default from "../src/astro/components/Default.astro";
 import data from "./data.json";
-import { generateStaticPaths, findListingById, getTruncatedText, getRelatedListings } from "src/scripts/property.details/listing";
+import { generateStaticPaths, findListingById } from "src/scripts/property.details/listing";
+import PropertyCard from "src/astro/components/PropertyCard.astro";
 
 export function getStaticPaths() {
   return generateStaticPaths(data);
@@ -10,7 +11,7 @@ export function getStaticPaths() {
 
 const id = Astro.params.id;
 const { mainListing, listing } = findListingById(data, id);
-const relatedListings = getRelatedListings(data)
+const currentId= Number(Astro.params.id)
 ---
 
 <Default data={data}>
@@ -167,33 +168,20 @@ const relatedListings = getRelatedListings(data)
             </div>
           </div>
           <div class="separator-dark"></div>
+
           <!-- Similar homes -->
           <div class="related-listings">
-            <h2>Similar homes</h2>
+            <h2>Similar Properties</h2>
             <div class="related-listings-grid">
-              {
-                relatedListings.slice(0, 4).map((related) => (
-                  <div class="related-listing-card" key={related.id}>
-                    <a href={related.link}>
-                      <img src={related.image} alt={`Image of ${related.location}`} />
-                      <div class="status">
-                        <span class="dot"></span> {related.status}
-                      </div>
-                      <h2>
-                        {related.price}
-                      </h2>
-                      <p class="location">
-                          {related.location}
-                      </p>
-                      <p class="sub-stats">
-                          {related.subStats}
-                      </p>
-                    </a>
-                  </div>
-                ))
-              }
+              {data.listings.filter(listing => listing.id !== currentId).slice(0, 4).map((listing) => {
+                const detail = data.listings_details.find(
+                    (detail) => detail.id === listing.id
+                );
+                return <PropertyCard listing={listing} detail={detail} key={listing.id} />;
+            })}
             </div>
           </div>
+          
         </div>
       </div>
     </div>
