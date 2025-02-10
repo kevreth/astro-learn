@@ -1,0 +1,24 @@
+---
+const { listing, detail } = Astro.props;
+---
+<div class="listing-card" key={listing.id}>
+    <a href={listing.link}>
+        <div class="for-sale-img-container">
+            {detail && detail.gallery && (
+                <img src={detail.gallery[0].src} />
+            )}
+        </div>
+        <div class="card-content">
+            <div class="card-content-header">
+                <div class="status">
+                    <span class="dot"></span> {listing.status}
+                </div>
+                <h2 class="price-list-property">
+                    {listing.price}
+                </h2>
+                <p class="location">{listing.location}</p>
+                <p class="sub-stats">{listing.subStats}</p>
+            </div>
+        </div>
+    </a>
+    </div>

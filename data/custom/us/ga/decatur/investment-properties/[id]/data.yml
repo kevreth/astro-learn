@@ -118,3 +118,32 @@ listings_details:
         value: '10'
       - label: 'Broker Co-Op'
         value: 'Yes'
+  - id: 4
+    agent:
+    gallery:
+      - src: 'https://images.crexi.com/assets/1510669/9e0d7807ebca4c1288184aed8853263e_1306x734.jpg'
+      - src: 'https://images1.loopnet.com/i2/lXXaYsyToqH-F1qI70uAX2kcv5_ADVqku_UaA7cKa3Y/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-3-Large.jpg'
+      - src: 'https://images1.loopnet.com/i2/Kga-vq_EwMA-0ep-SsVAkhM-a4NaFjrTbD1ilX5Bezs/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-5-Large.jpg'
+      - src: 'https://images1.loopnet.com/i2/bq_0IOZMPeJH2js8S3qEcYHLe4XM_cOintAsdMizGIw/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-12-Large.jpg'
+      - src: 'https://images1.loopnet.com/i2/sG293VI_7PJRkdxTH9at63ycVc6IURjPbpExyW6-kDY/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-18-Large.jpg'
+      - src: 'https://images1.loopnet.com/i2/ckVxPLPUD35TpF8tlzvLEBKW18Asd7E_zWf7njWcK1w/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-28-Large.jpg'
+      - src: 'https://images1.loopnet.com/i2/pzLn7FiXyRq0YxmY0kKTlFLm-RupUeAkyEWa8UVd8x0/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-29-Large.jpg'
+    detail_description: >
+      Great opportunity to own just under 4 acres in one of the most convenient locations South Dekalb has to offer. Level, wide lot with great potential. Perfect for a custom home, micro community or small town home subdivision. Best value is to keep the current home, renovate it and add 10+ additional .25 acre lots. For more information, text WESLEY to 59559.
+    map:
+      iframe_src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509317!2d-122.42037928468142!3d37.774929279758874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df04cbb5%3A0xdf978c470c530d3a!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1699378351969!5m2!1sen!2sus'
+    property_facts:
+      - label: 'Price'
+        value: '$350,000'
+      - label: 'Property Type'
+        value: 'Land'
+      - label: 'Sale Type'
+        value: 'Owner User'
+      - label: 'Property Subtype'
+        value: 'Residential'
+      - label: 'Sale Conditions'
+        value: 'Short Sale'
+      - label: 'Total Lot Size'
+        value: '3.71 AC'
+      - label: 'No. Lots'
+        value: '1'

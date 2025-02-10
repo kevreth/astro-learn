@@ -49,7 +49,6 @@ listings:
     price: '$375,000'
     location: '1875 Creekside Ct, Decatur, GA 30032'
     subStats: '3 Beds | 2 Baths | 1,685 sqft'
-    image: 'https://photos.zillowstatic.com/fp/4b69bcfcb1e0502887ed172010fb3941-sc_1920_1280.webp'
     link: '/us/ga/decatur/single-family-homes/1'
 
   - id: 2
@@ -57,29 +56,24 @@ listings:
     price: '$698,000'
     location: '3325 Piedmont RD NE, 1702, Decatur, GA, United States'
     subStats: '2 Beds | 3 Baths | 1,932 sqft'
-    image: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/641/661/182/1738693435.webp?SQ1v01oNB8CitZ6OBcrLqnkC3LBzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTAzJTJGNDQwZGFmZWNlMjJkNzI5NjU5ZTVmZGFkMDBkZWE0MjMlMkYxMzI4MzY5MDA2LmpwZWc='
     link: '/us/ga/decatur/single-family-homes/2'
 
   - id: 3
     status: 'House for sale'
     price: '$1,200,000'
-    image: 'https://images.unsplash.com/photo-1605352081508-2e09927ecfe3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fEx1eHVyeSUyMFdhdGVyZnJvbnQlMjBWaWxsYXxlbnwwfHwwfHx8MA%3D%3D'
     link: ''
 
   - id: 4
     status: 'House for sale'
     price: '$500,000'
-    image: 'https://nancysaedi.lovinltd.com/API/File/Download?id=ae0aa303-c0f6-48ae-a036-91fef62fecb7'
     link: ''
 
   - id: 5
     status: 'House for sale'
     price: '$725,000'
-    image: 'https://nancysaedi.lovinltd.com/API/File/Download?id=f640c328-0503-45a1-9dd0-2f30b0c057e3'
     link: ''
 
   - id: 6
     status: 'House for sale'
     price: '$350,000'
-    image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGZhbWlseSUyMGhvdXNlfGVufDB8fDB8fHww'
     link: ''

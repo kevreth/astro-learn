@@ -1,3 +1,37 @@
 name: Listings
 title: Decatur, GA real estate & homes for sale
 description: Listing Jenny Peterson| Inquirita
+listings:
+  - id: 1
+    status: 'House for sale'
+    price: '$35,000'
+    location: '2050 Reamsey Dr, Decatur, IL, 62526'
+    subStats: '4 Beds | 2 Baths | 1,855 sqft'
+    link: '/us/ga/decatur/real-estate-agents/listings/1'
+
+  - id: 2
+    status: 'House for sale'
+    price: '$157,900'
+    location: '56 N Maple Ct, Decatur, IL 62526'
+    subStats: '3 Beds | 2 Baths | 1,826 sqft'
+    link: '/us/ga/decatur/real-estate-agents/listings/2'
+
+  - id: 3
+    status: 'House for sale'
+    price: '$1,200,000'
+    link: ''
+
+  - id: 4
+    status: 'House for sale'
+    price: '$500,000'
+    link: ''
+
+  - id: 5
+    status: 'House for sale'
+    price: '$725,000'
+    link: ''
+
+  - id: 6
+    status: 'House for sale'
+    price: '$350,000'
+    link: ''

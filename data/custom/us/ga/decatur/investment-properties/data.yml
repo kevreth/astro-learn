@@ -49,7 +49,6 @@ listings:
     price: '$350,000'
     location: '3496 Wesley Chapel Road Decatur, Georgia 3003 '
     subStats: '1 Residential Income Lot'
-    image: 'https://images1.loopnet.com/i2/L_2bw8fx8a3s58ec219v4Du3MMPjmWOzgzqlnSoGS2s/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-4-Large.jpg'
     link: '/us/ga/decatur/investment-properties/1'
 
   - id: 2
@@ -57,7 +56,6 @@ listings:
     price: '$650,000'
     location: '2369 Whites Mill Rd, Decatur, GA 30032'
     subStats: '4 Unit Apartment Building'
-    image: 'https://images1.loopnet.com/i2/jQQr0HThgtPR1nwtWQgsQZps6io6x2b7dtkw6MAfcBw/110/2369-Whites-Mill-Rd-Decatur-GA-Primary-Photo-1-Large.jpg'
     link: '/us/ga/decatur/investment-properties/2'
 
   - id: 3
@@ -65,14 +63,14 @@ listings:
     price: '$635,000'
     location: '4889 Covington Hwy, Decatur, GA 30035'
     subStats: 'Prime Corner Commercial Lot'
-    image: 'https://images.crexi.com/assets/1113875/a2dd8f2e76fa410cbb3b1060a1a8c43c_1306x734.jpgx1eHVyeSUyMFdhdGVyZnJvbnQlMjBWaWxsYXxlbnwwfHwwfHx8MA%3D%3D'
     link: '/us/ga/decatur/investment-properties/3'
 
   - id: 4
     status: 'For sale'
-    price: '$500,000'
-    image: 'https://nancysaedi.lovinltd.com/API/File/Download?id=ae0aa303-c0f6-48ae-a036-91fef62fecb7'
-    link: ''
+    price: '$199,000'
+    location: '3388 Dogwood Dr, Atlanta, GA 30354'
+    subStats: 'Prime Office/Retail Space Minutes from Downtown Hapeville & Airport!'
+    link: '/us/ga/decatur/investment-properties/4'
 
   - id: 5
     status: 'For sale'

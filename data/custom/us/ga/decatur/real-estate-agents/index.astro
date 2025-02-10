@@ -1,15 +1,18 @@
 ---
 import Default from '../src/astro/components/Default.astro';
 import data from './data.json';
-const listings = data.listings
+import listings from "./listings/[id]/data.json"
+import listingsDetails from "./listings/[id]/data.json";
+import PropertyCard from 'src/astro/components/PropertyCard.astro';
+// const listings = data.listings
 ---
 <Default data={data}>
   <div slot="pageCustom">
       <section id="main-wrapper" class="mainContent no-scroll-content">
         <h1>Jenny Peterson - Helping you buy, sell, and find your dream home with ease.</h1>
-        <div class="text-content scroll-content locni-text-light-color">
+        <div class="text-content scroll-content">
           <div class="locni-container">
-            <section>
+            <section class="locni-text-light-color">
               <div class="no-margin-padding">
                 <h2>{data.title}</h2>
                 <p>{data.description}</p>
@@ -35,7 +38,7 @@ const listings = data.listings
                 </div>
               </div>
             </section>
-            <section class="services-offers margin-top">
+            <section class="services-offers margin-top locni-text-light-color">
               <h2 class="section-title">Services Offers</h2>
               <div class="services-grid">
                 {data.services.items.map(service => (
@@ -50,7 +53,7 @@ const listings = data.listings
             </section>
             <section class="property-listing">
                 <div class="listing-grid">
-                  {listings.slice(0, 3).map((listing: any) => (
+                  <!-- {listings.listings.slice(0, 3).map((listing: any) => (
                   <div class="property-card">
                     <a href={listing.link}>
                       <div class="for-sale-img-contanier">
@@ -69,7 +72,14 @@ const listings = data.listings
                       </div>
                     </a>
                   </div>
-                  ))}
+                  ))} -->
+                  {listings.listings.slice(0, 3).map((listing) => {
+                    // ✅ Find the matching property details
+                    const detail = listingsDetails.listings_details.find(detail => detail.id === listing.id);
+                    
+                    return <PropertyCard listing={listing} detail={detail} key={listing.id} />;
+                  })}
+                </div>
               </section>
           </div>
         </div>
@@ -131,7 +141,7 @@ const listings = data.listings
       object-fit: cover;
       border-radius: 10px;
     }
-    .property-card {
+    /* .property-card {
       background-color: #fff; 
       border-radius: 10px;
       overflow: hidden;
@@ -148,7 +158,7 @@ const listings = data.listings
     }
     .property-card:hover .for-sale-img-contanier img {
       transform: scale(1.1); 
-    }
+    } */
     .property-listing {
       display: grid;
       gap: 10px;

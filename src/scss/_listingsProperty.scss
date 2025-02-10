@@ -34,11 +34,6 @@
   color: black;
 }
 
-// .listing-card:hover {
-//   transform: translateY(-5px);
-//   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-// }
-
 .listing-card img {
   width: 100%;
   /* height: 200px; */
@@ -59,15 +54,9 @@
 .card-content p {
   color: #333;
 }
-/* .card-content-header {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-  
-      align-items: baseline;
-      line-height: 0.5;
-  }
-   */
+.sub-stats {
+  line-height: 1.1;
+}
 .price-list-property {
   /* order: 1; */
   padding-bottom: 10px;
