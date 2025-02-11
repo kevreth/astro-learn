@@ -181,12 +181,13 @@ listings_details:
   - id: 3
     agent: asdf
     gallery:
-      - src: 'https://images.homes.com/listings/211/1437717714-097790391/1923-manhattan-pkwy-decatur-ga-unit-183.jpg?t=p'
-      - src: 'https://images.homes.com/listings/117/2537717714-097790391/1923-manhattan-pkwy-decatur-ga-unit-183-buildingphoto-2.jpg?t=p'
-      - src: 'https://images.homes.com/listings/117/7637717714-097790391/1923-manhattan-pkwy-decatur-ga-unit-183-buildingphoto-4.jpg?t=p'
-      - src: 'https://images.homes.com/listings/117/0837717714-097790391/1923-manhattan-pkwy-decatur-ga-unit-183-buildingphoto-5.jpg?t=p'
-      - src: 'https://images.homes.com/listings/117/0937717714-097790391/1923-manhattan-pkwy-decatur-ga-unit-183-buildingphoto-6.jpg?t=p'
-      - src: 'https://images.homes.com/listings/117/7047717714-097790391/1923-manhattan-pkwy-decatur-ga-unit-183-buildingphoto-7.jpg?t=p'
+      - src: 'https://images.homes.com/listings/110/8443717714-496790391/3999-riverside-pkwy-decatur-ga-unit-2-primaryphoto.jpg'
+      - src: 'https://images.homes.com/listings/214/2543717714-496790391/3999-riverside-pkwy-decatur-ga-unit-2-buildingphoto-2.jpg'
+      - src: 'https://images.homes.com/listings/214/8643717714-496790391/3999-riverside-pkwy-decatur-ga-unit-2-8.jpg'
+      - src: 'https://images.homes.com/listings/214/0743717714-496790391/3999-riverside-pkwy-decatur-ga-unit-2-9.jpg'
+      - src: 'https://images.homes.com/listings/214/5843717714-496790391/3999-riverside-pkwy-decatur-ga-unit-2-13.jpg'
+      - src: 'https://images.homes.com/listings/214/2053717714-496790391/3999-riverside-pkwy-decatur-ga-unit-2-18.jpg'
+      - src: 'https://images.homes.com/listings/214/5053717714-496790391/3999-riverside-pkwy-decatur-ga-unit-2-19.jpg'
     detail_description: |
       This home has an open concept. The kitchen features granite countertops and stainless steel appliances. It overlooks a cozy family room with a fireplace and seamlessly flows into the dining room. Upstairs, you'll find three bedrooms and two full baths. The spacious primary bedroom boasts vaulted ceilings, two closets, and a private balcony. This stunning unit offers beautiful views of the woods and includes a private back patio. The homeowners' association (HOA) covers the roof and grounds maintenance, and since there are no rental restrictions, this community is ideal for owners and investors.
     map:
