@@ -5,33 +5,41 @@ listings:
   - id: 1
     status: 'House for sale'
     price: '$35,000'
-    location: '2050 Reamsey Dr, Decatur, IL, 62526'
+    location: '2050 Reamsey Dr, Decatur, GA 62526'
     subStats: '4 Beds | 2 Baths | 1,855 sqft'
     link: '/us/ga/decatur/real-estate-agents/listings/1'
 
   - id: 2
     status: 'House for sale'
-    price: '$157,900'
-    location: '56 N Maple Ct, Decatur, IL 62526'
-    subStats: '3 Beds | 2 Baths | 1,826 sqft'
+    price: '$275,000'
+    location: '4203 Stratford Commons, Decatur, GA 30033'
+    subStats: '2 Beds | 1 Baths | 1,082 sqft'
     link: '/us/ga/decatur/real-estate-agents/listings/2'
 
   - id: 3
     status: 'House for sale'
-    price: '$1,200,000'
-    link: ''
+    price: '$260,000'
+    location: '1923 Manhattan Pkwy Unit 183, Decatur, GA 30035'
+    subStats: '3 Beds | 2.5 Baths | 1,620 sqft'
+    link: '/us/ga/decatur/real-estate-agents/listings/3'
 
   - id: 4
     status: 'House for sale'
-    price: '$500,000'
-    link: ''
+    price: '$235,000'
+    location: ' Somerset Heights Condominiums 1501 Clairmont Rd Unit 223, Decatur, GA 30033'
+    subStats: '2 Beds | 2 Baths | 1,160 sqft'
+    link: '/us/ga/decatur/real-estate-agents/listings/4'
 
   - id: 5
     status: 'House for sale'
-    price: '$725,000'
-    link: ''
+    price: '$280,000'
+    location: '320 Tuxworth Cir, Decatur, GA 30033'
+    subStats: '2 Beds | 2 Baths | 1,178 sqft'
+    link: '/us/ga/decatur/real-estate-agents/listings/5'
 
   - id: 6
     status: 'House for sale'
-    price: '$350,000'
-    link: ''
+    price: '$424,900'
+    location: '2402 Tiffany Cir , Decatur, GA 30035'
+    subStats: '5 Beds | 3 Baths | 2,559 sqft'
+    link: '/us/ga/decatur/real-estate-agents/listings/6'

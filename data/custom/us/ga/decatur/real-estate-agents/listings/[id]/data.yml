@@ -1,5 +1,5 @@
-name: Real Estate
-title: Real Estate
+name: Real Estate Detail Property
+title: Real Estate Detail Property
 description: Real Estate Detail Property| Inquirita
 listings_details:
   - id: 1
@@ -13,7 +13,6 @@ listings_details:
       - src: 'https://ap.rdcpix.com/7c67ba10bace13f426dee622cd66d698l-m203334798rd-w1280_h960.webp'
       - src: 'https://ap.rdcpix.com/7c67ba10bace13f426dee622cd66d698l-m2411980298rd-w1280_h960.webp'
       - src: 'https://ap.rdcpix.com/7c67ba10bace13f426dee622cd66d698l-m709670263rd-w1280_h960.webp'
-    # price_per_sqft: $4,025.98 per sqft
     detail_description: |
       Charming Cape Cod-style home offering approximately 1, 510 square feet of finished living space, perfect for those seeking a home to personalize. 
 
@@ -72,3 +71,468 @@ listings_details:
           - 'Year Built: 1958'
           - 'Building Area Total: 1224'
           - 'Water Source: Public, Public Sewer'
+  - id: 2
+    agent: asdf
+    gallery:
+      - src: 'https://images.homes.com/listings/214/4832787714-098711391/4203-stratford-commons-decatur-ga-24.jpg'
+      - src: 'https://images.homes.com/listings/214/0832787714-098711391/4203-stratford-commons-decatur-ga-23.jpg'
+      - src: 'https://images.homes.com/listings/214/7632787714-098711391/4203-stratford-commons-decatur-ga-21.jpg'
+      - src: 'https://images.homes.com/listings/110/6071787714-098711391/4203-stratford-commons-decatur-ga.jpg'
+      - src: 'https://images.homes.com/listings/214/9932787714-098711391/4203-stratford-commons-decatur-ga-26.jpg'
+      - src: 'https://images.homes.com/listings/214/9532787714-098711391/4203-stratford-commons-decatur-ga-19.jpg'
+      - src: 'https://images.homes.com/listings/214/5822787714-098711391/4203-stratford-commons-decatur-ga-8.jpg'
+      - src: 'https://images.homes.com/listings/214/1645897714-098711391/4203-stratford-commons-decatur-ga-14.jpg'
+      - src: 'https://images.homes.com/listings/110/6071787714-098711391/4203-stratford-commons-decatur-ga-primaryphoto.jpg'
+      - src: 'https://images.homes.com/listings/214/6415897714-098711391/4203-stratford-commons-decatur-ga-buildingphoto-2.jpg'
+      - src: 'https://images.homes.com/listings/214/5171787714-098711391/4203-stratford-commons-decatur-ga-buildingphoto-3.jpg'
+    detail_description: |
+      Welcome to this beautifully updated condo in a prime North Decatur location, offering both convenience and modern upgrades. Situated in a gated community with controlled access, the building features a luxury hotel-style lobby, creating an inviting atmosphere. The recently updated kitchen boasts new appliances, complemented by stylish newer flooring throughout. The spacious layout includes an oversized primary bedroom with balcony access and an additional room that can serve as a bedroom or office. Elegant crown molding in the foyer and living areas, along with built-in shelving, adds charm and functionality. The well-designed bathroom features a separate shower and tub for a spa-like experience. A dedicated laundry room provides ample storage, while the private outdoor patio or balcony offers a perfect place to relax. This unit comes with one designated covered parking spot, plenty of guest parking, and a private storage unit within the building. With easy access to I-285, Hwy 78, shopping, and dining, this move-in-ready condo is a perfect blend of style and convenience. Schedule your showing today!
+    map:
+      iframe_src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509317!2d-122.42037928468142!3d37.774929279758874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df04cbb5%3A0xdf978c470c530d3a!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1699378351969!5m2!1sen!2sus'
+    interior_features:
+      - label: Home Type
+        value:
+          - 'Condominium'
+      - label: Estimated Annual Taxes
+        value:
+          - '$3,180'
+      - label: Year Built
+        value:
+          - 'Built in 2002'
+      - label: HOA Fees
+        value:
+          - '$399 Monthly HOA Fees'
+      - label: Interior Spaces
+        value:
+          - '1,082 Sq Ft Home'
+          - '1-Story Property'
+          - 'Bookcases'
+          - 'High Ceiling'
+          - 'Double Pane Windows'
+          - 'Family Room'
+          - 'Laundry in Kitchen'
+      - label: Kitchen
+        value:
+          - 'Breakfast Bar'
+          - 'Microwave'
+          - 'Dishwasher'
+          - 'Solid Surface Countertops'
+          - 'Disposal'
+      - label: Flooring
+        value:
+          - 'Carpet'
+          - 'Tile'
+          - 'Vinyl'
+      - label: Bedrooms & Bathrooms
+        value:
+          - '2 Main Level Bedrooms'
+          - 'Walk-In Closet'
+          - '1 Full Bathroom'
+          - 'Double Vanity'
+      - label: Home Security
+        value:
+          - 'Card or Code Access'
+          - 'Gated Community'
+          - 'Fire and Smoke Detector'
+          - 'Fire Sprinkler System'
+    exterior_features:
+      - label: Parking
+        value:
+          - '1 Car Garage'
+          - 'Assigned Parking'
+      - label: Outdoor Features
+        value:
+          - 'In Ground Pool'
+          - 'Balcony'
+      - label: Location
+        value:
+          - 'Property is near schools'
+          - 'Property is near shops'
+    additional_info:
+      - label: Schools
+        value:
+          - 'Avondale Elementary School'
+          - 'Druid Hills Middle School'
+          - 'Druid Hills High School'
+      - label: Utilities
+        value:
+          - 'Forced Air Heating and Cooling System'
+          - 'Electric Water Heater'
+          - 'High Speed Internet'
+          - 'Cable TV Available'
+      - label: Additional Features
+        value:
+          - 'Energy-Efficient Appliances'
+          - 'End Unit'
+      - label: Tax Lot
+        value:
+          - '48'
+      - label: Community Details
+        value:
+          - '$1,348 Initiation Fee'
+          - 'Association fees include insurance, pest control, swimming, trash, water'
+          - 'Mid-Rise Condominium'
+          - 'Stratford On North Decatur Subdivision'
+      - label: Recreation
+        value:
+          - 'Fitness Center'
+          - 'Community Pool'
+
+  - id: 3
+    agent: asdf
+    gallery:
+      - src: 'https://images.homes.com/listings/211/1437717714-097790391/1923-manhattan-pkwy-decatur-ga-unit-183.jpg?t=p'
+      - src: 'https://images.homes.com/listings/117/2537717714-097790391/1923-manhattan-pkwy-decatur-ga-unit-183-buildingphoto-2.jpg?t=p'
+      - src: 'https://images.homes.com/listings/117/7637717714-097790391/1923-manhattan-pkwy-decatur-ga-unit-183-buildingphoto-4.jpg?t=p'
+      - src: 'https://images.homes.com/listings/117/0837717714-097790391/1923-manhattan-pkwy-decatur-ga-unit-183-buildingphoto-5.jpg?t=p'
+      - src: 'https://images.homes.com/listings/117/0937717714-097790391/1923-manhattan-pkwy-decatur-ga-unit-183-buildingphoto-6.jpg?t=p'
+      - src: 'https://images.homes.com/listings/117/7047717714-097790391/1923-manhattan-pkwy-decatur-ga-unit-183-buildingphoto-7.jpg?t=p'
+    detail_description: |
+      This home has an open concept. The kitchen features granite countertops and stainless steel appliances. It overlooks a cozy family room with a fireplace and seamlessly flows into the dining room. Upstairs, you'll find three bedrooms and two full baths. The spacious primary bedroom boasts vaulted ceilings, two closets, and a private balcony. This stunning unit offers beautiful views of the woods and includes a private back patio. The homeowners' association (HOA) covers the roof and grounds maintenance, and since there are no rental restrictions, this community is ideal for owners and investors.
+    map:
+      iframe_src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509317!2d-122.42037928468142!3d37.774929279758874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df04cbb5%3A0xdf978c470c530d3a!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1699378351969!5m2!1sen!2sus'
+    interior_features:
+      - label: Estimated Annual Taxes
+        value:
+          - '$4,213'
+      - label: Year Built
+        value:
+          - 'Built in 2003'
+      - label: HOA Fees
+        value:
+          - '$83 Monthly HOA Fees'
+      - label: Interior Spaces
+        value:
+          - '1,620 Sq Ft Home'
+          - '2-Story Property'
+          - 'Roommate Plan'
+          - 'Fireplace With Gas Starter'
+          - 'Family Room with Fireplace'
+          - 'Formal Dining Room'
+      - label: Kitchen
+        value:
+          - 'Breakfast Bar'
+          - 'Cooktop'
+          - 'Microwave'
+          - 'Dishwasher'
+          - 'Disposal'
+      - label: Flooring
+        value:
+          - 'Wood'
+          - 'Carpet'
+          - 'Laminate'
+      - label: Bedrooms and Bathrooms
+        value:
+          - '3 Bedrooms'
+          - 'Walk-In Closet'
+      - label: Laundry
+        value:
+          - 'Laundry Room'
+          - 'Laundry in Hall'
+          - 'Dryer'
+    exterior_features:
+      - label: Outdoor Features
+        value:
+          - 'Patio'
+          - 'Porch'
+    additional_info:
+      - label: Schools
+        value:
+          - 'Rowland Elementary School'
+          - 'Mary Mcleod Bethune Middle School'
+          - 'Towers High School'
+      - label: Utilities
+        value:
+          - 'Central Heating and Cooling System'
+          - 'Underground Utilities'
+          - 'High Speed Internet'
+          - 'Phone Available'
+          - 'Cable TV Available'
+      - label: Additional Features
+        value:
+          - 'Energy-Efficient Thermostat'
+          - '871 Sq Ft Lot'
+      - label: Community Details
+        value:
+          - 'Park Place Subdivision'
+      - label: Recreation
+        value:
+          - 'Community Playground'
+  - id: 4
+    agent: asdf
+    gallery:
+      - src: 'https://images.homes.com/listings/110/9771173714-763789291/somerset-heights-condominiums-decatur-ga-unit-223-primaryphoto.jpg'
+      - src: 'https://images.homes.com/listings/214/4181173714-763789291/somerset-heights-condominiums-decatur-ga-unit-223-buildingphoto-2.jpg'
+      - src: 'https://images.homes.com/listings/214/6581173714-763789291/somerset-heights-condominiums-decatur-ga-unit-223-buildingphoto-4.jpg'
+      - src: 'https://images.homes.com/listings/214/3481173714-763789291/somerset-heights-condominiums-decatur-ga-unit-223-buildingphoto-3.jpg'
+      - src: 'https://images.homes.com/listings/214/1091173714-763789291/somerset-heights-condominiums-decatur-ga-unit-223-8.jpg'
+      - src: 'https://images.homes.com/listings/214/6191173714-763789291/somerset-heights-condominiums-decatur-ga-unit-223-10.jpg'
+      - src: 'https://images.homes.com/listings/214/2391173714-763789291/somerset-heights-condominiums-decatur-ga-unit-223-12.jpg'
+      - src: 'https://images.homes.com/listings/214/3791173714-763789291/somerset-heights-condominiums-decatur-ga-unit-223-17.jpg'
+      - src: 'https://images.homes.com/listings/214/3352173714-763789291/somerset-heights-condominiums-decatur-ga-unit-223-23.jpg'
+      - src: 'https://images.homes.com/listings/214/5002173714-763789291/somerset-heights-condominiums-decatur-ga-unit-223-21.jpg'
+      - src: 'https://images.homes.com/listings/214/9791173714-763789291/somerset-heights-condominiums-decatur-ga-unit-223-18.jpg'
+      - src: 'https://images.homes.com/listings/214/5452173714-763789291/somerset-heights-condominiums-decatur-ga-unit-223-24.jpg'
+    detail_description: |
+      Freshly painted 2 bed, 2 bath condo with private patio. Two assigned covered parking spaces and HOA covers all utilities. Walk-in level condo on first floor; No need to take elevator. This ideally situated condo offers unparalleled convenience, located near Emory University and Hospital, CDC, VA Hospital, and Children's Healthcare of Atlanta. Enjoy the vibrant community of Downtown Decatur is just a short drive away, with its array of shops, restaurants, and entertainment options. Plus, you're just 5 miles from Downtown Atlanta, Georgia State University, and Georgia Tech. Discover a condo that combines prime location with outstanding building amenities. Inviting Pool & Outdoor Entertaining Area: Perfect for relaxation and social gatherings. Updated Fitness Center: Stay active and fit. Free WiFi: Available in the lobby for your convenience. Private Club Room: Featuring a pool table for fun and relaxation. Library/Study Room: Ideal for quiet study or reading. Private Pet Run Area: A special space for your furry friends to enjoy. Don't miss out on this prime location with everything you need right at your doorstep! Taxes do Not reflect homestead exemption.
+    map:
+      iframe_src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509317!2d-122.42037928468142!3d37.774929279758874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df04cbb5%3A0xdf978c470c530d3a!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1699378351969!5m2!1sen!2sus'
+    interior_features:
+      - label: Home Type
+        value:
+          - 'Townhome'
+      - label: Estimated Annual Taxes
+        value:
+          - '$4,213'
+      - label: Year Built
+        value:
+          - 'Built in 2003'
+      - label: HOA Fees
+        value:
+          - '$83 Monthly HOA Fees'
+      - label: Interior Spaces
+        value:
+          - '1,620 Sq Ft Home'
+          - '2-Story Property'
+          - 'Roommate Plan'
+          - 'Fireplace With Gas Starter'
+          - 'Family Room with Fireplace'
+          - 'Formal Dining Room'
+      - label: Kitchen
+        value:
+          - 'Breakfast Bar'
+          - 'Cooktop'
+          - 'Microwave'
+          - 'Dishwasher'
+          - 'Disposal'
+      - label: Flooring
+        value:
+          - 'Wood'
+          - 'Carpet'
+          - 'Laminate'
+      - label: Bedrooms and Bathrooms
+        value:
+          - '3 Bedrooms'
+          - 'Walk-In Closet'
+      - label: Laundry
+        value:
+          - 'Laundry Room'
+          - 'Laundry in Hall'
+          - 'Dryer'
+    exterior_features:
+      - label: Outdoor Features
+        value:
+          - 'Patio'
+          - 'Porch'
+    additional_info:
+      - label: Schools
+        value:
+          - 'Rowland Elementary School'
+          - 'Mary Mcleod Bethune Middle School'
+          - 'Towers High School'
+      - label: Utilities
+        value:
+          - 'Central Heating and Cooling System'
+          - 'Underground Utilities'
+          - 'High Speed Internet'
+          - 'Phone Available'
+          - 'Cable TV Available'
+      - label: Additional Features
+        value:
+          - 'Energy-Efficient Thermostat'
+          - '871 Sq Ft Lot'
+      - label: Community Details
+        value:
+          - 'Park Place Subdivision'
+      - label: Recreation
+        value:
+          - 'Community Playground'
+  - id: 5
+    agent: asdf
+    gallery:
+      - src: 'https://images.homes.com/listings/110/0740907714-883590391/320-tuxworth-cir-decatur-ga-primaryphoto.jpg'
+      - src: 'https://images.homes.com/listings/214/0940907714-883590391/320-tuxworth-cir-decatur-ga-buildingphoto-2.jpg'
+      - src: 'https://images.homes.com/listings/214/5050907714-883590391/320-tuxworth-cir-decatur-ga-buildingphoto-4.jpg'
+      - src: 'https://images.homes.com/listings/214/7940907714-883590391/320-tuxworth-cir-decatur-ga-buildingphoto-3.jpg'
+      - src: 'https://images.homes.com/listings/214/8150907714-883590391/320-tuxworth-cir-decatur-ga-buildingphoto-5.jpg'
+      - src: 'https://images.homes.com/listings/214/6160907714-883590391/320-tuxworth-cir-decatur-ga-14.jpg'
+      - src: 'https://images.homes.com/listings/214/8460907714-883590391/320-tuxworth-cir-decatur-ga-17.jpg'
+      - src: 'https://images.homes.com/listings/214/5560907714-883590391/320-tuxworth-cir-decatur-ga-18.jpg'
+      - src: 'https://images.homes.com/listings/214/1121907714-883590391/320-tuxworth-cir-decatur-ga-24.jpg'
+      - src: 'https://images.homes.com/listings/214/9121907714-883590391/320-tuxworth-cir-decatur-ga-25.jpg'
+      - src: 'https://images.homes.com/listings/214/9221907714-883590391/320-tuxworth-cir-decatur-ga-26.jpg'
+      - src: 'https://images.homes.com/listings/214/0598717714-883590391/320-tuxworth-cir-decatur-ga-30.jpg'
+    detail_description: |
+      Nestled in a private, wooded enclave, this end-unit, ground-level condo offers the perfect blend of tranquility and convenience. Boasting a step-free entry and two spacious patios, this home invites you to sip your morning coffee while listening to the birds sing. Inside, you'll find a recently painted interior that enhances the bright and airy feel of the space. The updated kitchen features stylish butcher block countertops, crisp white cabinets, and plenty of prep space for cooking and entertaining. The roommate-style floor plan ensures privacy, with two generously sized bedrooms, each with its own full bathroom. Located in a prime Decatur location, you're just minutes from downtown Decatur’s shops, restaurants, and entertainment, while still enjoying the peaceful surroundings of this tucked-away community. Close to Emory, easy access to Hwy 78 and 285. Call Paula for a showing 404.217.0212
+    map:
+      iframe_src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509317!2d-122.42037928468142!3d37.774929279758874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df04cbb5%3A0xdf978c470c530d3a!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1699378351969!5m2!1sen!2sus'
+    interior_features:
+      - label: Home Type
+        value:
+          - 'Townhome'
+      - label: Estimated Annual Taxes
+        value:
+          - '$4,213'
+      - label: Year Built
+        value:
+          - 'Built in 2003'
+      - label: HOA Fees
+        value:
+          - '$83 Monthly HOA Fees'
+      - label: Interior Spaces
+        value:
+          - '1,620 Sq Ft Home'
+          - '2-Story Property'
+          - 'Roommate Plan'
+          - 'Fireplace With Gas Starter'
+          - 'Family Room with Fireplace'
+          - 'Formal Dining Room'
+      - label: Kitchen
+        value:
+          - 'Breakfast Bar'
+          - 'Cooktop'
+          - 'Microwave'
+          - 'Dishwasher'
+          - 'Disposal'
+      - label: Flooring
+        value:
+          - 'Wood'
+          - 'Carpet'
+          - 'Laminate'
+      - label: Bedrooms and Bathrooms
+        value:
+          - '3 Bedrooms'
+          - 'Walk-In Closet'
+      - label: Laundry
+        value:
+          - 'Laundry Room'
+          - 'Laundry in Hall'
+          - 'Dryer'
+    exterior_features:
+      - label: Outdoor Features
+        value:
+          - 'Patio'
+          - 'Porch'
+    additional_info:
+      - label: Schools
+        value:
+          - 'Rowland Elementary School'
+          - 'Mary Mcleod Bethune Middle School'
+          - 'Towers High School'
+      - label: Utilities
+        value:
+          - 'Central Heating and Cooling System'
+          - 'Underground Utilities'
+          - 'High Speed Internet'
+          - 'Phone Available'
+          - 'Cable TV Available'
+      - label: Additional Features
+        value:
+          - 'Energy-Efficient Thermostat'
+          - '871 Sq Ft Lot'
+      - label: Community Details
+        value:
+          - 'Park Place Subdivision'
+      - label: Recreation
+        value:
+          - 'Community Playground'
+  - id: 6
+    agent: asdf
+    gallery:
+      - src: 'https://images.homes.com/listings/110/4728707714-479490391/2402-tiffany-cir-decatur-ga-primaryphoto.jpg'
+      - src: 'https://images.homes.com/listings/214/4828707714-479490391/2402-tiffany-cir-decatur-ga-buildingphoto-2.jpg'
+      - src: 'https://images.homes.com/listings/214/1928707714-479490391/2402-tiffany-cir-decatur-ga-buildingphoto-3.jpg'
+      - src: 'https://images.homes.com/listings/214/2038707714-479490391/2402-tiffany-cir-decatur-ga-buildingphoto-6.jpg'
+      - src: 'https://images.homes.com/listings/214/8038707714-479490391/2402-tiffany-cir-decatur-ga-buildingphoto-7.jpg'
+      - src: 'https://images.homes.com/listings/214/2138707714-479490391/2402-tiffany-cir-decatur-ga-8.jpg'
+      - src: 'https://images.homes.com/listings/214/9138707714-479490391/2402-tiffany-cir-decatur-ga-10.jpg'
+      - src: 'https://images.homes.com/listings/214/1438707714-479490391/2402-tiffany-cir-decatur-ga-14.jpg'
+      - src: 'https://images.homes.com/listings/214/6538707714-479490391/2402-tiffany-cir-decatur-ga-17.jpg'
+      - src: 'https://images.homes.com/listings/214/2238707714-479490391/2402-tiffany-cir-decatur-ga-11.jpg'
+    detail_description: |
+      Welcome home to this fantastic and meticulous renovation in Decatur! Beautiful mostly brick home with 5 bedrooms and 3 bathrooms on 2 levels, including a huge recreation room and storage room with exterior access. Almost everything is NEW -- kitchen cabinets, quartz countertops, backsplash, Frigidaire SS appliances, LVP flooring on both levels, bathroom fixtures and tiling, windows, blinds, electrical fixtures/devices, water heater, attic foam insulation, privacy fence, landscaping, mailbox, and main water line. ADT alarm system included for the remainder of its first year! Plenty of parking in the carport and extra wide driveway. Emerald Estates is a great community convenient to I-20, I-285, downtown Decatur, Avondale Estates, and intown Atlanta attractions.
+    map:
+      iframe_src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509317!2d-122.42037928468142!3d37.774929279758874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df04cbb5%3A0xdf978c470c530d3a!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1699378351969!5m2!1sen!2sus'
+    interior_features:
+      - label: Home Type
+        value:
+          - 'Single Family'
+      - label: Estimated Annual Taxes
+        value:
+          - '$4,746'
+      - label: Year Built
+        value:
+          - 'Built in 1972 | Remodeled'
+      - label: Lot Details
+        value:
+          - '0.3 Acre Lot'
+          - 'Lot Dimensions are 62 x 116 x 162 x 163'
+          - 'Cul-De-Sac'
+          - 'Back Yard Fenced'
+          - 'Sloped Lot'
+      - label: Home Design
+        value:
+          - 'Traditional Architecture'
+          - 'Brick Foundation'
+          - 'Shingle Roof'
+          - 'Aluminum Siding'
+          - 'Three Sided Brick Exterior Elevation'
+      - label: Interior Spaces
+        value:
+          - '2-Story Property'
+          - 'Insulated Windows'
+          - 'Formal Dining Room'
+          - 'Den'
+          - 'Luxury Vinyl Tile Flooring'
+          - 'Fire and Smoke Detector'
+      - label: Kitchen
+        value:
+          - 'Electric Oven'
+          - 'Microwave'
+          - 'Dishwasher'
+          - 'Kitchen Island'
+          - 'Stone Countertops'
+      - label: Bedrooms and Bathrooms
+        value:
+          - 'Bathtub and Shower Combination in Primary Bathroom'
+      - label: Laundry
+        value:
+          - 'Laundry Room'
+          - 'Laundry in Hall'
+          - 'Laundry on lower level'
+      - label: Finished Basement
+        value:
+          - 'Basement Fills Entire Space Under The House'
+          - 'Interior and Exterior Basement Entry'
+          - 'Natural lighting in basement'
+      - label: Eco-Friendly Details
+        value:
+          - 'Energy-Efficient Appliances'
+          - 'Energy-Efficient Windows'
+          - 'Energy-Efficient Insulation'
+    exterior_features:
+      - label: Parking
+        value:
+          - '2 Carport Spaces'
+          - 'Driveway'
+      - label: Outdoor Features
+        value:
+          - 'Front Porch'
+    additional_info:
+      - label: Schools
+        value:
+          - 'Canby Lane Elementary School'
+          - 'Mary Mcleod Bethune Middle School'
+          - 'Towers High School'
+      - label: Utilities
+        value:
+          - 'Central Heating and Cooling System'
+          - 'Heating System Uses Natural Gas'
+          - 'High-Efficiency Water Heater'
+      - label: Community Details
+        value:
+          - 'Emerald Estates Subdivision'
+      - label: Listing and Financial Details
+        value:
+          - 'Legal Lot and Block 41 / D'
+          - 'Assessor Parcel Number 15 131 10 010'
