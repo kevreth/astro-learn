@@ -12,7 +12,7 @@ listings_details:
       - src: 'https://images1.loopnet.com/i2/sG293VI_7PJRkdxTH9at63ycVc6IURjPbpExyW6-kDY/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-18-Large.jpg'
       - src: 'https://images1.loopnet.com/i2/ckVxPLPUD35TpF8tlzvLEBKW18Asd7E_zWf7njWcK1w/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-28-Large.jpg'
       - src: 'https://images1.loopnet.com/i2/pzLn7FiXyRq0YxmY0kKTlFLm-RupUeAkyEWa8UVd8x0/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-29-Large.jpg'
-    detail_description: >
+    detail_description: |
       Great opportunity to own just under 4 acres in one of the most convenient locations South Dekalb has to offer. Level, wide lot with great potential. Perfect for a custom home, micro community or small town home subdivision. Best value is to keep the current home, renovate it and add 10+ additional .25 acre lots. For more information, text WESLEY to 59559.
     map:
       iframe_src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509317!2d-122.42037928468142!3d37.774929279758874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df04cbb5%3A0xdf978c470c530d3a!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1699378351969!5m2!1sen!2sus'
@@ -41,8 +41,9 @@ listings_details:
       - src: 'https://images1.loopnet.com/i2/Fv1WGop6da8VyJnCYukxPFdOymBkWmA334d-h_8AxYA/116/2369-Whites-Mill-Rd-Decatur-GA-Building-Photo-8-LargeHighDefinition.jpg'
       - src: 'https://images1.loopnet.com/i2/AfQOdwSuBPIYKFa3URDBXGym70v1valbM6QUgUHtuQc/116/2369-Whites-Mill-Rd-Decatur-GA-Building-Photo-10-LargeHighDefinition.jpg'
       - src: 'https://images1.loopnet.com/i2/2N8FzkMZ5kpXbGouySexmd28FdTNiaVUkOmgPdlCXZI/116/2369-Whites-Mill-Rd-Decatur-GA-Building-Photo-15-LargeHighDefinition.jpg'
-    detail_description: >
-      Updated 4 side brick 2 story Residential Income property has 4 units. 2 unites have 3 bedroom 1 full bathroom with market estimate rent $1300 per month. another 2 units have 2 bedrooms 1 full bathroom with market estimate rent $950. The building is sitting in a renovation area with many new construction around. It is a growing area with good public elementary school. The estimated net operation income is 7%. (Effective Year Built 1992)
+    detail_description: |
+      Updated 4 side brick 2 story Residential Income property has 4 units. 2 unites have 3 bedroom 1 full bathroom with market estimate rent $1300 per month. another 2 units have 2 bedrooms 1 full bathroom with market estimate rent $950. 
+      The building is sitting in a renovation area with many new construction around. It is a growing area with good public elementary school. The estimated net operation income is 7%. (Effective Year Built 1992)
     map:
       iframe_src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509317!2d-122.42037928468142!3d37.774929279758874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df04cbb5%3A0xdf978c470c530d3a!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1699378351969!5m2!1sen!2sus'
     property_facts:
@@ -122,28 +123,149 @@ listings_details:
     agent:
     gallery:
       - src: 'https://images.crexi.com/assets/1510669/9e0d7807ebca4c1288184aed8853263e_1306x734.jpg'
-      - src: 'https://images1.loopnet.com/i2/lXXaYsyToqH-F1qI70uAX2kcv5_ADVqku_UaA7cKa3Y/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-3-Large.jpg'
-      - src: 'https://images1.loopnet.com/i2/Kga-vq_EwMA-0ep-SsVAkhM-a4NaFjrTbD1ilX5Bezs/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-5-Large.jpg'
-      - src: 'https://images1.loopnet.com/i2/bq_0IOZMPeJH2js8S3qEcYHLe4XM_cOintAsdMizGIw/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-12-Large.jpg'
-      - src: 'https://images1.loopnet.com/i2/sG293VI_7PJRkdxTH9at63ycVc6IURjPbpExyW6-kDY/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-18-Large.jpg'
-      - src: 'https://images1.loopnet.com/i2/ckVxPLPUD35TpF8tlzvLEBKW18Asd7E_zWf7njWcK1w/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-28-Large.jpg'
-      - src: 'https://images1.loopnet.com/i2/pzLn7FiXyRq0YxmY0kKTlFLm-RupUeAkyEWa8UVd8x0/110/3496-Wesley-Chapel-Rd-Decatur-GA-Building-Photo-29-Large.jpg'
-    detail_description: >
-      Great opportunity to own just under 4 acres in one of the most convenient locations South Dekalb has to offer. Level, wide lot with great potential. Perfect for a custom home, micro community or small town home subdivision. Best value is to keep the current home, renovate it and add 10+ additional .25 acre lots. For more information, text WESLEY to 59559.
+      - src: 'https://images.crexi.com/assets/1510669/ea9f394cada2414b8be169921436f6d1_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1510669/3463862eda50449e8cd15dd3c4266d12_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1510669/6b20472ec4434ed5b235ea0ef1816817_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1510669/69feb02b9e824343a6aee4eb511ecec7_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1510669/25af6d01c3484e2288dc4afcc570df90_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1510669/d0f8ac30be9e407f9eb8e858bc1ca6d1_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1510669/be74cc116da9487b9686eca672e9659f_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1510669/84de025a6cb34880997f3d1b630209fe_1306x734.jpg'
+    detail_description: |
+      Prime Office/Retail Space Minutes from Downtown Hapeville & Airport!
+
+      Welcome to 3388 Dogwood Dr, an exceptional opportunity to lease a versatile commercial space strategically located just minutes away from both downtown Hapeville and Hartsfield-Jackson Atlanta International Airport.
+
+      Property Highlights:
+
+      - Location: Nestled on the bustling Dogwood Dr, this property enjoys high visibility and accessibility, attracting both local and transient clientele.
+
+      - Space: Boasting [insert square footage] of flexible floor space, this property is ideal for a range of businesses, from boutique retail shops to professional offices or service-based enterprises.
+
+      - Accessibility: Conveniently situated within minutes of major transportation hubs, including the airport and major highways, ensuring ease of access for both customers and employees.
+
+      - Amenities: With ample parking and modern amenities, including [insert amenities], this space offers comfort and convenience for both clients and staff.
+
+      - Surroundings: Benefit from a vibrant local community and a thriving business environment, with a diverse range of shops, restaurants, and amenities nearby.
+
+      - Potential: Take advantage of the dynamic growth in the area and position your business for success in this rapidly developing neighborhood.
+
+      Don't miss out on this fantastic opportunity to establish your business in one of Hapeville's most sought-after commercial locations. Contact us today to schedule a viewing and secure your spot in this prime retail/office space!
     map:
       iframe_src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509317!2d-122.42037928468142!3d37.774929279758874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df04cbb5%3A0xdf978c470c530d3a!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1699378351969!5m2!1sen!2sus'
     property_facts:
-      - label: 'Price'
-        value: '$350,000'
       - label: 'Property Type'
-        value: 'Land'
-      - label: 'Sale Type'
-        value: 'Owner User'
-      - label: 'Property Subtype'
-        value: 'Residential'
-      - label: 'Sale Conditions'
-        value: 'Short Sale'
-      - label: 'Total Lot Size'
-        value: '3.71 AC'
-      - label: 'No. Lots'
-        value: '1'
+        value: 'Retail'
+      - label: 'Subtype'
+        value: 'Day Care/Nursery, Storefront'
+      - label: 'Tenancy'
+        value: 'Vacant'
+      - label: 'Square Footage'
+        value: '1,287'
+      - label: 'Price/Sq Ft'
+        value: '$154.62'
+      - label: 'Occupancy'
+        value: 'Vacant'
+  - id: 5
+    agent:
+    gallery:
+      - src: 'https://images.crexi.com/assets/1042484/e79a70503a1241208082e26ed9017948_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1042484/31171208964744d4aaaaf9427bb19df8_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1042484/bbcd68636866444cbefdbecdc589373f_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1042484/e719f2857ce64042b4c7166075cc1292_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1042484/f9a81a74cec3464db343e744a1950855_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1042484/a05b48b7305b4d3ea6d5c6c002379548_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1042484/65820e56daeb431f9e0756d76947afcf_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1042484/30dfe2531a9b401e8a3e03689dc17eb8_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1042484/30dfe2531a9b401e8a3e03689dc17eb8_1306x734.jpg'
+    detail_description: |
+      A unique opportunity to own a 11,000 square feet liquor store in the desirable high-end office and residential area near Lake Lanier, GA; downtown Gainesville; with close proximity to the United Nations and Grand Central Terminal. This established liquor store boasts a prime location and a loyal customer base, making it the perfect investment for anyone looking to enter the liquor store business. The store offers an extensive selection of premium alcoholic beverages, and variety of beers and wines. With a spacious interior, welcoming atmosphere, and a knowledgeable and friendly staff, this store is a go-to destination for all your alcohol needs. Don't miss out on this exciting opportunity to own a thriving business in a prime location!
+    map:
+      iframe_src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509317!2d-122.42037928468142!3d37.774929279758874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df04cbb5%3A0xdf978c470c530d3a!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1699378351969!5m2!1sen!2sus'
+    property_facts:
+      - label: 'Property Type'
+        value: 'Retail'
+      - label: 'Subtype'
+        value: 'Storefront'
+      - label: 'Investment Type'
+        value: 'Owner/User'
+      - label: 'Tenancy'
+        value: 'Single'
+      - label: 'Square Footage'
+        value: '11,000'
+      - label: 'Price/Sq Ft'
+        value: '$472.73'
+      - label: 'Year Built'
+        value: '2001'
+      - label: 'Buildings'
+        value: '3'
+      - label: 'Lot Size (acres)'
+        value: '0.67'
+      - label: 'Broker Co-Op'
+        value: 'Yes'
+  - id: 6
+    agent:
+    gallery:
+      - src: 'https://images.crexi.com/assets/1460916/bbded440d565487eadb72198821de81b_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1460916/0b48db7d51ee49079aac4dd4eb3d0f44_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1460916/963a5ccaef2a445380c9fd9106630694_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1460916/36a895bdfc954786ac5880e3793605e9_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1460916/91c63840dfbc4ef59114cd200c1624d3_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1460916/91c63840dfbc4ef59114cd200c1624d3_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1460916/1716204aefb74a33be797c89cef4a6e3_1306x734.jpg'
+      - src: 'https://images.crexi.com/assets/1460916/f11a4899b66c45399c83e71d19ef53d8_3000x2000_resize.jpg'
+    detail_description: |
+      **Prime Commercial Property in Gainesville, GA**
+
+      **Location:** Gainesville, GA
+
+      **Size:** Approximately 5000 sq ft
+
+      This impressive commercial building offers approximately 5000 square feet of versatile space, perfectly situated in the heart of Gainesville, GA. With its prime location, it presents an excellent opportunity for various businesses seeking high visibility and accessibility.
+
+      **Features:**
+
+      - Spacious open floor plan
+
+      - High ceilings and ample natural light
+
+      - Modern amenities and fixtures
+
+      - Versatile layout suitable for various business needs
+
+      - Ample parking space for customers and employees
+
+      - Proximity to major highways and downtown area
+
+      - Surrounded by thriving businesses and residential communities
+
+      **Ideal for:**
+
+      - Retail stores
+
+      - Offices
+
+      - Restaurants
+
+      - Medical facilities
+
+      - Fitness centers
+
+      - Educational institutions
+
+      - And more!
+    map:
+      iframe_src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509317!2d-122.42037928468142!3d37.774929279758874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df04cbb5%3A0xdf978c470c530d3a!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1699378351969!5m2!1sen!2sus'
+    property_facts:
+      - label: 'Property Type'
+        value: 'Mixed Use, Office, Retail, Special Purpose'
+      - label: 'Subtype'
+        value: 'Convenience Store, Medical Office, Restaurant'
+      - label: 'Square Footage'
+        value: '5,225'
+      - label: 'Price/Sq Ft'
+        value: '$133.95'
+      - label: 'Ownership'
+        value: 'Fee Simple'
+      - label: 'Sale Condition'
+        value: 'For sale by owner'
