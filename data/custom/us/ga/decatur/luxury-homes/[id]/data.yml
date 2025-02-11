@@ -1,5 +1,5 @@
-name: Luxury house
-title: Luxury house
+name: Luxury house Detail Property
+title: Luxury house Detail Property
 description: Luxury House Detail Property| Inquirita
 listings_details:
   - id: 1
@@ -106,3 +106,343 @@ listings_details:
       - label: Neighborhood
         value:
           - 'Aviary'
+  - id: 3
+    agent:
+    gallery:
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/16x9-fhd/000/614/581/883/1692872693.webp?GkZOiSUDEjuLgaOCevX5PRPkHEVzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTAzJTJGM2M3MzU4OTBmOGRmZjc1YTllNzU2MTAxYzM1YjMxNDglMkY5MTk3MjIwNDMuanBlZw=='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/614/581/884/1692872693.webp?VfgNL43vZyQ+WoH7HNbWICd4pidzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTAzJTJGM2M3MzU4OTBmOGRmZjc1YTllNzU2MTAxYzM1YjMxNDglMkY0MTY1OTg0OTQ0LmpwZWc='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/614/581/885/1692872693.webp?5zMcSWn1aPKw6ycyzSkF4/Ujnc9zcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTAzJTJGM2M3MzU4OTBmOGRmZjc1YTllNzU2MTAxYzM1YjMxNDglMkYzOTAxOTAyMDQ5LmpwZWc='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/614/581/886/1692872693.webp?i0lkwzBVFcvZThABZJhLQCB5XsBzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTAzJTJGM2M3MzU4OTBmOGRmZjc1YTllNzU2MTAxYzM1YjMxNDglMkY3ODg5MTc1OTQuanBlZw=='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/614/581/956/1692872693.webp?TqjSYoCvS3h3kt2fsL6bqFU880tzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTAzJTJGM2M3MzU4OTBmOGRmZjc1YTllNzU2MTAxYzM1YjMxNDglMkY2MTA5NDgwNjMuanBlZw=='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/614/581/943/1692872693.webp?KpZhX/LyczG0boISc2bo6DSlKLFzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTAzJTJGM2M3MzU4OTBmOGRmZjc1YTllNzU2MTAxYzM1YjMxNDglMkYxMjQxNDY4NzQ3LmpwZWc='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/614/581/951/1692872693.webp?H2Adj2MsEelqU4+2EEPvHFNUAcVzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTAzJTJGM2M3MzU4OTBmOGRmZjc1YTllNzU2MTAxYzM1YjMxNDglMkYzNDQxOTEzOTczLmpwZWc='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/614/581/953/1692872693.webp?t4d2Td5pgdmv+Lx65ut3zYgpkblzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTAzJTJGM2M3MzU4OTBmOGRmZjc1YTllNzU2MTAxYzM1YjMxNDglMkYxMzE3MDczOTUxLmpwZWc='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/614/581/923/1692872693.webp?alnXvcXQr6e5FNRL4pHg7h3RDdBzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTAzJTJGM2M3MzU4OTBmOGRmZjc1YTllNzU2MTAxYzM1YjMxNDglMkYyMjI1MTI4MDczLmpwZWc='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/614/581/919/1692872693.webp?M/dHP/4Rsr7L09+D/uUT72rzqKJzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTAzJTJGM2M3MzU4OTBmOGRmZjc1YTllNzU2MTAxYzM1YjMxNDglMkYyNjAzOTIzMzQzLmpwZWc='
+    detail_description: |
+      This RESORT STYLE Home is the Ultimate Entertaining Venue! Nearly 5 Secluded Acres complete with Pebble Tec Heated Salt-Water Pool, Spa, Tennis Court, 2 Volleyball Courts, 19 Hole Putting Green, Several Gazebos, Oversized Marble Balconies, Parking for at Least 100 Vehicles and State of the Art Outdoor Lighting Throughout the Property. This CUSTOM BUILT Estate is Ready to Host 1,000 Guests with 4 Full Chef's Kitchens, 2 Huge Wetbars and 2 Outdoor Kitchens. 
+      The BALLROOM Includes Seating & Tables for 100 People & Will Easily Accommodate Gatherings of 200+ with Full Wet Bar/Buffet, Stage Area for a Band or DJ, Billiard Room and His/Hers Bathrooms with Several Stalls and Shower. 
+      The THEATRE ROOM was Custom Designed and Recognized as One of the Top HOME THEATERS in the WORLD. The FULL GYM Includes Top of the Line Workout Equipment & SAUNA. The 7 Bay Garage Opens on Both Sides to Create Even More Entertaining Space. The SEPARATE APARTMENT with Full Kitchen, Bedroom, Full Bath, Laundry, Living Room & Balcony overlooking the Pool is the Perfect NANNY/IN-LAW SUITE. 
+      The Attention to Detail in this LUXURY Home is Unbelievable. GATED with SECURITY SYSTEM, Extensive Custom Millwork, ELEVATOR, Exquisite HIGH END FINISHES throughout! Easy Commute to Downtown Atlanta and Atlanta International Airport.
+    map:
+      iframe_src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509317!2d-122.42037928468142!3d37.774929279758874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df04cbb5%3A0xdf978c470c530d3a!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1699378351969!5m2!1sen!2sus'
+    interior_features:
+      - label: 'Bedrooms'
+        value:
+          - '7 Bedrooms'
+      - label: 'Full Baths'
+        value:
+          - '7 Baths'
+      - label: 'Half Baths'
+        value:
+          - '2 Half Baths'
+      - label: 'Living Area'
+        value:
+          - '18,500 sqft'
+      - label: 'General Features'
+        value:
+          - 'Fireplace'
+      - label: 'Interior Features'
+        value:
+          - 'Bar-Wet'
+          - 'Book Shelving'
+          - 'Breakfast Bar'
+          - 'Cathedral/Vaulted/Tray Ceiling'
+          - 'Elevator'
+          - 'High Ceilings'
+          - 'In-Law Suite'
+          - 'Kitchen Island'
+          - 'Sauna'
+          - 'Security System'
+          - 'Smoke Alarm'
+          - 'Walk-In Closet'
+    exterior_features:
+      - label: 'Parking'
+        value:
+          - 'Garage'
+          - 'Guest'
+      - label: 'Exterior Features'
+        value:
+          - 'Balcony'
+          - 'Deck'
+          - 'Gazebo'
+          - 'Patio'
+          - 'Tennis Court(s)'
+      - label: 'Roofing'
+        value:
+          - 'Tile'
+
+    additional_info:
+      - label: 'Year Built'
+        value:
+          - '1988'
+      - label: 'Lot Size'
+        value:
+          - '4.84 acres'
+      - label: 'County'
+        value:
+          - 'Douglas'
+      - label: 'Neighborhood'
+        value:
+          - 'Atlanta'
+      - label: 'Schools'
+        value:
+          - 'Mount Carmel Elementary'
+          - 'New Manchester High'
+          - 'Chestnut Log Middle School'
+      - label: 'Appliances'
+        value:
+          - 'Ceiling Fans'
+          - 'Central Air Conditioning'
+          - 'Cook Top Range'
+          - 'Dishwasher'
+          - 'Disposal'
+          - 'Double Oven'
+          - 'Ice Maker'
+          - 'Microwave Oven'
+          - 'Oven'
+          - 'Refrigerator'
+          - 'Stainless Steel'
+      - label: 'Flooring'
+        value:
+          - 'Hardwood'
+          - 'Tile'
+  - id: 4
+    agent:
+    gallery:
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/16x9-fhd/000/640/625/096/1735736010.webp?sP18bUxOTw0XybEB1iEUZYNwFJRzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTIyNzUxMi5qcGclM0ZEYXRlJTNERGVjJTI1MjAzMSUyNTIwMjAyNCUyNTIwJTI1MjA5JTNBMjRBTQ=='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/625/097/1735736011.webp?P/3c53uF6UNHOEqrg6EqfDwZmgZzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTIyNzUxMiUyRjEyMjc1MTItMi5qcGclM0ZEYXRlJTNERGVjJTI1MjAzMSUyNTIwMjAyNCUyNTIwJTI1MjA5JTNBMjRBTQ=='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/625/098/1735736011.webp?QcLQoMSKhL18o9mCBxpxIwwZCmdzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTIyNzUxMiUyRjEyMjc1MTItMy5qcGclM0ZEYXRlJTNERGVjJTI1MjAzMSUyNTIwMjAyNCUyNTIwJTI1MjA5JTNBMjRBTQ=='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/625/099/1735736011.webp?FxLWo1LJQZnVsdGhZAu55t9lD8pzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTIyNzUxMiUyRjEyMjc1MTItNC5qcGclM0ZEYXRlJTNERGVjJTI1MjAzMSUyNTIwMjAyNCUyNTIwJTI1MjA5JTNBMjRBTQ=='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/625/102/1735736011.webp?SOeXZ7IJHZfY/dNjxmUtBwMV3blzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTIyNzUxMiUyRjEyMjc1MTItNy5qcGclM0ZEYXRlJTNERGVjJTI1MjAzMSUyNTIwMjAyNCUyNTIwJTI1MjA5JTNBMjRBTQ=='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/625/111/1735736011.webp?nxSKS2seVVzOSFsD+D+XzjRg689zcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTIyNzUxMiUyRjEyMjc1MTItMTYuanBnJTNGRGF0ZSUzRERlYyUyNTIwMzElMjUyMDIwMjQlMjUyMCUyNTIwOSUzQTI0QU0='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/625/116/1735736011.webp?8U6aBVdZIZmK7dIAhidMDxe08jhzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTIyNzUxMiUyRjEyMjc1MTItMjEuanBnJTNGRGF0ZSUzRERlYyUyNTIwMzElMjUyMDIwMjQlMjUyMCUyNTIwOSUzQTI0QU0='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/625/127/1735736011.webp?JzQ0Or6V2piudT1vmt0dUgTi9NpzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTIyNzUxMiUyRjEyMjc1MTItMzIuanBnJTNGRGF0ZSUzRERlYyUyNTIwMzElMjUyMDIwMjQlMjUyMCUyNTIwOSUzQTI0QU0='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/625/130/1735736011.webp?lH6pLbpXy1vWs3c/9p8dnuKXIYlzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTIyNzUxMiUyRjEyMjc1MTItMzUuanBnJTNGRGF0ZSUzRERlYyUyNTIwMzElMjUyMDIwMjQlMjUyMCUyNTIwOSUzQTI0QU0='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/625/133/1735736011.webp?IsGEoncQdM8ZcCEyQh3Z9gkHRr5zcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTIyNzUxMiUyRjEyMjc1MTItMzguanBnJTNGRGF0ZSUzRERlYyUyNTIwMzElMjUyMDIwMjQlMjUyMCUyNTIwOSUzQTI0QU0='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/625/140/1735736011.webp?tFY5Ad+psac75kFfdd0aHh1gPChzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTIyNzUxMiUyRjEyMjc1MTItNDUuanBnJTNGRGF0ZSUzRERlYyUyNTIwMzElMjUyMDIwMjQlMjUyMCUyNTIwOSUzQTI0QU0='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/625/148/1735736011.webp?0ZXvr8IYUm/dRcaUND3UjCQ9vzdzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTIyNzUxMiUyRjEyMjc1MTItNTMuanBnJTNGRGF0ZSUzRERlYyUyNTIwMzElMjUyMDIwMjQlMjUyMCUyNTIwOSUzQTI0QU0='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/625/151/1735736011.webp?09YTZIGgooAsGToCkNQsujOn5m5zcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTIyNzUxMiUyRjEyMjc1MTItNTYuanBnJTNGRGF0ZSUzRERlYyUyNTIwMzElMjUyMDIwMjQlMjUyMCUyNTIwOSUzQTI0QU0='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/625/152/1735736011.webp?TXxKhL4VMif0VYApDQnIrH/JNmpzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTIyNzUxMiUyRjEyMjc1MTItNTcuanBnJTNGRGF0ZSUzRERlYyUyNTIwMzElMjUyMDIwMjQlMjUyMCUyNTIwOSUzQTI0QU0='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/625/154/1735736011.webp?E3Clk5lTBZhiO858YAeYlsSIu9JzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTIyNzUxMiUyRjEyMjc1MTItNTkuanBnJTNGRGF0ZSUzRERlYyUyNTIwMzElMjUyMDIwMjQlMjUyMCUyNTIwOSUzQTI0QU0='
+    detail_description: |
+      Discover the potential of 1760 Barnesdale in Sherwood Forest-an exceptional opportunity to renovate or build the home of your dreams. This charming 1950s ranch offers timeless character with modern possibilities. Step into the formal living room, where a granite fireplace sets the stage for intimate gatherings, while the formal dining room and breakfast room offer lovely views of the expansive family room. The family room is a true centerpiece, boasting soaring vaulted ceilings with hand-hewn timbers from the owner''s property in Ellijay, GA, and a striking stone fireplace built with granite from the original Ansley Golf Club clubhouse. 
+      The spacious owner''s suite is a private retreat, complete with its own deck overlooking the serene backyard, two walk-in closets, and an en-suite bathroom featuring a separate tub and shower. Two additional bedrooms, each with access to their own full bathroom, provide ample space and privacy.The terrace level features a charming 1-bedroom, 1-bathroom apartment, ideal for an in-law suite or au pair accommodations. 
+      With a private entrance and outdoor living area, including a fire pit and grill, this space offers independence while still being part of the home. The apartment can also be reconnected to the main level during a renovation for seamless integration. Outside, the property is anchored by a magnificent magnolia tree and lush landscaping, creating a peaceful, private oasis. A level, gated driveway leads to a detached two-car garage, while the backyard boasts a ground-level deck, accessible through French doors from the family room, a gated dog area, and a rose-covered arbor. With a 292-foot deep lot, there''s ample room to add a pool and customize the outdoor space to your liking. Unbeatable location close to Ansley Golf Club, the Beltline, Piedmont Park, the newly reimagined Colony Square plus numerous dining and shopping options!
+    map:
+      iframe_src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509317!2d-122.42037928468142!3d37.774929279758874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df04cbb5%3A0xdf978c470c530d3a!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1699378351969!5m2!1sen!2sus'
+    interior_features:
+      - label: Bedrooms
+        value:
+          - '4 Bedrooms'
+      - label: Full Baths
+        value:
+          - '4 Bathrooms'
+      - label: Total Baths
+        value:
+          - '4 Bathrooms'
+      - label: Living Area
+        value:
+          - '4,134 sqft'
+      - label: General Features
+        value:
+          - 'Fireplace'
+      - label: Appliances
+        value:
+          - 'Central Air Conditioning'
+          - 'Cook Top Range'
+          - 'Dishwasher'
+          - 'Disposal'
+          - 'Dryer'
+          - 'Microwave Oven'
+          - 'Oven'
+    exterior_features:
+      - label: Parking
+        value:
+          - 'Garage'
+    additional_info:
+      - label: Listing Status
+        value:
+          - 'Active'
+      - label: Built
+        value:
+          - '1950'
+      - label: County
+        value:
+          - 'Fulton - GA'
+      - label: Neighborhood
+        value:
+          - 'Sherwood Forest'
+  - id: 5
+    agent:
+    gallery:
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/16x9-fhd/000/641/112/155/1737099520.webp?TYo/97g2uDXZnzEw63DSuYO04zlzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTc0JTJGNjRjOWNjOTQ2Zjc0MWI2ZDQ2MmVkMTQ4NWFmNmNmOTklMkYzMTI2Mzc0Nzg4LmpwZWc='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/641/112/155/1737099520.webp?TYo/97g2uDXZnzEw63DSuYO04zlzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTc0JTJGNjRjOWNjOTQ2Zjc0MWI2ZDQ2MmVkMTQ4NWFmNmNmOTklMkYzMTI2Mzc0Nzg4LmpwZWc='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/641/112/158/1737099520.webp?ox+qxC+B5zGHbKF36TvmZHziliZzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTc0JTJGNjRjOWNjOTQ2Zjc0MWI2ZDQ2MmVkMTQ4NWFmNmNmOTklMkY0NjkyNzk3NjAuanBlZw=='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/641/112/160/1737099520.webp?QYtr9UeSh6wUIWJcVZK2vl6FF8BzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTc0JTJGNjRjOWNjOTQ2Zjc0MWI2ZDQ2MmVkMTQ4NWFmNmNmOTklMkYxMDQ3Nzc2NTUxLmpwZWc='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/641/112/162/1737099520.webp?+KghKGyV0Ypt3z6SL8YZrM1Q+wdzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTc0JTJGNjRjOWNjOTQ2Zjc0MWI2ZDQ2MmVkMTQ4NWFmNmNmOTklMkYxMjcyMjEzMTg4LmpwZWc='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/641/112/165/1737099520.webp?XE+SrZ0CcMCGIP45TCJkRX45+9dzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTc0JTJGNjRjOWNjOTQ2Zjc0MWI2ZDQ2MmVkMTQ4NWFmNmNmOTklMkYxNTczMDE5OTc4LmpwZWc='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/641/112/170/1737099520.webp?Qn6nVt2K/vTOQgOxMgSzYoUXQFNzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTc0JTJGNjRjOWNjOTQ2Zjc0MWI2ZDQ2MmVkMTQ4NWFmNmNmOTklMkYzNTg5MTQxMDUuanBlZw=='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/641/112/175/1737099520.webp?7xXK/yHORgf9a7XpeRy48n76PTpzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTc0JTJGNjRjOWNjOTQ2Zjc0MWI2ZDQ2MmVkMTQ4NWFmNmNmOTklMkYyMTQwODYwOTEuanBlZw=='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/641/112/179/1737099520.webp?ythO5WkGW/iZvEqSMfvVwtASwJpzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTc0JTJGNjRjOWNjOTQ2Zjc0MWI2ZDQ2MmVkMTQ4NWFmNmNmOTklMkYyODg5MTg1OTEzLmpwZWc='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/641/112/190/1737099520.webp?SVRpIKo2JRo2RYn6GYJ2rUB8K1pzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTc0JTJGNjRjOWNjOTQ2Zjc0MWI2ZDQ2MmVkMTQ4NWFmNmNmOTklMkYzNjQ2NDk3OTUwLmpwZWc='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/641/112/195/1737099520.webp?u80luqlPCAH/sItXt2MkJpc5RNFzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTc0JTJGNjRjOWNjOTQ2Zjc0MWI2ZDQ2MmVkMTQ4NWFmNmNmOTklMkYzNTU2Njg5OTI3LmpwZWc='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/641/112/196/1737099520.webp?KScQ5+8L67oakXVa56DV1+44E1pzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTc0JTJGNjRjOWNjOTQ2Zjc0MWI2ZDQ2MmVkMTQ4NWFmNmNmOTklMkYyMzYxNDIzMTQxLmpwZWc='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/641/112/197/1737099520.webp?MLBRMCeBqOhymr0JJnDAbMAiPcxzcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTc0JTJGNjRjOWNjOTQ2Zjc0MWI2ZDQ2MmVkMTQ4NWFmNmNmOTklMkY2NjY3NzgzMTguanBlZw=='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/641/112/212/1737099520.webp?ghn/AIw9LHzokSNd11G0z1vWV05zcmM9aHR0cHMlM0ElMkYlMkZwaG90b3MucHJvZC5jaXJydXNzeXN0ZW0ubmV0JTJGOTc0JTJGNjRjOWNjOTQ2Zjc0MWI2ZDQ2MmVkMTQ4NWFmNmNmOTklMkYxMjU0NzQwNDc2LmpwZWc='
+    detail_description: |
+      Nestled on the prestigious 8th Green of Atlanta Country Club, this stunning 6-bedroom, 5-bath residence seamlessly blends Old World elegance with modern luxury. Fully renovated (full list attached in docs) and expanded, this home offers a perfect fusion of timeless charm and contemporary sophistication.
+
+      Step through the striking new iron doors and be immediately greeted by natural light streaming through large windows. On your right, an inviting office overlooks the lush golf course, providing a peaceful setting for work. To the left, a beautiful dining room and cozy keeping room offer ideal spaces for formal or casual gatherings.
+
+      The upgraded kitchen is a chef's dream, featuring custom light cabinetry, gleaming granite countertops, top-of-the-line appliances, and a spacious island perfect for meal prep and casual dining. A walk-in pantry, recently transformed into a stunning bourbon pantry with backlighting, adds both beauty and practicality to this already magnificent space.
+
+      The heart of the home is the impressive two-story great room, where panoramic views of the golf course and infinity pool create a captivating ambiance for both relaxation and entertainment.
+
+      Upstairs, the luxurious primary suite features a stunningly renovated bath with a steam shower and a walk-in California closet. Two additional en-suite bedrooms are conveniently located nearby. For added flexibility, the property includes a fully appointed apartment with a cozy bedroom, living room, kitchenette, and private entrance—perfect for guests, in-laws, or a home office. A dedicated upstairs laundry room connects these spaces, along with an extra room currently used as a gym but easily adaptable as an office or playroom.
+
+      The terrace level is designed for ultimate leisure, showcasing a wet bar with a wine fridge, a media area, and ample recreation space. Two additional bedrooms and a full bath on this level offer privacy and comfort for family or guests.
+
+      Designed for seamless indoor-outdoor living, this home features several exquisite spaces for both relaxation and entertaining. The expansive multi-level decks and patio overlook the lush fairways and includes multiple areas for lounging, dining, and enjoying the serene surroundings. The outdoor grilling and bar area makes alfresco meals and gatherings easy, while the elevated position of the infinity pool ensures both privacy and easy access to the golf course—just a short stroll away. Whether hosting a cocktail party or a casual barbecue, these spaces are perfect for entertaining in style.
+
+      Located in a top-rated school district, this exceptional 4 car garage residence offers a rare opportunity for luxurious living in one of the most coveted areas of Atlanta. Don’t miss your chance to call this enchanting property home!
+    map:
+      iframe_src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509317!2d-122.42037928468142!3d37.774929279758874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df04cbb5%3A0xdf978c470c530d3a!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1699378351969!5m2!1sen!2sus'
+    interior_features:
+      - label: Bedrooms
+        value:
+          - '6 Bedrooms'
+      - label: Full Baths
+        value:
+          - '5 Bathrooms'
+      - label: Half Baths
+        value:
+          - '2 Half Baths'
+      - label: Total Baths
+        value:
+          - '7 Bathrooms'
+      - label: Built
+        value:
+          - '1971'
+      - label: General Features
+        value:
+          - 'Fireplace'
+      - label: Interior Features
+        value:
+          - 'Bar-Wet'
+          - 'Book Shelving'
+          - 'Breakfast Bar'
+          - 'Cathedral/Vaulted/Tray Ceiling'
+          - 'Central Vacuum'
+          - 'Fire Alarm'
+          - 'Kitchen Island'
+          - 'Security System'
+          - 'Smoke Alarm'
+          - 'Walk-In Closet'
+      - label: Appliances
+        value:
+          - 'Central Air Conditioning'
+          - 'Dishwasher'
+          - 'Disposal'
+          - 'Double Oven'
+          - 'Gas Appliances'
+          - 'Refrigerator'
+          - 'Self Cleaning Oven'
+    exterior_features:
+      - label: Parking
+        value:
+          - 'Garage'
+      - label: Exterior Features
+        value:
+          - 'Deck'
+          - 'Patio'
+          - 'Storage Shed'
+      - label: Roofing
+        value:
+          - 'Composition Shingle'
+      - label: Flooring
+        value:
+          - 'Carpet'
+          - 'Hardwood'
+      - label: View
+        value:
+          - 'Golf Course'
+    additional_info:
+      - label: Listing Status
+        value:
+          - 'Active'
+      - label: County
+        value:
+          - 'Cobb'
+      - label: Neighborhood
+        value:
+          - 'Atlanta Country Club'
+      - label: Categories
+        value:
+          - 'Golf Course'
+      - label: Schools
+        value:
+          - 'Sope Creek Elementary'
+          - 'Walton High'
+          - 'Dickerson Middle School'
+  - id: 6
+    agent:
+    gallery:
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/16x9-fhd/000/640/703/783/1735908843.webp?4ZN6W14a13OL5sYHprAeAL/e6CdzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTI0NDIwNi5qcGclM0ZEYXRlJTNESmFuJTI1MjAlMjUyMDIlMjUyMDIwMjUlMjUyMCUyNTIwNyUzQTU1QU0='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/703/784/1735908843.webp?E5log9fRhT6EJ0H4ScsjemWp11tzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTI0NDIwNiUyRjEyNDQyMDYtMi5qcGclM0ZEYXRlJTNESmFuJTI1MjAlMjUyMDIlMjUyMDIwMjUlMjUyMCUyNTIwNyUzQTU1QU0='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/703/785/1735908843.webp?bwb6/1Qw/1B/yBUe/UoJjyX3bqxzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTI0NDIwNiUyRjEyNDQyMDYtMy5qcGclM0ZEYXRlJTNESmFuJTI1MjAlMjUyMDIlMjUyMDIwMjUlMjUyMCUyNTIwNyUzQTU1QU0='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/703/786/1735908843.webp?92XegVBzYdMPjjJDxFIgNxjcYyZzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTI0NDIwNiUyRjEyNDQyMDYtNC5qcGclM0ZEYXRlJTNESmFuJTI1MjAlMjUyMDIlMjUyMDIwMjUlMjUyMCUyNTIwNyUzQTU1QU0='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/703/790/1735908843.webp?B1v/afavc+Z81kGGWrwH8Pa9DrRzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTI0NDIwNiUyRjEyNDQyMDYtOC5qcGclM0ZEYXRlJTNESmFuJTI1MjAlMjUyMDIlMjUyMDIwMjUlMjUyMCUyNTIwNyUzQTU1QU0='
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/703/794/1735908843.webp?OrRtpb8syIwsAaG8hKAygj1PFWFzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTI0NDIwNiUyRjEyNDQyMDYtMTIuanBnJTNGRGF0ZSUzREphbiUyNTIwJTI1MjAyJTI1MjAyMDI1JTI1MjAlMjUyMDclM0E1NUFN'
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/703/795/1735908843.webp?z1je7PmSmfuQuebpdyfF/AcwUnZzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTI0NDIwNiUyRjEyNDQyMDYtMTMuanBnJTNGRGF0ZSUzREphbiUyNTIwJTI1MjAyJTI1MjAyMDI1JTI1MjAlMjUyMDclM0E1NUFN'
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/703/799/1735908844.webp?kQKjRqzKUZ574lnVE5GfAd+wCkxzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTI0NDIwNiUyRjEyNDQyMDYtMTcuanBnJTNGRGF0ZSUzREphbiUyNTIwJTI1MjAyJTI1MjAyMDI1JTI1MjAlMjUyMDclM0E1NUFN'
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/703/802/1735908844.webp?XOTjULSfdyQ04v592N9zwiNrx8xzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTI0NDIwNiUyRjEyNDQyMDYtMjAuanBnJTNGRGF0ZSUzREphbiUyNTIwJTI1MjAyJTI1MjAyMDI1JTI1MjAlMjUyMDclM0E1NUFN'
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/703/807/1735908844.webp?L6NLC1gNhSMFs0M1PziI9scCoehzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTI0NDIwNiUyRjEyNDQyMDYtMjUuanBnJTNGRGF0ZSUzREphbiUyNTIwJTI1MjAyJTI1MjAyMDI1JTI1MjAlMjUyMDclM0E1NUFN'
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/703/810/1735908844.webp?BVE9szpJRQYR/L9s6rs3YQGNvaVzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTI0NDIwNiUyRjEyNDQyMDYtMjguanBnJTNGRGF0ZSUzREphbiUyNTIwJTI1MjAyJTI1MjAyMDI1JTI1MjAlMjUyMDclM0E1NUFN'
+      - src: 'https://assets.luxuryrealestate.com/lre-assets/images/versions/listings/3x2-sd/000/640/703/814/1735908844.webp?jrfV3TQ3a8aAzR/uXB6l0OMCtpRzcmM9aHR0cHMlM0ElMkYlMkZjb250ZW50Lm1lZGlhc3RnLm5ldCUyRmR5bmFfaW1hZ2VzJTJGbWxzJTJGMTA2MjQ1JTJGMTI0NDIwNiUyRjEyNDQyMDYtMzIuanBnJTNGRGF0ZSUzREphbiUyNTIwJTI1MjAyJTI1MjAyMDI1JTI1MjAlMjUyMDclM0E1NUFN'
+    detail_description: |
+      Nestled in a prestigious enclave off the sought-after Briarcliff corridor, this stunning home offers over 10,000 square feet of refined living across three levels, plus exceptional outdoor spaces. Recent renovations combine timeless elegance with modern updates, making it an entertainer''s paradise. The two-story foyer opens to white oak floors, a formal living room with built-ins, a fireplace, and tree-lined views. The Chef''s kitchen dazzles with seven blue Bahia marble slabs, a Viking range, walk-in pantry, water filtration system, and seating for six. A Butler''s pantry connects the dining room, while a keeping room with a second fireplace adds comfort. The private office is ideal for working from home. Upstairs, the luxurious primary suite boasts a marble fireplace, wet bar, projector, dual walk-in closets, and a spa-like bath with dual showers and black Spyder marble. Secondary bedrooms feature en-suites and walk-in closets. The lower level includes a game room, custom bar, cinema room, and direct access to the saltwater pool, outdoor kitchen, and screened porch with Sonos surround sound. Additional amenities include an elevator, 19-camera security system, generator, and a top-rated school district. Perfectly blending luxury and practicality, this home is a true destination for family and friends. Don''t miss your chance to own this masterpiece!
+    map:
+      iframe_src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509317!2d-122.42037928468142!3d37.774929279758874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df04cbb5%3A0xdf978c470c530d3a!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1699378351969!5m2!1sen!2sus'
+    interior_features:
+      - label: Bedrooms
+        value:
+          - '8 Bedrooms'
+      - label: Full Baths
+        value:
+          - '9 Bathrooms'
+      - label: Total Baths
+        value:
+          - '9 Bathrooms'
+      - label: Living Area
+        value:
+          - '10,436 sqft'
+      - label: Built
+        value:
+          - '2007'
+      - label: General Features
+        value:
+          - 'Fireplace'
+      - label: Appliances
+        value:
+          - 'Central Air Conditioning'
+          - 'Cook Top Range'
+          - 'Dishwasher'
+          - 'Disposal'
+          - 'Dryer'
+          - 'Microwave Oven'
+          - 'Oven'
+    exterior_features:
+      - label: Parking
+        value:
+          - 'Garage'
+    additional_info:
+      - label: Listing Status
+        value:
+          - 'Active'
+      - label: County
+        value:
+          - 'Dekalb - GA'
+      - label: Neighborhood
+        value:
+          - 'Oak Grove Preserve'

@@ -44,13 +44,6 @@ agent:
   dre: '01995816'
   address: '3512 16th Street | San Francisco, CA 94114'
 listings:
-  # - id:
-  #   status:
-  #   price:
-  #   location:
-  #   subStats: '3 Beds | 2 Baths | 1,826 sqft'
-  #   image:
-  #   link: '/us/ga/decatur/luxury-homes/listings/1'
   - id: 1
     status: 'House for sale'
     price: '$1,459,000'
@@ -65,25 +58,25 @@ listings:
     link: '/us/ga/decatur/luxury-homes/2'
   - id: 3
     status: 'House for sale'
-    price: '$1,050,000'
-    location: '3420 Aviary Lane, Decatur, GA, United States'
-    subStats: '4 Beds | 6 Baths | 4875 sqft'
-    link: '/us/ga/decatur/luxury-homes/'
+    price: '$6,299,999'
+    location: '5326 Presley PL, Decatur, GA, United States'
+    subStats: '7 Beds | 7 Baths | 4.84 acres '
+    link: '/us/ga/decatur/luxury-homes/3'
   - id: 4
     status: 'House for sale'
-    price: '$1,050,000'
-    location: '3420 Aviary Lane, Decatur, GA, United States'
-    subStats: '4 Beds | 6 Baths | 4875 sqft'
-    link: '/us/ga/decatur/luxury-homes/'
+    price: '$1,095,000'
+    location: '1760 Barnesdale Way NE, Decatur, GA, United States'
+    subStats: '4 Beds | 4 Baths | 4134 sqft'
+    link: '/us/ga/decatur/luxury-homes/4'
   - id: 5
     status: 'House for sale'
-    price: '$1,050,000'
-    location: '3420 Aviary Lane, Decatur, GA, United States'
-    subStats: '4 Beds | 6 Baths | 4875 sqft'
-    link: '/us/ga/decatur/luxury-homes/'
+    price: '$3,500,000'
+    location: '571 Glen Eagles Circle SE, Decatur, GA, United States'
+    subStats: '6 Beds | 7 Baths'
+    link: '/us/ga/decatur/luxury-homes/5'
   - id: 6
     status: 'House for sale'
-    price: '$1,050,000'
-    location: '3420 Aviary Lane, Decatur, GA, United States'
-    subStats: '4 Beds | 6 Baths | 4875 sqft'
-    link: '/us/ga/decatur/luxury-homes/'
+    price: '$2,850,000'
+    location: '2015 Shaudi Lane, Decatur, GA, United States'
+    subStats: '8 Beds | 9 Baths | 10436 sqft'
+    link: '/us/ga/decatur/luxury-homes/6'
