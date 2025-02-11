@@ -12,6 +12,9 @@ import data from "./data.json";
                     <p class="locni-description">
                         {data.luxury_properties.description}
                     </p>
+                    <a class="btn-primary" href={data.luxury_properties.link.url}>
+                        {data.luxury_properties.link.text}
+                    </a>
                     <div class="luxury-features">
                         {data.luxury_properties.features.map(feature => (
                             <div class="bottom-line"></div>

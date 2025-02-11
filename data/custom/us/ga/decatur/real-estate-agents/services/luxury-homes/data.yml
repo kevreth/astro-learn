@@ -3,6 +3,9 @@ title: Luxury Services Offers
 description: Luxury Services Offers| Inquirita
 luxury_properties:
   title: 'Explore Luxury Properties'
+  link:
+    text: 'Luxury Homes'
+    url: '/us/ga/decatur/luxury-homes'
   description: 'Luxury homes are more than just properties—they are a lifestyle. Our exclusive luxury listings showcase the finest estates, featuring breathtaking designs, unmatched locations, and premium amenities. From elegant city penthouses to serene countryside retreats, we have the perfect home waiting for you.'
   features:
     - title: 'What Sets Our Luxury Listings Apart?'
