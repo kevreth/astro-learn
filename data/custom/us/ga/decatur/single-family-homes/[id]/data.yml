@@ -242,3 +242,419 @@ listings_details:
           - 'Smith Primary/Elementary'
           - 'North Atlanta High'
           - 'Sutton Middle School'
+  - id: 3
+    agent:
+    gallery:
+      - src: 'https://roofstock-cdn4.azureedge.net/public/properties/2181166/photo/a16e0b1f-b81b-4125-b983-907cac1e65bc_01_1467319786_1280.jpg'
+      - src: 'https://roofstock-cdn4.azureedge.net/public/properties/2181166/photo/8ea0e5d4-9d0b-4f9d-bbb2-69f737a889a1_03_3940099946_1280.jpg'
+      - src: 'https://roofstock-cdn4.azureedge.net/public/properties/2181166/photo/8c901b6a-1eb4-49f8-8968-ad7f16eaf8d5_04_404451824_1280.jpg'
+      - src: 'https://roofstock-cdn4.azureedge.net/public/properties/2181166/photo/e6474fe1-af13-433a-b84e-10c6b5c4ee22_05_3065125847_1280.jpg'
+      - src: 'https://roofstock-cdn4.azureedge.net/public/properties/2181166/photo/cf109d6e-ea48-4ab0-8dd3-e2267cf0e5e5_07_1298805876_1280.jpg'
+      - src: 'https://roofstock-cdn4.azureedge.net/public/properties/2181166/photo/4f0c879c-20cb-4c51-abff-36a994e67617_08_247263026_1280.jpg'
+      - src: 'https://roofstock-cdn4.azureedge.net/public/properties/2181166/photo/07b2161a-4f6f-47b8-99a4-024aaa936e76_09_1686360498_1280.jpg'
+      - src: 'https://roofstock-cdn4.azureedge.net/public/properties/2181166/photo/3e50bc2a-3909-419b-9184-5629f4fe22cd_12_2841941528_1280.jpg'
+      - src: 'https://roofstock-cdn4.azureedge.net/public/properties/2181166/photo/744684b1-d163-4277-9b07-3829a4fa6408_16_21638305_1280.jpg'
+    detail_description: |
+      Charming 3-bedroom, 2-bathroom ranch on a peaceful lagoon for under $270k in centrally-located Georgetown! The PERFECT home for first-time homebuyers and investors looking to add to their portfolio. This home features an open and inviting floor plan perfect for entertaining and includes vaulted ceilings, a freshly painted interior, spacious rooms, an outdoor patio, and a 2-car garage. The primary suite includes a walk-in closet and en-suite bath. Enjoy a private, fenced backyard that backs up to a lagoon—no rear neighbors! Located just minutes from shopping, dining, hospitals, and a short drive to downtown Savannah, this property offers unbeatable comfort and convenience. A rare find in Georgetown at this price—don’t miss out!
+    map:
+      iframe_src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509317!2d-122.42037928468142!3d37.774929279758874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df04cbb5%3A0xdf978c470c530d3a!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1699378351969!5m2!1sen!2sus'
+    interior_features:
+      - label: Bedrooms
+        value:
+          - '3 Bedrooms'
+      - label: Full Baths
+        value:
+          - '2 Bathrooms'
+      - label: Living Area
+        value:
+          - 'Ranch-style home'
+      - label: Appliances
+        value:
+          - 'Central Air Conditioning'
+          - 'Dishwasher'
+          - 'Oven'
+          - 'Microwave'
+          - 'Refrigerator'
+    exterior_features:
+      - label: Parking
+        value:
+          - '2-Car Garage'
+      - label: Outdoor Features
+        value:
+          - 'Private fenced backyard'
+          - 'Backs up to a lagoon (no rear neighbors)'
+          - 'Outdoor patio'
+    additional_info:
+      - label: Listing Status
+        value:
+          - 'Active'
+      - label: Nearby Amenities
+        value:
+          - 'Minutes from shopping'
+          - 'Close to dining and hospitals'
+          - 'Short drive to downtown Savannah'
+  - id: 4
+    agent:
+    gallery:
+      - src: 'https://photos.zillowstatic.com/fp/259553d092c3d72fee3eaaf8ed54d731-cc_ft_768.webp'
+      - src: 'https://photos.zillowstatic.com/fp/1b55614621c1561cb8cad06fd771acba-cc_ft_384.webp'
+      - src: 'https://photos.zillowstatic.com/fp/f9547b593664e9882173503580f9528e-cc_ft_384.webp'
+      - src: 'https://photos.zillowstatic.com/fp/e0da48993bbadf6385b8ae8b923b58ec-cc_ft_384.webp'
+      - src: 'https://photos.zillowstatic.com/fp/9dcd3d541d2259fd90cf6ab8b8ed89c6-cc_ft_384.webp'
+      - src: 'https://photos.zillowstatic.com/fp/b99926490d189c44516466262a8f11e6-cc_ft_384.webp'
+      - src: 'https://photos.zillowstatic.com/fp/c60b89d531851b47dfbe0663ef28998e-cc_ft_768.webp'
+      - src: 'https://photos.zillowstatic.com/fp/a63f47b601a2ff24601bb8fef2c58362-cc_ft_384.webp'
+      - src: 'https://photos.zillowstatic.com/fp/dd24c5625662a9cf68c16e4cf6e4b6bd-cc_ft_768.webp'
+      - src: 'https://photos.zillowstatic.com/fp/b12c8afedb082327c47a7b6b3c0a9383-cc_ft_384.webp'
+    detail_description: |
+      Charming 3-bedroom, 1.5-bath, two-story home in a quiet neighborhood. Features a spacious layout with white cabinets, granite countertops, and stainless steel appliances in the kitchen. Enjoy a mix of vinyl and carpet flooring throughout. The large, fenced backyard provides plenty of outdoor space for relaxation and entertainment. Perfect for families or anyone looking for a comfortable and functional home.    Don’t miss this wonderful opportunity!
+    map:
+      iframe_src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509317!2d-122.42037928468142!3d37.774929279758874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df04cbb5%3A0xdf978c470c530d3a!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1699378351969!5m2!1sen!2sus'
+    interior_features:
+      - label: Bedrooms
+        value:
+          - '3 Bedrooms'
+      - label: Bathrooms
+        value:
+          - '2 Bathrooms'
+      - label: Full Bathrooms
+        value:
+          - '1'
+      - label: Half Bathrooms
+        value:
+          - '1'
+      - label: Kitchen
+        value:
+          - 'Cabinets White'
+          - 'Stone Counters'
+      - label: Heating
+        value:
+          - 'Central'
+      - label: Cooling
+        value:
+          - 'Central Air'
+      - label: Appliances
+        value:
+          - 'Dishwasher'
+          - 'Electric Oven'
+          - 'Electric Range'
+          - 'Microwave'
+          - 'Refrigerator'
+      - label: Flooring
+        value:
+          - 'Carpet'
+          - 'Vinyl'
+      - label: Windows
+        value:
+          - 'Window Treatments'
+          - 'Wood Frames'
+      - label: Basement
+        value:
+          - 'Exterior Entry'
+          - 'Interior Entry'
+      - label: Has Fireplace
+        value:
+          - 'No'
+      - label: Fireplace Features
+        value:
+          - 'None'
+      - label: Common Walls
+        value:
+          - 'No Common Walls'
+    exterior_features:
+      - label: Parking
+        value:
+          - 'Total Spaces: 1'
+          - 'Driveway'
+          - 'Garage'
+      - label: Garage Spaces
+        value:
+          - '1'
+      - label: Has Uncovered Spaces
+        value:
+          - 'Yes'
+      - label: Patio & Porch
+        value:
+          - 'Front Porch'
+      - label: Fencing
+        value:
+          - 'Back Yard'
+          - 'Chain Link'
+      - label: Has View
+        value:
+          - 'Yes'
+      - label: View Description
+        value:
+          - 'Trees/Woods'
+      - label: Waterfront Features
+        value:
+          - 'None'
+      - label: Body of Water
+        value:
+          - 'None'
+    additional_info:
+      - label: Interior Area
+        value:
+          - 'Total Structure Area: 1,125 sqft'
+          - 'Total Interior Livable Area: 1,125 sqft'
+      - label: Lot Size
+        value:
+          - '0.28 Acres'
+      - label: Lot Dimensions
+        value:
+          - '175 x 58'
+      - label: Lot Features
+        value:
+          - 'Back Yard'
+      - label: Additional Structures
+        value:
+          - 'None'
+      - label: Parcel Number
+        value:
+          - '15 163 04 121'
+      - label: Special Conditions
+        value:
+          - 'Standard'
+      - label: Other Equipment
+        value:
+          - 'None'
+      - label: Horse Amenities
+        value:
+          - 'None'
+      - label: Architectural Style
+        value:
+          - 'Traditional'
+      - label: Property Subtype
+        value:
+          - 'Single Family Residence'
+          - 'Residential'
+      - label: Materials
+        value:
+          - 'Stone'
+      - label: Roof
+        value:
+          - 'Shingle'
+      - label: Condition
+        value:
+          - 'Resale'
+      - label: New Construction
+        value:
+          - 'No'
+      - label: Year Built
+        value:
+          - '1967'
+  - id: 5
+    agent:
+    gallery:
+      - src: 'https://photos.zillowstatic.com/fp/611dc3ae29f60c2d8c177fc155884217-cc_ft_768.webp'
+      - src: 'https://photos.zillowstatic.com/fp/30a34d13e424f4687d5ac5dfc78f1d84-cc_ft_384.webp'
+      - src: 'https://photos.zillowstatic.com/fp/abe2b98b5b0c83a5f89dd36cc564b5d1-cc_ft_384.webp'
+      - src: 'https://photos.zillowstatic.com/fp/9cbd69cdebebaf9646db3cb5e636e5d9-cc_ft_384.webp'
+      - src: 'https://photos.zillowstatic.com/fp/7f00b46fc3d7d8bc664cadbdbe12c631-cc_ft_768.webp'
+      - src: 'https://photos.zillowstatic.com/fp/e84af06f5d0a1e504261be51c5378d19-cc_ft_768.webp'
+      - src: 'https://photos.zillowstatic.com/fp/e5ada821740871922246975df61e9e42-cc_ft_384.webp'
+      - src: 'https://photos.zillowstatic.com/fp/de2107e9c8dff6338a12e6e1227f7bff-cc_ft_768.webp'
+      - src: 'https://photos.zillowstatic.com/fp/e158040c75df1543df9039b36318c260-cc_ft_384.webp'
+      - src: 'https://photos.zillowstatic.com/fp/c5f8fb1aeb2cb949ff9bdb03981f8ec1-cc_ft_768.webp'
+      - src: 'https://photos.zillowstatic.com/fp/af3fe5e8dd3b20432895400cf9664c76-cc_ft_768.webp'
+      - src: 'https://photos.zillowstatic.com/fp/039c804829bae73e922ec6ae53caa5e6-cc_ft_768.webp'
+      - src: 'https://photos.zillowstatic.com/fp/e94f75909e7683da915febe9fd29cf39-cc_ft_768.webp'
+    detail_description: |
+      SELLER MOTIVATED! VACANT PROPERTY WITH A GREAT PRICE!!! This charming 3 bedrooms 2 full bathrooms home showcases newly-installed hardwood laminate flooring; remodeled bathrooms and in the kitchen great suite of stainless appliances. A spacious floor plan with a living room, two dining rooms, a big Family Room and an enclosed porch perfect for an office!    Great Location! Proximity to the city: the Perimeter shopping mall is only a few-mile straight shot. Beautiful parks near by: Chapel hill and Panola mountain state parks!
+    map:
+      iframe_src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509317!2d-122.42037928468142!3d37.774929279758874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df04cbb5%3A0xdf978c470c530d3a!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1699378351969!5m2!1sen!2sus'
+    interior_features:
+      - label: Bedrooms
+        value:
+          - '3 Bedrooms'
+      - label: Bathrooms
+        value:
+          - '2 Bathrooms'
+      - label: Full Bathrooms
+        value:
+          - '2'
+      - label: Rooms
+        value:
+          - 'Dining Room'
+      - label: Bonus Room
+        value:
+          - 'Enclosed Porch can be an office!'
+          - 'Level: Main'
+      - label: Family Room
+        value:
+          - 'Level: Main'
+      - label: Living Room
+        value:
+          - 'Level: Main'
+      - label: Heating
+        value:
+          - 'Central'
+      - label: Cooling
+        value:
+          - 'Central Air'
+      - label: Appliances
+        value:
+          - 'Dishwasher'
+          - 'Disposal'
+          - 'Electric Oven'
+      - label: Laundry
+        value:
+          - 'Main Level'
+          - 'Mud Room'
+      - label: Flooring
+        value:
+          - 'Laminate'
+      - label: Windows
+        value:
+          - 'None'
+      - label: Basement
+        value:
+          - 'Crawl Space'
+      - label: Number of Fireplaces
+        value:
+          - '1'
+      - label: Fireplace Features
+        value:
+          - 'Family Room'
+      - label: Common Walls
+        value:
+          - 'No Common Walls'
+    exterior_features:
+      - label: Parking
+        value:
+          - 'Total Spaces: 2'
+          - 'Attached Garage Spaces: 2'
+          - 'Has Uncovered Spaces: Yes'
+          - 'Parking Features: Attached, Driveway, Garage, Garage Door Opener, Garage Faces Front'
+      - label: Patio & Porch
+        value:
+          - 'Covered'
+          - 'Enclosed'
+      - label: Fencing
+        value:
+          - 'None'
+      - label: Has View
+        value:
+          - 'Yes'
+      - label: View Description
+        value:
+          - 'Trees/Woods'
+    additional_info:
+      - label: Interior Area
+        value:
+          - 'Total Structure Area: 2,426 sqft'
+          - 'Total Interior Livable Area: 2,426 sqft'
+      - label: Lot Size
+        value:
+          - '0.90 Acres'
+      - label: Lot Dimensions
+        value:
+          - '270 x 82'
+      - label: Lot Features
+        value:
+          - 'Back Yard'
+          - 'Front Yard'
+          - 'Landscaped'
+          - 'Sloped'
+      - label: Parcel Number
+        value:
+          - '15 068 01 016'
+      - label: Architectural Style
+        value:
+          - 'Ranch'
+      - label: Property Subtype
+        value:
+          - 'Single Family Residence'
+          - 'Residential'
+      - label: Materials
+        value:
+          - 'Brick 4 Sides'
+      - label: Roof
+        value:
+          - 'Composition'
+      - label: Condition
+        value:
+          - 'Resale'
+      - label: New Construction
+        value:
+          - 'No'
+      - label: Year Built
+        value:
+          - '1964'
+  - id: 6
+    agent:
+    gallery:
+      - src: 'https://photos.zillowstatic.com/fp/38bf005ae78fbc18d971c38baeb4c148-cc_ft_768.webp'
+      - src: 'https://photos.zillowstatic.com/fp/ca1ed016af6ff080a412abb925fe69c9-cc_ft_384.webp'
+      - src: 'https://photos.zillowstatic.com/fp/61bcf3d598d3b35f2ebf67b75288938b-cc_ft_768.webp'
+      - src: 'https://photos.zillowstatic.com/fp/5e18c6e8b9afaf32cc0fe1396649e93c-cc_ft_768.webp'
+      - src: 'https://photos.zillowstatic.com/fp/099279f17fded754981e66d8555c07d6-cc_ft_384.webp'
+      - src: 'https://photos.zillowstatic.com/fp/9cf03d958350970ddb2a882e7ff0a823-cc_ft_384.webp'
+      - src: 'https://photos.zillowstatic.com/fp/79b77c02896d09d07a66850d03f13fe7-cc_ft_768.webp'
+      - src: 'https://photos.zillowstatic.com/fp/20d4420d3e41cbf2c9a39170a3c71408-cc_ft_768.webp'
+    detail_description: |
+      This property is a blank canvas for savvy investors looking to capitalize on the booming real estate market in this revitalizing neighborhood.   Property Highlights:  Prime Location: Nestled in a rapidly gentrifying area, with numerous renovations underway on the street and nearby. This property is positioned for significant appreciation.   Renovation Potential: This home is in need of a complete overhaul, offering endless possibilities for customization. Create a lucrative rental or a stunning resale that caters to the high demand for modern living spaces in Atlanta.  Expanding Market: With new developments sprouting up all around, this is the perfect time to invest. Benefit from the area's growth and rising property values as the neighborhood transforms.   Solid Investment: Whether you're looking to flip or rent, this property provides an incredible opportunity to maximize your ROI in a sought-after location.   Don't miss out on this chance to invest in a property that is ripe for renovation and positioned for future growth. Bring your vision and transform this home into a profitable venture! Act fast-properties like this don't stay on the market long!
+    map:
+      iframe_src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509317!2d-122.42037928468142!3d37.774929279758874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df04cbb5%3A0xdf978c470c530d3a!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1699378351969!5m2!1sen!2sus'
+    interior_features:
+      - label: Bedrooms
+        value:
+          - '3 Bedrooms'
+      - label: Bathrooms
+        value:
+          - '1 Bathroom'
+      - label: Full Bathrooms
+        value:
+          - '1'
+      - label: Rooms
+        value:
+          - 'Family Room'
+          - 'Other'
+      - label: Heating
+        value:
+          - 'Central'
+      - label: Cooling
+        value:
+          - 'Central Air'
+      - label: Appliances
+        value:
+          - 'Refrigerator'
+      - label: Number of Fireplaces
+        value:
+          - '1'
+    exterior_features:
+      - label: Parking
+        value:
+          - 'Total Spaces: 2'
+          - 'Parking Features: None'
+    additional_info:
+      - label: Interior Area
+        value:
+          - 'Total Structure Area: 1,488 sqft'
+          - 'Total Interior Livable Area: 1,488 sqft'
+          - 'Finished Area Above Ground: 1,488 sqft'
+          - 'Finished Area Below Ground: 0 sqft'
+      - label: Lot Size
+        value:
+          - '0.40 Acres'
+      - label: Lot Features
+        value:
+          - 'Level'
+      - label: Parcel Number
+        value:
+          - '15 138 07 010'
+      - label: Home Type
+        value:
+          - 'Single Family'
+      - label: Architectural Style
+        value:
+          - 'Ranch'
+      - label: Property Subtype
+        value:
+          - 'Single Family Residence'
+      - label: Materials
+        value:
+          - 'Brick'
+      - label: Roof
+        value:
+          - 'Composition'

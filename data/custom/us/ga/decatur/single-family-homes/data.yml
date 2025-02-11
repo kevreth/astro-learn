@@ -60,20 +60,28 @@ listings:
 
   - id: 3
     status: 'House for sale'
-    price: '$1,200,000'
-    link: ''
+    price: '$269,900'
+    location: '28 Leeward Dr Savannah, Decatur, GA 31419, United States'
+    subStats: '3 Beds | 2 Baths | 1,438 sqft'
+    link: '/us/ga/decatur/single-family-homes/3'
 
   - id: 4
     status: 'House for sale'
-    price: '$500,000'
-    link: ''
+    price: '$210,000'
+    location: '4083 Thetford Ct, Decatur, GA 30035, United States'
+    subStats: '3 Beds | 2 Baths | 1,125 sqft'
+    link: '/us/ga/decatur/single-family-homes/4'
 
   - id: 5
     status: 'House for sale'
-    price: '$725,000'
-    link: ''
+    price: '$294,900'
+    location: '3891 Artist Vw, Decatur, GA 30034, United States'
+    subStats: '3 Beds | 2 Baths | 2,426 sqft'
+    link: '/us/ga/decatur/single-family-homes/5'
 
   - id: 6
     status: 'House for sale'
-    price: '$350,000'
-    link: ''
+    price: '$130,000'
+    location: '2633 Yale Ter, Decatur, GA 30032, United States'
+    subStats: '3 Beds | 1 Baths | 1,488 sqft'
+    link: '/us/ga/decatur/single-family-homes/6'
