@@ -1,0 +1,13 @@
+---
+import PropertyCard from "./PropertyCard.astro";
+
+const {data, listingsDetails} = Astro.props
+---
+<div class="listings-grid">
+    {data.listings.map((listing) => {
+        const detail = listingsDetails.listings_details.find(
+            (detail) => detail.id === listing.id
+        );
+        return <PropertyCard listing={listing} detail={detail} key={listing.id} />;
+    })}
+</div>

@@ -2,7 +2,7 @@
 import Default from "../src/astro/components/Default.astro";
 import data from "./data.json";
 import listingsDetails from "./[id]/data.json"
-import PropertyCard from "src/astro/components/PropertyCard.astro";
+import PropertyListings from "src/astro/components/PropertyListings.astro";
 ---
 
 <Default data={data}>
@@ -11,14 +11,7 @@ import PropertyCard from "src/astro/components/PropertyCard.astro";
             <h1>Decatur, GA Investment Properties</h1>
             <div class="text-content scroll-content">
                 <div class="listing-container">
-                    <div class="listings-grid">
-                        {data.listings.map((listing) => {
-                            const detail = listingsDetails.listings_details.find(
-                                (detail) => detail.id === listing.id
-                            );
-                            return <PropertyCard listing={listing} detail={detail} key={listing.id} />;
-                        })}
-                    </div>
+                    <PropertyListings data={data} listingsDetails={listingsDetails}/>
                 </div>
             </div>
         </div>
