@@ -1,0 +1,77 @@
+---
+import PropertyDetails from "./PropertyDetails.astro";
+import PropertyFacts from "./PropertyFacts.astro";
+
+const { data, mainListing, listing, contentType } = Astro.props;
+---
+<div class="detail-container">
+  <!-- Left column property -->
+  <div class="left-column">
+    <div class="content-header">
+      <div class="status">
+        <span class="dot"></span> {mainListing.status}
+      </div>
+      <h2>{mainListing.price}</h2>
+      <p>{mainListing.location}</p>
+      <p>{mainListing.subStats}</p>
+    </div>
+    <div class="separator-dark"></div>
+    <div class="content-description">
+      <div class="content-left">
+        <ul class="property-stats no-padding"></ul>
+      </div>
+      <div class="content-right">
+        <div class="property-description">
+          <p id="description">{listing.detail_description}</p>
+        </div>
+      </div>
+    </div>
+    <div class="map">
+      <h2>Map</h2>
+      <iframe
+        src={listing.map.iframe_src}
+        width="100%"
+        height="20%"
+        style="border: 0;"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <p class="map-address">{listing.location}</p>
+    </div>
+    <div class="separator-dark"></div>
+
+    <!-- Content Type -->
+    {contentType === "facts" ? (
+      <PropertyFacts listing={listing} />
+    ) : (
+      <PropertyDetails listing={listing} />
+    )}
+  </div>
+
+  <!-- Right column Agent contact -->
+  <div class="right-column">
+    <div class="agent-card">
+      <div class="agent-details">
+        <h3 class="agent-name">{data.agent.name}</h3>
+        <div class="agent-info">
+          <div class="mobile-info row-info">
+            <p class="label">Mobile number</p>
+            <p class="value">{data.agent.phone}</p>
+          </div>
+          <hr />
+          <div class="email-info row-info">
+            <p class="label">Email</p>
+            <p class="value">{data.agent.email}</p>
+          </div>
+        </div>
+      </div>
+      <div class="agent-contact">
+        <a href="/us/ga/decatur/real-estate-agents/contact" class="btn-primary">
+          Contact agent
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="separator-dark"></div>

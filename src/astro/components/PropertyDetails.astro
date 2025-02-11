@@ -1,0 +1,69 @@
+---
+const { listing } = Astro.props;
+---
+
+<div class="property-details">
+  {listing.interior_features ? (
+    <div class="feature-details">
+      <div class="feature-title">
+        <img src="https://img.icons8.com/ios/50/sofa.png" alt="sofa" width="20" height="20" />
+        <h3>Interior Features</h3>
+      </div>
+      <ul class="feature-list">
+        {listing.interior_features.map(feature => (
+          <li>
+            <span class="feature-label">{feature.label}</span>
+            <ul class="feature-value">
+              {feature.value.map(row => (
+                <li>{row}</li>
+              ))}
+            </ul>
+          </li>
+        ))}
+      </ul>
+    </div>
+  ) : ''}
+
+  {listing.exterior_features ? (
+    <div class="feature-details">
+      <div class="feature-title">
+        <img src="https://img.icons8.com/ios/50/exterior.png" alt="exterior" width="20" height="20" />
+        <h3>Exterior/Building Features</h3>
+      </div>
+      <ul class="feature-list">
+        {listing.exterior_features.map(feature => (
+          <li>
+            <span class="feature-label">{feature.label}</span>
+            <ul class="feature-value">
+              {feature.value.map(row => (
+                <li>{row}</li>
+              ))}
+            </ul>
+          </li>
+        ))}
+      </ul>
+    </div>
+  ) : ''}
+
+  {listing.additional_info ? (
+    <div class="feature-details">
+      <div class="feature-title">
+        <img src="https://img.icons8.com/ios/50/features-list.png" alt="features-list" width="20" height="20" />
+        <h3>Additional Information</h3>
+      </div>
+      <ul class="feature-list">
+        {listing.additional_info.map(feature => (
+          <li>
+            <span class="feature-label">{feature.label}</span>
+            <ul class="feature-value">
+              {feature.value.map(row => (
+                <li>{row}</li>
+              ))}
+            </ul>
+          </li>
+        ))}
+      </ul>
+    </div>
+  ) : ''}
+</div>
+

@@ -1,0 +1,16 @@
+---
+const { data, currentId } = Astro.props;
+import PropertyCard from "./PropertyCard.astro";
+
+---
+<div class="related-listings">
+    <h2>Similar Properties</h2>
+    <div class="related-listings-grid">
+      {data.listings.filter(listing => listing.id !== currentId).slice(0, 4).map((listing) => {
+        const detail = data.listings_details.find(
+            (detail) => detail.id === listing.id
+        );
+        return <PropertyCard listing={listing} detail={detail} key={listing.id} />;
+    })}
+    </div>
+  </div>
