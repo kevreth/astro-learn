@@ -10,12 +10,11 @@ import data from "./data.json";
             <div class="text-content scroll-content">
                 <div class="commercial-container locni-container">
                     <p class="locni-description">
-                        {data.investment_properties.description}
-                    </p>
-                    <a class="btn-primary" href={data.investment_properties.link.url}>
+                    {data.investment_properties.description} <a class="link-color" href={data.investment_properties.link.url}>
                         {data.investment_properties.link.text}
                     </a>
-                    <div class="bottom-line"></div>
+                    </p>
+                    <div class="bottom-line-no-padding"></div>
                     <div class="locni-features">
                         {data.investment_properties.services.map(service => (
                             <div>
@@ -34,12 +33,12 @@ import data from "./data.json";
                                     }
                                 })}
                               </ul>
-                              <div class="bottom-line"></div> 
+                              {/* <div class="bottom-line"></div>  */}
                             </div>
                           ))}
-                    <div class="padding-top flex-gap">
+                    <div class="padding-top flex-gap btn-outline">
                         {data.investment_properties.buttons.map(button => (
-                          <a class="btn-primary" href={button.url}>{button.text}</a>
+                          <a href={button.url}>{button.text}</a>
                         ))}
                     </div>
                 </div>

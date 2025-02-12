@@ -3,10 +3,10 @@ title: Commercial Services Offers
 description: Commercial Services Offers| Inquirita
 investment_properties:
   title: 'Commercial Real Estate'
+  description: "Investing in real estate can provide your business with the foundation it needs to grow and thrive. Whether you're looking for office space, retail locations, industrial, or residential properties, we specialize in connecting you with the right opportunities to meet your goals. Browse our listings:"
   link:
-    text: 'Investment Properties'
+    text: INVESTMENT PROPERTIES TO BUY NOW'
     url: '/us/ga/decatur/investment-properties'
-  description: "Investing in real estate can provide your business with the foundation it needs to grow and thrive. Whether you're looking for office space, retail locations, industrial, or residential properties, we specialize in connecting you with the right opportunities to meet your goals."
   services:
     - title: 'Our Services in Investment Real Estate'
       items:

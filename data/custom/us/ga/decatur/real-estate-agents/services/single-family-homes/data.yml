@@ -3,8 +3,9 @@ title: Residental Services Offers
 description: Residental Services Offers| Inquirita
 single_family_homes:
   title: 'Single-Family Homes'
+  description: 'Browse our listings:'
   link:
-    text: 'Single Family Homes'
+    text: 'SINGLE FAMILY HOMES TO BUY NOW'
     url: '/us/ga/decatur/single-family-homes'
   services:
     title: 'Our Residential Real Estate Services'

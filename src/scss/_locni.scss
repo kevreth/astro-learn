@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 @media (min-width: 600px) {
   .locni-container ul {
     margin-left: 20px;
@@ -10,6 +12,9 @@
   }
   .locni-section-img {
     order: 2;
+  }
+  .btn-outline a {
+    flex: unset !important;
   }
 }
 
@@ -172,7 +177,7 @@
 // }
 
 .btn-outline a {
-  display: inline-block;
+  // display: inline-block
   padding: 12px 20px;
   font-weight: bold;
   text-align: center;
@@ -180,11 +185,19 @@
   color: #222;
   text-decoration: none;
   transition: all 0.3s ease;
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 .btn-outline a:hover {
   background: #000;
   color: #fff;
+}
+
+.link-color {
+  color: $link-color;
 }
 
 .locni-container {

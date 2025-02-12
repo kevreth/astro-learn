@@ -172,6 +172,7 @@ $desktop: 600px;
   flex-direction: column;
   position: sticky;
   top: 50px;
+  z-index: 1;
 }
 
 .agent-name {

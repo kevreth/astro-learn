@@ -9,10 +9,10 @@ import data from "./data.json";
             <h1>{data.single_family_homes.title}</h1>
             <div class="text-content scroll-content">
                 <div class="residental-container locni-container locni-text-light-color">
-                    <a class="btn-primary margin-top " href={data.single_family_homes.link.url}>
+                    <p>{data.single_family_homes.description} <a class="link-color margin-top " href={data.single_family_homes.link.url}>
                         {data.single_family_homes.link.text}
-                    </a>
-                    <div class="bottom-line"></div>
+                    </a></p>
+                    <div class="bottom-line-no-padding"></div>
                     <h2>{data.single_family_homes.services.title}</h2>
                     <div class="locni-features residental-services">
                         {data.single_family_homes.services.categories.map(category => (
@@ -37,9 +37,9 @@ import data from "./data.json";
                     <div class="bottom-line"></div>
                     <h2>{data.single_family_homes.contact.title}</h2>
                     <p>{data.single_family_homes.contact.text}</p>
-                    <div class="padding-top flex-gap">
+                    <div class="padding-top flex-gap btn-outline">
                         {data.single_family_homes.buttons.map(button => (
-                            <a class="btn-primary" href={button.url}>
+                            <a href={button.url}>
                                 {button.text}
                             </a>
                         ))}
