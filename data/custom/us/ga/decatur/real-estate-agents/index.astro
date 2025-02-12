@@ -1,4 +1,5 @@
 ---
+import PropertyListings from 'src/astro/components/PropertyListings.astro';
 import Default from '../src/astro/components/Default.astro';
 import data from './data.json';
 import listings from "./listings/[id]/data.json"
@@ -53,32 +54,7 @@ import PropertyCard from 'src/astro/components/PropertyCard.astro';
             </section>
             <section class="property-listing">
                 <div class="listing-grid">
-                  <!-- {listings.listings.slice(0, 3).map((listing: any) => (
-                  <div class="property-card">
-                    <a href={listing.link}>
-                      <div class="for-sale-img-contanier">
-                        <img src={listing.image} alt="Property"/>
-                        {/* <div class="badge">For Sale</div> */}
-                      </div>
-                      <div class="property-details">
-                        <div class="status">
-                          <span class="dot"></span> {listing.status}
-                        </div>
-                        <h2>{listing.price}</h2>
-                        <div class="no-padding">
-                          <p>{listing.location}</p>
-                          <p>{listing.subStats}</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  ))} -->
-                  {listings.listings.slice(0, 3).map((listing) => {
-                    // ✅ Find the matching property details
-                    const detail = listingsDetails.listings_details.find(detail => detail.id === listing.id);
-                    
-                    return <PropertyCard listing={listing} detail={detail} key={listing.id} />;
-                  })}
+                  <PropertyListings data={{ listings: listings.listings.slice(0, 3) }} listingsDetails={listingsDetails} />                
                 </div>
               </section>
           </div>

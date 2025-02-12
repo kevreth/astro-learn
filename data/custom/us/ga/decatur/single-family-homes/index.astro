@@ -11,7 +11,9 @@ import PropertyListings from "src/astro/components/PropertyListings.astro";
             <h1>Decatur, GA Investment Properties</h1>
             <div class="text-content scroll-content">
                 <div class="listing-container">
-                    <PropertyListings data={data} listingsDetails={listingsDetails}/>
+                    <div class="listings-grid">
+                        <PropertyListings data={data} listingsDetails={listingsDetails}/>
+                    </div>
                 </div>
             </div>
         </div>
