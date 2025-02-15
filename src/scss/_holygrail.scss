@@ -7,8 +7,12 @@ $desktop: 600px;
       padding: 0;
     }
 
-    .mainContent h1 {
-      padding: 20px !important;
+    // .mainContent h1 {
+    //   padding: 20px !important;
+    // }
+
+    header {
+      position: unset !important;
     }
 
     .float-title {
@@ -29,6 +33,11 @@ $desktop: 600px;
       max-width: 100% !important;
       object-fit: contain;
       height: auto !important;
+    }
+
+    .logoImg img {
+      top: unset !important;
+      position: unset !important;
     }
 
     nav {

@@ -26,3 +26,6 @@ export function calculateAvailableDimensions(dm: IDataManager): {
 export function floadTitleWhenBreadcrumbsAllow(dm: IDataManager): void {
   return modeFactory(dm).floadTitleWhenBreadcrumbsAllow(dm);
 }
+export function applyMobileStyles(dm: IDataManager): void {
+  return modeFactory(dm).applyMobileStyles(dm);
+}

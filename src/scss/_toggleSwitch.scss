@@ -1,4 +1,4 @@
-@use "variables";
+@use 'variables';
 @use 'holygrail';
 
 .header-container {
@@ -11,8 +11,9 @@
   cursor: pointer;
 }
 .toggle-container {
-  padding: 5px 0;
+  // padding: 5px 0;
   gap: 5px;
+  padding-bottom: 5px;
 }
 .toggle-switch {
   display: none;
@@ -21,13 +22,13 @@
   display: flex;
 }
 .label-div {
-  color: #ffffff; 
-  text-shadow: 
-    -1px -1px 0 #000, 
-      1px -1px 0 #000, 
-    -1px  1px 0 #000, 
-      1px  1px 0 #000; 
-  background: rgba(0, 0, 0, 0.6); 
+  color: #ffffff;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  background: rgba(0, 0, 0, 0.6);
 }
 .switch {
   position: relative;
@@ -48,7 +49,7 @@
 }
 .switch .slider:before {
   position: absolute;
-  content: "";
+  content: '';
   height: 16px;
   width: 16px;
   left: 1px;

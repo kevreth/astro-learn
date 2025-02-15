@@ -1,17 +1,23 @@
 import { IDataManager } from '../IDataManager';
 import { Modes } from './modes';
+import { navNotEmpty } from '../layoutManager';
 export class Mobile extends Modes {
   handleView(dm: IDataManager) {
+    // const header = dm.header;
     const navbar = dm.navbar;
     const logoNavbarWrapper = dm.logoNavbarWrapper;
     const breadcrumbContainer = dm.breadcrumbContainer;
     const title = dm.title;
     const logoImg = dm.logoImg;
+    // const mainWrapper = dm.mainWrapper;
     navbar.classList.add('hidden');
     navbar.classList.remove('transparent');
     logoNavbarWrapper.classList.remove('breadcrumb-below-nav');
+    // const headerHeight = header.offsetHeight;
     const logoImgWidth = logoImg.offsetWidth;
     const logoImgHeight = logoImg.offsetHeight;
+    // const breadcrumbContainerHeight = breadcrumbContainer.offsetHeight;
+    // const navbarHeight = navbar.offsetHeight;
 
     if (typeof window !== 'undefined') {
       // Indent logo if width as 2 times height
@@ -22,15 +28,15 @@ export class Mobile extends Modes {
           logoNavbarWrapper.style.setProperty('justify-content', 'center');
           breadcrumbContainer.classList.add('breadcrumb-left');
         }
-        adjustBreadcrumbHeight();
+        // adjustBreadcrumbHeight();
       };
       // logo as same height with breadcrumbs when in same line
-      const adjustBreadcrumbHeight = () => {
-        if (logoImg && breadcrumbContainer) {
-          breadcrumbContainer.style.minHeight = `${logoImgHeight}px`;
-          breadcrumbContainer.style.marginLeft = `${logoImgWidth + 10}px`;
-        }
-      };
+      // const adjustBreadcrumbHeight = () => {
+      //   if (logoImg && breadcrumbContainer) {
+      //     breadcrumbContainer.style.minHeight = `${logoImgHeight}px`;
+      //     breadcrumbContainer.style.marginLeft = `${logoImgWidth + 10}px`;
+      //   }
+      // };
       initializeDimensions();
     }
     // title jump up when no breadcrumbs
@@ -39,6 +45,68 @@ export class Mobile extends Modes {
       title.classList.add('title');
     } else {
       title.classList.remove('title');
+    }
+  }
+  applyMobileStyles(dm: IDataManager) {
+    const isMobileView = dm.window.innerWidth < 600;
+
+    if (isMobileView) {
+      const header = dm.header;
+      const navbar = dm.navbar;
+      const logoNavbarWrapper = dm.logoNavbarWrapper;
+      const breadcrumbContainer = dm.breadcrumbContainer;
+      const navbarHeight = navbar.offsetHeight;
+      const logoImg = dm.logoImg;
+      const mainWrapper = dm.mainWrapper;
+      navbar.classList.add('hidden');
+      navbar.classList.remove('transparent');
+      logoNavbarWrapper.classList.remove('breadcrumb-below-nav');
+      const headerHeight = header.offsetHeight;
+      const logoImgWidth = logoImg.offsetWidth;
+      // const logoImgHeight = logoImg.offsetHeight;
+      const breadcrumbContainerHeight = breadcrumbContainer.offsetHeight;
+      const navbarExists = navNotEmpty(dm);
+      const adjustMainContentTop = () => {
+        if (logoImg && breadcrumbContainer) {
+          mainWrapper.style.top = `${headerHeight + breadcrumbContainerHeight + navbarHeight - 30}px`;
+          mainWrapper.style.position = 'relative';
+        }
+      };
+      const adjustBreadcrumbTop = () => {
+        if (logoImg && breadcrumbContainer) {
+          breadcrumbContainer.style.top = `${headerHeight + navbarHeight}px`;
+          breadcrumbContainer.style.position = 'relative';
+        }
+      };
+      const adjustNavbarTop = () => {
+        if (navbarExists) {
+          navbar.style.top = `${headerHeight + 5}px`;
+          navbar.style.position = 'fixed';
+          navbar.style.marginLeft = `${logoImgWidth + 5}px`;
+        }
+      };
+      const adjustHeaderWidth = () => {
+        if (logoImg && header) {
+          const availableWidth = window.innerWidth - logoImgWidth;
+          header.style.width = `${availableWidth - 10}px`;
+        }
+      };
+      const adjustLogoHeight = () => {
+        let newLogoHeight;
+        if (navbarExists) {
+          newLogoHeight = headerHeight + navbarHeight + 5;
+        } else {
+          logoImg.style.minHeight = `${breadcrumbContainerHeight}px + ${headerHeight}px`;
+          breadcrumbContainer.style.marginLeft = `${logoImgWidth + 10}px`;
+        }
+
+        logoImg.style.minHeight = `${newLogoHeight}px`;
+      };
+      adjustLogoHeight();
+      adjustHeaderWidth();
+      adjustBreadcrumbTop();
+      adjustNavbarTop();
+      adjustMainContentTop();
     }
   }
   calculateAvailableDimensions(dm: IDataManager): {

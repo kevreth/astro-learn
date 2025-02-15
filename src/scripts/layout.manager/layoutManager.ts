@@ -6,6 +6,7 @@ import {
   navempty,
   floadTitleWhenBreadcrumbsAllow,
   calculateAvailableDimensions,
+  applyMobileStyles,
 } from './mode/modeFactory';
 export function handleSearchInput(dm: IDataManager): void {
   const searchInputs = dm.searchInputs;
@@ -52,11 +53,25 @@ export function setBreadcrumbTransparency(dm: IDataManager): void {
   const breadcrumbContainer = dm.breadcrumbContainer;
   breadcrumbContainer.classList.toggle('transparent', isBreadcrumbEmpty);
 }
-export function navNotEmpty(dm: IDataManager): void {
+export function navNotEmpty(dm: IDataManager): boolean {
   const navbar = dm.navbar;
   const logoNavbarWrapper = dm.logoNavbarWrapper;
   navbar.classList.remove('hidden');
   logoNavbarWrapper.classList.add('breadcrumb-below-nav');
+  // const isMobileView = dm.window.innerWidth < 600;
+  // if (isMobileView) {
+  //   const header = dm.header;
+  //   const logoImg = dm.logoImg;
+  //   const headerHeight = header.offsetHeight;
+  //   const logoImgWidth = logoImg.offsetWidth;
+
+  //   navbar.style.top = `${headerHeight}px`;
+  //   navbar.style.position = 'relative';
+  //   navbar.style.marginLeft = `${logoImgWidth + 5}px`;
+
+  //   console.log('navbar', navbar.style.top);
+  // }
+  return !!dm.navbar && dm.navbar.children.length > 0;
 }
 export function whenNavEmpty(dm: IDataManager): void {
   dm.isNavEmpty ? navempty(dm) : navNotEmpty(dm);
@@ -111,15 +126,18 @@ export function adjustHeightAndLayout(dm: IDataManager): void {
     setBreadcrumbTransparency(dm);
     toggleEmptyAside(dm);
     observeMainWrapper(dm);
+    applyMobileStyles(dm);
   }, 0);
   window.addEventListener('resize', () => {
     adjustContentHeight(dm);
+    applyMobileStyles(dm);
   });
 }
 export function initLayout(dm: DataManager) {
   dm.window.addEventListener('resize', () => {
     adjustHeightAndLayout(dm);
     adjustLogoSize(dm);
+    // applyMobileStyles(dm);
   });
 }
 export function initializeLayout(): void {
@@ -131,6 +149,7 @@ export function initializeLayout(): void {
   initLayout(dm);
   adjustHeightAndLayout(dm);
   adjustLogoSize(dm);
+  applyMobileStyles(dm);
 }
 //entry point protected for testing
 if (typeof window !== 'undefined') {

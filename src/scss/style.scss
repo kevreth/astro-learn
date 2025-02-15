@@ -57,6 +57,11 @@ body {
   display: none;
 }
 
+header {
+  right: 0;
+  position: absolute;
+}
+
 header,
 footer {
   font-size: 24px;
@@ -101,6 +106,8 @@ main {
     justify-content: space-between;
     gap: 5px;
     position: absolute;
+
+    align-items: center;
   }
 
   .logoImg {
@@ -113,6 +120,9 @@ main {
   .logoImg img {
     max-width: 11vw;
     height: auto;
+
+    top: -5px;
+    position: absolute;
   }
 
   .logoSlogan {
@@ -127,6 +137,7 @@ main {
     align-items: center;
     text-wrap: nowrap;
     line-height: 1.5em;
+    padding: 0 5px;
 
     .navlink {
       text-align: center;
@@ -191,7 +202,8 @@ main {
       text-align: center;
       position: relative;
       // padding: 20px !important;
-      padding: unset;
+      // padding: unset;
+      padding: 5px !important;
       margin-bottom: 5px;
       width: fit-content;
       background: rgb(241, 238, 233, 0.6);
