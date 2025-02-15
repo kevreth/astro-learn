@@ -58,19 +58,6 @@ export function navNotEmpty(dm: IDataManager): boolean {
   const logoNavbarWrapper = dm.logoNavbarWrapper;
   navbar.classList.remove('hidden');
   logoNavbarWrapper.classList.add('breadcrumb-below-nav');
-  // const isMobileView = dm.window.innerWidth < 600;
-  // if (isMobileView) {
-  //   const header = dm.header;
-  //   const logoImg = dm.logoImg;
-  //   const headerHeight = header.offsetHeight;
-  //   const logoImgWidth = logoImg.offsetWidth;
-
-  //   navbar.style.top = `${headerHeight}px`;
-  //   navbar.style.position = 'relative';
-  //   navbar.style.marginLeft = `${logoImgWidth + 5}px`;
-
-  //   console.log('navbar', navbar.style.top);
-  // }
   return !!dm.navbar && dm.navbar.children.length > 0;
 }
 export function whenNavEmpty(dm: IDataManager): void {
@@ -137,7 +124,6 @@ export function initLayout(dm: DataManager) {
   dm.window.addEventListener('resize', () => {
     adjustHeightAndLayout(dm);
     adjustLogoSize(dm);
-    // applyMobileStyles(dm);
   });
 }
 export function initializeLayout(): void {

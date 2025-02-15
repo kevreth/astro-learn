@@ -9,15 +9,11 @@ export class Mobile extends Modes {
     const breadcrumbContainer = dm.breadcrumbContainer;
     const title = dm.title;
     const logoImg = dm.logoImg;
-    // const mainWrapper = dm.mainWrapper;
     navbar.classList.add('hidden');
     navbar.classList.remove('transparent');
     logoNavbarWrapper.classList.remove('breadcrumb-below-nav');
-    // const headerHeight = header.offsetHeight;
     const logoImgWidth = logoImg.offsetWidth;
     const logoImgHeight = logoImg.offsetHeight;
-    // const breadcrumbContainerHeight = breadcrumbContainer.offsetHeight;
-    // const navbarHeight = navbar.offsetHeight;
 
     if (typeof window !== 'undefined') {
       // Indent logo if width as 2 times height
@@ -58,12 +54,8 @@ export class Mobile extends Modes {
       const navbarHeight = navbar.offsetHeight;
       const logoImg = dm.logoImg;
       const mainWrapper = dm.mainWrapper;
-      navbar.classList.add('hidden');
-      navbar.classList.remove('transparent');
-      logoNavbarWrapper.classList.remove('breadcrumb-below-nav');
       const headerHeight = header.offsetHeight;
       const logoImgWidth = logoImg.offsetWidth;
-      // const logoImgHeight = logoImg.offsetHeight;
       const breadcrumbContainerHeight = breadcrumbContainer.offsetHeight;
       const navbarExists = navNotEmpty(dm);
       const adjustMainContentTop = () => {

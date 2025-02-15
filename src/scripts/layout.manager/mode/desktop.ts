@@ -72,4 +72,38 @@ export class Desktop extends Modes {
       nextElementTitle.style.removeProperty('margin-top');
     }
   }
+  applyMobileStyles(dm: IDataManager) {
+    // Reset mobile style in desktop view
+    const header = dm.header;
+    const navbar = dm.navbar;
+    const breadcrumbContainer = dm.breadcrumbContainer;
+    const logoImg = dm.logoImg;
+    const mainWrapper = dm.mainWrapper;
+
+    if (header) {
+      header.style.width = '';
+      header.style.position = '';
+    }
+
+    if (logoImg) {
+      logoImg.style.minHeight = '';
+    }
+
+    if (mainWrapper) {
+      mainWrapper.style.top = '';
+      mainWrapper.style.position = '';
+    }
+
+    if (breadcrumbContainer) {
+      breadcrumbContainer.style.top = '';
+      breadcrumbContainer.style.marginLeft = '';
+      breadcrumbContainer.style.position = '';
+    }
+
+    if (navbar) {
+      navbar.style.top = '';
+      navbar.style.position = '';
+      navbar.style.marginLeft = '';
+    }
+  }
 }

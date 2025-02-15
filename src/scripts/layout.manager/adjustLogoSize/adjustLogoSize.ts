@@ -8,10 +8,10 @@ export function adjustNavbarFontSize(dm: IDataManager): void {
   const minFontSize = 10;
   const maxWidth = pageWidth - 20;
   const totalContentWidth = navbar!.offsetWidth + logoImg!.offsetWidth;
-  if (fontSize < maxFontSize) {
-    fontSize = Math.min(maxFontSize, fontSize + 2);
-    navbar!.style.fontSize = `${fontSize}px`;
-  }
+  // if (fontSize < maxFontSize) {
+  //   fontSize = Math.min(maxFontSize, fontSize + 2);
+  //   navbar!.style.fontSize = `${fontSize}px`;
+  // }
   if (totalContentWidth > maxWidth && fontSize > minFontSize) {
     const diff = totalContentWidth - maxWidth;
     const decrement = Math.ceil(diff / 10);
