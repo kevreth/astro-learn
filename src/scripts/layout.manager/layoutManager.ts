@@ -124,6 +124,7 @@ export function initLayout(dm: DataManager) {
   dm.window.addEventListener('resize', () => {
     adjustHeightAndLayout(dm);
     adjustLogoSize(dm);
+    applyMobileStyles(dm);
   });
 }
 export function initializeLayout(): void {

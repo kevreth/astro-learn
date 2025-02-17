@@ -12,7 +12,43 @@ export class Desktop extends Modes {
     breadcrumbContainer.style.setProperty('margin-left', '0');
     breadcrumbContainer.style.setProperty('min-height', 'auto');
     title.classList.remove('title');
+
+    // this.removeMobileStyles(dm);
   }
+  // removeMobileStyles(dm: IDataManager) {
+  //   // Reset mobile style in desktop view
+  //   const header = dm.header;
+  //   const navbar = dm.navbar;
+  //   const breadcrumbContainer = dm.breadcrumbContainer;
+  //   const logoImg = dm.logoImg;
+  //   const mainWrapper = dm.mainWrapper;
+
+  //   if (header) {
+  //     header.style.width = '';
+  //     header.style.position = '';
+  //   }
+
+  //   if (logoImg) {
+  //     logoImg.style.minHeight = '';
+  //   }
+
+  //   if (mainWrapper) {
+  //     mainWrapper.style.top = '';
+  //     mainWrapper.style.position = '';
+  //   }
+
+  //   if (breadcrumbContainer) {
+  //     breadcrumbContainer.style.top = '';
+  //     breadcrumbContainer.style.marginLeft = '';
+  //     breadcrumbContainer.style.position = '';
+  //   }
+
+  //   if (navbar) {
+  //     navbar.style.top = '';
+  //     navbar.style.position = '';
+  //     navbar.style.marginLeft = '';
+  //   }
+  // }
   calculateAvailableDimensions(dm: IDataManager): {
     availableHeight: number;
     availableWidth: number;
