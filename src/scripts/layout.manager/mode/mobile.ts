@@ -66,6 +66,7 @@ export class Mobile extends Modes {
           mainWrapper,
           logoImg,
           isBreadcrumbEmpty,
+          title,
         } = dm;
         const navbarHeight = navbar.getBoundingClientRect().height;
         const navbarExists = navbarHeight > 0;
@@ -103,6 +104,8 @@ export class Mobile extends Modes {
           }
         };
         const adjustHeaderWidth = () => {
+          void logoImg.getBoundingClientRect();
+          void header.getBoundingClientRect();
           if (logoImg && header) {
             const availableWidth = window.innerWidth - logoImgWidth;
             header.style.width = `${availableWidth - 10}px`;
@@ -110,10 +113,17 @@ export class Mobile extends Modes {
         };
         const adjustLogoHeight = () => {
           let newLogoHeight;
-          if (navbarExists) {
+          const mainTitleHeight = title.getBoundingClientRect().height;
+
+          if (isBreadcrumbEmpty) {
+            newLogoHeight = headerHeight + mainTitleHeight + 5;
+            title.style.left = '0px';
+            title.style.transform = 'unset';
+            title.style.marginLeft = `${logoImgWidth + 5}px`;
+          } else if (navbarExists) {
             newLogoHeight = headerHeight + navbarHeight + 5;
           } else {
-            logoImg.style.minHeight = `${breadcrumbContainerHeight}px + ${headerHeight}px`;
+            newLogoHeight = breadcrumbContainerHeight + headerHeight;
           }
           logoImg.style.minHeight = `${newLogoHeight}px`;
         };
@@ -148,33 +158,37 @@ export class Mobile extends Modes {
     return { availableHeight, availableWidth };
   }
   floadTitleWhenBreadcrumbsAllow(dm: IDataManager) {
-    const title = dm.title;
-    const toggleContainer = dm.toggleContainer;
-    if (!title) {
-      console.warn(
-        'Title element is null. Skipping floadTitleWhenBreadcrumbsAllow.'
-      );
-      return;
-    }
-    const sibling = (title.nextElementSibling as HTMLElement) || null;
-    if (!sibling) {
-      console.warn(
-        'Sibling element is null. Skipping floadTitleWhenBreadcrumbsAllow.'
-      );
-      return;
-    }
-    const isBreadcrumbEmpty = dm.isBreadcrumbEmpty;
-    title.classList.remove('float-title');
-    // Remove float affects in mobile
-    if (toggleContainer) {
-      // toggleContainer.classList.remove('float-toggle')
-      toggleContainer.style.removeProperty('margin-top');
-    }
-    sibling?.style.removeProperty('margin-top');
-    // float title when no breadcrumbs in homepage mobile
-    if (isBreadcrumbEmpty) {
-      const logoImgHeight = dm.logoImg.offsetHeight;
-      sibling.style.setProperty('margin-top', `${logoImgHeight + 10}px`);
-    }
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const title = dm.title;
+        const toggleContainer = dm.toggleContainer;
+        if (!title) {
+          console.warn(
+            'Title element is null. Skipping floadTitleWhenBreadcrumbsAllow.'
+          );
+          return;
+        }
+        const sibling = (title.nextElementSibling as HTMLElement) || null;
+        if (!sibling) {
+          console.warn(
+            'Sibling element is null. Skipping floadTitleWhenBreadcrumbsAllow.'
+          );
+          return;
+        }
+        const isBreadcrumbEmpty = dm.isBreadcrumbEmpty;
+        title.classList.remove('float-title');
+        // Remove float affects in mobile
+        if (toggleContainer) {
+          // toggleContainer.classList.remove('float-toggle')
+          toggleContainer.style.removeProperty('margin-top');
+        }
+        sibling?.style.removeProperty('margin-top');
+        // float title when no breadcrumbs in homepage mobile
+        if (isBreadcrumbEmpty) {
+          const logoImgHeight = dm.logoImg.getBoundingClientRect().height;
+          sibling.style.setProperty('margin-top', `${logoImgHeight - 20}px`);
+        }
+      });
+    });
   }
 }
