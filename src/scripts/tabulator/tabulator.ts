@@ -382,7 +382,9 @@ export const adjustColumnVisibility = (tabulatorInstance: Tabulator) => {
       tabulatorInstance.showColumn('Name');
       tabulatorInstance.hideColumn('Combined');
     }
-    tabulatorInstance.redraw(true);
+    setTimeout(() => {
+      tabulatorInstance.redraw(true);
+    }, 50);
   }
 };
 export function buildTable(tab: Tabulator, doc: Document) {

@@ -4,22 +4,24 @@
   height: auto !important;
 }
 .tabulator {
-  overflow-y: auto; 
+  overflow-y: auto;
   height: fit-content;
   background-color: #fff !important;
   display: flex !important;
   flex-direction: column;
   height: 100%;
   border: none !important;
+
+  margin-right: 10px;
 }
 .tabulator-tableholder {
   flex: 1 !important;
   scrollbar-width: thin;
 }
 
-.tabulator .tabulator-header .tabulator-col .tabulator-col-content  {
-background-color: #244189;
-color: white;
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content {
+  background-color: #244189;
+  color: white;
 }
 
 .tabulator a {
@@ -30,7 +32,8 @@ color: white;
   text-decoration: underline;
 }
 
-
-  
-
-
+// @media (min-width: 600px) {
+//   .tabulator {
+//     margin-right: unset !important;
+//   }
+// }

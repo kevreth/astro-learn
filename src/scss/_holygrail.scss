@@ -82,6 +82,12 @@ $desktop: 600px;
     .main-container {
       flex: 1;
     }
+
+    .tabulator,
+    .dynamic-table,
+    .text-content {
+      margin-right: unset !important;
+    }
   }
 }
 

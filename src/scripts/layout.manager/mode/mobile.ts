@@ -59,8 +59,14 @@ export class Mobile extends Modes {
     if (isMobileView) {
       const logoImg = dm.logoImg;
       this.waitForImageLoad(logoImg, () => {
-        const { header, navbar, breadcrumbContainer, mainWrapper, logoImg } =
-          dm;
+        const {
+          header,
+          navbar,
+          breadcrumbContainer,
+          mainWrapper,
+          logoImg,
+          isBreadcrumbEmpty,
+        } = dm;
         const navbarHeight = navbar.getBoundingClientRect().height;
         const navbarExists = navbarHeight > 0;
         const headerHeight = header.getBoundingClientRect().height;
@@ -69,13 +75,36 @@ export class Mobile extends Modes {
           breadcrumbContainer.getBoundingClientRect().height;
 
         const adjustMainContentTop = () => {
-          const navbarOffset = navbarExists ? -15 : -20;
-          mainWrapper.style.top = `${headerHeight + breadcrumbContainerHeight + (navbarExists ? navbarHeight : 0) + navbarOffset}px`;
-          mainWrapper.style.position = 'relative';
+          // void header.getBoundingClientRect();
+          // void breadcrumbContainer.getBoundingClientRect();
+          // void navbar.getBoundingClientRect();
+          // void mainWrapper.getBoundingClientRect();
+
+          // void header.offsetHeight;
+          // void breadcrumbContainer.offsetHeight;
+          // void navbar.offsetHeight;
+
+          // mainWrapper.style.position = 'relative';
+          // mainWrapper.style.top = isBreadcrumbEmpty
+          //   ? `${header.offsetTop + headerHeight + breadcrumbContainerHeight - 5}px`
+          //   : `${headerHeight + breadcrumbContainerHeight + navbarHeight - 15}px`;
+          mainWrapper.style.top = '0px';
+          mainWrapper.style.position = 'absolute';
+          if (isBreadcrumbEmpty) {
+            mainWrapper.style.top = `${headerHeight + breadcrumbContainerHeight}px`;
+            // mainWrapper.style.position = 'relative';
+          } else {
+            const navbarOffset = navbarExists ? +15 : +10;
+            mainWrapper.style.top = `${headerHeight + breadcrumbContainerHeight + (navbarExists ? navbarHeight : 0) + navbarOffset}px`;
+            // mainWrapper.style.position = 'relative';
+
+            console.log('navbarOffset', mainWrapper.style.top);
+          }
         };
         const adjustBreadcrumbTop = () => {
           if (navbarHeight <= 0) {
-            breadcrumbContainer.style.top = `${headerHeight - 5}px`;
+            // breadcrumbContainer.style.top = `${headerHeight - 5}px`;
+            breadcrumbContainer.style.top = `${headerHeight}px`;
             breadcrumbContainer.style.position = 'relative';
             breadcrumbContainer.style.marginLeft = `${logoImgWidth + 10}px`;
           } else {
@@ -163,7 +192,7 @@ export class Mobile extends Modes {
     // float title when no breadcrumbs in homepage mobile
     if (isBreadcrumbEmpty) {
       const logoImgHeight = dm.logoImg.offsetHeight;
-      sibling.style.setProperty('margin-top', `${logoImgHeight + 5}px`);
+      sibling.style.setProperty('margin-top', `${logoImgHeight + 10}px`);
     }
   }
 }
