@@ -30,50 +30,57 @@ export class Desktop extends Modes {
     return { availableHeight, availableWidth };
   }
   floadTitleWhenBreadcrumbsAllow(dm: IDataManager) {
-    const title = dm.title;
-    if (!title) return;
-    const toggleContainer = dm.toggleContainer;
-    const isBreadcrumbEmpty = dm.isBreadcrumbEmpty;
-    const mainWrapper = dm.mainWrapper;
-    const breadcrumbContainer = dm.breadcrumbContainer;
-    const availableSpace = mainWrapper.offsetWidth;
-    const breadcrumbWidth = breadcrumbContainer.offsetWidth;
-    const titleWidth = title.offsetWidth;
-    const titleHeight = title.offsetHeight;
-    // Get the actual next sibling element
-    let nextElementTitle = title.nextSibling as HTMLElement;
-    while (nextElementTitle && nextElementTitle.nodeType !== 1) {
-      nextElementTitle = nextElementTitle.nextSibling as HTMLElement;
-    }
-    const breadcrumbLeftSpace = availableSpace / 2 - breadcrumbWidth;
-    const titleWidthNeedSpace = titleWidth / 2;
-    // float title when no breadcrumbs in homepage desktop
-    if (nextElementTitle && isBreadcrumbEmpty) {
-      title.style.setProperty('margin-top', '5px');
-    } else if (nextElementTitle && breadcrumbLeftSpace > titleWidthNeedSpace) {
-      title.classList.add('float-title');
-      // update on time when scailing with settimeout
+    requestAnimationFrame(() => {
       setTimeout(() => {
-        nextElementTitle.style.setProperty(
-          'margin-top',
-          `${titleHeight - breadcrumbContainer.offsetHeight}px`
-        );
-        if (toggleContainer) {
-          if (nextElementTitle === toggleContainer) {
-            toggleContainer.style.removeProperty('margin-top');
-            toggleContainer.classList.add('float-toggle');
-          } else {
-            toggleContainer.classList.remove('float-toggle');
-          }
+        const title = dm.title;
+        if (!title) return;
+        const toggleContainer = dm.toggleContainer;
+        const isBreadcrumbEmpty = dm.isBreadcrumbEmpty;
+        const mainWrapper = dm.mainWrapper;
+        const breadcrumbContainer = dm.breadcrumbContainer;
+        const availableSpace = mainWrapper.offsetWidth;
+        const breadcrumbWidth = breadcrumbContainer.offsetWidth;
+        const titleWidth = title.offsetWidth;
+        const titleHeight = title.offsetHeight;
+        // Get the actual next sibling element
+        let nextElementTitle = title.nextSibling as HTMLElement;
+        while (nextElementTitle && nextElementTitle.nodeType !== 1) {
+          nextElementTitle = nextElementTitle.nextSibling as HTMLElement;
         }
-      }, 0);
-    } else {
-      title.classList.remove('float-title');
-      // nextElementTitle.style.removeProperty('margin-top')
-    }
-    if (nextElementTitle) {
-      nextElementTitle.style.removeProperty('margin-top');
-    }
+        const breadcrumbLeftSpace = availableSpace / 2 - breadcrumbWidth;
+        const titleWidthNeedSpace = titleWidth / 2;
+        // float title when no breadcrumbs in homepage desktop
+        if (nextElementTitle && isBreadcrumbEmpty) {
+          title.style.setProperty('margin-top', '5px');
+        } else if (
+          nextElementTitle &&
+          breadcrumbLeftSpace > titleWidthNeedSpace
+        ) {
+          title.classList.add('float-title');
+          // update on time when scailing with settimeout
+          setTimeout(() => {
+            nextElementTitle.style.setProperty(
+              'margin-top',
+              `${titleHeight - breadcrumbContainer.offsetHeight}px`
+            );
+            if (toggleContainer) {
+              if (nextElementTitle === toggleContainer) {
+                toggleContainer.style.removeProperty('margin-top');
+                toggleContainer.classList.add('float-toggle');
+              } else {
+                toggleContainer.classList.remove('float-toggle');
+              }
+            }
+          }, 0);
+        } else {
+          title.classList.remove('float-title');
+          // nextElementTitle.style.removeProperty('margin-top')
+        }
+        if (nextElementTitle) {
+          nextElementTitle.style.removeProperty('margin-top');
+        }
+      });
+    });
   }
   applyMobileStyles(dm: IDataManager) {
     // Reset mobile style in desktop view
