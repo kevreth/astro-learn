@@ -211,12 +211,8 @@ export function proc(
 ): void {
   var currentProps = _.cloneDeep(inheritedProps)
   mergeDicts_(directory, currentProps)
-  console.log(directory)
   const fragment = directory.replace('sites','')
-  console.log(fragment)
-  // currentProps = removeNavEntry(fragment, currentProps)
-  console.log(currentProps['nav1'])
-  console.log(currentProps['nav2'])
+  currentProps = removeNavEntry(fragment, currentProps)
   currentProps['content'] = getContentHtml(directory)
   const filePath = directory.replace(rootDirectory, '')
   breadcrumbs['/' + filePath] = currentProps['name']
