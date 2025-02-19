@@ -3,7 +3,7 @@ name: Real Estate Agents
 # description: Decatur, Georgia Real Estate Agent|Jenny Peterson
 title: 'Your Trusted Advisor for Buying, Selling, and Investing in Real Estate'
 description: "Welcome to Jenny Peterson's Real Estate Services – your trusted partner in finding the perfect home or investment. With a personalized approach and deep local expertise, I am committed to helping you buy, sell, or invest with confidence. Let’s turn your real estate dreams into reality!"
-nav1:
+nav:
   - label: Directory
     path: /us/ga/decatur/real-estate-agents/directory
     icon: /svg/directory.svg
@@ -16,7 +16,6 @@ nav1:
   - label: Contact
     path: /us/ga/decatur/real-estate-agents/contact
     icon: /svg/contact.svg
-nav2:
   - label: Listings
     path: /us/ga/decatur/real-estate-agents/listings
     icon: /svg/listings.svg

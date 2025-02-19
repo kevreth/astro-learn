@@ -1,7 +1,7 @@
 name: Investment Properties
 title: Decatur, GA Investment Properties
 description: Decatur, GA Investment Properties | Jenny Peterson
-nav1:
+nav:
   - label: Directory
     path: /us/ga/decatur/real-estate-agents/directory
     icon: /svg/directory.svg
@@ -14,7 +14,6 @@ nav1:
   - label: Contact
     path: /us/ga/decatur/real-estate-agents/contact
     icon: /svg/contact.svg
-nav2:
   - label: Listings
     path: /us/ga/decatur/real-estate-agents/listings
     icon: /svg/listings.svg

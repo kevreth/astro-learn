@@ -20,7 +20,7 @@ export class MockDataManager implements IDataManager {
   isBreadcrumbEmpty = false;
   doc = this.dom.window.document;
   window = this.dom.window as unknown as Window;
-  setData(nav1, nav2, breadcrumb) {}
+  setData(nav, breadcrumb) {}
   setProperty(parentProperty: any, propertyName: string, value: any) {
     Object.defineProperty(parentProperty, propertyName, {
       value: value,

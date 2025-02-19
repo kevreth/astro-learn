@@ -15,5 +15,5 @@ export interface IDataManager {
   isBreadcrumbEmpty: boolean;
   doc: Document;
   window: Window;
-  setData(nav1, nav2, breadcrumb): void;
+  setData(nav, breadcrumb): void;
 }

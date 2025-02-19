@@ -1,14 +1,13 @@
 name: TreeMaster Services
 title: Sample Murfreesboro, Tennessee Tree Services Site
 description: Murfreesboro, Tennessee Tree Services|TreeMaster Services
-nav1:
+nav:
   - label: Directory
     path: /us/tn/murfreesboro/tree-service/directory
   - label: Services
     path: /us/tn/murfreesboro/tree-service/services
   - label: About Us
     path: /us/tn/murfreesboro/tree-service/about
-nav2:
   - label: Special Offers
     path: /us/tn/murfreesboro/tree-service/offers
   - label: Testimonials
