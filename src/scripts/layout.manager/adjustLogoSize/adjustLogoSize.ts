@@ -3,7 +3,6 @@ export function adjustNavbarFontSize(dm: IDataManager): void {
   const isMobileView = dm.window.innerWidth < 600;
   const navbar = dm.navbar;
   const logoImg = dm.logoImg;
-  // const pageWidth = dm.window.innerWidth;
   let fontSize = parseFloat(dm.window.getComputedStyle(navbar!).fontSize) || 16;
   const maxFontSize = 16;
   const minFontSize = 10;
@@ -21,23 +20,6 @@ export function adjustNavbarFontSize(dm: IDataManager): void {
       navbar!.style.fontSize = `${fontSize}px`;
     }
   }
-  // const adjustFontSize = () => {
-  //   const totalContentWidth = navbar.offsetWidth + logoImg.offsetWidth;
-
-  //   if (totalContentWidth > maxWidth && fontSize > minFontSize) {
-  //     // Shrink font size to fit
-  //     const diff = totalContentWidth - maxWidth;
-  //     fontSize = Math.max(minFontSize, fontSize - Math.ceil(diff / 8)); // ✅ More gradual decrease
-  //     navbar.style.fontSize = `${fontSize}px`;
-  //     requestAnimationFrame(adjustFontSize); // ✅ Continue adjusting if needed
-  //   } else if (totalContentWidth < maxWidth && fontSize < maxFontSize) {
-  //     // Increase font size if space allows
-  //     fontSize = Math.min(maxFontSize, fontSize + 1);
-  //     navbar.style.fontSize = `${fontSize}px`;
-  //   }
-  // };
-
-  // requestAnimationFrame(adjustFontSize);
 }
 export function adjustLogoSize(dm: IDataManager): void {
   const navbar = dm.navbar;
