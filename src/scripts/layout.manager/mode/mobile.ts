@@ -104,6 +104,7 @@ export class Mobile extends Modes {
             navbar.style.top = `${headerHeight + 5}px`;
             navbar.style.position = 'fixed';
             navbar.style.marginLeft = `${logoImgWidth + 5}px`;
+            navbar.style.width = `${window.innerWidth - logoImgWidth - 15}px`;
           }
         };
         const adjustHeaderWidth = () => {
