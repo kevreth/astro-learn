@@ -64,7 +64,6 @@ export class Mobile extends Modes {
           navbar,
           breadcrumbContainer,
           mainWrapper,
-          logoImg,
           isBreadcrumbEmpty,
           title,
         } = dm;
@@ -96,7 +95,11 @@ export class Mobile extends Modes {
             breadcrumbContainer.style.marginLeft = '5px';
           }
         };
-        const adjustNavbarTop = () => {
+        const updateImg = () => {
+          const logoImgWidth = logoImg.getBoundingClientRect().width;
+          adjustNavbarTop(logoImgWidth);
+        };
+        const adjustNavbarTop = (logoImgWidth: number) => {
           if (navbarHeight > 0) {
             navbar.style.top = `${headerHeight + 5}px`;
             navbar.style.position = 'fixed';
@@ -104,8 +107,8 @@ export class Mobile extends Modes {
           }
         };
         const adjustHeaderWidth = () => {
-          void logoImg.getBoundingClientRect();
-          void header.getBoundingClientRect();
+          // void logoImg.getBoundingClientRect();
+          // void header.getBoundingClientRect();
           if (logoImg && header) {
             const availableWidth = window.innerWidth - logoImgWidth;
             header.style.width = `${availableWidth - 10}px`;
@@ -130,8 +133,9 @@ export class Mobile extends Modes {
         adjustLogoHeight();
         adjustHeaderWidth();
         adjustBreadcrumbTop();
-        adjustNavbarTop();
+        // adjustNavbarTop();
         adjustMainContentTop();
+        updateImg();
       });
     }
   };
