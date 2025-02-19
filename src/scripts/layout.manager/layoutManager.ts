@@ -119,6 +119,10 @@ export function adjustHeightAndLayout(dm: IDataManager): void {
     adjustContentHeight(dm);
     applyMobileStyles(dm);
   });
+  window.addEventListener('DOMContentLoaded', () => {
+    adjustContentHeight(dm);
+    applyMobileStyles(dm);
+  });
 }
 export function initLayout(dm: DataManager) {
   dm.window.addEventListener('resize', () => {
