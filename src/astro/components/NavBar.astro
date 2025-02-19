@@ -1,7 +1,10 @@
 ---
-const { nav1, nav2 } = Astro.props;
+import { splitArray } from '../../scripts/navbar'
+const { nav } = Astro.props;
+const navs = splitArray(nav)
+const nav1 = JSON.parse(JSON.stringify(navs[0]))
+const nav2 = JSON.parse(JSON.stringify(navs[1]))
 ---
-
 <nav class={`navbar ${Astro.props.class || ''}`} id="navbar">
     <div class="navlink" id="navlink">
         <!-- First Navigation Section -->

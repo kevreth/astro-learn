@@ -8,16 +8,7 @@ logo:
 header: 'Inquirita'
 footer: (855) 463-9309
 aside: ''
-nav1: []
-  # - label: Blog
-  #   path: /blog
-  # - label: About
-  #   path: /about
-  # - label: Services
-  #   path: /services
-  # - label: Wiki
-  #   path: /wiki
-nav2: []
+nav: []
 backgroundImages:
   - https://i.imgur.com/S5Jew7M.jpeg
   - https://i.imgur.com/OLEeuXk.jpeg
