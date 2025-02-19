@@ -1,20 +1,4 @@
 <style>
-    /* body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #f9f9f9;
-        min-height: 100vh;
-    } */
-  /* @media (min-width: 600px) {
-    .dynamic-table {
-        right: unset !important;
-        position: unset !important;
-    }
-  } */
     h1 {
         text-align: center;
         margin-bottom: 20px;
@@ -37,6 +21,7 @@
         overflow: auto;
         padding-left: 0 !important;
         margin-right: 10px;
+        overscroll-behavior: none;
     }
     .dynamic-table li {
         padding: 2px;

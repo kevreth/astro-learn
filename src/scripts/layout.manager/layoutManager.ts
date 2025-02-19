@@ -120,7 +120,6 @@ export function adjustHeightAndLayout(dm: IDataManager): void {
     applyMobileStyles(dm);
   });
   window.addEventListener('DOMContentLoaded', () => {
-    adjustContentHeight(dm);
     applyMobileStyles(dm);
   });
 }

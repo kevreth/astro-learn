@@ -106,10 +106,10 @@ export class Mobile extends Modes {
             navbar.style.marginLeft = `${logoImgWidth + 5}px`;
             navbar.style.width = `${window.innerWidth - logoImgWidth - 15}px`;
 
-            console.log('navbar.style.marginLeft', navbar.style.marginLeft);
-            console.log('navbar.style.top', navbar.style.top);
-            console.log('headerHeight', headerHeight);
-            console.log('logoImgWidth', logoImgWidth);
+            // console.log('navbar.style.marginLeft', navbar.style.marginLeft);
+            // console.log('navbar.style.top', navbar.style.top);
+            // console.log('headerHeight', headerHeight);
+            // console.log('logoImgWidth', logoImgWidth);
           }
         };
         const adjustHeaderWidth = () => {
