@@ -44,8 +44,8 @@ colors:
   primaryColor: '#045858'
 agent:
   name: 'Jenny Peterson'
-  phone: '530.990.5366'
-  email: 'jennyperterson@gmail.com'
+  phone: '(404) 555-5555'
+  email: 'jennyperterson2345765@gmail.com'
   dre: '01995816'
   address: '3512 16th Street | Decatur, GA 94114'
 navCustom: 'custom-navbar'
