@@ -105,37 +105,32 @@ export class Mobile extends Modes {
             navbar.style.position = 'fixed';
             navbar.style.marginLeft = `${logoImgWidth + 5}px`;
             navbar.style.width = `${window.innerWidth - logoImgWidth - 15}px`;
-
-            // console.log('navbar.style.marginLeft', navbar.style.marginLeft);
-            // console.log('navbar.style.top', navbar.style.top);
-            // console.log('headerHeight', headerHeight);
-            // console.log('logoImgWidth', logoImgWidth);
           }
         };
         const adjustHeaderWidth = () => {
-          // void logoImg.getBoundingClientRect();
-          // void header.getBoundingClientRect();
           if (logoImg && header) {
             const availableWidth = window.innerWidth - logoImgWidth;
             header.style.width = `${availableWidth - 10}px`;
           }
         };
         const adjustLogoHeight = () => {
-          let newLogoHeight;
           const mainTitleHeight = title.getBoundingClientRect().height;
 
+          let newLogoHeight = isBreadcrumbEmpty
+            ? headerHeight + mainTitleHeight + 5
+            : navbarExists
+              ? headerHeight + navbarHeight + 5
+              : breadcrumbContainerHeight + headerHeight;
+
+          logoImg.style.minHeight = `${newLogoHeight}px`;
+
           if (isBreadcrumbEmpty) {
-            newLogoHeight = headerHeight + mainTitleHeight + 5;
             title.style.left = '0px';
             title.style.transform = 'unset';
             title.style.marginLeft = `${logoImgWidth + 5}px`;
-          } else if (navbarExists) {
-            newLogoHeight = headerHeight + navbarHeight + 5;
-          } else {
-            newLogoHeight = breadcrumbContainerHeight + headerHeight;
           }
-          logoImg.style.minHeight = `${newLogoHeight}px`;
         };
+
         adjustLogoHeight();
         adjustHeaderWidth();
         adjustBreadcrumbTop();
@@ -171,6 +166,7 @@ export class Mobile extends Modes {
     requestAnimationFrame(() => {
       setTimeout(() => {
         const title = dm.title;
+        const logoImg = dm.logoImg;
         const toggleContainer = dm.toggleContainer;
         if (!title) {
           console.warn(
@@ -185,19 +181,56 @@ export class Mobile extends Modes {
           );
           return;
         }
-        const isBreadcrumbEmpty = dm.isBreadcrumbEmpty;
-        title.classList.remove('float-title');
-        // Remove float affects in mobile
-        if (toggleContainer) {
-          // toggleContainer.classList.remove('float-toggle')
-          toggleContainer.style.removeProperty('margin-top');
-        }
-        sibling?.style.removeProperty('margin-top');
-        // float title when no breadcrumbs in homepage mobile
-        if (isBreadcrumbEmpty) {
-          const logoImgHeight = dm.logoImg.getBoundingClientRect().height;
-          sibling.style.setProperty('margin-top', `${logoImgHeight - 20}px`);
-        }
+        // const isBreadcrumbEmpty = dm.isBreadcrumbEmpty;
+        // title.classList.remove('float-title');
+        // // Remove float affects in mobile
+        // if (toggleContainer) {
+        //   // toggleContainer.classList.remove('float-toggle')
+        //   toggleContainer.style.removeProperty('margin-top');
+        // }
+        // sibling?.style.removeProperty('margin-top');
+        // // float title when no breadcrumbs in homepage mobile
+        // if (isBreadcrumbEmpty) {
+        //   const logoImgHeight = dm.logoImg.getBoundingClientRect().height;
+        //   sibling.style.setProperty('margin-top', `${logoImgHeight - 20}px`);
+        // }
+
+        // Wait until the image height is updated correctly
+        const waitForImageHeight = (
+          callback: (correctHeight: number) => void
+        ) => {
+          requestAnimationFrame(() => {
+            setTimeout(() => {
+              logoImg.style.display = 'none';
+              void logoImg.offsetHeight;
+              logoImg.style.display = 'block';
+
+              const logoImgHeight = logoImg.getBoundingClientRect().height;
+              if (logoImgHeight > 0 && logoImgHeight !== 48) {
+                callback(logoImgHeight);
+              } else {
+                waitForImageHeight(callback);
+              }
+            }, 50);
+          });
+        };
+
+        // Ensure correct height before setting margin
+        waitForImageHeight((correctHeight: number) => {
+          const isBreadcrumbEmpty = dm.isBreadcrumbEmpty;
+          title.classList.remove('float-title');
+
+          toggleContainer?.style.removeProperty('margin-top');
+          sibling.style.removeProperty('margin-top');
+
+          if (isBreadcrumbEmpty) {
+            sibling.style.setProperty('margin-top', `${correctHeight - 20}px`);
+            console.log(
+              '✅ Updated margin-top for sibling:',
+              correctHeight - 20
+            );
+          }
+        });
       });
     });
   }
