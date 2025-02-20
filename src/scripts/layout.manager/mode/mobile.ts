@@ -83,20 +83,13 @@ export class Mobile extends Modes {
             : `${headerHeight + breadcrumbContainerHeight + (navbarExists ? navbarHeight : 0) + navbarOffset}px`;
         };
         const adjustBreadcrumbTop = () => {
-          if (navbarHeight <= 0) {
-            breadcrumbContainer.style.top = `${headerHeight}px`;
-            breadcrumbContainer.style.position = 'relative';
-            breadcrumbContainer.style.marginLeft = `${logoImgWidth + 10}px`;
-          } else {
-            breadcrumbContainer.style.top = `${headerHeight + navbarHeight}px`;
-            breadcrumbContainer.style.position = 'relative';
-            breadcrumbContainer.style.marginLeft = '5px';
-          }
+          breadcrumbContainer.style.top = `${navbarHeight > 0 ? headerHeight + navbarHeight : headerHeight}px`;
+          breadcrumbContainer.style.position = 'relative';
+          breadcrumbContainer.style.marginLeft =
+            navbarHeight > 0 ? '5px' : `${logoImgWidth + 10}px`;
         };
         const updateImg = () => {
-          const logoImgWidth = logoImg.getBoundingClientRect().width;
-          adjustNavbarTop(logoImgWidth);
-          adjustLogoHeight(logoImgWidth);
+          adjustNavbarTop(logoImg.getBoundingClientRect().width);
         };
         const adjustNavbarTop = (logoImgWidth: number) => {
           if (navbarHeight > 0) {
@@ -108,18 +101,17 @@ export class Mobile extends Modes {
         };
         const adjustHeaderWidth = () => {
           if (logoImg && header) {
-            const availableWidth = window.innerWidth - logoImgWidth;
-            header.style.width = `${availableWidth - 10}px`;
+            header.style.width = `${window.innerWidth - logoImgWidth - 10}px`;
           }
         };
-        const adjustLogoHeight = (logoImgWidth: number) => {
+        const adjustLogoHeight = () => {
           const mainTitleHeight = title.getBoundingClientRect().height;
 
           let newLogoHeight = isBreadcrumbEmpty
             ? headerHeight + mainTitleHeight + 5
             : navbarExists
               ? headerHeight + navbarHeight + 5
-              : breadcrumbContainerHeight + headerHeight;
+              : breadcrumbContainerHeight + headerHeight + 5;
 
           logoImg.style.minHeight = `${newLogoHeight}px`;
 
@@ -130,10 +122,9 @@ export class Mobile extends Modes {
           }
         };
 
-        // adjustLogoHeight();
+        adjustLogoHeight();
         adjustHeaderWidth();
         adjustBreadcrumbTop();
-        // adjustNavbarTop();
         adjustMainContentTop();
         updateImg();
       });
