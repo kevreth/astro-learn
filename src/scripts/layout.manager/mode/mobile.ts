@@ -81,14 +81,17 @@ export class Mobile extends Modes {
           ? `${headerHeight + breadcrumbContainerHeight}px`
           : `${headerHeight + breadcrumbContainerHeight + (navbarExists ? navbarHeight : 0) + navbarOffset}px`;
       };
-      const adjustBreadcrumbTop = () => {
+      const adjustBreadcrumbTop = (logoImgWidth: number) => {
         breadcrumbContainer.style.top = `${navbarHeight > 0 ? headerHeight + navbarHeight : headerHeight}px`;
         breadcrumbContainer.style.position = 'relative';
         breadcrumbContainer.style.marginLeft =
           navbarHeight > 0 ? '5px' : `${logoImgWidth + 10}px`;
       };
+      // update img in mobile and desktop
       const updateImg = () => {
-        adjustNavbarTop(logoImg.getBoundingClientRect().width);
+        const logoImgWidth = logoImg.getBoundingClientRect().width;
+        adjustNavbarTop(logoImgWidth);
+        adjustBreadcrumbTop(logoImgWidth);
       };
       const adjustNavbarTop = (logoImgWidth: number) => {
         if (navbarHeight > 0) {
@@ -123,7 +126,7 @@ export class Mobile extends Modes {
 
       adjustLogoHeight();
       adjustHeaderWidth();
-      adjustBreadcrumbTop();
+      // adjustBreadcrumbTop();
       adjustMainContentTop();
       updateImg();
     });

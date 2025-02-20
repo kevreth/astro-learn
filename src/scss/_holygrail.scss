@@ -45,6 +45,8 @@ $desktop: 600px;
       flex: none !important;
       padding-left: 5px;
       max-height: fit-content !important;
+      width: auto !important;
+      font-size: inherit !important;
     }
 
     .navlink {
