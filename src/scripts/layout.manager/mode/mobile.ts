@@ -53,82 +53,80 @@ export class Mobile extends Modes {
   };
   // logo jump to header when in mobile view
   applyMobileStyles = (dm: IDataManager) => {
-    const isMobileView = dm.window.innerWidth < 600;
-    if (!isMobileView) return;
+    if (dm.window.innerWidth > 600) return;
 
-    if (isMobileView) {
-      const logoImg = dm.logoImg;
-      this.waitForImageLoad(logoImg, () => {
-        const {
-          header,
-          navbar,
-          breadcrumbContainer,
-          mainWrapper,
-          isBreadcrumbEmpty,
-          title,
-        } = dm;
-        const navbarHeight = navbar.getBoundingClientRect().height;
-        const navbarExists = navbarHeight > 0;
-        const headerHeight = header.getBoundingClientRect().height;
-        const logoImgWidth = logoImg.getBoundingClientRect().width;
-        const breadcrumbContainerHeight =
-          breadcrumbContainer.getBoundingClientRect().height;
+    const {
+      header,
+      navbar,
+      breadcrumbContainer,
+      mainWrapper,
+      isBreadcrumbEmpty,
+      title,
+      logoImg,
+    } = dm;
 
-        const adjustMainContentTop = () => {
-          mainWrapper.style.top = '0px';
-          mainWrapper.style.position = 'absolute';
-          const navbarOffset = navbarExists ? +15 : +10;
-          mainWrapper.style.top = isBreadcrumbEmpty
-            ? `${headerHeight + breadcrumbContainerHeight}px`
-            : `${headerHeight + breadcrumbContainerHeight + (navbarExists ? navbarHeight : 0) + navbarOffset}px`;
-        };
-        const adjustBreadcrumbTop = () => {
-          breadcrumbContainer.style.top = `${navbarHeight > 0 ? headerHeight + navbarHeight : headerHeight}px`;
-          breadcrumbContainer.style.position = 'relative';
-          breadcrumbContainer.style.marginLeft =
-            navbarHeight > 0 ? '5px' : `${logoImgWidth + 10}px`;
-        };
-        const updateImg = () => {
-          adjustNavbarTop(logoImg.getBoundingClientRect().width);
-        };
-        const adjustNavbarTop = (logoImgWidth: number) => {
-          if (navbarHeight > 0) {
-            navbar.style.top = `${headerHeight + 5}px`;
-            navbar.style.position = 'fixed';
-            navbar.style.marginLeft = `${logoImgWidth + 5}px`;
-            navbar.style.width = `${window.innerWidth - logoImgWidth - 15}px`;
-          }
-        };
-        const adjustHeaderWidth = () => {
-          if (logoImg && header) {
-            header.style.width = `${window.innerWidth - logoImgWidth - 10}px`;
-          }
-        };
-        const adjustLogoHeight = () => {
-          const mainTitleHeight = title.getBoundingClientRect().height;
+    this.waitForImageLoad(logoImg, () => {
+      const navbarHeight = navbar.getBoundingClientRect().height;
+      const navbarExists = navbarHeight > 0;
+      const headerHeight = header.getBoundingClientRect().height;
+      const logoImgWidth = logoImg.getBoundingClientRect().width;
+      const breadcrumbContainerHeight =
+        breadcrumbContainer.getBoundingClientRect().height;
 
-          let newLogoHeight = isBreadcrumbEmpty
-            ? headerHeight + mainTitleHeight + 5
-            : navbarExists
-              ? headerHeight + navbarHeight + 5
-              : breadcrumbContainerHeight + headerHeight + 5;
+      const adjustMainContentTop = () => {
+        mainWrapper.style.top = '0px';
+        mainWrapper.style.position = 'absolute';
+        const navbarOffset = navbarExists ? +15 : +10;
+        mainWrapper.style.top = isBreadcrumbEmpty
+          ? `${headerHeight + breadcrumbContainerHeight}px`
+          : `${headerHeight + breadcrumbContainerHeight + (navbarExists ? navbarHeight : 0) + navbarOffset}px`;
+      };
+      const adjustBreadcrumbTop = () => {
+        breadcrumbContainer.style.top = `${navbarHeight > 0 ? headerHeight + navbarHeight : headerHeight}px`;
+        breadcrumbContainer.style.position = 'relative';
+        breadcrumbContainer.style.marginLeft =
+          navbarHeight > 0 ? '5px' : `${logoImgWidth + 10}px`;
+      };
+      const updateImg = () => {
+        adjustNavbarTop(logoImg.getBoundingClientRect().width);
+      };
+      const adjustNavbarTop = (logoImgWidth: number) => {
+        if (navbarHeight > 0) {
+          navbar.style.top = `${headerHeight + 5}px`;
+          navbar.style.position = 'fixed';
+          navbar.style.marginLeft = `${logoImgWidth + 5}px`;
+          navbar.style.width = `${window.innerWidth - logoImgWidth - 15}px`;
+        }
+      };
+      const adjustHeaderWidth = () => {
+        if (logoImg && header) {
+          header.style.width = `${window.innerWidth - logoImgWidth - 10}px`;
+        }
+      };
+      const adjustLogoHeight = () => {
+        const mainTitleHeight = title.getBoundingClientRect().height;
 
-          logoImg.style.minHeight = `${newLogoHeight}px`;
+        let newLogoHeight = isBreadcrumbEmpty
+          ? headerHeight + mainTitleHeight + 5
+          : navbarExists
+            ? headerHeight + navbarHeight + 5
+            : breadcrumbContainerHeight + headerHeight + 5;
 
-          if (isBreadcrumbEmpty) {
-            title.style.left = '0px';
-            title.style.transform = 'unset';
-            title.style.marginLeft = `${logoImgWidth + 5}px`;
-          }
-        };
+        logoImg.style.minHeight = `${newLogoHeight}px`;
 
-        adjustLogoHeight();
-        adjustHeaderWidth();
-        adjustBreadcrumbTop();
-        adjustMainContentTop();
-        updateImg();
-      });
-    }
+        if (isBreadcrumbEmpty) {
+          title.style.left = '0px';
+          title.style.transform = 'unset';
+          title.style.marginLeft = `${logoImgWidth + 5}px`;
+        }
+      };
+
+      adjustLogoHeight();
+      adjustHeaderWidth();
+      adjustBreadcrumbTop();
+      adjustMainContentTop();
+      updateImg();
+    });
   };
   calculateAvailableDimensions(dm: IDataManager): {
     availableHeight: number;
@@ -171,19 +169,6 @@ export class Mobile extends Modes {
           );
           return;
         }
-        // const isBreadcrumbEmpty = dm.isBreadcrumbEmpty;
-        // title.classList.remove('float-title');
-        // // Remove float affects in mobile
-        // if (toggleContainer) {
-        //   // toggleContainer.classList.remove('float-toggle')
-        //   toggleContainer.style.removeProperty('margin-top');
-        // }
-        // sibling?.style.removeProperty('margin-top');
-        // // float title when no breadcrumbs in homepage mobile
-        // if (isBreadcrumbEmpty) {
-        //   const logoImgHeight = dm.logoImg.getBoundingClientRect().height;
-        //   sibling.style.setProperty('margin-top', `${logoImgHeight - 20}px`);
-        // }
 
         // Wait until the image height is updated correctly
         const waitForImageHeight = (
