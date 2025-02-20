@@ -6,6 +6,7 @@ import data from "./data.json";
 <Default data={data}>
     <div slot="pageCustom">
         <div class="mainContent" id="main-wrapper">
+            <h1>{data.title}</h1>
             <div class="text-content">
                 <div class="contact-container locni-section">
                     <div class="contact-section locni-section-img">
@@ -34,7 +35,6 @@ import data from "./data.json";
                         </div>
                     </div>
                     <div class="form-section locni-section-content contact-locni-section">
-                        <h2>{data.title}</h2>
                         <p>{data.contact_bio}</p>
                         <form class="contact-form" action="#" method="post">
                             <label for="firstName">Name</label>
