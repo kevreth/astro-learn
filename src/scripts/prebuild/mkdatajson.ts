@@ -196,7 +196,7 @@ export function recurse(
   })
 }
 export function removeNavEntry(targetPath: string, data:any): any {
-  ["nav1", "nav2"].forEach(key => {
+  ["nav"].forEach(key => {
     if (data[key]) data[key] = data[key].filter((item: any) => item.path !== targetPath);
   });
   return data

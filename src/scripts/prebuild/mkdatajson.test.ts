@@ -105,12 +105,10 @@ const path = '/us/ga/decatur/real-estate-agents/about'
 describe('removeNavEntry', () => {
   it('removes the target path from nav1 and nav2', () => {
     const data = {
-      nav1: [{ path: '/a' }, { path: path }, { path: '/b' }],
-      nav2: [{ path: '/c' }, { path: path }]
+      nav: [{ path: '/a' }, { path: path }, { path: '/b' }]
     }
     const result = removeNavEntry(path, data)
-    expect(result.nav1).toEqual([{ path: '/a' }, { path: '/b' }])
-    expect(result.nav2).toEqual([{ path: '/c' }])
+    expect(result.nav).toEqual([{ path: '/a' }, { path: '/b' }])
   })
   it('handles missing nav1 and nav2', () => {
     const data = { other: [] }
@@ -119,8 +117,7 @@ describe('removeNavEntry', () => {
   })
   it('returns the original object if no entries match', () => {
     const data = {
-      nav1: [{ path: '/x' }, { path: '/y' }],
-      nav2: [{ path: '/z' }]
+      nav: [{ path: '/x' }, { path: '/y' }]
     }
     const result = removeNavEntry(path, data)
     expect(result).toEqual(data)
