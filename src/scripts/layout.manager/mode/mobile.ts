@@ -77,12 +77,10 @@ export class Mobile extends Modes {
         const adjustMainContentTop = () => {
           mainWrapper.style.top = '0px';
           mainWrapper.style.position = 'absolute';
-          if (isBreadcrumbEmpty) {
-            mainWrapper.style.top = `${headerHeight + breadcrumbContainerHeight}px`;
-          } else {
-            const navbarOffset = navbarExists ? +15 : +10;
-            mainWrapper.style.top = `${headerHeight + breadcrumbContainerHeight + (navbarExists ? navbarHeight : 0) + navbarOffset}px`;
-          }
+          const navbarOffset = navbarExists ? +15 : +10;
+          mainWrapper.style.top = isBreadcrumbEmpty
+            ? `${headerHeight + breadcrumbContainerHeight}px`
+            : `${headerHeight + breadcrumbContainerHeight + (navbarExists ? navbarHeight : 0) + navbarOffset}px`;
         };
         const adjustBreadcrumbTop = () => {
           if (navbarHeight <= 0) {
@@ -98,6 +96,7 @@ export class Mobile extends Modes {
         const updateImg = () => {
           const logoImgWidth = logoImg.getBoundingClientRect().width;
           adjustNavbarTop(logoImgWidth);
+          adjustLogoHeight(logoImgWidth);
         };
         const adjustNavbarTop = (logoImgWidth: number) => {
           if (navbarHeight > 0) {
@@ -113,7 +112,7 @@ export class Mobile extends Modes {
             header.style.width = `${availableWidth - 10}px`;
           }
         };
-        const adjustLogoHeight = () => {
+        const adjustLogoHeight = (logoImgWidth: number) => {
           const mainTitleHeight = title.getBoundingClientRect().height;
 
           let newLogoHeight = isBreadcrumbEmpty
@@ -131,7 +130,7 @@ export class Mobile extends Modes {
           }
         };
 
-        adjustLogoHeight();
+        // adjustLogoHeight();
         adjustHeaderWidth();
         adjustBreadcrumbTop();
         // adjustNavbarTop();
