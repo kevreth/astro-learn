@@ -22,8 +22,8 @@ export class DataManager implements IDataManager {
   isBreadcrumbEmpty = false;
   doc = document;
   window = window;
-  setData(nav1, nav2, breadcrumb) {
-    this.isNavEmpty = !nav1.length && !nav2.length;
+  setData(nav, breadcrumb) {
+    this.isNavEmpty = !nav.length
     this.isBreadcrumbEmpty = !breadcrumb.length;
   }
 }
