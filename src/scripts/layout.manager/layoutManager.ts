@@ -135,7 +135,7 @@ export function initializeLayout(): void {
   const attribute = element.getAttribute('data-content') as string;
   const data = JSON.parse(attribute);
   const dm = new DataManager();
-  dm.setData(data.nav1, data.nav2, data.breadcrumb);
+  dm.setData(data.nav, data.breadcrumb);
   initLayout(dm);
   adjustHeightAndLayout(dm);
   adjustLogoSize(dm);

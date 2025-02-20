@@ -195,6 +195,12 @@ export function recurse(
     )
   })
 }
+export function removeNavEntry(targetPath: string, data:any): any {
+  ["nav"].forEach(key => {
+    if (data[key]) data[key] = data[key].filter((item: any) => item.path !== targetPath);
+  });
+  return data
+}
 export function proc(
   baseUrl: string,
   directory: string,
@@ -203,8 +209,10 @@ export function proc(
   breadcrumbs: Dict,
   companiesLocni: Dict
 ): void {
-  const currentProps = _.cloneDeep(inheritedProps)
+  var currentProps = _.cloneDeep(inheritedProps)
   mergeDicts_(directory, currentProps)
+  const fragment = directory.replace('sites','')
+  currentProps = removeNavEntry(fragment, currentProps)
   currentProps['content'] = getContentHtml(directory)
   const filePath = directory.replace(rootDirectory, '')
   breadcrumbs['/' + filePath] = currentProps['name']

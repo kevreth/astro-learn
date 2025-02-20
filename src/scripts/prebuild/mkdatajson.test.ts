@@ -99,3 +99,27 @@ describe('createBreadCrumbs', () => {
         expect(createBreadCrumbs('/path', breadcrumbs)).toContain('breadcrumb-item')
     })
 })
+import { removeNavEntry } from './mkdatajson'
+
+const path = '/us/ga/decatur/real-estate-agents/about'
+describe('removeNavEntry', () => {
+  it('removes the target path from nav1 and nav2', () => {
+    const data = {
+      nav: [{ path: '/a' }, { path: path }, { path: '/b' }]
+    }
+    const result = removeNavEntry(path, data)
+    expect(result.nav).toEqual([{ path: '/a' }, { path: '/b' }])
+  })
+  it('handles missing nav1 and nav2', () => {
+    const data = { other: [] }
+    const result = removeNavEntry(path, data)
+    expect(result).toEqual({ other: [] })
+  })
+  it('returns the original object if no entries match', () => {
+    const data = {
+      nav: [{ path: '/x' }, { path: '/y' }]
+    }
+    const result = removeNavEntry(path, data)
+    expect(result).toEqual(data)
+  })
+})
