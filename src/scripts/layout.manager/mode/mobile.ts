@@ -160,16 +160,10 @@ export class Mobile extends Modes {
         const logoImg = dm.logoImg;
         const toggleContainer = dm.toggleContainer;
         if (!title) {
-          console.warn(
-            'Title element is null. Skipping floadTitleWhenBreadcrumbsAllow.'
-          );
           return;
         }
         const sibling = (title.nextElementSibling as HTMLElement) || null;
         if (!sibling) {
-          console.warn(
-            'Sibling element is null. Skipping floadTitleWhenBreadcrumbsAllow.'
-          );
           return;
         }
 
@@ -203,10 +197,6 @@ export class Mobile extends Modes {
 
           if (isBreadcrumbEmpty) {
             sibling.style.setProperty('margin-top', `${correctHeight - 20}px`);
-            console.log(
-              '✅ Updated margin-top for sibling:',
-              correctHeight - 20
-            );
           }
         });
       });

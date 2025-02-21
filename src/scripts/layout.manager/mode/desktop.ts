@@ -84,11 +84,14 @@ export class Desktop extends Modes {
   }
   applyMobileStyles(dm: IDataManager) {
     // Reset mobile style in desktop view
-    const header = dm.header;
-    const navbar = dm.navbar;
-    const breadcrumbContainer = dm.breadcrumbContainer;
-    const logoImg = dm.logoImg;
-    const mainWrapper = dm.mainWrapper;
+    // const header = dm.header;
+    // const navbar = dm.navbar;
+    // const breadcrumbContainer = dm.breadcrumbContainer;
+    // const logoImg = dm.logoImg;
+    // const mainWrapper = dm.mainWrapper;
+    const { header, navbar, breadcrumbContainer, logoImg, mainWrapper, title } =
+      dm;
+    const sibling = (title.nextElementSibling as HTMLElement) || null;
 
     if (header) {
       header.style.width = '';
@@ -114,6 +117,18 @@ export class Desktop extends Modes {
       navbar.style.top = '';
       navbar.style.position = '';
       navbar.style.marginLeft = '';
+    }
+
+    if (title) {
+      title.style.left = '';
+      title.style.transform = '';
+      title.style.marginLeft = '';
+    }
+
+    if (sibling) {
+      sibling.style.removeProperty('margin-top');
+      void sibling.offsetHeight;
+      sibling.getBoundingClientRect();
     }
   }
 }
