@@ -4,10 +4,10 @@ $desktop: 600px;
   display: none;
 }
 
-.custom-navbar li.active span {
-  background-color: transparent;
-  border-bottom: 2px solid #555;
-}
+// .custom-navbar li.active span {
+//   background-color: transparent;
+//   border-bottom: 2px solid #555;
+// }
 
 @media (min-width: $desktop) {
   .custom-navbar {
@@ -21,13 +21,13 @@ $desktop: 600px;
     padding: 5px 0;
   }
 
-  .custom-navbar li.active span {
-    border-bottom: unset !important;
-  }
+  // .custom-navbar li.active span {
+  //   border-bottom: unset !important;
+  // }
 
-  .custom-navbar li.active .nav-icon {
-    filter: brightness(0) invert(1);
-  }
+  // .custom-navbar li.active .nav-icon {
+  //   filter: brightness(0) invert(1);
+  // }
 
   .custom-navbar li:hover {
     background-color: rgba(85, 85, 85, 0.8);

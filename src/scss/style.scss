@@ -132,7 +132,7 @@ main {
   .navbar {
     display: flex;
     z-index: 2;
-    background: rgb(241, 238, 233, 0.6);
+    background: rgb(241, 238, 233, 0.9);
     flex: 1;
     align-items: center;
     text-wrap: nowrap;
@@ -162,6 +162,9 @@ main {
 
       a {
         justify-content: center;
+        font-weight: normal;
+        color: #045858;
+        text-decoration: none;
       }
     }
 

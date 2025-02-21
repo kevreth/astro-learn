@@ -35,17 +35,16 @@
 
 .breadcrumb-item {
   padding: 2px 0;
-  font-size: 1em;
-  font-weight: bold;
+  // font-size: 1em;
+  // font-weight: bold;
   margin: 0;
   line-height: 0.9;
 }
 
 .breadcrumb a {
   font-weight: normal;
-  // text-decoration: none;
-  // color: aqua;
   color: #045858;
+  text-decoration: none;
 }
 
 .breadcrumb-item a:hover {
