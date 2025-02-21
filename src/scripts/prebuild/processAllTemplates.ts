@@ -70,7 +70,7 @@ export function processPaths(paths: string[]) {
     }
 }
 export function processAllTemplates(data:LocniData) {
-    const template = 'data/template/'
+    const template = 'src/template/'
     const output = 'sites'
     const files = findFiles('sites/us', 'content.csv')
     let result = processPaths(files)

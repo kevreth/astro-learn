@@ -183,7 +183,7 @@ export function createDirectoryStructure(root: string): ActiveRegionsType {
     return structure
 }
 export function load(): LocniData {
-  return loadAll('data/niches/', 'data/config/region.csv', 'data/config/locality.csv', 'sites/us/')
+  return loadAll('src/niches/', 'data/config/region.csv', 'data/config/locality.csv', 'sites/us/')
 }
 if (import.meta.url === `file://${process.argv[1]}`) {
   const data = load()
